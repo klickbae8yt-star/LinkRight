@@ -1,0 +1,17 @@
+Metric,Formula,Current_Value,Purpose
+Total Comments,"=COUNTA(Comments_Master!A:A)-1",150,Total comments scraped
+Lead Comments,"=COUNTIF(Comments_Master!K:K,""Lead"")",45,Comments categorized as leads
+Casual Comments,"=COUNTIF(Comments_Master!K:K,""Casual"")",95,Non-lead comments
+Spam Comments,"=COUNTIF(Comments_Master!K:K,""Spam"")",10,Spam/irrelevant comments
+Lead Conversion Rate,"=Lead Comments / Total Comments * 100",30%,Percentage of comments that are leads
+Delivery Success Rate,"=COUNTIF(Comments_Master!O:O,""Delivered"") / Lead Comments * 100",88.9%,Successfully delivered lead magnets
+Average Response Time (mins),"=AVERAGE(Comments_Master!R:R - Comments_Master!B:B) * 24 * 60",6.5,Avg time from comment to reply
+Total DMs Received,"=COUNTA(DMs_Master!A:A)-1",32,Total incoming DMs
+Lead DMs,"=COUNTIF(DMs_Master!H:H,""Lead"")",18,DMs with lead intent
+Duplicate Prevention Count,"=COUNTIF(DMs_Master!P:P,""Yes"")",5,Duplicates caught and prevented
+Connection Rate,"=COUNTIF(Comments_Master!N:N,""Connected"") / Total Comments * 100",65%,Percentage of connected users
+Total Qualified Leads,"=COUNTA(Leads_CRM!A:A)-1",28,Leads in CRM
+Top Performing Post,"=MODE(Comments_Master!C:C)",Post #12345,Post with most engagement
+Most Common Keyword,"=MODE(Comments_Master!J:J)",DM,Most frequently used trigger word
+Error Rate,"=COUNTA(Comments_Master!V:V) / Total Comments * 100",2.7%,Percentage of failed operations
+Cold Emails Sent,"=COUNTIF(Leads_CRM!O:O,""Yes"")",0,Cold email campaign progress

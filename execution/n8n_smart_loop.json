@@ -1,0 +1,183 @@
+{
+    "name": "LinkedIn Smart Loop (Safe Mode)",
+    "nodes": [
+        {
+            "parameters": {},
+            "name": "Start",
+            "type": "n8n-nodes-base.start",
+            "typeVersion": 1,
+            "position": [
+                240,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "authentication": "oAuth2",
+                "sheetId": "19ziyAH5xJeAF8fW4Kb31gzrv0_Lluiuw9NGGan6xIKc",
+                "range": "A:Z",
+                "options": {
+                    "returnAllMatches": "returnAllMatches"
+                }
+            },
+            "name": "Read Interested Leads",
+            "type": "n8n-nodes-base.googleSheets",
+            "typeVersion": 3,
+            "position": [
+                460,
+                300
+            ],
+            "credentials": {
+                "googleSheetsOAuth2Api": {
+                    "id": "YOUR_CREDENTIAL_ID",
+                    "name": "Google Sheets Account"
+                }
+            }
+        },
+        {
+            "parameters": {
+                "functionCode": "// Filter for 'Interested' and 'New' (or 'Categorized') leads\nreturn items.filter(item => \n  item.json.AI_Category === 'Interested' && \n  item.json.Processing_Status !== 'Delivered'\n);"
+            },
+            "name": "Filter Leads",
+            "type": "n8n-nodes-base.function",
+            "typeVersion": 1,
+            "position": [
+                680,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "batchSize": 1,
+                "options": {}
+            },
+            "name": "Split In Batches",
+            "type": "n8n-nodes-base.splitInBatches",
+            "typeVersion": 1,
+            "position": [
+                900,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "method": "POST",
+                "url": "https://astucious-neville-unboisterously.ngrok-free.dev/process-single-comment",
+                "sendBody": true,
+                "specifyBody": "json",
+                "jsonBody": "={{$json}}",
+                "options": {}
+            },
+            "name": "Process Single Comment",
+            "type": "n8n-nodes-base.httpRequest",
+            "typeVersion": 3,
+            "position": [
+                1120,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "amount": 15,
+                "unit": "seconds"
+            },
+            "name": "Wait",
+            "type": "n8n-nodes-base.wait",
+            "typeVersion": 1,
+            "position": [
+                1340,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "authentication": "oAuth2",
+                "operation": "update",
+                "sheetId": "19ziyAH5xJeAF8fW4Kb31gzrv0_Lluiuw9NGGan6xIKc",
+                "range": "={{ 'A' + $json.Row_ID + ':Z' + $json.Row_ID }}",
+                "options": {}
+            },
+            "name": "Update Sheet Status",
+            "type": "n8n-nodes-base.googleSheets",
+            "typeVersion": 3,
+            "position": [
+                1340,
+                500
+            ],
+            "credentials": {
+                "googleSheetsOAuth2Api": {
+                    "id": "YOUR_CREDENTIAL_ID",
+                    "name": "Google Sheets Account"
+                }
+            }
+        }
+    ],
+    "connections": {
+        "Start": {
+            "main": [
+                [
+                    {
+                        "node": "Read Interested Leads",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Read Interested Leads": {
+            "main": [
+                [
+                    {
+                        "node": "Filter Leads",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Filter Leads": {
+            "main": [
+                [
+                    {
+                        "node": "Split In Batches",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Split In Batches": {
+            "main": [
+                [
+                    {
+                        "node": "Process Single Comment",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Process Single Comment": {
+            "main": [
+                [
+                    {
+                        "node": "Wait",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Wait": {
+            "main": [
+                [
+                    {
+                        "node": "Split In Batches",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    }
+}

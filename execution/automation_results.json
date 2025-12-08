@@ -1,0 +1,12 @@
+[
+  {
+    "commenterName": "John Doe",
+    "commenterProfileUrl": "https://www.linkedin.com/in/johndoe",
+    "commentText": "GEMINI - this looks interesting!",
+    "commentUrl": "https://www.linkedin.com/feed/update/urn:li:activity:123?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A123%2C456%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%28456%2Curn%3Ali%3Aactivity%3A123%29",
+    "success": true,
+    "connectionStatus": "NOT_CONNECTED",
+    "message": "Hey! We're not connected yet. Please send me a connection request and DM me with 'GEMINI' - I'll send you the resource right away! 🚀",
+    "timestamp": "2025-12-07T18:09:10.697Z"
+  }
+]

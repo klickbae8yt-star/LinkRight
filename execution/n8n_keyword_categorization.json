@@ -1,0 +1,115 @@
+{
+    "name": "LinkedIn Keyword Categorization (No AI)",
+    "nodes": [
+        {
+            "parameters": {},
+            "name": "Start",
+            "type": "n8n-nodes-base.start",
+            "typeVersion": 1,
+            "position": [
+                240,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "authentication": "oAuth2",
+                "sheetId": "YOUR_SHEET_ID_HERE",
+                "range": "A:Z",
+                "options": {
+                    "returnAllMatches": "returnAllMatches"
+                }
+            },
+            "name": "Read Comments",
+            "type": "n8n-nodes-base.googleSheets",
+            "typeVersion": 3,
+            "position": [
+                460,
+                300
+            ],
+            "credentials": {
+                "googleSheetsOAuth2Api": {
+                    "id": "YOUR_CREDENTIAL_ID",
+                    "name": "Google Sheets Account"
+                }
+            }
+        },
+        {
+            "parameters": {
+                "functionCode": "// Process Items\nfor (const item of items) {\n  const text = (item.json.Comment_Text || '').toLowerCase();\n  let category = 'Ignore';\n  let status = 'Skipped';\n  let matchedKeyword = '';\n\n  // Get Target Keyword from Sheet (Dynamic) or default to 'dm'\n  const targetKeyword = (item.json.Lead_Magnet_Keyword || 'dm').toLowerCase();\n\n  // Check if Comment contains Target Keyword\n  if (text.includes(targetKeyword)) {\n    category = 'Interested';\n    status = 'Categorized';\n    matchedKeyword = targetKeyword.toUpperCase();\n  }\n\n  // Assign to Output\n  item.json.AI_Category = category;\n  item.json.Processing_Status = status;\n  item.json.Lead_Magnet_Keyword = matchedKeyword; // Confirming the match\n}\n\nreturn items;"
+            },
+            "name": "Categorize Logic",
+            "type": "n8n-nodes-base.function",
+            "typeVersion": 1,
+            "position": [
+                680,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "authentication": "oAuth2",
+                "operation": "update",
+                "sheetId": "YOUR_SHEET_ID_HERE",
+                "range": "A:Z",
+                "key": "Row_ID",
+                "columns": {
+                    "mappingMode": "defineBelow",
+                    "value": {
+                        "AI_Category": "={{$json.AI_Category}}",
+                        "Processing_Status": "={{$json.Processing_Status}}",
+                        "Last_Updated": "={{ new Date().toLocaleString('en-GB', {timeZone: 'Asia/Kolkata'}).replace(',', '') }}"
+                    }
+                }
+            },
+            "name": "Update Sheet",
+            "type": "n8n-nodes-base.googleSheets",
+            "typeVersion": 3,
+            "position": [
+                900,
+                300
+            ],
+            "credentials": {
+                "googleSheetsOAuth2Api": {
+                    "id": "YOUR_CREDENTIAL_ID",
+                    "name": "Google Sheets Account"
+                }
+            }
+        }
+    ],
+    "connections": {
+        "Start": {
+            "main": [
+                [
+                    {
+                        "node": "Read Comments",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Read Comments": {
+            "main": [
+                [
+                    {
+                        "node": "Categorize Logic",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Categorize Logic": {
+            "main": [
+                [
+                    {
+                        "node": "Update Sheet",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    }
+}

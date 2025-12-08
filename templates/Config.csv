@@ -1,0 +1,11 @@
+Setting,Value,Purpose
+Lead_Magnet_Keywords,"DM, interested, send, share",Comma-separated trigger words for lead detection
+Lead_Magnet_Resource_URL,https://drive.google.com/file/d/YOUR_FILE_ID/view,PDF/resource link to send to leads
+Lead_Magnet_DM_Template,"Hey {name}! Thanks for your interest. Here's the resource you requested: {resource_url}",Message template for DM delivery
+Comment_Reply_Template,"Thanks for your interest! I'm sending you the resource via DM right now. Check your messages!",Public reply template for comments
+Non_Connected_Message,"Hey {name}! I'd love to send you the resource but we're not connected yet. Please send me a connection request and then DM me with the keyword '{keyword}' - I'll reply there!",Message for non-connected users
+AI_Confidence_Threshold,0.7,Minimum AI confidence score to auto-process (0-1)
+Workflow_Active,TRUE,Master on/off switch for all workflows
+Daily_Activator_Email,your@email.com,Email address to receive daily activation triggers
+Scrape_Interval_Minutes,30,How often to check LinkedIn for new comments/DMs
+Post_URLs_To_Monitor,"https://www.linkedin.com/posts/example1, https://www.linkedin.com/posts/example2",Comma-separated list of post URLs to track

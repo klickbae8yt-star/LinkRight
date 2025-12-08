@@ -1,0 +1,32 @@
+{
+    "name": "linkedin-reply-automation",
+    "version": "2.0.0",
+    "description": "LinkedIn comment reply automation with Google Sheets integration",
+    "main": "execution/server.js",
+    "scripts": {
+        "start": "node execution/server.js",
+        "dev": "nodemon execution/server.js",
+        "login": "node execution/manual_login.js",
+        "install-browsers": "npx playwright install chromium"
+    },
+    "keywords": [
+        "linkedin",
+        "automation",
+        "playwright",
+        "google-sheets"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.13.2",
+        "body-parser": "^2.2.1",
+        "cors": "^2.8.5",
+        "express": "^4.22.1",
+        "googleapis": "^128.0.0",
+        "ngrok": "^5.0.0-beta.2",
+        "playwright": "^1.40.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}
