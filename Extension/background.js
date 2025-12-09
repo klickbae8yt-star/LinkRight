@@ -8,10 +8,10 @@ let settings = getDefaultSettings();
 
 function getDefaultSettings() {
     return {
-        // Webhooks (synced with content.js)
-        webhookCollectComments: 'https://n8n.linkright.in/webhook-test/collect-comments',
-        webhookLeadCategorization: 'https://n8n.linkright.in/webhook-test/lead-categorization',
-        webhookAiReply: 'https://n8n.linkright.in/webhook-test/linkedin-reply',
+        // Webhooks (Production URLs - synced with content.js)
+        webhookCollectComments: 'https://n8n.linkright.in/webhook/collect-comments',
+        webhookLeadCategorization: 'https://n8n.linkright.in/webhook/lead-categorization',
+        webhookAiReply: 'https://n8n.linkright.in/webhook/linkedin-reply',
 
         // Reply Automation
         googleSheetsId: '',

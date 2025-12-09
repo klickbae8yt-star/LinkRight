@@ -39,10 +39,10 @@ class LinkedInReplyExtension {
      */
     getDefaultSettings() {
         return {
-            // Webhooks
-            webhookCollectComments: 'https://n8n.linkright.in/webhook-test/collect-comments',
-            webhookLeadCategorization: 'https://n8n.linkright.in/webhook-test/lead-categorization',
-            webhookAiReply: 'https://n8n.linkright.in/webhook-test/linkedin-reply',
+            // Webhooks (Production URLs)
+            webhookCollectComments: 'https://n8n.linkright.in/webhook/collect-comments',
+            webhookLeadCategorization: 'https://n8n.linkright.in/webhook/lead-categorization',
+            webhookAiReply: 'https://n8n.linkright.in/webhook/linkedin-reply',
 
             // Scraper Settings
             leadGenKeywords: 'co-founder, hiring, lead magnet',
