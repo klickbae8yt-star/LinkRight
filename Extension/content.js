@@ -45,10 +45,10 @@ class LinkedInReplyExtension {
             webhookAiReply: 'https://n8n.linkright.in/webhook/linkedin-reply',
 
             // Scraper Settings
-            leadGenKeywords: 'co-founder, hiring, lead magnet',
+            leadGenKeywords: 'DM',
 
             // Reply Automation
-            googleSheetsId: '',
+            googleSheetsId: '19ziyAH5xJeAF8fW4Kb31gzrv0_Lluiuw9NGGan6xIKc',
 
             // Message templates
             messageConnected: "Thanks for your interest! Sending you the resource via DM now. Check your messages! 📩",
