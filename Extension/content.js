@@ -360,9 +360,9 @@ class LinkedInReplyExtension {
         try {
             console.log('🚀 Starting Safe Expansion...');
             let totalExpanded = 0;
-            const BATCH_LIMIT = 50; // Safety brake
+            // No batch limit - expand all
 
-            while (!this.stopExpansion && totalExpanded < BATCH_LIMIT) {
+            while (!this.stopExpansion) {
                 // Find buttons (refresh list every time as DOM changes)
                 // FIXED: More specific selectors to avoid matching search bar etc.
                 const selectors = [
@@ -386,7 +386,7 @@ class LinkedInReplyExtension {
                     const textButtons = Array.from(commentsSection.querySelectorAll('button')).filter(btn => {
                         const text = btn.textContent.toLowerCase();
                         return (text.includes('replies') || text.includes('previous') || text.includes('more')) &&
-                            !text.includes('react') && !text.includes('like'); // Exclude reaction buttons
+                            !text.includes('react') && !text.includes('like') && !text.includes('collapse'); // Exclude collapse & reaction buttons
                     });
                     buttons = [...buttons, ...textButtons];
                 }
@@ -426,9 +426,6 @@ class LinkedInReplyExtension {
             if (this.stopExpansion) {
                 console.log('🛑 Expansion stopped by user.');
                 btn.textContent = 'Stopped';
-            } else if (totalExpanded >= BATCH_LIMIT) {
-                console.log('⚠️ Batch limit reached.');
-                btn.textContent = 'Batch Limit Reached (Click to Continue)';
             } else {
                 console.log('✅ Expansion Complete');
                 btn.textContent = '✓ All Expanded';
