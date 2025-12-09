@@ -4,7 +4,7 @@ const cors = require('cors');
 const { processSingleComment } = require('./linkedin_reply_automation');
 
 const app = express();
-const PORT = 3001;
+const PORT = 3000;
 
 // CORS middleware - Allow requests from LinkedIn
 app.use(cors({
