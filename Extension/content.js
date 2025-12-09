@@ -364,27 +364,43 @@ class LinkedInReplyExtension {
 
             while (!this.stopExpansion && totalExpanded < BATCH_LIMIT) {
                 // Find buttons (refresh list every time as DOM changes)
-                // Comprehensive selectors for all reply/comment expansion buttons
+                // FIXED: More specific selectors to avoid matching search bar etc.
                 const selectors = [
-                    // Load more comments buttons
+                    // Load more comments buttons (primary)
                     '.comments-comments-list__load-more-comments-button',
                     '.comments-comments-list__load-more-comments-button--cr',
                     // See previous/more replies buttons
                     '.comments-replies-list__replies-button',
-                    // Aria-label based (catches "See X more replies" buttons)
-                    'button[aria-label*="replies"]',
-                    'button[aria-label*="reply"]',
-                    'button[aria-label*="previous"]',
-                    // Text content based - buttons containing "replies" text
-                    'button.artdeco-button--muted',
+                    // Show replies button (alternative class)
+                    '.show-prev-replies',
                     // Generic show more in comments section
                     '[data-test-comments-comment-item__show-replies-button]'
                 ];
 
-                const buttons = Array.from(document.querySelectorAll(selectors.join(', ')));
+                // Get all buttons matching selectors
+                let buttons = Array.from(document.querySelectorAll(selectors.join(', ')));
 
-                // Filter visible buttons
-                const visibleButtons = buttons.filter(b => b.offsetParent !== null);
+                // ALSO: Find buttons with text containing "replies" or "previous" but ONLY inside comments section
+                const commentsSection = document.querySelector('.comments-comments-list, .comments-comment-list, [class*="comments"]');
+                if (commentsSection) {
+                    const textButtons = Array.from(commentsSection.querySelectorAll('button')).filter(btn => {
+                        const text = btn.textContent.toLowerCase();
+                        return (text.includes('replies') || text.includes('previous') || text.includes('more')) &&
+                            !text.includes('react') && !text.includes('like'); // Exclude reaction buttons
+                    });
+                    buttons = [...buttons, ...textButtons];
+                }
+
+                // Remove duplicates
+                buttons = [...new Set(buttons)];
+
+                // Filter: visible buttons AND inside comments section
+                const visibleButtons = buttons.filter(b => {
+                    if (b.offsetParent === null) return false;
+                    // Ensure button is inside a comments-related container
+                    const isInComments = b.closest('.comments-comments-list, .comments-comment-item, [class*="comment"]');
+                    return isInComments;
+                });
 
                 if (visibleButtons.length === 0) {
                     console.log('✅ No more buttons found.');
@@ -392,6 +408,7 @@ class LinkedInReplyExtension {
                 }
 
                 const buttonToClick = visibleButtons[0]; // Take first one
+                console.log(`🔍 Found button: "${buttonToClick.textContent.trim().substring(0, 50)}"`);
 
                 // Scroll into view
                 buttonToClick.scrollIntoView({ behavior: 'smooth', block: 'center' });
