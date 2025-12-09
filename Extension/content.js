@@ -394,12 +394,16 @@ class LinkedInReplyExtension {
                 // Remove duplicates
                 buttons = [...new Set(buttons)];
 
-                // Filter: visible buttons AND inside comments section
+                // Filter: visible buttons AND inside comments section AND not collapse buttons
                 const visibleButtons = buttons.filter(b => {
                     if (b.offsetParent === null) return false;
                     // Ensure button is inside a comments-related container
                     const isInComments = b.closest('.comments-comments-list, .comments-comment-item, [class*="comment"]');
-                    return isInComments;
+                    if (!isInComments) return false;
+                    // CRITICAL: Exclude "Collapse" buttons
+                    const buttonText = b.textContent.toLowerCase();
+                    if (buttonText.includes('collapse')) return false;
+                    return true;
                 });
 
                 if (visibleButtons.length === 0) {
