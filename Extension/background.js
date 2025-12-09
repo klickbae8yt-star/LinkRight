@@ -106,7 +106,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     }
 
     if (message.type === 'TRIGGER_LEAD_CATEGORIZATION') {
-        fetch('https://n8n.linkright.in/webhook/lead-catgorisation')
+        fetch('https://n8n.linkright.in/webhook/lead-categorization')
             .then(response => {
                 if (response.ok) {
                     sendResponse({ success: true });
@@ -115,6 +115,31 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
                 }
             })
             .catch(error => {
+                sendResponse({ success: false, error: error.message });
+            });
+        return true; // Keep channel open for async response
+    }
+
+    // Generic Webhook Proxy (CORS bypass)
+    if (message.type === 'FETCH_WEBHOOK') {
+        const { url, method, body } = message;
+        console.log('🔄 Proxying webhook call:', url);
+
+        fetch(url, {
+            method: method || 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: body ? JSON.stringify(body) : undefined
+        })
+            .then(async response => {
+                if (!response.ok) {
+                    throw new Error(`Webhook failed: ${response.status}`);
+                }
+                const data = await response.json().catch(() => ({}));
+                console.log('✅ Webhook response:', data);
+                sendResponse({ success: true, data });
+            })
+            .catch(error => {
+                console.error('❌ Webhook error:', error);
                 sendResponse({ success: false, error: error.message });
             });
         return true; // Keep channel open for async response

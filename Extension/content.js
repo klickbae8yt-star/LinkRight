@@ -364,11 +364,21 @@ class LinkedInReplyExtension {
 
             while (!this.stopExpansion && totalExpanded < BATCH_LIMIT) {
                 // Find buttons (refresh list every time as DOM changes)
-                // Updated selectors based on user feedback
+                // Comprehensive selectors for all reply/comment expansion buttons
                 const selectors = [
-                    '.comments-replies-list__replies-button', // See previous replies
-                    '.comments-comments-list__load-more-comments-button--cr', // Load more comments
-                    '.comments-comments-list__load-more-comments-button' // Fallback
+                    // Load more comments buttons
+                    '.comments-comments-list__load-more-comments-button',
+                    '.comments-comments-list__load-more-comments-button--cr',
+                    // See previous/more replies buttons
+                    '.comments-replies-list__replies-button',
+                    // Aria-label based (catches "See X more replies" buttons)
+                    'button[aria-label*="replies"]',
+                    'button[aria-label*="reply"]',
+                    'button[aria-label*="previous"]',
+                    // Text content based - buttons containing "replies" text
+                    'button.artdeco-button--muted',
+                    // Generic show more in comments section
+                    '[data-test-comments-comment-item__show-replies-button]'
                 ];
 
                 const buttons = Array.from(document.querySelectorAll(selectors.join(', ')));
@@ -569,22 +579,23 @@ class LinkedInReplyExtension {
             await navigator.clipboard.writeText(csvString);
             console.log(`✅ Copied ${comments.length} items to Clipboard (CSV)!`);
 
-            // 2. Send JSON to Webhook
+            // 2. Send JSON to Webhook (via background.js to bypass CORS)
             const webhookUrl = this.settings.webhookCollectComments;
             console.log(`📤 Sending data to Webhook: ${webhookUrl}`);
 
             try {
-                const response = await fetch(webhookUrl, {
+                const response = await chrome.runtime.sendMessage({
+                    type: 'FETCH_WEBHOOK',
+                    url: webhookUrl,
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ comments }) // Send as { comments: [...] }
+                    body: { comments }
                 });
 
-                if (response.ok) {
+                if (response.success) {
                     console.log('✅ Webhook success!');
                     btn.textContent = `✓ Copied CSV & Sent to Webhook!`;
                 } else {
-                    console.error('Webhook failed:', response.status);
+                    console.error('Webhook failed:', response.error);
                     btn.textContent = `✓ Copied CSV (Webhook Failed)`;
                 }
             } catch (webhookErr) {
@@ -808,7 +819,7 @@ class LinkedInReplyExtension {
     }
 
     /**
-     * Call Smart Engagement webhook
+     * Call Smart Engagement webhook (via background.js to bypass CORS)
      */
     async callSmartEngagementWebhook(editor, postData) {
         this.webhookInFlight = true;
@@ -817,17 +828,18 @@ class LinkedInReplyExtension {
         console.log('📤 Calling AI Reply webhook with:', postData);
 
         try {
-            const response = await fetch(this.settings.webhookAiReply, {
+            const response = await chrome.runtime.sendMessage({
+                type: 'FETCH_WEBHOOK',
+                url: this.settings.webhookAiReply,
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(postData)
+                body: postData
             });
 
-            if (!response.ok) {
-                throw new Error(`Webhook failed: ${response.status}`);
+            if (!response.success) {
+                throw new Error(response.error || 'Webhook failed');
             }
 
-            const data = await response.json();
+            const data = response.data;
             console.log('📥 Webhook response:', data);
 
             if (data.comment) {
@@ -837,7 +849,6 @@ class LinkedInReplyExtension {
                 console.log('✅ AI comment inserted successfully!');
             } else {
                 console.warn('⚠️ Webhook returned no "comment" field. Response:', data);
-                // Show user feedback
                 alert('AI Reply webhook did not return a comment. Check n8n workflow.');
             }
         } catch (error) {
