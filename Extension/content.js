@@ -127,7 +127,7 @@ class LinkedInReplyExtension {
     }
 
     /**
-     * Create sidebar UI
+     * Create sidebar UI - Minimalistic & Clean Design
      */
     createSidebar() {
         // Remove existing sidebar
@@ -140,139 +140,183 @@ class LinkedInReplyExtension {
 
         sidebar.innerHTML = `
       <div class="lr-sidebar-header">
-        <div class="lr-title">LinkedIn Reply</div>
+        <div class="lr-logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+          <span>LinkRight</span>
+        </div>
         <button class="lr-close-btn" title="Close">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18M6 6l12 12"/>
           </svg>
         </button>
       </div>
       
       <div class="lr-sidebar-content">
-        <!-- Smart Engagement Section -->
-        <div class="lr-section">
-          <div class="lr-section-header">
-            <h3>💬 Smart Engagement</h3>
+        
+        <!-- Smart AI Toggle -->
+        <div class="lr-card">
+          <div class="lr-card-header">
+            <div class="lr-card-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+              <span>Smart AI</span>
+            </div>
             <label class="lr-toggle">
               <input type="checkbox" id="lr-smart-engagement-toggle" ${this.smartEngagementEnabled ? 'checked' : ''}>
               <span class="lr-toggle-slider"></span>
             </label>
           </div>
-          <p class="lr-description">AI-powered manual comments via webhook</p>
+          <p class="lr-card-desc">AI-powered comment suggestions</p>
         </div>
-        
-        <!-- Reply Automation Section -->
-        <div class="lr-section">
-          <div class="lr-section-header">
-            <h3>🤖 Workflow Controls</h3>
+
+        <!-- Workflow Actions -->
+        <div class="lr-card">
+          <div class="lr-card-header">
+            <div class="lr-card-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+              <span>Actions</span>
+            </div>
           </div>
-          <p class="lr-description">Execute steps in order:</p>
           
-          <!-- Step 0: Expand Comments -->
-          <button id="lr-expand-comments" class="lr-btn lr-btn-secondary" style="margin-bottom: 10px; border-color: #0ea5e9; color: #0ea5e9;">
-            0. Expand Comments (Safe)
-          </button>
+          <div class="lr-actions">
+            <button id="lr-expand-comments" class="lr-action-btn lr-action-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 4v16m8-16v16"/>
+              </svg>
+              <span>Expand All</span>
+            </button>
 
-          <!-- Step 1: Scrape -->
-          <button id="lr-scrape-console" class="lr-btn lr-btn-primary" style="margin-bottom: 10px;">
-            1. Scrape Console (Copy Data)
-          </button>
+            <button id="lr-scrape-console" class="lr-action-btn lr-action-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+              </svg>
+              <span>Scrape Data</span>
+            </button>
 
-          <!-- Step 2: Categorize -->
-          <button id="lr-start-categorization" class="lr-btn lr-btn-secondary" style="margin-bottom: 10px;">
-            2. Start Lead Categorization
-          </button>
+            <button id="lr-start-categorization" class="lr-action-btn lr-action-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/>
+              </svg>
+              <span>Categorize</span>
+            </button>
 
-          <!-- Step 3: Reply Automation -->
-          <button id="lr-start-automation" class="lr-btn lr-btn-secondary" style="margin-bottom: 10px;">
-            3. Start Reply Automation
-          </button>
-          
-          <!-- Step 4: DM Workflow -->
-          <button id="lr-start-dm-flow" class="lr-btn lr-btn-secondary">
-            4. Start DM Workflow
-          </button>
+            <button id="lr-start-automation" class="lr-action-btn lr-action-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 12l2 2 4-4"/>
+              </svg>
+              <span>Auto Reply</span>
+            </button>
+
+            <button id="lr-start-dm-flow" class="lr-action-btn lr-action-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+              </svg>
+              <span>DM Flow</span>
+            </button>
+          </div>
           
           <div id="lr-automation-status" class="lr-status" style="display: none; margin-top: 16px;">
-            <div class="lr-status-text">Idle</div>
+            <div class="lr-status-text">Processing...</div>
             <div class="lr-progress-bar">
               <div class="lr-progress-fill" style="width: 0%"></div>
             </div>
-            <div class="lr-progress-text">0/0 comments processed</div>
+            <div class="lr-progress-text">0/0 done</div>
           </div>
         </div>
-        
-        <!-- Settings Section -->
-        <div class="lr-section lr-settings-section">
-          <div class="lr-section-header lr-collapsible" id="lr-settings-toggle">
-            <h3>⚙️ Settings</h3>
+
+        <!-- Settings (Collapsible) -->
+        <div class="lr-card lr-settings-card">
+          <div class="lr-card-header lr-collapsible" id="lr-settings-toggle">
+            <div class="lr-card-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v6m0 6v6M1 12h6m6 0h6M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24M19.78 4.22l-4.24 4.24m-5.08 5.08l-4.24 4.24"/>
+              </svg>
+              <span>Settings</span>
+            </div>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="lr-chevron">
               <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
             </svg>
           </div>
           
           <div class="lr-settings-content" style="display: none;">
-            <div class="lr-form-group">
-              <label>Smart Engagement Webhook</label>
-              <input type="text" id="lr-webhook-url" value="${this.settings.smartEngagementWebhook}" placeholder="https://...">
+            
+            <!-- Core Settings -->
+            <div class="lr-settings-group">
+              <label class="lr-label">Google Sheets ID</label>
+              <input type="text" class="lr-input" id="lr-sheets-id" value="${this.settings.googleSheetsId}" placeholder="1ABC...XYZ">
             </div>
             
-            <div class="lr-form-group">
-              <label>Google Sheets ID</label>
-              <input type="text" id="lr-sheets-id" value="${this.settings.googleSheetsId}" placeholder="1ABC...XYZ">
+            <div class="lr-settings-group">
+              <label class="lr-label">Backend URL</label>
+              <input type="text" class="lr-input" id="lr-backend-url" value="${this.settings.backendUrl}" placeholder="http://127.0.0.1:3000">
             </div>
+
+            <div class="lr-settings-group">
+              <label class="lr-label">Keywords</label>
+              <input type="text" class="lr-input" id="lr-lead-keywords" value="${this.settings.leadGenKeywords}" placeholder="DM, co-founder">
+            </div>
+
+            <!-- Webhooks (Advanced) -->
+            <details class="lr-details">
+              <summary class="lr-summary">Advanced: Webhooks</summary>
+              <div class="lr-details-content">
+                <div class="lr-settings-group">
+                  <label class="lr-label-sm">Scraper Webhook</label>
+                  <input type="text" class="lr-input-sm" id="lr-webhook-collect" value="${this.settings.webhookCollectComments}">
+                </div>
+                <div class="lr-settings-group">
+                  <label class="lr-label-sm">Categorization Webhook</label>
+                  <input type="text" class="lr-input-sm" id="lr-webhook-categorization" value="${this.settings.webhookLeadCategorization}">
+                </div>
+                <div class="lr-settings-group">
+                  <label class="lr-label-sm">AI Reply Webhook</label>
+                  <input type="text" class="lr-input-sm" id="lr-webhook-ai-reply" value="${this.settings.webhookAiReply}">
+                </div>
+              </div>
+            </details>
+
+            <!-- Messages (Advanced) -->
+            <details class="lr-details">
+              <summary class="lr-summary">Advanced: Reply Templates</summary>
+              <div class="lr-details-content">
+                <div class="lr-settings-group">
+                  <label class="lr-label-sm">Connected Message</label>
+                  <textarea class="lr-textarea-sm" id="lr-msg-connected" rows="2">${this.settings.messageConnected}</textarea>
+                </div>
+                <div class="lr-settings-group">
+                  <label class="lr-label-sm">Not Connected Message</label>
+                  <textarea class="lr-textarea-sm" id="lr-msg-not-connected" rows="2">${this.settings.messageNotConnected}</textarea>
+                </div>
+                <div class="lr-settings-group">
+                  <label class="lr-label-sm">Pending Message</label>
+                  <textarea class="lr-textarea-sm" id="lr-msg-pending" rows="2">${this.settings.messagePending}</textarea>
+                </div>
+              </div>
+            </details>
             
-            <div class="lr-form-group">
-              <label>Backend URL</label>
-              <input type="text" id="lr-backend-url" value="${this.settings.backendUrl}" placeholder="http://127.0.0.1:3001">
-            </div>
-
-            <div class="lr-section-header" style="margin-top: 16px; margin-bottom: 8px;">
-              <h3 style="font-size: 14px;">🔗 Webhook Configuration</h3>
-            </div>
-
-            <div class="lr-form-group">
-              <label>1. Collect Comments Webhook (Scraper)</label>
-              <input type="text" id="lr-webhook-collect" value="${this.settings.webhookCollectComments}" placeholder="https://...">
-            </div>
-
-            <div class="lr-form-group">
-              <label>2. Lead Categorization Webhook</label>
-              <input type="text" id="lr-webhook-categorization" value="${this.settings.webhookLeadCategorization}" placeholder="https://...">
-            </div>
-
-            <div class="lr-form-group">
-              <label>3. AI Reply Webhook (Smart Engagement)</label>
-              <input type="text" id="lr-webhook-ai-reply" value="${this.settings.webhookAiReply}" placeholder="https://...">
-            </div>
-
-            <div class="lr-section-header" style="margin-top: 16px; margin-bottom: 8px;">
-              <h3 style="font-size: 14px;">🛠️ Scraper Settings</h3>
-            </div>
-
-            <div class="lr-form-group">
-              <label>Lead Gen Keywords (comma separated)</label>
-              <textarea id="lr-lead-keywords" rows="2" placeholder="co-founder, hiring">${this.settings.leadGenKeywords}</textarea>
-            </div>
-            
-            <div class="lr-form-group">
-              <label>Message (Connected)</label>
-              <textarea id="lr-msg-connected" rows="2">${this.settings.messageConnected}</textarea>
-            </div>
-            
-            <div class="lr-form-group">
-              <label>Message (Not Connected)</label>
-              <textarea id="lr-msg-not-connected" rows="2">${this.settings.messageNotConnected}</textarea>
-            </div>
-            
-            <div class="lr-form-group">
-              <label>Message (Pending)</label>
-              <textarea id="lr-msg-pending" rows="2">${this.settings.messagePending}</textarea>
-            </div>
-            
-            <button id="lr-save-settings" class="lr-btn lr-btn-secondary">Save Settings</button>
+            <button id="lr-save-settings" class="lr-btn-save">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/>
+                <path d="M17 21v-8H7v8M7 3v5h8"/>
+              </svg>
+              <span>Save Changes</span>
+            </button>
           </div>
         </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="lr-footer">
+        <span class="lr-footer-text">Press <kbd>Cmd+Shift+.</kbd> for AI assist</span>
       </div>
     `;
 
