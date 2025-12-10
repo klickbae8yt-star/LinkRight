@@ -809,27 +809,86 @@ class LinkedInReplyExtension {
     /**
      * Extract post data from editor context
      */
+    /**
+     * Extract post data from editor context (Rich Data)
+     */
     extractPostData(editor) {
         try {
             // Find parent post container (supports both activity and ugcPost)
-            const postContainer = editor.closest('[data-id^="urn:li:activity:"], [data-id^="urn:li:ugcPost:"]');
+            const postContainer = editor.closest('[data-id^="urn:li:activity:"], [data-id^="urn:li:ugcPost:"], .feed-shared-update-v2');
+
             if (!postContainer) {
                 console.log('⚠️ No post container found. Trying fallback...');
-                // Fallback: Try to find any nearby post content
-                const feedItem = editor.closest('.feed-shared-update-v2');
-                if (feedItem) {
-                    const postContent = feedItem.querySelector('.feed-shared-update-v2__description')?.textContent?.trim() || '';
-                    const author = feedItem.querySelector('.update-components-actor__name')?.textContent?.trim() || '';
-                    return { postId: 'unknown', postContent, author };
-                }
                 return null;
             }
 
-            const postId = postContainer.getAttribute('data-id');
-            const postContent = postContainer.querySelector('.feed-shared-update-v2__description')?.textContent?.trim() || '';
-            const author = postContainer.querySelector('.update-components-actor__name')?.textContent?.trim() || '';
+            // 1. Root Post ID
+            const rootPostId = postContainer.getAttribute('data-id') || postContainer.getAttribute('data-urn') || '';
 
-            return { postId, postContent, author };
+            // 2. Root Post Text
+            const textElement = postContainer.querySelector('.feed-shared-update-v2__description .update-components-text') ||
+                postContainer.querySelector('.feed-shared-text') ||
+                postContainer.querySelector('.feed-shared-update-v2__description');
+            const postText = textElement ? textElement.innerText.trim() : '';
+
+            // 3. Root Post Author
+            const authorElement = postContainer.querySelector('.update-components-actor__name') ||
+                postContainer.querySelector('.feed-shared-actor__name');
+            const authorName = authorElement ? authorElement.innerText.trim() : 'Unknown';
+
+            // 4. Engagement Stats
+            const likesElement = postContainer.querySelector('.social-details-social-counts__reactions-count');
+            const commentsElement = postContainer.querySelector('.social-details-social-counts__comments');
+
+            const likes = likesElement ? parseInt(likesElement.innerText.replace(/[^0-9]/g, '')) || 0 : 0;
+            const comments = commentsElement ? parseInt(commentsElement.innerText.replace(/[^0-9]/g, '')) || 0 : 0;
+
+            // 5. Thread ID (If replying to a comment)
+            let threadId = '';
+            const parentComment = editor.closest('article.comments-comment-entity');
+            if (parentComment) {
+                threadId = parentComment.getAttribute('data-id') || '';
+            }
+
+            // 6. Time Since Posted
+            const timeElement = postContainer.querySelector('.update-components-actor__sub-description') ||
+                postContainer.querySelector('.feed-shared-actor__sub-description');
+            const timeSincePosted = timeElement ? timeElement.innerText.trim().split('•')[0].trim() : '';
+
+            // Construct Rich Payload matching EXACTLY the old extension structure
+            return {
+                // Metadata
+                thread_id: threadId,
+                root_post_id: rootPostId,
+                triggered_by: 'manual_shortcut', // Distinct from 'hotkey'
+                timestamp: new Date().toISOString(),
+                locale: navigator.language || 'en-US',
+                action_type: 'reply', // Default action
+                user_override_flags: {}, // Placeholder for future flags
+
+                // Root post author
+                root_post_author: { name: authorName },
+
+                // Post information
+                post_text: postText,
+                post_media_type: 'unknown', // Placeholder
+                post_engagement_numbers: { likes, comments, reposts: 0 },
+                time_since_posted: timeSincePosted,
+
+                // Comments (Empty for manual shortcut context, as we are writing a NEW comment)
+                all_comments: [],
+
+                // Personalization & Context
+                comment_depth_level: threadId ? 1 : 0, // 0 = Top level, 1 = Reply
+                parent_author_headline: '', // Could scrape if needed
+                comment_engagement_count: 0,
+                thread_visibility_state: 'visible',
+
+                // Legacy fields for backward compatibility
+                postId: rootPostId,
+                postContent: postText,
+                author: authorName
+            };
         } catch (error) {
             console.error('Error extracting post data:', error);
             return null;

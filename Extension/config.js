@@ -6,7 +6,7 @@
 
 const LINKRIGHT_CONFIG = {
   // n8n Webhook URL for AI comment generation
-  WEBHOOK_URL: 'https://n8n.linkright.in/webhook/linkedin-reply',
+  WEBHOOK_URL: 'https://n8n.linkright.in/webhook-test/smart-reply',
 
   // Privacy Policy URL
   PRIVACY_POLICY_URL: 'https://www.linkright.in/privacy',

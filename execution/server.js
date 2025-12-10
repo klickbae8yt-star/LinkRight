@@ -1,10 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const axios = require('axios'); // Added axios for webhook calls
 const { processSingleComment } = require('./linkedin_reply_automation');
 
 const app = express();
 const PORT = 3000;
+const WEBHOOK_URL = 'https://n8n.linkright.in/webhook-test/smart-reply'; // Updated to Test URL
 
 // CORS middleware - Allow requests from LinkedIn
 app.use(cors({
@@ -27,6 +29,7 @@ app.post('/process-single-comment', async (req, res) => {
     const commenterName = req.body.commenterName || req.body.Commenter_Name;
     const commenterProfileUrl = req.body.commenterProfileUrl || req.body.Commenter_Profile_URL;
     const commentText = req.body.commentText || req.body.Comment_Text;
+    const commentUrnId = req.body.commentUrnId || req.body.Comment_URN_ID; // Ensure we get the ID
 
     if (!commentUrl) {
         return res.status(400).json({ error: 'Missing commentUrl (or Comment_URL)' });
@@ -40,24 +43,53 @@ app.post('/process-single-comment', async (req, res) => {
         Row_ID: rowId,
         commenterName: commenterName || 'Unknown',
         commenterProfileUrl: commenterProfileUrl || '',
-        commentText: commentText || ''
+        commentText: commentText || '',
+        commentUrnId
     };
 
     try {
+        // 1. Run Automation Script (Scrape & Decide)
         const result = await processSingleComment(commentData);
-        res.json({ status: 'success', data: result });
+
+        // 2. Handle AI Reply Case
+        if (result.status === 'ai_reply_needed') {
+            console.log('🤖 AI Reply Needed. Calling Webhook with Rich Payload...');
+
+            try {
+                // Call AI Webhook
+                const webhookResponse = await axios.post(WEBHOOK_URL, result.payload);
+                // Handle various response formats from n8n
+                const aiReplyText = webhookResponse.data.reply || webhookResponse.data.text || webhookResponse.data.output || "Thanks for sharing!";
+
+                console.log(`✨ AI Reply Generated: "${aiReplyText}"`);
+
+                // 3. Post the AI Reply (Re-using Playwright logic with Force Mode)
+                console.log('🚀 Re-launching browser to post AI reply...');
+                const postResult = await processSingleComment({
+                    ...commentData,
+                    forceReplyMessage: aiReplyText // Force the script to just post this message
+                });
+
+                res.json({ status: 'success', data: postResult });
+
+            } catch (webhookError) {
+                console.error('❌ Webhook Error:', webhookError.message);
+                res.status(500).json({ status: 'error', message: 'AI Webhook failed' });
+            }
+
+        } else {
+            // Standard success (e.g. Reply to Connect)
+            res.json({ status: 'success', data: result });
+        }
+
     } catch (error) {
         console.error('❌ Error processing request:', error);
         res.status(500).json({ status: 'error', message: error.message });
     }
 });
 
-// Endpoint for Extension's Reply Automation button
 app.post('/api/reply-automation/start', async (req, res) => {
     console.log('📥 Extension triggered reply automation:', req.body);
-
-    // This endpoint is called by the extension
-    // In future, it will read from Google Sheets and process comments
     res.json({
         status: 'success',
         message: 'Reply automation triggered. Processing will be handled by n8n workflow.',
@@ -67,7 +99,4 @@ app.post('/api/reply-automation/start', async (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`🚀 Server running on http://localhost:${PORT}`);
-    console.log('👉 Endpoints available:');
-    console.log('   POST /process-single-comment (n8n)');
-    console.log('   POST /api/reply-automation/start (Extension)');
 });

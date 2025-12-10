@@ -11,7 +11,7 @@ function getDefaultSettings() {
         // Webhooks (Production URLs - synced with content.js)
         webhookCollectComments: 'https://n8n.linkright.in/webhook/collect-comments',
         webhookLeadCategorization: 'https://n8n.linkright.in/webhook/lead-categorization',
-        webhookAiReply: 'https://n8n.linkright.in/webhook/linkedin-reply',
+        webhookAiReply: 'https://n8n.linkright.in/webhook-test/smart-reply',
 
         // Reply Automation
         googleSheetsId: '19ziyAH5xJeAF8fW4Kb31gzrv0_Lluiuw9NGGan6xIKc',
