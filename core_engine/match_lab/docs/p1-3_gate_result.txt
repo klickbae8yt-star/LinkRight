@@ -1,0 +1,14 @@
+judged 120
+final decision agreement  all:        (0.975, 120)
+final decision agreement  unambiguous: (0.9897959183673469, 98)
+NO vs not-NO agreement    all:        (1.0, 120)
+domain agreement: (0.6166666666666667, 120)   level agreement: (0.9416666666666667, 120)
+confusion (truth -> judge):
+  HOLD     -> HOLD     11
+  HOLD     -> STRETCH  1
+  NO       -> NO       86
+  REFER    -> REFER    13
+  REFER    -> STRETCH  1
+  STRETCH  -> HOLD     1
+  STRETCH  -> STRETCH  7
+DANGEROUS: judge says REFER/STRETCH where truth is NO: 0

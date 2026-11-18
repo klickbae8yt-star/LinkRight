@@ -1,0 +1,371 @@
+{
+  "updatedAt": "2026-10-12T07:04:00.886Z",
+  "createdAt": "2026-09-03T01:09:21.414Z",
+  "id": "JmV3niatmJiOgbmY",
+  "name": "SUB — Candidate to Job Top 5",
+  "description": null,
+  "active": true,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "run"
+            },
+            {
+              "name": "candidate",
+              "type": "object"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "190808ba-bd5a-4dcc-b486-9200124ec46f",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "collection": "job_embeddings",
+        "options": {},
+        "query": "={\n  \"status\": \"Open\",\n  \"embedding\": {\n    \"$ne\": null\n  }\n}"
+      },
+      "type": "n8n-nodes-base.mongoDb",
+      "typeVersion": 1.4,
+      "position": [
+        480,
+        0
+      ],
+      "id": "dc0d5b43-49b7-4bd8-8bd5-2edb30160bd2",
+      "name": "Get Open Job Embeddings",
+      "alwaysOutputData": true,
+      "executeOnce": true,
+      "credentials": {
+        "mongoDb": {
+          "id": "5uL8HRrGFYPzMren",
+          "name": "Referrals"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "collection": "referrals_sent",
+        "options": {},
+        "query": "={\n  \"email_id\": \"{{ $('When Executed by Another Workflow').first().json.candidate.email_id }}\"\n}"
+      },
+      "type": "n8n-nodes-base.mongoDb",
+      "typeVersion": 1.4,
+      "position": [
+        720,
+        0
+      ],
+      "id": "216496ca-f574-422e-af1a-904119ba8dec",
+      "name": "Get Candidate's Referred Jobs",
+      "alwaysOutputData": true,
+      "executeOnce": true,
+      "credentials": {
+        "mongoDb": {
+          "id": "5uL8HRrGFYPzMren",
+          "name": "Referrals"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Cosine Top 5 (SUB — Candidate to Job Top 5)  v5\n// Builds on v4 (country filter → experience pre-filter → cosine). New in v5, each behind a switch in CONFIG:\n//   B1  band-wise MIN_SCORE by candidate years (replaces the flat MIN_SCORE)\n//   B2  pool guard: too few eligible jobs → skip_reason 'thin_pool'\n//   C4  multi-profile: every active resume of the person is scored; best job overall wins; profile_key is passed down\n//   D1  job-family check: distant family needs band min + FAMILY_EXTRA, else dropped\n//   D2  match strength by gap: #1 must be clearly ahead of #2..#5, else 'weak_match'\n//   D3  per-job soft cap: jobs with >= SOFT_CAP_N referrals in the last 7 days get a ranking penalty\n//   B6  stretch + family-first (Satvik 6 Oct): jobs up to STRETCH_YEARS above the candidate are allowed (stretch),\n//       over-qualified guard OVER_GAP; candidate family = family of the top-3 jobs by cosine over ALL jobs in their\n//       countries; top 5 ordered by tier (same@level, same@stretch, adjacent@level, adjacent@stretch, rest), then score.\n//       Pool size is never a reason to skip (B2 dropped).\n//   +   candidate.raw_cv (first 1200 chars of the matched resume) is passed down so Build Message Draft can write a real hook\n// Output shape is unchanged (candidate, top_jobs, skip_reason ...) plus new fields; downstream nodes keep working.\n//   9 Oct: candidate.job_preference (form answer: same_level | same_stretch | any) is a hard filter on family + stretch;\n//       nothing left → skip_reason 'no_job_for_preference'. No answer = same_stretch (Satvik, 10 Oct; was same_level).\n//   10 Oct (Satvik): years window on a RANGE [lo, hi] (required_years .. required_years_max, written by Job Sync / the backfill):\n//       over-qualified guard hi >= n - DOWN (a job whose range ends more than 1 year below the candidate is not shown);\n//       same_level: lo <= n · same_stretch and any: lo <= n + STRETCH_UP. Examples n = 3: [0,4] yes · [0,1] no · [1,2] yes · [4,6] stretch only.\n//       Fresher with 0 years: level lo 0; stretch lo 0 or 1 (so a job asking \"1-2 years\" is open to a fresher). Never lo 2+.\n// Blocking rule: REFERRED / ALREADY_REFERRED / QUEUED pairs are excluded (QUEUED added 6 Oct).\n\nconst CONFIG = {\n  // ---- B1: minimum cosine by experience band (candidate years <= max → min). Recalibrate from the per-batch scorecard.\n  // Satvik 6 Oct: bands off for now — every band uses the 0.65 floor he chose. Revisit with fit labels / Amex outcomes.\n  // Planned bands (batch-2 medians): 0–1 yr 0.66 · 2–3 yr 0.71 · 4–6 yr 0.74 · 7+ 0.75.\n  BANDS: [\n    { max: 999, min: 0.75 },\n  ],\n  // ---- B2: pool guard\n  POOL_GUARD: false,     // B2 dropped by Satvik 6 Oct: never skip because the pool is small\n  MIN_POOL: 5,            // fewer eligible jobs than this → thin_pool skip\n  // ---- B6: stretch + family-first\n  STRETCH_UP: 1,          // same_stretch / any: a job's lo may be this many years above the candidate (labelled stretch). same_level: 0.\n  DOWN: 1,                // over-qualified guard: job hi must be >= candidate years - DOWN (10 Oct, Satvik: range [n-1, n+1], was n-2 .. n+1)\n  FAMILY_FIRST: true,\n  FAMILY_TOP_K: 3,        // candidate family = majority family of their top-K jobs (all jobs in their countries)\n  // ---- D1: job-family check\n  FAMILY_CHECK: false,    // switch on in Phase D\n  FAMILY_EXTRA: 0.05,     // distant family must beat band min + this\n  // ---- D2: gap-based match strength\n  GAP_CHECK: false,       // switch on in Phase D after back-test\n  GAP_MIN: 0.02,          // score#1 − median(#2..#5) must be >= this ...\n  STRONG_EXTRA: 0.03,     // ... or score#1 >= band min + this\n  // ---- D3: per-job soft cap\n  SOFT_CAP: false,        // switch on in Phase D (needs the \"Get Job Referral Counts (7d)\" node)\n  SOFT_CAP_N: 8,\n  SOFT_CAP_PENALTY: 0.02,\n  // ---- misc\n  ASSUMED_PENALTY: 0.01,  // 9 Oct: years only assumed (title floor / no number) → rank just below a verified job of the same tier\n  CV_SNIPPET_CHARS: 1200, // raw_cv passed down for the message hook\n  TOP_N: 5,\n};\n\n// ============ job families (D1) — order matters: first match wins ============\nconst FAMILIES = [\n  { name: 'data',         re: /\\b(data scien|data analy|analytics|machine learning|\\bml\\b|\\bai\\b|artificial intelligence|business intelligence|\\bbi\\b|statistic|decision scien|data engineer|nlp|deep learning)/i },\n  { name: 'engineer',     re: /\\b(software|developer|engineer|sde|full[- ]?stack|backend|back[- ]end|frontend|front[- ]end|devops|sre|site reliability|qa|quality engineer|test engineer|programmer|architect|cloud|platform)/i },\n  { name: 'finance_risk', re: /\\b(financ|risk|credit|fraud|underwrit|audit|accountant|accounting|treasury|compliance|aml|kyc|actuar|investment|banking)/i },\n  { name: 'product',      re: /\\b(product manager|product owner|program manager|project manager|business analyst|scrum|agile coach|strategy)/i },\n  { name: 'ops',          re: /\\b(operations|customer|support|service|process|collections|servicing|back office|contact cent|call cent|onboarding|administrat)/i },\n  { name: 'manager',      re: /\\b(manager|director|head of|vice president|\\bvp\\b|lead\\b|chief)/i },\n];\nconst ADJACENT = {\n  engineer: ['data', 'product'],\n  data: ['engineer', 'finance_risk', 'product'],\n  finance_risk: ['data', 'ops'],\n  product: ['engineer', 'data', 'ops'],\n  ops: ['finance_risk', 'product'],\n  manager: ['engineer', 'data', 'finance_risk', 'product', 'ops'],\n};\nfunction familyOf(text) {\n  const t = String(text || '');\n  for (const f of FAMILIES) if (f.re.test(t)) return f.name;\n  return 'unknown';\n}\nfunction familyRelation(candFam, jobFam) {\n  if (candFam === 'unknown' || jobFam === 'unknown') return 'unknown';\n  if (candFam === jobFam) return 'same';\n  if ((ADJACENT[candFam] || []).includes(jobFam)) return 'adjacent';\n  return 'distant';\n}\n// candidate family: the most recent title is usually in the first part of the CV (headline / summary / first job)\nfunction candidateFamily(rawCv) {\n  const head = String(rawCv || '').slice(0, 1500);\n  return familyOf(head);\n}\n\n// ============ inputs ============\nconst candidate = $('When Executed by Another Workflow').first().json.candidate || {};\n\n// all documents the Mongo node returned (v5: all ACTIVE resumes of this email; before Phase C it is still 1 document)\nconst candDocs = $('Get Candidate Embedding').all().map(x => x.json)\n  .filter(d => d && Array.isArray(d.embedding) && d.active !== false);\nif (!candDocs.length) {\n  return [{ json: { candidate, top_jobs: [], skip_reason: 'candidate_not_embedded' } }];\n}\n// newest document first (person facts come from it)\ncandDocs.sort((a, b) => String(b.embedded_at || '').localeCompare(String(a.embedded_at || '')));\n// Satvik, 6 Oct: one email = one CV. Only the newest resume is scored; older ones stay in Mongo as history.\n// (A person who really wants two profiles uses two email addresses.) The C2/C4 multi-profile path is off.\ncandDocs.splice(1);\nconst newest = candDocs[0];\n\n// ---- Country preference ----\nconst rawCountries = String(candidate.job_countries || newest.job_countries || '').trim();\nconst wantedCountries = rawCountries\n  ? rawCountries.split('|').map(s => s.trim().toLowerCase()).filter(Boolean)\n  : ['india'];\nconst anyCountry = wantedCountries.includes('any');\n\nconst jobs = $('Get Open Job Embeddings').all().map(x => x.json);\n\n// QUEUED blocks too (6 Oct): a pair waiting for the AHK must not be matched again (46 same-job re-matches in batch 3)\nconst BLOCKING = new Set(['REFERRED', 'ALREADY_REFERRED', 'QUEUED']);\nconst referredJobs = new Set(\n  $(\"Get Candidate's Referred Jobs\").all()\n    .map(x => x.json)\n    .filter(r => BLOCKING.has(r.status))\n    .map(r => r.job_id)\n    .filter(Boolean)\n    .map(String)\n);\n\n// D3: referrals per job in the last 7 days (node is optional; missing node = no cap)\nconst jobCounts = {};\nif (CONFIG.SOFT_CAP) {\n  try {\n    for (const x of $('Get Job Referral Counts (7d)').all()) {\n      const j = x.json || {};\n      if (j._id !== undefined && j._id !== null) jobCounts[String(j._id)] = Number(j.count) || 0;\n    }\n  } catch (e) { /* node not present yet */ }\n}\n\n// ---- candidate years (person fact: form value from the queue, else newest document) ----\nconst candYears = Number(candidate.years_experience ?? newest.years_experience ?? 0) || 0;\n// ---- job preference (form answer; blank = same_stretch since 10 Oct) ----\nconst pref = String(candidate.job_preference || newest.job_preference || '').trim().toLowerCase() || 'same_stretch';\nconst band = CONFIG.BANDS.find(b => candYears <= b.max) || CONFIG.BANDS[CONFIG.BANDS.length - 1];\nconst MIN_SCORE = band.min;\n\n// ---- country + experience pre-filter (same as v4) ----\nconst countryJobs = jobs.filter(j => {\n  if (anyCountry) return true;\n  const c = String(j.country || '').trim().toLowerCase();\n  return c && c !== 'unknown' && wantedCountries.includes(c);\n});\nconst reqYearsOf = (j) => (j.required_years_manual !== undefined && j.required_years_manual !== null && j.required_years_manual !== '')\n  ? Number(j.required_years_manual)\n  : (j.required_years === undefined || j.required_years === null || j.required_years === '' ? null : Number(j.required_years));\n// upper end of the job's years range; a single figure (or an old doc without required_years_max) is [lo, lo]\nconst reqHiOf = (j) => {\n  const lo = reqYearsOf(j); if (lo === null || Number.isNaN(lo)) return null;\n  const manual = j.required_years_manual !== undefined && j.required_years_manual !== null && j.required_years_manual !== '';\n  const mx = manual ? j.required_years_max_manual : j.required_years_max;\n  return (mx !== undefined && mx !== null && mx !== '' && Number(mx) >= lo) ? Number(mx) : lo;\n};\nconst maxLo = candYears + (pref === 'same_level' ? 0 : CONFIG.STRETCH_UP);\nconst eligibleJobs = countryJobs\n  .filter(j => { const lo = reqYearsOf(j), hi = reqHiOf(j); return lo !== null && !Number.isNaN(lo) && hi >= candYears - CONFIG.DOWN && lo <= maxLo; })\n  .filter(j => Array.isArray(j.embedding) && j.job_id && !referredJobs.has(String(j.job_id)));\n\n// ---- B2: pool guard ----\nif (CONFIG.POOL_GUARD && eligibleJobs.length < CONFIG.MIN_POOL) {\n  return [{ json: {\n    candidate: { ...candidate, years_experience: candYears, job_countries: rawCountries || 'India' },\n    top_jobs: [],\n    wanted_countries: wantedCountries,\n    jobs_pool: jobs.length,\n    jobs_in_countries: countryJobs.length,\n    candidate_years: candYears,\n    jobs_within_experience: eligibleJobs.length,\n    excluded_count: referredJobs.size,\n    band_min_score: MIN_SCORE,\n    skip_reason: countryJobs.length === 0 ? 'no_jobs_in_chosen_countries' : (eligibleJobs.length === 0 ? 'no_jobs_within_experience' : 'thin_pool'),\n  } }];\n}\n\n// ---- helpers ----\nconst sectionOf = (et, label, next) => {\n  const i = et.indexOf(label);\n  if (i < 0) return '';\n  const start = i + label.length;\n  const end = next ? et.indexOf(next, start) : -1;\n  return et.slice(start, end > start ? end : undefined).trim();\n};\nconst normOf = (v) => Math.sqrt(v.reduce((s, x) => s + x * x, 0)) || 1;\n\n// ---- score every eligible job against every active profile (C4) ----\nconst best = new Map(); // job_id → best scored row across profiles\nfor (const doc of candDocs) {\n  const v = doc.embedding;\n  const normV = normOf(v);\n  const profileKey = doc.candidate_key || (doc.email_id + '||' + (doc.resume_link || ''));\n  for (const j of eligibleJobs) {\n    const w = j.embedding;\n    let dot = 0;\n    const n = Math.min(v.length, w.length);\n    for (let i = 0; i < n; i++) dot += v[i] * w[i];\n    const score = dot / (normV * normOf(w));\n    const prev = best.get(String(j.job_id));\n    if (prev && prev.score >= score) continue;\n    const et = String(j.embedding_text || '');\n    best.set(String(j.job_id), {\n      job_id: j.job_id,\n      title: j.title,\n      location: j.location,\n      country: j.country,\n      description: sectionOf(et, 'Description:', '\\n\\nResponsibilities:'),\n      qualifications: sectionOf(et, 'Qualifications:', '\\n\\nExperience Required:'),\n      required_years: reqYearsOf(j),\n      required_years_max: reqHiOf(j),\n      required_years_source: (j.required_years_manual !== undefined && j.required_years_manual !== null && j.required_years_manual !== '') ? 'manual' : (j.required_years_source || null),\n      required_years_evidence: j.required_years_evidence || '',\n      workplace_type: j.workplace_type,\n      experience_required: j.experience_required,\n      referral_link: j.referral_link,\n      status: j.status,\n      score,\n      profile_key: profileKey,\n      profile_resume_link: doc.resume_link || '',\n    });\n  }\n}\n\n// ---- B6: candidate family from similarity (top-K jobs over ALL jobs in their countries, newest resume) ----\nlet simFam = 'unknown';\nif (CONFIG.FAMILY_FIRST) {\n  const v = newest.embedding, nv = normOf(v);\n  const ranked = countryJobs.filter(j => Array.isArray(j.embedding))\n    .map(j => { let d = 0; const w = j.embedding; for (let i = 0; i < Math.min(v.length, w.length); i++) d += v[i] * w[i]; return { fam: familyOf(j.title), s: d / (nv * normOf(w)) }; })\n    .sort((a, b) => b.s - a.s).slice(0, CONFIG.FAMILY_TOP_K);\n  const votes = {};\n  for (const r of ranked) votes[r.fam] = (votes[r.fam] || 0) + 1;\n  const topVote = Math.max(0, ...Object.values(votes));\n  simFam = ranked.length ? (ranked.find(r => votes[r.fam] === topVote) || ranked[0]).fam : 'unknown';\n}\n// ---- D1: family check ----\nconst candFam = CONFIG.FAMILY_FIRST ? simFam : (CONFIG.FAMILY_CHECK ? candidateFamily(newest.raw_cv) : 'unknown');\nlet scored = [...best.values()].map(r => {\n  const jobFam = familyOf(r.title);\n  const rel = (CONFIG.FAMILY_CHECK || CONFIG.FAMILY_FIRST) ? familyRelation(candFam, jobFam) : 'unchecked';\n  const stretch = r.required_years > candYears;\n  const tier = !CONFIG.FAMILY_FIRST ? 0 : rel === 'same' ? (stretch ? 1 : 0) : rel === 'adjacent' ? (stretch ? 3 : 2) : 4;\n  const needed = (CONFIG.FAMILY_CHECK && rel === 'distant') ? MIN_SCORE + CONFIG.FAMILY_EXTRA : MIN_SCORE;\n  const count7d = jobCounts[String(r.job_id)] || 0;\n  const penalty = (CONFIG.SOFT_CAP && count7d >= CONFIG.SOFT_CAP_N) ? CONFIG.SOFT_CAP_PENALTY : 0;\n  // 9 Oct: a job whose years are only assumed (title floor / no number) ranks a little below a job whose JD states them\n  const assumed = r.required_years_source !== 'manual' && r.required_years_source !== 'rules_required' && r.required_years_source !== 'micro_verified';\n  return { ...r, job_family: jobFam, family_relation: rel, stretch, tier, min_score_applied: needed, referrals_7d: count7d, years_assumed: assumed, rank_score: r.score - penalty - (assumed ? CONFIG.ASSUMED_PENALTY : 0) };\n});\nconst droppedFamily = CONFIG.FAMILY_CHECK ? scored.filter(r => r.family_relation === 'distant' && r.score < r.min_score_applied).length : 0;\n\n// ---- job preference (9 Oct): the candidate's form answer is a hard filter, like the country choice ----\n//   same_level = same family, no stretch (tier 0) · same_stretch = same family (tiers 0–1) · any = everything\n//   No answer (old form entries) = same_stretch (Satvik, 10 Oct): with same_level a fresher in data / engineering never matched (India has no 0-year job there).\n//   The years window above already differs per option (same_level lo <= n, the others lo <= n + 1).\nconst prefOk = (r) => pref === 'same_level' ? (r.family_relation === 'same' && !r.stretch)\n  : pref === 'same_stretch' ? r.family_relation === 'same' : true;\nconst droppedPreference = scored.filter(r => !prefOk(r)).length;\n\nscored = scored\n  .filter(prefOk)\n  .filter(r => r.score >= r.min_score_applied)\n  .sort((a, b) => (a.tier - b.tier) || (b.rank_score - a.rank_score));\n\nconst top = scored.slice(0, CONFIG.TOP_N);\n\n// ---- D2: match strength ----\nlet matchStrength = 'n/a', gap = null;\nif (top.length) {\n  const rest = top.slice(1).map(r => r.rank_score).sort((a, b) => a - b);\n  const median = rest.length ? (rest.length % 2 ? rest[(rest.length - 1) / 2] : (rest[rest.length / 2 - 1] + rest[rest.length / 2]) / 2) : null;\n  gap = median === null ? null : +(top[0].rank_score - median).toFixed(4);\n  const strongByGap = gap !== null && gap >= CONFIG.GAP_MIN;\n  const strongByLevel = top[0].score >= MIN_SCORE + CONFIG.STRONG_EXTRA;\n  matchStrength = (strongByGap || strongByLevel || median === null) ? 'strong' : 'weak';\n}\nconst weak = CONFIG.GAP_CHECK && top.length > 0 && matchStrength === 'weak';\n\n// ---- matched profile → pass its CV down for the hook sentence ----\nconst matchedDoc = top.length ? (candDocs.find(d => (d.candidate_key || '') === top[0].profile_key) || newest) : newest;\n\nconst skip_reason = top.length === 0\n  ? (droppedPreference > 0 && scored.length === 0 ? 'no_job_for_preference'\n    : droppedFamily > 0 && scored.length === 0 ? 'no_job_in_family' : 'no_job_above_threshold')\n  : (weak ? 'weak_match' : undefined);\n\nreturn [{\n  json: {\n    candidate: {\n      ...candidate,\n      years_experience: candYears,\n      job_countries: rawCountries || 'India',\n      job_preference: pref,\n      profile_key: matchedDoc.candidate_key || null,\n      profile_keys: candDocs.map(d => d.candidate_key).filter(Boolean),\n      raw_cv: String(matchedDoc.raw_cv || '').slice(0, CONFIG.CV_SNIPPET_CHARS),\n    },\n    top_jobs: weak ? [] : top,\n    considered_jobs: weak ? top.map(r => ({ job_id: r.job_id, title: r.title, score: r.score })) : undefined,\n    wanted_countries: wantedCountries,\n    jobs_pool: jobs.length,\n    jobs_in_countries: countryJobs.length,\n    candidate_years: candYears,\n    jobs_within_experience: eligibleJobs.length,\n    excluded_count: referredJobs.size,\n    band_min_score: MIN_SCORE,\n    candidate_family: candFam,\n    family_source: CONFIG.FAMILY_FIRST ? 'similarity' : (CONFIG.FAMILY_CHECK ? 'cv_regex' : 'none'),\n    stretch_match: top.length ? top[0].stretch === true : false,\n    dropped_distant_family: droppedFamily,\n    dropped_for_preference: droppedPreference,\n    match_strength: matchStrength,\n    top_gap: gap,\n    profiles_scored: candDocs.length,\n    skip_reason,\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        0
+      ],
+      "id": "0c5fba86-1a97-4321-aa2b-cf9f9ae9af02",
+      "name": "Cosine Top 5"
+    },
+    {
+      "parameters": {
+        "collection": "candidate_embeddings",
+        "options": {},
+        "query": "={\n  \"email_id\": \"{{ $('When Executed by Another Workflow').first().json.candidate.email_id }}\",\n  \"embedding\": {\n    \"$ne\": null\n  }\n}"
+      },
+      "type": "n8n-nodes-base.mongoDb",
+      "typeVersion": 1.4,
+      "position": [
+        240,
+        0
+      ],
+      "id": "20093226-308f-4f6f-8830-c3d01948efae",
+      "name": "Get Candidate Embedding",
+      "alwaysOutputData": true,
+      "credentials": {
+        "mongoDb": {
+          "id": "5uL8HRrGFYPzMren",
+          "name": "Referrals"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Get Candidate Embedding",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Open Job Embeddings": {
+      "main": [
+        [
+          {
+            "node": "Get Candidate's Referred Jobs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Candidate's Referred Jobs": {
+      "main": [
+        [
+          {
+            "node": "Cosine Top 5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Candidate Embedding": {
+      "main": [
+        [
+          {
+            "node": "Get Open Job Embeddings",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false,
+    "saveDataSuccessExecution": "none",
+    "saveDataErrorExecution": "all"
+  },
+  "staticData": null,
+  "meta": null,
+  "nodeGroups": [],
+  "pinData": {},
+  "versionId": "20af6af3-8be2-40a2-8f19-f560df21bb74",
+  "activeVersionId": "20af6af3-8be2-40a2-8f19-f560df21bb74",
+  "versionCounter": 28,
+  "triggerCount": 0,
+  "sourceWorkflowId": null,
+  "shared": [
+    {
+      "updatedAt": "2026-09-03T01:09:21.416Z",
+      "createdAt": "2026-09-03T01:09:21.416Z",
+      "role": "workflow:owner",
+      "workflowId": "JmV3niatmJiOgbmY",
+      "projectId": "IW9uQ1V084WZWfb2",
+      "project": {
+        "updatedAt": "2026-03-10T22:59:45.781Z",
+        "createdAt": "2026-03-10T22:43:50.259Z",
+        "id": "IW9uQ1V084WZWfb2",
+        "name": "Satvik Jain <klickbae8yt@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "customTelemetryTags": [],
+        "creatorId": "97376212-c8ff-4b6f-9937-68c23f216b5d"
+      }
+    }
+  ],
+  "tags": [],
+  "activeVersion": {
+    "updatedAt": "2026-10-12T07:04:03.000Z",
+    "createdAt": "2026-10-12T07:04:00.888Z",
+    "versionId": "20af6af3-8be2-40a2-8f19-f560df21bb74",
+    "workflowId": "JmV3niatmJiOgbmY",
+    "nodes": [
+      {
+        "parameters": {
+          "workflowInputs": {
+            "values": [
+              {
+                "name": "run"
+              },
+              {
+                "name": "candidate",
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "type": "n8n-nodes-base.executeWorkflowTrigger",
+        "typeVersion": 1.2,
+        "position": [
+          0,
+          0
+        ],
+        "id": "190808ba-bd5a-4dcc-b486-9200124ec46f",
+        "name": "When Executed by Another Workflow"
+      },
+      {
+        "parameters": {
+          "collection": "job_embeddings",
+          "options": {},
+          "query": "={\n  \"status\": \"Open\",\n  \"embedding\": {\n    \"$ne\": null\n  }\n}"
+        },
+        "type": "n8n-nodes-base.mongoDb",
+        "typeVersion": 1.4,
+        "position": [
+          480,
+          0
+        ],
+        "id": "dc0d5b43-49b7-4bd8-8bd5-2edb30160bd2",
+        "name": "Get Open Job Embeddings",
+        "alwaysOutputData": true,
+        "executeOnce": true,
+        "credentials": {
+          "mongoDb": {
+            "id": "5uL8HRrGFYPzMren",
+            "name": "Referrals"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "collection": "referrals_sent",
+          "options": {},
+          "query": "={\n  \"email_id\": \"{{ $('When Executed by Another Workflow').first().json.candidate.email_id }}\"\n}"
+        },
+        "type": "n8n-nodes-base.mongoDb",
+        "typeVersion": 1.4,
+        "position": [
+          720,
+          0
+        ],
+        "id": "216496ca-f574-422e-af1a-904119ba8dec",
+        "name": "Get Candidate's Referred Jobs",
+        "alwaysOutputData": true,
+        "executeOnce": true,
+        "credentials": {
+          "mongoDb": {
+            "id": "5uL8HRrGFYPzMren",
+            "name": "Referrals"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "jsCode": "// Cosine Top 5 (SUB — Candidate to Job Top 5)  v5\n// Builds on v4 (country filter → experience pre-filter → cosine). New in v5, each behind a switch in CONFIG:\n//   B1  band-wise MIN_SCORE by candidate years (replaces the flat MIN_SCORE)\n//   B2  pool guard: too few eligible jobs → skip_reason 'thin_pool'\n//   C4  multi-profile: every active resume of the person is scored; best job overall wins; profile_key is passed down\n//   D1  job-family check: distant family needs band min + FAMILY_EXTRA, else dropped\n//   D2  match strength by gap: #1 must be clearly ahead of #2..#5, else 'weak_match'\n//   D3  per-job soft cap: jobs with >= SOFT_CAP_N referrals in the last 7 days get a ranking penalty\n//   B6  stretch + family-first (Satvik 6 Oct): jobs up to STRETCH_YEARS above the candidate are allowed (stretch),\n//       over-qualified guard OVER_GAP; candidate family = family of the top-3 jobs by cosine over ALL jobs in their\n//       countries; top 5 ordered by tier (same@level, same@stretch, adjacent@level, adjacent@stretch, rest), then score.\n//       Pool size is never a reason to skip (B2 dropped).\n//   +   candidate.raw_cv (first 1200 chars of the matched resume) is passed down so Build Message Draft can write a real hook\n// Output shape is unchanged (candidate, top_jobs, skip_reason ...) plus new fields; downstream nodes keep working.\n//   9 Oct: candidate.job_preference (form answer: same_level | same_stretch | any) is a hard filter on family + stretch;\n//       nothing left → skip_reason 'no_job_for_preference'. No answer = same_stretch (Satvik, 10 Oct; was same_level).\n//   10 Oct (Satvik): years window on a RANGE [lo, hi] (required_years .. required_years_max, written by Job Sync / the backfill):\n//       over-qualified guard hi >= n - DOWN (a job whose range ends more than 1 year below the candidate is not shown);\n//       same_level: lo <= n · same_stretch and any: lo <= n + STRETCH_UP. Examples n = 3: [0,4] yes · [0,1] no · [1,2] yes · [4,6] stretch only.\n//       Fresher with 0 years: level lo 0; stretch lo 0 or 1 (so a job asking \"1-2 years\" is open to a fresher). Never lo 2+.\n// Blocking rule: REFERRED / ALREADY_REFERRED / QUEUED pairs are excluded (QUEUED added 6 Oct).\n\nconst CONFIG = {\n  // ---- B1: minimum cosine by experience band (candidate years <= max → min). Recalibrate from the per-batch scorecard.\n  // Satvik 6 Oct: bands off for now — every band uses the 0.65 floor he chose. Revisit with fit labels / Amex outcomes.\n  // Planned bands (batch-2 medians): 0–1 yr 0.66 · 2–3 yr 0.71 · 4–6 yr 0.74 · 7+ 0.75.\n  BANDS: [\n    { max: 999, min: 0.75 },\n  ],\n  // ---- B2: pool guard\n  POOL_GUARD: false,     // B2 dropped by Satvik 6 Oct: never skip because the pool is small\n  MIN_POOL: 5,            // fewer eligible jobs than this → thin_pool skip\n  // ---- B6: stretch + family-first\n  STRETCH_UP: 1,          // same_stretch / any: a job's lo may be this many years above the candidate (labelled stretch). same_level: 0.\n  DOWN: 1,                // over-qualified guard: job hi must be >= candidate years - DOWN (10 Oct, Satvik: range [n-1, n+1], was n-2 .. n+1)\n  FAMILY_FIRST: true,\n  FAMILY_TOP_K: 3,        // candidate family = majority family of their top-K jobs (all jobs in their countries)\n  // ---- D1: job-family check\n  FAMILY_CHECK: false,    // switch on in Phase D\n  FAMILY_EXTRA: 0.05,     // distant family must beat band min + this\n  // ---- D2: gap-based match strength\n  GAP_CHECK: false,       // switch on in Phase D after back-test\n  GAP_MIN: 0.02,          // score#1 − median(#2..#5) must be >= this ...\n  STRONG_EXTRA: 0.03,     // ... or score#1 >= band min + this\n  // ---- D3: per-job soft cap\n  SOFT_CAP: false,        // switch on in Phase D (needs the \"Get Job Referral Counts (7d)\" node)\n  SOFT_CAP_N: 8,\n  SOFT_CAP_PENALTY: 0.02,\n  // ---- misc\n  ASSUMED_PENALTY: 0.01,  // 9 Oct: years only assumed (title floor / no number) → rank just below a verified job of the same tier\n  CV_SNIPPET_CHARS: 1200, // raw_cv passed down for the message hook\n  TOP_N: 5,\n};\n\n// ============ job families (D1) — order matters: first match wins ============\nconst FAMILIES = [\n  { name: 'data',         re: /\\b(data scien|data analy|analytics|machine learning|\\bml\\b|\\bai\\b|artificial intelligence|business intelligence|\\bbi\\b|statistic|decision scien|data engineer|nlp|deep learning)/i },\n  { name: 'engineer',     re: /\\b(software|developer|engineer|sde|full[- ]?stack|backend|back[- ]end|frontend|front[- ]end|devops|sre|site reliability|qa|quality engineer|test engineer|programmer|architect|cloud|platform)/i },\n  { name: 'finance_risk', re: /\\b(financ|risk|credit|fraud|underwrit|audit|accountant|accounting|treasury|compliance|aml|kyc|actuar|investment|banking)/i },\n  { name: 'product',      re: /\\b(product manager|product owner|program manager|project manager|business analyst|scrum|agile coach|strategy)/i },\n  { name: 'ops',          re: /\\b(operations|customer|support|service|process|collections|servicing|back office|contact cent|call cent|onboarding|administrat)/i },\n  { name: 'manager',      re: /\\b(manager|director|head of|vice president|\\bvp\\b|lead\\b|chief)/i },\n];\nconst ADJACENT = {\n  engineer: ['data', 'product'],\n  data: ['engineer', 'finance_risk', 'product'],\n  finance_risk: ['data', 'ops'],\n  product: ['engineer', 'data', 'ops'],\n  ops: ['finance_risk', 'product'],\n  manager: ['engineer', 'data', 'finance_risk', 'product', 'ops'],\n};\nfunction familyOf(text) {\n  const t = String(text || '');\n  for (const f of FAMILIES) if (f.re.test(t)) return f.name;\n  return 'unknown';\n}\nfunction familyRelation(candFam, jobFam) {\n  if (candFam === 'unknown' || jobFam === 'unknown') return 'unknown';\n  if (candFam === jobFam) return 'same';\n  if ((ADJACENT[candFam] || []).includes(jobFam)) return 'adjacent';\n  return 'distant';\n}\n// candidate family: the most recent title is usually in the first part of the CV (headline / summary / first job)\nfunction candidateFamily(rawCv) {\n  const head = String(rawCv || '').slice(0, 1500);\n  return familyOf(head);\n}\n\n// ============ inputs ============\nconst candidate = $('When Executed by Another Workflow').first().json.candidate || {};\n\n// all documents the Mongo node returned (v5: all ACTIVE resumes of this email; before Phase C it is still 1 document)\nconst candDocs = $('Get Candidate Embedding').all().map(x => x.json)\n  .filter(d => d && Array.isArray(d.embedding) && d.active !== false);\nif (!candDocs.length) {\n  return [{ json: { candidate, top_jobs: [], skip_reason: 'candidate_not_embedded' } }];\n}\n// newest document first (person facts come from it)\ncandDocs.sort((a, b) => String(b.embedded_at || '').localeCompare(String(a.embedded_at || '')));\n// Satvik, 6 Oct: one email = one CV. Only the newest resume is scored; older ones stay in Mongo as history.\n// (A person who really wants two profiles uses two email addresses.) The C2/C4 multi-profile path is off.\ncandDocs.splice(1);\nconst newest = candDocs[0];\n\n// ---- Country preference ----\nconst rawCountries = String(candidate.job_countries || newest.job_countries || '').trim();\nconst wantedCountries = rawCountries\n  ? rawCountries.split('|').map(s => s.trim().toLowerCase()).filter(Boolean)\n  : ['india'];\nconst anyCountry = wantedCountries.includes('any');\n\nconst jobs = $('Get Open Job Embeddings').all().map(x => x.json);\n\n// QUEUED blocks too (6 Oct): a pair waiting for the AHK must not be matched again (46 same-job re-matches in batch 3)\nconst BLOCKING = new Set(['REFERRED', 'ALREADY_REFERRED', 'QUEUED']);\nconst referredJobs = new Set(\n  $(\"Get Candidate's Referred Jobs\").all()\n    .map(x => x.json)\n    .filter(r => BLOCKING.has(r.status))\n    .map(r => r.job_id)\n    .filter(Boolean)\n    .map(String)\n);\n\n// D3: referrals per job in the last 7 days (node is optional; missing node = no cap)\nconst jobCounts = {};\nif (CONFIG.SOFT_CAP) {\n  try {\n    for (const x of $('Get Job Referral Counts (7d)').all()) {\n      const j = x.json || {};\n      if (j._id !== undefined && j._id !== null) jobCounts[String(j._id)] = Number(j.count) || 0;\n    }\n  } catch (e) { /* node not present yet */ }\n}\n\n// ---- candidate years (person fact: form value from the queue, else newest document) ----\nconst candYears = Number(candidate.years_experience ?? newest.years_experience ?? 0) || 0;\n// ---- job preference (form answer; blank = same_stretch since 10 Oct) ----\nconst pref = String(candidate.job_preference || newest.job_preference || '').trim().toLowerCase() || 'same_stretch';\nconst band = CONFIG.BANDS.find(b => candYears <= b.max) || CONFIG.BANDS[CONFIG.BANDS.length - 1];\nconst MIN_SCORE = band.min;\n\n// ---- country + experience pre-filter (same as v4) ----\nconst countryJobs = jobs.filter(j => {\n  if (anyCountry) return true;\n  const c = String(j.country || '').trim().toLowerCase();\n  return c && c !== 'unknown' && wantedCountries.includes(c);\n});\nconst reqYearsOf = (j) => (j.required_years_manual !== undefined && j.required_years_manual !== null && j.required_years_manual !== '')\n  ? Number(j.required_years_manual)\n  : (j.required_years === undefined || j.required_years === null || j.required_years === '' ? null : Number(j.required_years));\n// upper end of the job's years range; a single figure (or an old doc without required_years_max) is [lo, lo]\nconst reqHiOf = (j) => {\n  const lo = reqYearsOf(j); if (lo === null || Number.isNaN(lo)) return null;\n  const manual = j.required_years_manual !== undefined && j.required_years_manual !== null && j.required_years_manual !== '';\n  const mx = manual ? j.required_years_max_manual : j.required_years_max;\n  return (mx !== undefined && mx !== null && mx !== '' && Number(mx) >= lo) ? Number(mx) : lo;\n};\nconst maxLo = candYears + (pref === 'same_level' ? 0 : CONFIG.STRETCH_UP);\nconst eligibleJobs = countryJobs\n  .filter(j => { const lo = reqYearsOf(j), hi = reqHiOf(j); return lo !== null && !Number.isNaN(lo) && hi >= candYears - CONFIG.DOWN && lo <= maxLo; })\n  .filter(j => Array.isArray(j.embedding) && j.job_id && !referredJobs.has(String(j.job_id)));\n\n// ---- B2: pool guard ----\nif (CONFIG.POOL_GUARD && eligibleJobs.length < CONFIG.MIN_POOL) {\n  return [{ json: {\n    candidate: { ...candidate, years_experience: candYears, job_countries: rawCountries || 'India' },\n    top_jobs: [],\n    wanted_countries: wantedCountries,\n    jobs_pool: jobs.length,\n    jobs_in_countries: countryJobs.length,\n    candidate_years: candYears,\n    jobs_within_experience: eligibleJobs.length,\n    excluded_count: referredJobs.size,\n    band_min_score: MIN_SCORE,\n    skip_reason: countryJobs.length === 0 ? 'no_jobs_in_chosen_countries' : (eligibleJobs.length === 0 ? 'no_jobs_within_experience' : 'thin_pool'),\n  } }];\n}\n\n// ---- helpers ----\nconst sectionOf = (et, label, next) => {\n  const i = et.indexOf(label);\n  if (i < 0) return '';\n  const start = i + label.length;\n  const end = next ? et.indexOf(next, start) : -1;\n  return et.slice(start, end > start ? end : undefined).trim();\n};\nconst normOf = (v) => Math.sqrt(v.reduce((s, x) => s + x * x, 0)) || 1;\n\n// ---- score every eligible job against every active profile (C4) ----\nconst best = new Map(); // job_id → best scored row across profiles\nfor (const doc of candDocs) {\n  const v = doc.embedding;\n  const normV = normOf(v);\n  const profileKey = doc.candidate_key || (doc.email_id + '||' + (doc.resume_link || ''));\n  for (const j of eligibleJobs) {\n    const w = j.embedding;\n    let dot = 0;\n    const n = Math.min(v.length, w.length);\n    for (let i = 0; i < n; i++) dot += v[i] * w[i];\n    const score = dot / (normV * normOf(w));\n    const prev = best.get(String(j.job_id));\n    if (prev && prev.score >= score) continue;\n    const et = String(j.embedding_text || '');\n    best.set(String(j.job_id), {\n      job_id: j.job_id,\n      title: j.title,\n      location: j.location,\n      country: j.country,\n      description: sectionOf(et, 'Description:', '\\n\\nResponsibilities:'),\n      qualifications: sectionOf(et, 'Qualifications:', '\\n\\nExperience Required:'),\n      required_years: reqYearsOf(j),\n      required_years_max: reqHiOf(j),\n      required_years_source: (j.required_years_manual !== undefined && j.required_years_manual !== null && j.required_years_manual !== '') ? 'manual' : (j.required_years_source || null),\n      required_years_evidence: j.required_years_evidence || '',\n      workplace_type: j.workplace_type,\n      experience_required: j.experience_required,\n      referral_link: j.referral_link,\n      status: j.status,\n      score,\n      profile_key: profileKey,\n      profile_resume_link: doc.resume_link || '',\n    });\n  }\n}\n\n// ---- B6: candidate family from similarity (top-K jobs over ALL jobs in their countries, newest resume) ----\nlet simFam = 'unknown';\nif (CONFIG.FAMILY_FIRST) {\n  const v = newest.embedding, nv = normOf(v);\n  const ranked = countryJobs.filter(j => Array.isArray(j.embedding))\n    .map(j => { let d = 0; const w = j.embedding; for (let i = 0; i < Math.min(v.length, w.length); i++) d += v[i] * w[i]; return { fam: familyOf(j.title), s: d / (nv * normOf(w)) }; })\n    .sort((a, b) => b.s - a.s).slice(0, CONFIG.FAMILY_TOP_K);\n  const votes = {};\n  for (const r of ranked) votes[r.fam] = (votes[r.fam] || 0) + 1;\n  const topVote = Math.max(0, ...Object.values(votes));\n  simFam = ranked.length ? (ranked.find(r => votes[r.fam] === topVote) || ranked[0]).fam : 'unknown';\n}\n// ---- D1: family check ----\nconst candFam = CONFIG.FAMILY_FIRST ? simFam : (CONFIG.FAMILY_CHECK ? candidateFamily(newest.raw_cv) : 'unknown');\nlet scored = [...best.values()].map(r => {\n  const jobFam = familyOf(r.title);\n  const rel = (CONFIG.FAMILY_CHECK || CONFIG.FAMILY_FIRST) ? familyRelation(candFam, jobFam) : 'unchecked';\n  const stretch = r.required_years > candYears;\n  const tier = !CONFIG.FAMILY_FIRST ? 0 : rel === 'same' ? (stretch ? 1 : 0) : rel === 'adjacent' ? (stretch ? 3 : 2) : 4;\n  const needed = (CONFIG.FAMILY_CHECK && rel === 'distant') ? MIN_SCORE + CONFIG.FAMILY_EXTRA : MIN_SCORE;\n  const count7d = jobCounts[String(r.job_id)] || 0;\n  const penalty = (CONFIG.SOFT_CAP && count7d >= CONFIG.SOFT_CAP_N) ? CONFIG.SOFT_CAP_PENALTY : 0;\n  // 9 Oct: a job whose years are only assumed (title floor / no number) ranks a little below a job whose JD states them\n  const assumed = r.required_years_source !== 'manual' && r.required_years_source !== 'rules_required' && r.required_years_source !== 'micro_verified';\n  return { ...r, job_family: jobFam, family_relation: rel, stretch, tier, min_score_applied: needed, referrals_7d: count7d, years_assumed: assumed, rank_score: r.score - penalty - (assumed ? CONFIG.ASSUMED_PENALTY : 0) };\n});\nconst droppedFamily = CONFIG.FAMILY_CHECK ? scored.filter(r => r.family_relation === 'distant' && r.score < r.min_score_applied).length : 0;\n\n// ---- job preference (9 Oct): the candidate's form answer is a hard filter, like the country choice ----\n//   same_level = same family, no stretch (tier 0) · same_stretch = same family (tiers 0–1) · any = everything\n//   No answer (old form entries) = same_stretch (Satvik, 10 Oct): with same_level a fresher in data / engineering never matched (India has no 0-year job there).\n//   The years window above already differs per option (same_level lo <= n, the others lo <= n + 1).\nconst prefOk = (r) => pref === 'same_level' ? (r.family_relation === 'same' && !r.stretch)\n  : pref === 'same_stretch' ? r.family_relation === 'same' : true;\nconst droppedPreference = scored.filter(r => !prefOk(r)).length;\n\nscored = scored\n  .filter(prefOk)\n  .filter(r => r.score >= r.min_score_applied)\n  .sort((a, b) => (a.tier - b.tier) || (b.rank_score - a.rank_score));\n\nconst top = scored.slice(0, CONFIG.TOP_N);\n\n// ---- D2: match strength ----\nlet matchStrength = 'n/a', gap = null;\nif (top.length) {\n  const rest = top.slice(1).map(r => r.rank_score).sort((a, b) => a - b);\n  const median = rest.length ? (rest.length % 2 ? rest[(rest.length - 1) / 2] : (rest[rest.length / 2 - 1] + rest[rest.length / 2]) / 2) : null;\n  gap = median === null ? null : +(top[0].rank_score - median).toFixed(4);\n  const strongByGap = gap !== null && gap >= CONFIG.GAP_MIN;\n  const strongByLevel = top[0].score >= MIN_SCORE + CONFIG.STRONG_EXTRA;\n  matchStrength = (strongByGap || strongByLevel || median === null) ? 'strong' : 'weak';\n}\nconst weak = CONFIG.GAP_CHECK && top.length > 0 && matchStrength === 'weak';\n\n// ---- matched profile → pass its CV down for the hook sentence ----\nconst matchedDoc = top.length ? (candDocs.find(d => (d.candidate_key || '') === top[0].profile_key) || newest) : newest;\n\nconst skip_reason = top.length === 0\n  ? (droppedPreference > 0 && scored.length === 0 ? 'no_job_for_preference'\n    : droppedFamily > 0 && scored.length === 0 ? 'no_job_in_family' : 'no_job_above_threshold')\n  : (weak ? 'weak_match' : undefined);\n\nreturn [{\n  json: {\n    candidate: {\n      ...candidate,\n      years_experience: candYears,\n      job_countries: rawCountries || 'India',\n      job_preference: pref,\n      profile_key: matchedDoc.candidate_key || null,\n      profile_keys: candDocs.map(d => d.candidate_key).filter(Boolean),\n      raw_cv: String(matchedDoc.raw_cv || '').slice(0, CONFIG.CV_SNIPPET_CHARS),\n    },\n    top_jobs: weak ? [] : top,\n    considered_jobs: weak ? top.map(r => ({ job_id: r.job_id, title: r.title, score: r.score })) : undefined,\n    wanted_countries: wantedCountries,\n    jobs_pool: jobs.length,\n    jobs_in_countries: countryJobs.length,\n    candidate_years: candYears,\n    jobs_within_experience: eligibleJobs.length,\n    excluded_count: referredJobs.size,\n    band_min_score: MIN_SCORE,\n    candidate_family: candFam,\n    family_source: CONFIG.FAMILY_FIRST ? 'similarity' : (CONFIG.FAMILY_CHECK ? 'cv_regex' : 'none'),\n    stretch_match: top.length ? top[0].stretch === true : false,\n    dropped_distant_family: droppedFamily,\n    dropped_for_preference: droppedPreference,\n    match_strength: matchStrength,\n    top_gap: gap,\n    profiles_scored: candDocs.length,\n    skip_reason,\n  }\n}];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          1040,
+          0
+        ],
+        "id": "0c5fba86-1a97-4321-aa2b-cf9f9ae9af02",
+        "name": "Cosine Top 5"
+      },
+      {
+        "parameters": {
+          "collection": "candidate_embeddings",
+          "options": {},
+          "query": "={\n  \"email_id\": \"{{ $('When Executed by Another Workflow').first().json.candidate.email_id }}\",\n  \"embedding\": {\n    \"$ne\": null\n  }\n}"
+        },
+        "type": "n8n-nodes-base.mongoDb",
+        "typeVersion": 1.4,
+        "position": [
+          240,
+          0
+        ],
+        "id": "20093226-308f-4f6f-8830-c3d01948efae",
+        "name": "Get Candidate Embedding",
+        "alwaysOutputData": true,
+        "credentials": {
+          "mongoDb": {
+            "id": "5uL8HRrGFYPzMren",
+            "name": "Referrals"
+          }
+        }
+      }
+    ],
+    "connections": {
+      "When Executed by Another Workflow": {
+        "main": [
+          [
+            {
+              "node": "Get Candidate Embedding",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Get Open Job Embeddings": {
+        "main": [
+          [
+            {
+              "node": "Get Candidate's Referred Jobs",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Get Candidate's Referred Jobs": {
+        "main": [
+          [
+            {
+              "node": "Cosine Top 5",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Get Candidate Embedding": {
+        "main": [
+          [
+            {
+              "node": "Get Open Job Embeddings",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "nodeGroups": [],
+    "authors": "Satvik Jain",
+    "name": "Version 20af6af3",
+    "description": "",
+    "autosaved": true,
+    "workflowPublishHistory": [
+      {
+        "createdAt": "2026-10-12T07:04:03.307Z",
+        "id": 1962,
+        "workflowId": "JmV3niatmJiOgbmY",
+        "versionId": "20af6af3-8be2-40a2-8f19-f560df21bb74",
+        "event": "activated",
+        "userId": "97376212-c8ff-4b6f-9937-68c23f216b5d"
+      }
+    ]
+  }
+}
