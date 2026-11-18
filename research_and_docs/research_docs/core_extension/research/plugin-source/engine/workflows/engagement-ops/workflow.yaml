@@ -1,0 +1,29 @@
+# W6. Publish and Engage. The first hour, where reach is decided.
+workflow:
+  code: engagement-ops
+  name: Publish and Engage
+  purpose: Set the post time, seed the first comment, and plan the first hour of replies
+  cadence: per post, around launch
+
+  config_source: config/
+  output_folder: runs/
+
+  agents:
+    - scheduler        # best time to post from the data
+    - first-comment    # the seeded opening comment that sparks discussion
+    - reply-strategist # the first hour reply plan
+
+  validation: evals/reply-plan.md
+  primary_output: templates/engagement-plan.md
+
+  inputs:
+    - config/user-config.yaml
+    - knowledge-base/algorithm-mechanics.md
+    - knowledge-base/audience-icp.md
+    - knowledge-base/voice-profile.md
+    - knowledge-base/performance-data/posts.csv
+    - the passed post and asset
+
+  execution_hints:
+    interactive: false
+    resumable: true

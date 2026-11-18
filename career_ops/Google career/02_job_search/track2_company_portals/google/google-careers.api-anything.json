@@ -1,0 +1,107 @@
+{
+  "name": "google-careers",
+  "displayName": "Google Careers",
+  "baseUrl": "https://www.google.com",
+  "description": "Logged-out Google Careers job search over plain HTTP via SSR AF_initDataCallback ds:1 payload (no browser, no cookies).",
+  "operations": [
+    {
+      "name": "search",
+      "request": {
+        "method": "GET",
+        "url": "https://www.google.com/about/careers/applications/jobs/results?q=%22Product%20Manager%22&location=India&page=1",
+        "headers": {
+          "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+          "accept-language": "en-US,en;q=0.9",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+        }
+      },
+      "slots": [
+        {
+          "param": "q",
+          "at": [
+            "query:q"
+          ]
+        },
+        {
+          "param": "location",
+          "at": [
+            "query:location"
+          ]
+        },
+        {
+          "param": "page",
+          "at": [
+            "query:page"
+          ]
+        }
+      ],
+      "volatile": [],
+      "trigger": {
+        "url": "https://www.google.com/about/careers/applications/jobs/results?q={q}&location={location}&page={page}"
+      },
+      "match": {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/about/careers/applications/jobs/results"
+      },
+      "response": {
+        "format": "embedded",
+        "contentType": "text/html; charset=utf-8",
+        "extract": "[0]",
+        "pick": [
+          "jobId=[0]",
+          "title=[1]",
+          "applyUrl=[2]",
+          "responsibilitiesHtml=[3][1]",
+          "qualificationsHtml=[4][1]",
+          "company=[7]",
+          "locations=[9][*][0]",
+          "aboutHtml=[10][1]",
+          "educationCodes=[11]",
+          "createdEpochSec=[12][0]",
+          "publishedEpochSec=[13][0]",
+          "updatedEpochSec=[14][0]",
+          "applicantNotesHtml=[15][1]",
+          "locationNoteHtml=[18][1]",
+          "minQualificationsHtml=[19][1]",
+          "experienceLevelCode=[20]"
+        ],
+        "embedded": {
+          "regex": "key: 'ds:1', hash: '\\d+', data:(\\[)"
+        }
+      },
+      "params": [
+        {
+          "name": "q",
+          "type": "string",
+          "required": true,
+          "description": "Job title or keyword query (wrap in double quotes for exact phrase, e.g. \"Product Manager\")",
+          "example": "\"Product Manager\"",
+          "hint": "Search query string for Google Careers"
+        },
+        {
+          "name": "location",
+          "type": "string",
+          "required": false,
+          "description": "Location filter such as India, United States, Singapore, or Bengaluru",
+          "example": "India",
+          "hint": "Country, state, or city name"
+        },
+        {
+          "name": "page",
+          "type": "string",
+          "required": false,
+          "description": "1-based results page number (20 jobs per page)",
+          "example": "1",
+          "pattern": "^\\d+$",
+          "hint": "Page number starting at 1"
+        }
+      ],
+      "readOnly": true,
+      "minTier": 1,
+      "learnedLoggedIn": false,
+      "description": "Search Google Careers jobs directly over plain HTTP. Returns up to 20 full job postings per page with descriptions, minimum/preferred qualifications, responsibilities, locations, timestamps, and apply links."
+    }
+  ]
+}
+

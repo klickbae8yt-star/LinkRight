@@ -1,0 +1,85 @@
+{
+  "company_slug": "lattice",
+  "company_name": "Lattice",
+  "website": "https://lattice.com",
+  "career_portal_url": "https://lattice.com/careers",
+  "ats_platform": "greenhouse",
+  "ats_slug": "lattice",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 6,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W16",
+  "team_size": 540,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "San Francisco"
+  ],
+  "summary": "Modern people management platform.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/lattice",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/lattice-hq/",
+  "founders": [
+    {
+      "name": "Jack Altman",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/jackealtman",
+      "twitter": "",
+      "bio": "",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 19,
+      "career_signals": [
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    },
+    {
+      "name": "Eric Koslow",
+      "title": "Founder/CTO",
+      "linkedin": "https://www.linkedin.com/in/erickoslow",
+      "twitter": "https://twitter.com/ekosz1",
+      "bio": "Founder of multiple startups. Knows a fair bit about SaaS, video, streaming, VTubers, and doing business in Japan.",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 19,
+      "career_signals": [
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 73,
+  "recommendation": "consider",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 10,
+    "founder_career": 19,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

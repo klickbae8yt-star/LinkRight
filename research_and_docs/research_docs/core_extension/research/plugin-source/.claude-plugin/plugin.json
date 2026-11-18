@@ -1,0 +1,9 @@
+{
+  "name": "linkedin-content-engine",
+  "version": "0.2.0",
+  "description": "A config-driven engine that builds your authentic writing voice, then plans, drafts, designs, gates, and schedules LinkedIn content in that voice. Works for any role, field, or goal.",
+  "author": {
+    "name": "Satvik Jain"
+  },
+  "keywords": ["linkedin", "content", "personal-branding", "writing-voice", "ghostwriting", "growth"]
+}

@@ -1,0 +1,247 @@
+%-------------------------
+% Satvik Jain — Product Strategist / Chief of Staff (CPO)
+% Meesho Chief of Staff — CPO's Office Variant
+% FAANGPath Simple Template (A4)
+% Archetype: PROD-STRAT (Product Strategy / CPO Office)
+% Gate 6 applied: cprimary=#9F2089 (Meesho Magenta) | csection=#5A0047 (Deep Magenta)
+% Base: resume_meesho-pm-i_2026-05-25.tex → rearchetyped for CoS CPO
+% Changes from Meesho PM-I:
+%   SUMMARY: Product strategist / analytical rigour / structured comms framing
+%   SKILLS bucket 1: "Product Strategy & Operations" (roadmapping, buy-vs-build, etc.)
+%   SKILLS bucket 3: "Communication & Exec Storytelling" (board, strategy reviews, all-hands)
+%   SPA order: Analyzed leads (product strategy signal first for CPO role)
+%   All 18 action verbs unique: Slashed/Delivered/Led/Drove/Earned/
+%     Analyzed/Grew/Mapped/Lifted/Secured/Ranked/
+%     Wrote/Built/Partnered/Designed/Deployed/Validated/Launched
+%-------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage{eso-pic}
+\usepackage{tikz}
+\input{glyphtounicode}
+
+% ═══════════════════════════════════════════════════════════════════
+% COMPANY DESIGN LAYER — Meesho
+% RULE: cprimary = border (dominant brand color)
+%        csection = section dividers (secondary brand color)
+%        name    = #1A1A1A always
+% ┌── SWAP COMPANY: Change only these two hex codes ──────────────────┐
+\definecolor{cprimary}{HTML}{9F2089}   % Border: Meesho Magenta (rgb 159 32 137)
+\definecolor{csection}{HTML}{5A0047}   % Section rules: Deep Magenta
+% └─────────────────────────────────────────────────────────────────┘
+% ═══════════════════════════════════════════════════════════════════
+
+% ── Inset border: 1.5pt rule, 8pt gap from page edges on all four sides ──
+\AddToShipoutPictureBG{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[color=cprimary, line width=1.5pt]
+      ([xshift=8pt,yshift=-8pt]current page.north west)
+      rectangle
+      ([xshift=-8pt,yshift=8pt]current page.south east);
+  \end{tikzpicture}%
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{csection}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-2pt}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\parfillskip=0pt}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%--- HEADER ---
+\begin{center}
+  \textcolor[HTML]{1A1A1A}{\textbf{\Huge \scshape Satvik Jain}} \\ \vspace{1pt}
+  \small +91-7678296693 $|$
+  \href{mailto:satvik.jain@iitdalumni.com}{\underline{satvik.jain@iitdalumni.com}} $|$
+  \href{https://linkedin.com/in/satvik-jain-iitd}{\underline{LinkedIn}} $|$
+  \href{https://github.com/satvik-jain-iitd}{\underline{GitHub}}
+\end{center}
+
+%--- SUMMARY ---
+\section{Summary}
+Product strategist and structured operator with 4+ years translating analytical rigour and cross-functional execution into measurable product outcomes at Fortune 500 scale.
+Analyzed \textbf{1,500+ client patterns} across 15 sectors to define product entry strategy; grew Social Listening adoption \textbf{$\sim$35\% $\rightarrow$ $\sim$85\%}; cut time-to-value \textbf{$\sim$75\%}.
+Shipped \textbf{60+ features} across 10 sprints as sole PM; lifted 7-day retention \textbf{40\% $\rightarrow$ 55\%}; secured \textbf{\$1.2M TCV} and \textbf{\$9M+ pipeline} via structured discovery and stakeholder alignment.
+A/B experimentation, cohort analysis, executive communication, and product roadmapping across Fortune 500 and government clients. IIT Delhi.
+
+%--- EXPERIENCE ---
+\section{Experience}
+\resumeSubHeadingListStart
+
+  % ── American Express ────────────────────────────────────────────────────
+  \resumeSubheading
+    {American Express}{Jul 2024 -- Present}
+    {Senior Associate Product Manager}{Gurugram, India}
+  \resumeItemListStart
+    % A1 — product strategy execution: UI redesign + API automation → 70% improvement
+    \resumeItem{Slashed AML risk-config speed-to-market \textbf{10 days $\rightarrow$ 3 days (70\%)} via rule UI redesign and API-automated approvals}
+    % A3 — product delivery at scale: sole PM, 60+ features, 10 sprints
+    \resumeItem{Led CRR platform for \textbf{10 sprints} (sole PM); shipped \textbf{60+ features}: rule engine, asset mgmt, versioning, audit trail}
+    % A2 — execution rigour: zero-spillover delivery, pivot absorption
+    \resumeItem{Delivered \textbf{4 zero-spillover PIs} as sole PM; absorbed 2 strategy pivots, reprioritizing entire backlog within 1 week each}
+    % A4 — org process innovation: 80% AI adoption via structured change
+    \resumeItem{Drove \textbf{80\% AI-assisted story drafting} adoption within team by introducing ChatGPT Enterprise for sprint planning}
+    % A5 — executive recognition: G1L2 rating, SVP award, 120% bonus
+    \resumeItem{Earned \textbf{Leadership in Action Award} from SVP Risk (6 months); rated \textbf{G1L2}, top Band 30 PO in org; \textbf{120\% bonus}}
+  \resumeItemListEnd
+
+  % ── Sprinklr ────────────────────────────────────────────────────────────
+  \resumeSubheading
+    {Sprinklr}{Apr 2022 -- Jul 2024}
+    {Senior Product Analyst}{Gurugram, India}
+  \resumeItemListStart
+    % S1 — product strategy: structured discovery → #1 entry point; CPO-office signal
+    \resumeItem{Analyzed \textbf{1,500+ client patterns} across 15 sectors; launched Use Case Hub, \textbf{\#1 entry point} for dashboard creation}
+    % S2 — product-led growth: adoption 35→85%, TTV −75%
+    \resumeItem{Grew Social Listening adoption \textbf{$\sim$35\% $\rightarrow$ $\sim$85\%} for SME clients; removed onboarding friction, cut time-to-value \textbf{$\sim$75\%}}
+    % S4 — analytical rigour: SQL cohort deep-dive, D7→D30→D60 diagnosis
+    \resumeItem{Mapped Walmart Spark Driver retention collapse (D7 $\sim$65\% $\rightarrow$ D30 $\sim$35\% $\rightarrow$ D60 $\sim$18\%) via SQL; 4-cohort deep-dive}
+    % S3 — measurable product outcome: 7-day retention lift, government scale
+    \resumeItem{Lifted Qatar Sharek app \textbf{7-day retention 40\% $\rightarrow$ 55\%} across 40 government ministries (\$32M TCV, 120 dashboards)}
+    % S6 — structured discovery → commercial outcome: $1.2M TCV + $9M+ pipeline
+    \resumeItem{Secured \textbf{\$1.2M TCV} POC-to-close, \textbf{\$9M+ Q4 pipeline}, and \textbf{\$2M follow-on deal} via Walmart GenAI pipeline}
+  \resumeItemListEnd
+
+  % ── Sprinklr — earlier role ──────────────────────────────────────────────
+  \resumeSubSubheading
+    {Product Analyst}{Apr 2022 -- Apr 2023}
+  \resumeItemListStart
+    % P1 — credibility: #1 globally, 10/10 CSAT, earliest promotion
+    \resumeItem{Ranked \textbf{\#1 globally} among all Sprinklr POs in first 6 months (\textbf{10/10 CSAT}); only 1 of 8 promoted at 11 months}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%--- VENTURES & ADVISORY ---
+\section{Ventures \& Advisory}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{ContentStack} $|$ \emph{Freelance AI PM}}{Nov 2024 -- Jun 2025}
+  \resumeItemListStart
+    \resumeItem{Wrote PRDs and shipped \textbf{6 AI features} across Compose AI, DesignerAI, and Lens at ContentStack (freelance AI PM)}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{GoGoGo} $|$ \emph{Angel Investor}: pre-seed ride-hailing (Indore); backed, advised on product \& GTM; \textbf{$\sim$Rs.2.5Cr raised}}{}
+  \resumeItemListStart
+    \resumeItem{Built brand + GTM: AI anthem, AI video, LinkedIn automation; drove driver acquisition and founding team onboarding}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Navii (HeyNavii)} $|$ \emph{Beta Growth PM}}{2025}
+  \resumeItemListStart
+    \resumeItem{Partnered with ex-Google product leaders; scaled user base \textbf{2K $\rightarrow$ 20K} during beta; built N8N automations + Chrome extension}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%--- PROJECTS ---
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{LinkRight} $|$ \emph{Founder \& Solo Engineer}}{Jun 2025 -- Present}
+  \resumeItemListStart
+    \resumeItem{Designed and built solo LLM pipeline: hybrid resume parser, \textbf{16-dim eval scorecard}, fabrication guard, feedback loop}
+    \resumeItem{Deployed \textbf{9 self-hosted LLMs} on Oracle VPS (Ollama, fallback chain); built FastAPI backend, CLI published to \textbf{PyPI}}
+    \resumeItem{Validated via \textbf{147-response} survey + \textbf{7,000+} cold-reached; shipped \textbf{44/57 features (77\%)} in 11 months}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Sukha Education} $|$ \emph{Digital Transformation Lead}}{Jan 2025 -- May 2025}
+  \resumeItemListStart
+    \resumeItem{Launched GTM and digital transformation for Chennai NGO (2,000+ students); \textbf{$\sim$Rs.60K/year} in operational savings}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%--- SKILLS ---
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Product Strategy \& Operations:}{ Product Roadmapping, PRDs, Buy vs.\ Build Frameworks, Funnel Analysis, Cohort Analysis, Retention Optimization, A/B Testing, User Research, Problem Discovery, Customer Journey Mapping, Onboarding Optimization, OKR/KPI Design, Product-Led Growth (PLG), SAFe Agile, PI Planning, Stakeholder Management} \\
+    \textbf{Analytics \& Data:}{ SQL (production), Python, BigQuery, Google Analytics, Mixpanel, Amplitude, PostHog, Tableau, Cohort Modeling, A/B Test Design, Data-Driven Decision Making} \\
+    \textbf{Communication \& Exec Storytelling:}{ Board Presentation Design, Executive Narratives, Monthly Strategy Reviews, All-Hands Communication, Structured Storytelling, Slide Design, Cross-Functional Alignment, Influence Without Authority} \\
+    \textbf{Tools:}{ JIRA, Rally, Figma, ChatGPT Enterprise, N8N, Lucidchart, PowerBI, Hotjar, Confluence, Miro}
+  }}
+\end{itemize}
+
+%--- EDUCATION ---
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Indian Institute of Technology Delhi}{2017 -- 2021}
+    {B.Tech, Civil Engineering}{CGPA: 6.43/10}
+  \resumeItemListStart
+    \resumeItem{JEE Advanced \textbf{Rank 2446} (Top 0.002\% of 1.2M+); Class 12 \textbf{District Rank 1}, 94.2\%, 100/100 Maths \& Chemistry}
+    \resumeItem{\textbf{GGI Fellow} (2024); Scaler Academy: SQL, Excel, Tableau, Power BI, Python, Product Analytics (all 6 completed)}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%--- REFERENCES ---
+\vspace{-6pt}
+\section{References}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \href{https://linkedin.com/in/pulit-sharma-36426349}{\textbf{\underline{Pulit Sharma}}} $|$ Product Mgmt \& Channel, Sprinklr $|$ (+91-8698487841) \\
+    \href{https://linkedin.com/in/pallavi-sharma-54088159}{\textbf{\underline{Pallavi Sharma}}} $|$ Sr. Product Manager, American Express $|$ (+91-9910922037) \\
+    \href{https://linkedin.com/in/kartik-bn-3770807b}{\textbf{\underline{Kartik B.N}}} $|$ Sr. Manager Customer Success, Q2 $|$ (+91-9886896571)
+  }}
+\end{itemize}
+
+\end{document}

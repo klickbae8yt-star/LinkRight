@@ -1,0 +1,24 @@
+# Setup conductor. A thin meta workflow. Runs onboarding then voice building in one sitting.
+# It owns no agents of its own. It just chains two real workflows in order, in one session.
+workflow:
+  code: setup
+  name: First Time Setup
+  purpose: One session that captures settings, then builds the voice, so setup feels like one onboarding
+  cadence: once, when the owner first stands up the system
+  type: conductor                 # chains sub workflows, does not run agents directly
+
+  config_source: config/
+  output_folder: config/
+
+  runs_in_order:
+    - workflow: onboarding         # W0, must finish first, it writes the config
+      produces: config/user-config.yaml
+    - workflow: voice-architect    # W1, reads the fresh config, then builds the voice
+      produces: knowledge-base/voice-profile.md
+
+  gate_between: config/user-config.yaml must exist and pass evals/config-completeness.md before voice building starts
+
+  execution_hints:
+    interactive: true
+    resumable: true                # if the owner stops after onboarding, voice building resumes later
+    rerun_independently: true      # either sub workflow can also be run alone later

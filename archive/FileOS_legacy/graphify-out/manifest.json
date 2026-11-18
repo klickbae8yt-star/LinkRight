@@ -1,0 +1,308 @@
+{
+  "fileos-organizer-plugin/plugin.json": {
+    "mtime": 1794370806.0950232,
+    "seen": 1794775304.161657,
+    "ast_hash": "5a65ded2b11e0ab435e9ca3aac575f54",
+    "semantic_hash": "5a65ded2b11e0ab435e9ca3aac575f54"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/scripts/audit.py": {
+    "mtime": 1794410286.9178421,
+    "seen": 1794775304.161668,
+    "ast_hash": "3e0e03701dddc883a1890414ca115358",
+    "semantic_hash": "3e0e03701dddc883a1890414ca115358"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/scripts/connectors/__init__.py": {
+    "mtime": 1794396651.6090195,
+    "seen": 1794775304.161673,
+    "ast_hash": "add741baea44d954e185960c0e4857a1",
+    "semantic_hash": "add741baea44d954e185960c0e4857a1"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/scripts/connectors/mongo_history.py": {
+    "mtime": 1794396651.6096346,
+    "seen": 1794775304.161676,
+    "ast_hash": "c50a7a793145b11f0110a24a40b61dfc",
+    "semantic_hash": "c50a7a793145b11f0110a24a40b61dfc"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/scripts/connectors/oracle_pool.py": {
+    "mtime": 1794396651.6099837,
+    "seen": 1794775304.161679,
+    "ast_hash": "cdeeee4e57154dd1a2b05845eb6f8d03",
+    "semantic_hash": "cdeeee4e57154dd1a2b05845eb6f8d03"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/scripts/dashboard.py": {
+    "mtime": 1794410766.6094973,
+    "seen": 1794775304.161681,
+    "ast_hash": "6e6d7ae0e717d1688342eff88ec32e71",
+    "semantic_hash": "6e6d7ae0e717d1688342eff88ec32e71"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/scripts/fileos.py": {
+    "mtime": 1794410245.6518993,
+    "seen": 1794775304.161684,
+    "ast_hash": "1a55fa47060c9ec945f008da198536bb",
+    "semantic_hash": "1a55fa47060c9ec945f008da198536bb"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/scripts/similarity.py": {
+    "mtime": 1794396651.6168723,
+    "seen": 1794775304.161686,
+    "ast_hash": "7215c1cd30065bae2aaf614183f16f51",
+    "semantic_hash": "7215c1cd30065bae2aaf614183f16f51"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/fixtures/golden_manifests.json": {
+    "mtime": 1794389611.1026244,
+    "seen": 1794775304.161689,
+    "ast_hash": "ebb23378a655a2beba436871143f1704",
+    "semantic_hash": "ebb23378a655a2beba436871143f1704"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_accounting.py": {
+    "mtime": 1794389611.183073,
+    "seen": 1794775304.161691,
+    "ast_hash": "9256cbe7850ee6ff05cd55233022b415",
+    "semantic_hash": "9256cbe7850ee6ff05cd55233022b415"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_dashboard.py": {
+    "mtime": 1794410722.7534955,
+    "seen": 1794775304.1616929,
+    "ast_hash": "010fcce5164bca679cdc330970390cea",
+    "semantic_hash": "010fcce5164bca679cdc330970390cea"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_duplicates.py": {
+    "mtime": 1794370807.408171,
+    "seen": 1794775304.161696,
+    "ast_hash": "c74261d5e674bee54e951c46395d4686",
+    "semantic_hash": "c74261d5e674bee54e951c46395d4686"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_golden_fixtures.py": {
+    "mtime": 1794388906.721774,
+    "seen": 1794775304.161698,
+    "ast_hash": "8f5752ef0bdc20b0c496e286d5231164",
+    "semantic_hash": "8f5752ef0bdc20b0c496e286d5231164"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_hierarchy.py": {
+    "mtime": 1794351969.3614879,
+    "seen": 1794775304.1617,
+    "ast_hash": "f80524dbe28ad888be20a2331c24e7b4",
+    "semantic_hash": "f80524dbe28ad888be20a2331c24e7b4"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_incremental.py": {
+    "mtime": 1794396651.6171384,
+    "seen": 1794775304.1617029,
+    "ast_hash": "6d312e09553e3f8fc8d05cbe411c728a",
+    "semantic_hash": "6d312e09553e3f8fc8d05cbe411c728a"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_inventory.py": {
+    "mtime": 1794351980.1242702,
+    "seen": 1794775304.161705,
+    "ast_hash": "50d882c0a2a90b344bdb98bcf856ad36",
+    "semantic_hash": "50d882c0a2a90b344bdb98bcf856ad36"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_near_duplicates.py": {
+    "mtime": 1794396652.567984,
+    "seen": 1794775304.161707,
+    "ast_hash": "ed30ad47fc4d099e1eb440c94a40bf85",
+    "semantic_hash": "ed30ad47fc4d099e1eb440c94a40bf85"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_network_isolation.py": {
+    "mtime": 1794389611.6412587,
+    "seen": 1794775304.161709,
+    "ast_hash": "7586420e703613669e1888d8b8f31a9b",
+    "semantic_hash": "7586420e703613669e1888d8b8f31a9b"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_oracle_connectors.py": {
+    "mtime": 1794396652.5677795,
+    "seen": 1794775304.1617112,
+    "ast_hash": "6f84d1c2a8642ba899252548a922b9ff",
+    "semantic_hash": "6f84d1c2a8642ba899252548a922b9ff"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_recursive.py": {
+    "mtime": 1794374722.5480583,
+    "seen": 1794775304.1617138,
+    "ast_hash": "6fcd4889d57ded6f4bd63da5376e9ad6",
+    "semantic_hash": "6fcd4889d57ded6f4bd63da5376e9ad6"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_safety.py": {
+    "mtime": 1794389460.882079,
+    "seen": 1794775304.161716,
+    "ast_hash": "a44e872acd1811324b760e525b4eb143",
+    "semantic_hash": "a44e872acd1811324b760e525b4eb143"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_versions.py": {
+    "mtime": 1794370809.3646214,
+    "seen": 1794775304.1617181,
+    "ast_hash": "d4948977e394d1c2ccf9f0f4802dfc1b",
+    "semantic_hash": "d4948977e394d1c2ccf9f0f4802dfc1b"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/tests/test_watch.py": {
+    "mtime": 1794396652.5693674,
+    "seen": 1794775304.1617222,
+    "ast_hash": "7502981cd528b87a85242008c589974e",
+    "semantic_hash": "7502981cd528b87a85242008c589974e"
+  },
+  "ANTIGRAVITY_SELF_PROMPT.md": {
+    "mtime": 1794351522.9645047,
+    "seen": 1794775304.1617239,
+    "ast_hash": "6d062fb301bb562d78eb85c3834f6895",
+    "semantic_hash": "6d062fb301bb562d78eb85c3834f6895"
+  },
+  "FILEOS_LOW_TOKEN_SKILL_SPEC.md": {
+    "mtime": 1794351519.8990786,
+    "seen": 1794775304.161726,
+    "ast_hash": "2dce95c0041469fa769f2ab2e1b7b21b",
+    "semantic_hash": "2dce95c0041469fa769f2ab2e1b7b21b"
+  },
+  "FILEOS_V2_SPEC.md": {
+    "mtime": 1794415353.0609787,
+    "seen": 1794775304.161728,
+    "ast_hash": "a80091a774700c3eba9102d303db31e6",
+    "semantic_hash": "a80091a774700c3eba9102d303db31e6"
+  },
+  "FileOS_chat_history.txt": {
+    "mtime": 1794351153.0081658,
+    "seen": 1794775304.161731,
+    "ast_hash": "422a0346631c294f4cfb5c2a72122b16",
+    "semantic_hash": "422a0346631c294f4cfb5c2a72122b16"
+  },
+  "README.md": {
+    "mtime": 1794351526.3286355,
+    "seen": 1794775304.1617332,
+    "ast_hash": "3263728600438d232728502f32973536",
+    "semantic_hash": "3263728600438d232728502f32973536"
+  },
+  "docs/research/repo-radar.md": {
+    "mtime": 1794415353.0927122,
+    "seen": 1794775304.1617348,
+    "ast_hash": "d84e0def25c869f89ac25ef5505e3357",
+    "semantic_hash": "d84e0def25c869f89ac25ef5505e3357"
+  },
+  "fileos-organizer-plugin/IMPLEMENTATION_NOTES.md": {
+    "mtime": 1794373614.345283,
+    "seen": 1794775304.161737,
+    "ast_hash": "0e23fe8388ae16d9921747d68454c8d8",
+    "semantic_hash": "0e23fe8388ae16d9921747d68454c8d8"
+  },
+  "fileos-organizer-plugin/README.md": {
+    "mtime": 1794372054.9625533,
+    "seen": 1794775304.161739,
+    "ast_hash": "b00998d5a2d5d4fd0c0d8133b9e415f5",
+    "semantic_hash": "b00998d5a2d5d4fd0c0d8133b9e415f5"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/BASELINE_INVENTORY.md": {
+    "mtime": 1794389609.8371692,
+    "seen": 1794775304.161741,
+    "ast_hash": "1e45b60e66ca0a1fbaf7e8eca5e99e8b",
+    "semantic_hash": "1e45b60e66ca0a1fbaf7e8eca5e99e8b"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/CHANGELOG.md": {
+    "mtime": 1794396616.6887832,
+    "seen": 1794775304.1617439,
+    "ast_hash": "9063646710f780d748d12695c0ad66da",
+    "semantic_hash": "9063646710f780d748d12695c0ad66da"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/MILESTONE_STATUS.md": {
+    "mtime": 1794396602.9302154,
+    "seen": 1794775304.161746,
+    "ast_hash": "810713e5a780c5334d06dda630388a0c",
+    "semantic_hash": "810713e5a780c5334d06dda630388a0c"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/ROADMAP.md": {
+    "mtime": 1794398100.2779646,
+    "seen": 1794775304.1617558,
+    "ast_hash": "12dbe107168de508b0dd481ddc517061",
+    "semantic_hash": "12dbe107168de508b0dd481ddc517061"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/SKILL.md": {
+    "mtime": 1794374787.8005285,
+    "seen": 1794775304.161759,
+    "ast_hash": "56eb5c7a6eae804f5686635139c950fc",
+    "semantic_hash": "56eb5c7a6eae804f5686635139c950fc"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/docs/plans/2026-11-11-fileos-m0-m1-and-architectural-gaps.md": {
+    "mtime": 1794388146.023664,
+    "seen": 1794775304.161765,
+    "ast_hash": "1387f71acf4d15ead4300f27a223333d",
+    "semantic_hash": "1387f71acf4d15ead4300f27a223333d"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/examples/sample_report.md": {
+    "mtime": 1794372063.1006455,
+    "seen": 1794775304.161767,
+    "ast_hash": "12d06b057c6031e6026b74ad9ee63915",
+    "semantic_hash": "12d06b057c6031e6026b74ad9ee63915"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/references/ARCHITECTURE.md": {
+    "mtime": 1794389610.095678,
+    "seen": 1794775304.1617699,
+    "ast_hash": "2e820d57ac634e93139eb8dcfb9e1902",
+    "semantic_hash": "2e820d57ac634e93139eb8dcfb9e1902"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/references/ARCHITECTURE_DECISIONS.md": {
+    "mtime": 1794389610.0955942,
+    "seen": 1794775304.161772,
+    "ast_hash": "5e56d2a8bcda1e4875bbd95e8902a2ab",
+    "semantic_hash": "5e56d2a8bcda1e4875bbd95e8902a2ab"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/references/DECISION_TREE.md": {
+    "mtime": 1794372015.9975295,
+    "seen": 1794775304.1617742,
+    "ast_hash": "fa1cb7d616f4247c63af4ceff8160c7d",
+    "semantic_hash": "fa1cb7d616f4247c63af4ceff8160c7d"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/references/OUTPUT_SCHEMA.md": {
+    "mtime": 1794388738.314739,
+    "seen": 1794775304.161783,
+    "ast_hash": "05b67a85ff19c9fb09b49217ae1d31de",
+    "semantic_hash": "05b67a85ff19c9fb09b49217ae1d31de"
+  },
+  "fileos-organizer-plugin/skills/fileos-organizer/references/SPEC.md": {
+    "mtime": 1794351725.7372434,
+    "seen": 1794775304.161786,
+    "ast_hash": "2dce95c0041469fa769f2ab2e1b7b21b",
+    "semantic_hash": "2dce95c0041469fa769f2ab2e1b7b21b"
+  },
+  "fileos_agentic_coding_pack/ANTIGRAVITY_LOCAL_REVIEW_DASHBOARD_PROMPT.md": {
+    "mtime": 1794387978.1822708,
+    "seen": 1794775304.16179,
+    "ast_hash": "a4d7831b809ad2d6e347fdfc01c10c63",
+    "semantic_hash": "a4d7831b809ad2d6e347fdfc01c10c63"
+  },
+  "fileos_agentic_coding_pack/ANTIGRAVITY_M0_M1_EXECUTION_PROMPT.md": {
+    "mtime": 1794387978.1829689,
+    "seen": 1794775304.161792,
+    "ast_hash": "720eb319f19405a1e86ef0a2d96213ed",
+    "semantic_hash": "720eb319f19405a1e86ef0a2d96213ed"
+  },
+  "fileos_agentic_coding_pack/ANTIGRAVITY_RECURSIVE_DIRECTORY_ADDON_PROMPT.md": {
+    "mtime": 1794387978.180672,
+    "seen": 1794775304.161794,
+    "ast_hash": "713a5b93cdcf3b5095c258d68ed44ab1",
+    "semantic_hash": "713a5b93cdcf3b5095c258d68ed44ab1"
+  },
+  "fileos_agentic_coding_pack/ANTIGRAVITY_SELF_PROMPT.md": {
+    "mtime": 1794387978.1818857,
+    "seen": 1794775304.161796,
+    "ast_hash": "6d062fb301bb562d78eb85c3834f6895",
+    "semantic_hash": "6d062fb301bb562d78eb85c3834f6895"
+  },
+  "fileos_agentic_coding_pack/FILEOS_DEPENDENCY_GUARD_SELF_PROMPT.md": {
+    "mtime": 1794412538.88328,
+    "seen": 1794775304.161798,
+    "ast_hash": "4863a080c025c1ca7dde72039d86f9de",
+    "semantic_hash": "4863a080c025c1ca7dde72039d86f9de"
+  },
+  "fileos_agentic_coding_pack/FILEOS_LOW_TOKEN_SKILL_SPEC.md": {
+    "mtime": 1794387978.1832657,
+    "seen": 1794775304.1618,
+    "ast_hash": "2dce95c0041469fa769f2ab2e1b7b21b",
+    "semantic_hash": "2dce95c0041469fa769f2ab2e1b7b21b"
+  },
+  "fileos_agentic_coding_pack/FILEOS_M0_M1_IMPLEMENTATION_SPEC.md": {
+    "mtime": 1794387978.1826732,
+    "seen": 1794775304.161802,
+    "ast_hash": "f7fbbe93299a7bb64dac9db83c95bf48",
+    "semantic_hash": "f7fbbe93299a7bb64dac9db83c95bf48"
+  },
+  "fileos_agentic_coding_pack/README.md": {
+    "mtime": 1794387978.1813016,
+    "seen": 1794775304.1618052,
+    "ast_hash": "f32f14a0c69db287711d3e90c6f89531",
+    "semantic_hash": "f32f14a0c69db287711d3e90c6f89531"
+  }
+}

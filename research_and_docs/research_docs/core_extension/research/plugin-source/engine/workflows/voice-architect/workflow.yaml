@@ -1,0 +1,27 @@
+# Worked example. Voice Building workflow.
+workflow:
+  code: voice-architect
+  name: Voice Building
+  purpose: Build the owner's voice profile from a live interview plus stylometry of their real writing
+  cadence: once, refresh when the Voice Drift Auditor flags it
+
+  config_source: knowledge-base/
+  output_folder: knowledge-base/
+
+  agents:
+    - interviewer          # runs the elicitation interview, writes the transcript
+    - stylometrist         # mines transcript plus chats plus samples, writes the metrics
+    - voice-synthesizer    # fuses both into the voice profile and examples
+
+  validation: evals/voice-profile-qa.md
+  primary_output: templates/voice-profile.md
+
+  inputs:
+    - knowledge-base/elicitation-method.md
+    - knowledge-base/stylometry-method.md
+    - knowledge-base/personality-primer.md
+    - past chat transcripts and any real writing samples the owner provides
+
+  execution_hints:
+    interactive: true       # the interview needs the owner live
+    resumable: true

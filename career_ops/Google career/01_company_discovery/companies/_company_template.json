@@ -1,0 +1,87 @@
+{
+  "_instructions": "Copy this file to target_companies/<company-slug>.json and fill in every field. Remove this _instructions key.",
+
+  "company_slug": "",
+  "company_name": "",
+  "website": "",
+  "career_portal_url": "",
+
+  "ats_platform": "",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": false,
+
+  "score": 0,
+  "recommendation": "",
+  "score_breakdown": {
+    "investor_quality": 0,
+    "founder_education": 0,
+    "founder_career": 0,
+    "past_exits": 0,
+    "industry_match": 0,
+    "role_match": 0,
+    "location_compliance": 0,
+    "product_stage_fit": 0
+  },
+
+  "funding": {
+    "stage": "",
+    "amount_usd": 0,
+    "date": "",
+    "investors": [],
+    "investor_tier": 0,
+    "source_url": ""
+  },
+
+  "founders": [
+    {
+      "name": "",
+      "title": "",
+      "linkedin": "",
+      "education": "",
+      "education_score": 0,
+      "previous_companies": [],
+      "past_exits": false,
+      "exit_details": "",
+      "career_score": 0,
+      "notable": ""
+    }
+  ],
+
+  "industry": "",
+  "industry_grade": "",
+  "b2c_or_b2b": "",
+  "ai_native": false,
+  "product_stage": "",
+
+  "open_roles": [],
+
+  "monitoring": {
+    "enabled": false,
+    "poll_interval_hours": 6,
+    "last_checked": null,
+    "last_new_job_seen": null
+  },
+
+  "outreach": {
+    "status": "not_started",
+    "target_person": "",
+    "linkedin": "",
+    "email_guess": "",
+    "email_pattern": "",
+    "last_contact_date": null,
+    "followup_due": null,
+    "notes": ""
+  },
+
+  "sources": {
+    "found_via": "",
+    "crunchbase_url": "",
+    "linkedin_company": "",
+    "news_links": []
+  },
+
+  "added_on": "",
+  "notes": ""
+}
+

@@ -1,0 +1,5067 @@
+[
+  {
+    "company": "Google",
+    "segment": "india_mnc",
+    "career_url": "https://www.google.com/about/careers/applications/",
+    "candidate_tried": "https://careers.google.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Microsoft",
+    "segment": "india_mnc",
+    "career_url": "https://careers.microsoft.com/v2/global/en/home.html",
+    "candidate_tried": "https://careers.microsoft.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Amazon",
+    "segment": "india_mnc",
+    "career_url": "https://amazon.jobs/en/",
+    "candidate_tried": "https://amazon.jobs",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Uber",
+    "segment": "india_mnc",
+    "career_url": "https://www.uber.com/us/en/careers/",
+    "candidate_tried": "https://www.uber.com/us/en/careers/",
+    "http_status": null,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: uber.wd5.myworkdayjobs.com"
+  },
+  {
+    "company": "Flipkart",
+    "segment": "india_mnc",
+    "career_url": "https://www.flipkartcareers.com",
+    "candidate_tried": "https://www.flipkartcareers.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Swiggy",
+    "segment": "india_mnc",
+    "career_url": "https://careers.swiggy.com",
+    "candidate_tried": "https://careers.swiggy.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Atlassian",
+    "segment": "india_mnc",
+    "career_url": "https://www.atlassian.com/company/careers",
+    "candidate_tried": "https://www.atlassian.com/company/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Adobe",
+    "segment": "india_mnc",
+    "career_url": "https://adobe.wd5.myworkdayjobs.com/external_experienced",
+    "candidate_tried": "https://adobe.wd5.myworkdayjobs.com/external_experienced",
+    "http_status": 200,
+    "portal_type": "ATS_Workday"
+  },
+  {
+    "company": "Salesforce",
+    "segment": "india_mnc",
+    "career_url": "https://www.salesforce.com/company/careers/?bc=OTH",
+    "candidate_tried": "https://careers.salesforce.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Walmart Global Tech",
+    "segment": "india_mnc",
+    "career_url": "https://careers.walmart.com/us/en/home",
+    "candidate_tried": "https://careers.walmart.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "NVIDIA",
+    "segment": "india_mnc",
+    "career_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+    "candidate_tried": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+    "http_status": 200,
+    "portal_type": "ATS_Workday"
+  },
+  {
+    "company": "LinkedIn",
+    "segment": "india_mnc",
+    "career_url": "https://careers.linkedin.com",
+    "candidate_tried": "https://careers.linkedin.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "PayPal",
+    "segment": "india_mnc",
+    "career_url": "https://paypal.eightfold.ai/careers",
+    "candidate_tried": "https://paypal.eightfold.ai/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Eightfold"
+  },
+  {
+    "company": "PhonePe",
+    "segment": "india_mnc",
+    "career_url": "https://www.phonepe.com/careers/",
+    "candidate_tried": "https://careers.phonepe.com",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "known_ats: boards.greenhouse.io/phonepe"
+  },
+  {
+    "company": "Zepto",
+    "segment": "india_mnc",
+    "career_url": "https://zepto.talentrecruit.com/career-page",
+    "candidate_tried": "https://www.zeptonow.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "manual_verified: TalentRecruit ATS, no scraper available"
+  },
+  {
+    "company": "Zomato / Blinkit",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.lever.co/eternal",
+    "candidate_tried": "https://www.zomato.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Lever",
+    "classification_source": "known_ats: jobs.lever.co/eternal"
+  },
+  {
+    "company": "Razorpay",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.smartrecruiters.com/Razorpay",
+    "candidate_tried": "https://razorpay.com/jobs",
+    "http_status": 200,
+    "portal_type": "ATS_SmartRecruiters",
+    "classification_source": "corrected: sr/Razorpay"
+  },
+  {
+    "company": "Booking.com",
+    "segment": "india_mnc",
+    "career_url": "https://careers.booking.com",
+    "candidate_tried": "https://careers.booking.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Oracle",
+    "segment": "india_mnc",
+    "career_url": "https://www.oracle.com/careers/",
+    "candidate_tried": "https://www.oracle.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Taleo",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Cisco",
+    "segment": "india_mnc",
+    "career_url": "https://careers.cisco.com/global/en",
+    "candidate_tried": "https://jobs.cisco.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Intuit",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.intuit.com",
+    "candidate_tried": "https://jobs.intuit.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "ServiceNow",
+    "segment": "india_mnc",
+    "career_url": "https://careers.servicenow.com",
+    "candidate_tried": "https://careers.servicenow.com",
+    "http_status": null,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: servicenow.wd5.myworkdayjobs.com"
+  },
+  {
+    "company": "Twilio",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.twilio.com/careers",
+    "candidate_tried": "https://www.twilio.com/en-us/company/jobs",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "known_ats: boards.greenhouse.io/twilio"
+  },
+  {
+    "company": "Grab",
+    "segment": "india_mnc",
+    "career_url": "https://www.grab.careers/en/",
+    "candidate_tried": "https://grab.careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Stripe",
+    "segment": "india_mnc",
+    "career_url": "https://stripe.com/in/jobs",
+    "candidate_tried": "https://stripe.com/jobs",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "known_ats: boards.greenhouse.io/stripe"
+  },
+  {
+    "company": "Intel",
+    "segment": "india_mnc",
+    "career_url": "https://intel.wd1.myworkdayjobs.com/External",
+    "candidate_tried": "https://intel.wd1.myworkdayjobs.com/External",
+    "http_status": 200,
+    "portal_type": "ATS_Workday"
+  },
+  {
+    "company": "SAP",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.sap.com",
+    "candidate_tried": "https://jobs.sap.com",
+    "http_status": 200,
+    "portal_type": "ATS_SAP_SuccessFactors"
+  },
+  {
+    "company": "Myntra",
+    "segment": "india_mnc",
+    "career_url": "https://www.myntra.com/careers",
+    "candidate_tried": "https://myntra.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Qualcomm",
+    "segment": "india_mnc",
+    "career_url": "https://www.qualcomm.com/company/careers",
+    "candidate_tried": "https://www.qualcomm.com/company/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "JPMorgan Chase (Tech)",
+    "segment": "india_mnc",
+    "career_url": "https://www.jpmorganchase.com/careers?redirect=careers_jpm",
+    "candidate_tried": "https://careers.jpmorgan.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Meta",
+    "segment": "india_mnc",
+    "career_url": "https://www.metacareers.com",
+    "candidate_tried": "https://www.metacareers.com",
+    "http_status": null,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "known_ats: metacareers.com - React SPA"
+  },
+  {
+    "company": "Apple",
+    "segment": "india_mnc",
+    "career_url": "https://www.apple.com/careers/us/",
+    "candidate_tried": "https://jobs.apple.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Netflix",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.netflix.com",
+    "candidate_tried": "https://jobs.netflix.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Snap Inc.",
+    "segment": "india_mnc",
+    "career_url": "https://careers.snap.com",
+    "candidate_tried": "https://careers.snap.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "known_ats: snap.com/careers - React SPA"
+  },
+  {
+    "company": "Disney+ Hotstar",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.disneycareers.com/search-jobs/India",
+    "candidate_tried": "https://careers.hotstar.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "rebranded JioStar - Disney careers India"
+  },
+  {
+    "company": "Meesho",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.lever.co/meesho",
+    "candidate_tried": "https://jobs.lever.co/meesho",
+    "http_status": 200,
+    "portal_type": "ATS_Lever"
+  },
+  {
+    "company": "InMobi / Glance",
+    "segment": "india_mnc",
+    "career_url": "https://www.inmobi.com/company/careers",
+    "candidate_tried": "https://www.inmobi.com/company/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "known_ats: boards.greenhouse.io/inmobi"
+  },
+  {
+    "company": "Ola / Ola Electric",
+    "segment": "india_mnc",
+    "career_url": "https://www.olaelectric.com/careers",
+    "candidate_tried": "https://olaelectric.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "MakeMyTrip",
+    "segment": "india_mnc",
+    "career_url": "https://careers.makemytrip.com",
+    "candidate_tried": "https://careers.makemytrip.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Coinbase",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.smartrecruiters.com/Coinbase",
+    "candidate_tried": "https://www.coinbase.com/careers",
+    "http_status": null,
+    "portal_type": "ATS_SmartRecruiters",
+    "classification_source": "corrected: sr/Coinbase"
+  },
+  {
+    "company": "Expedia Group",
+    "segment": "india_mnc",
+    "career_url": "https://careers.expediagroup.com/jobs",
+    "candidate_tried": "https://lifeatexpedia.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: expedia.wd5.myworkdayjobs.com"
+  },
+  {
+    "company": "Zoom Video Communications",
+    "segment": "india_mnc",
+    "career_url": "https://careers.zoom.us",
+    "candidate_tried": "https://careers.zoom.us",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Mastercard",
+    "segment": "india_mnc",
+    "career_url": "https://careers.mastercard.com/us/en",
+    "candidate_tried": "https://careers.mastercard.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Visa",
+    "segment": "india_mnc",
+    "career_url": "https://www.visa.co.in/careers.html",
+    "candidate_tried": "https://careers.visa.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: visa.wd5.myworkdayjobs.com"
+  },
+  {
+    "company": "Rakuten India",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.smartrecruiters.com/Rakuten",
+    "candidate_tried": "https://rakuten.careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: rakuten via Workday"
+  },
+  {
+    "company": "Sony India Software Centre",
+    "segment": "india_mnc",
+    "career_url": "https://sony.wd5.myworkdayjobs.com/sony_global_ext",
+    "candidate_tried": "https://www.sonyindiasoftware.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: sony.wd5.myworkdayjobs.com/sony_global_ext"
+  },
+  {
+    "company": "Goldman Sachs (Tech)",
+    "segment": "india_mnc",
+    "career_url": "https://www.goldmansachs.com/careers",
+    "candidate_tried": "https://www.goldmansachs.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Dell Technologies",
+    "segment": "india_mnc",
+    "career_url": "https://iawmqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/careers",
+    "candidate_tried": "https://jobs.dell.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "custom_tier_override"
+  },
+  {
+    "company": "Samsung R&D Institute",
+    "segment": "india_mnc",
+    "career_url": "https://research.samsung.com/careers",
+    "candidate_tried": "https://research.samsung.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Morgan Stanley (Tech)",
+    "segment": "india_mnc",
+    "career_url": "https://www.morganstanley.com/careers",
+    "candidate_tried": "https://www.morganstanley.com/people-opportunities",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "IBM India",
+    "segment": "india_mnc",
+    "career_url": "https://www.ibm.com/careers",
+    "candidate_tried": "https://www.ibm.com/employment",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Broadcom (VMware)",
+    "segment": "india_mnc",
+    "career_url": "https://www.broadcom.com/company/careers",
+    "candidate_tried": "https://careers.broadcom.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: broadcom.wd1.myworkdayjobs.com"
+  },
+  {
+    "company": "Target India",
+    "segment": "india_mnc",
+    "career_url": "https://corporate.target.com/careers",
+    "candidate_tried": "https://corporate.target.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Tesco Technology",
+    "segment": "india_mnc",
+    "career_url": "https://www.tesco-careers.com",
+    "candidate_tried": "https://www.tesco-careers.com",
+    "http_status": null,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: tesco.wd3.myworkdayjobs.com"
+  },
+  {
+    "company": "Hewlett Packard Enterprise",
+    "segment": "india_mnc",
+    "career_url": "https://careers.hpe.com/us/en",
+    "candidate_tried": "https://careers.hpe.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Philips HealthTech",
+    "segment": "india_mnc",
+    "career_url": "https://www.careers.philips.com/global/en/",
+    "candidate_tried": "https://www.philips.com/a-w/about/careers.html",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: philips.wd3.myworkdayjobs.com"
+  },
+  {
+    "company": "Yahoo! India",
+    "segment": "india_mnc",
+    "career_url": "https://www.yahooinc.com/careers",
+    "candidate_tried": "https://yahoobelieves.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: yahooinc.wd5.myworkdayjobs.com"
+  },
+  {
+    "company": "Coupang India",
+    "segment": "india_mnc",
+    "career_url": "https://boards.greenhouse.io/coupang",
+    "candidate_tried": "https://www.coupang.com/np/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "known_ats: boards.greenhouse.io/coupang"
+  },
+  {
+    "company": "Siemens Technology",
+    "segment": "india_mnc",
+    "career_url": "https://www.siemens.com/en-us/company/jobs/",
+    "candidate_tried": "https://www.siemens.com/global/en/home/company/jobs.html",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Citrix (Cloud Software Group)",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.smartrecruiters.com/CloudSoftwareGroup",
+    "candidate_tried": "https://www.citrix.com/about/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: cloudsoftwaregroup.wd5.myworkdayjobs.com"
+  },
+  {
+    "company": "Trellix",
+    "segment": "india_mnc",
+    "career_url": "https://trellix.wd1.myworkdayjobs.com/External",
+    "candidate_tried": "https://www.trellix.com/en-us/about/careers.html",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: trellix.wd1.myworkdayjobs.com"
+  },
+  {
+    "company": "Juniper Networks",
+    "segment": "india_mnc",
+    "career_url": "https://careers.hpe.com/juniper",
+    "candidate_tried": "https://careers.juniper.net",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Akamai Technologies",
+    "segment": "india_mnc",
+    "career_url": "https://www.akamai.com/careers",
+    "candidate_tried": "https://www.akamai.com/careers",
+    "http_status": null,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: akamai.wd1.myworkdayjobs.com"
+  },
+  {
+    "company": "Thomson Reuters",
+    "segment": "india_mnc",
+    "career_url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site",
+    "candidate_tried": "https://jobs.thomsonreuters.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday"
+  },
+  {
+    "company": "Electronic Arts (EA)",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.ea.com/en_US/careers",
+    "candidate_tried": "https://jobs.ea.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Autodesk",
+    "segment": "india_mnc",
+    "career_url": "https://www.autodesk.com/careers/overview",
+    "candidate_tried": "https://www.autodesk.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Honeywell Technology",
+    "segment": "india_mnc",
+    "career_url": "https://careers.honeywell.com/en/sites/Honeywell",
+    "candidate_tried": "https://careers.honeywell.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Gartner",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.gartner.com",
+    "candidate_tried": "https://jobs.gartner.com",
+    "http_status": null,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: gartner.wd5.myworkdayjobs.com"
+  },
+  {
+    "company": "GE HealthCare",
+    "segment": "india_mnc",
+    "career_url": "https://careers.gehealthcare.com",
+    "candidate_tried": "https://jobs.gehealthcare.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: gehealthcare.wd5.myworkdayjobs.com"
+  },
+  {
+    "company": "Barclays",
+    "segment": "india_mnc",
+    "career_url": "https://home.barclays/careers/",
+    "candidate_tried": "https://home.barclays/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "HP Inc.",
+    "segment": "india_mnc",
+    "career_url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite",
+    "candidate_tried": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite",
+    "http_status": 200,
+    "portal_type": "ATS_Workday"
+  },
+  {
+    "company": "Red Hat",
+    "segment": "india_mnc",
+    "career_url": "https://www.redhat.com/en/jobs",
+    "candidate_tried": "https://www.redhat.com/en/jobs",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Deloitte USI",
+    "segment": "india_mnc",
+    "career_url": "https://www2.deloitte.com/in/en/careers.html",
+    "candidate_tried": "https://careers.deloitte.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Societe Generale (GSC)",
+    "segment": "india_mnc",
+    "career_url": "https://careers.societegenerale.com/",
+    "candidate_tried": "https://careers.societegenerale.com",
+    "http_status": 200,
+    "portal_type": "ATS_Taleo",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Amadeus",
+    "segment": "india_mnc",
+    "career_url": "https://amadeus.com/en/careers/overview",
+    "candidate_tried": "https://jobs.amadeus.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Veritas Technologies",
+    "segment": "india_mnc",
+    "career_url": "https://www.cohesity.com/careers/",
+    "candidate_tried": "https://www.veritas.com/company/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "MathWorks",
+    "segment": "india_mnc",
+    "career_url": "https://www.mathworks.com/company/jobs",
+    "candidate_tried": "https://www.mathworks.com/company/jobs",
+    "http_status": null,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "known_ats: MathWorks custom React portal"
+  },
+  {
+    "company": "NetApp",
+    "segment": "india_mnc",
+    "career_url": "https://careers.netapp.com/",
+    "candidate_tried": "https://careers.netapp.com",
+    "http_status": 200,
+    "portal_type": "ATS_SAP_SuccessFactors",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Bosch Global Tech (BGSW)",
+    "segment": "india_mnc",
+    "career_url": "https://www.bosch.in/careers/",
+    "candidate_tried": "https://www.bosch.in/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Citi (Citibank Tech)",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.citi.com/",
+    "candidate_tried": "https://jobs.citi.com",
+    "http_status": 200,
+    "portal_type": "ATS_Eightfold",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Freshworks",
+    "segment": "india_mnc",
+    "career_url": "https://careers.smartrecruiters.com/Freshworks",
+    "candidate_tried": "https://careers.freshworks.com",
+    "http_status": 200,
+    "portal_type": "ATS_SmartRecruiters"
+  },
+  {
+    "company": "Palo Alto Networks",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.paloaltonetworks.com/en",
+    "candidate_tried": "https://jobs.paloaltonetworks.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Nutanix",
+    "segment": "india_mnc",
+    "career_url": "https://www.nutanix.com/company/careers",
+    "candidate_tried": "https://www.nutanix.com/company/careers",
+    "http_status": null,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: nutanix.wd5.myworkdayjobs.com"
+  },
+  {
+    "company": "Acko",
+    "segment": "india_mnc",
+    "career_url": "https://www.acko.com/careers/",
+    "candidate_tried": "https://www.acko.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Jio Platforms",
+    "segment": "india_mnc",
+    "career_url": "https://careers.jio.com/",
+    "candidate_tried": "https://careers.jio.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Nykaa",
+    "segment": "india_mnc",
+    "career_url": "https://careers.nykaa.com/",
+    "candidate_tried": "https://careers.nykaa.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Sprinklr",
+    "segment": "india_mnc",
+    "career_url": "https://www.sprinklr.com/careers/",
+    "candidate_tried": "https://www.sprinklr.com/life/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Gupshup",
+    "segment": "india_mnc",
+    "career_url": "https://www.gupshup.ai/careers",
+    "candidate_tried": "https://www.gupshup.io/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Splunk (Cisco)",
+    "segment": "india_mnc",
+    "career_url": "https://careers.cisco.com/global/en/splunk",
+    "candidate_tried": "https://www.splunk.com/en_us/careers.html",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "HSBC Technology",
+    "segment": "india_mnc",
+    "career_url": "https://www.hsbc.com/careers",
+    "candidate_tried": "https://www.hsbc.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "CRED",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.lever.co/cred",
+    "candidate_tried": "https://jobs.lever.co/cred",
+    "http_status": 200,
+    "portal_type": "ATS_Lever"
+  },
+  {
+    "company": "Paytm",
+    "segment": "india_mnc",
+    "career_url": "https://paytm.com/careers",
+    "candidate_tried": "https://paytm.com/about-us/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Urban Company",
+    "segment": "india_mnc",
+    "career_url": "https://careers.urbancompany.com",
+    "candidate_tried": "https://www.urbancompany.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Tata Neu (Tata Digital)",
+    "segment": "india_mnc",
+    "career_url": "https://www.tata.com/careers",
+    "candidate_tried": "https://careers.tata.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: careers.tata.com. See https://curl.se/libcurl/c",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Cars24",
+    "segment": "india_mnc",
+    "career_url": "https://www.cars24.com/careers/",
+    "candidate_tried": "https://www.cars24.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Info Edge (Naukri)",
+    "segment": "india_mnc",
+    "career_url": "https://www.naukri.com/jobs-in-infoedge-india-ltd-in-india",
+    "candidate_tried": "https://infoedge.in/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Dream11",
+    "segment": "india_mnc",
+    "career_url": "https://www.dream11.com/careers",
+    "candidate_tried": "https://dream11.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Groww",
+    "segment": "india_mnc",
+    "career_url": "https://groww.in/careers",
+    "candidate_tried": "https://groww.in/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "known_ats: boards.greenhouse.io/groww"
+  },
+  {
+    "company": "Upstox",
+    "segment": "india_mnc",
+    "career_url": "https://upstox.com/careers/",
+    "candidate_tried": "https://upstox.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Games24x7",
+    "segment": "india_mnc",
+    "career_url": "https://www.games24x7.com/careers/",
+    "candidate_tried": "https://www.games24x7.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Perplexity AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/perplexity",
+    "candidate_tried": "https://jobs.ashbyhq.com/perplexity",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Character.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/character",
+    "candidate_tried": "https://jobs.ashbyhq.com/character",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Midjourney",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.midjourney.com/jobs",
+    "candidate_tried": "https://www.midjourney.com/jobs",
+    "http_status": null,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "known_ats: midjourney.com/jobs - custom portal"
+  },
+  {
+    "company": "ElevenLabs",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/elevenlabs",
+    "candidate_tried": "https://jobs.ashbyhq.com/elevenlabs",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Cursor (Anysphere)",
+    "segment": "global_ai_startup",
+    "career_url": "https://cursor.com/careers",
+    "candidate_tried": "https://cursor.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Suno AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/suno",
+    "candidate_tried": "https://suno.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Phind",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.phind.com/",
+    "candidate_tried": "https://www.phind.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Limitless AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/limitless",
+    "candidate_tried": "https://jobs.ashbyhq.com/limitless",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA"
+  },
+  {
+    "company": "Krea AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/krea/",
+    "candidate_tried": "https://www.krea.ai/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Heptabase",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/heptabase",
+    "candidate_tried": "https://jobs.ashbyhq.com/heptabase",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA"
+  },
+  {
+    "company": "InVideo",
+    "segment": "global_ai_startup",
+    "career_url": "https://invideo.io/careers/",
+    "candidate_tried": "https://careers.invideo.io",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: careers.invideo.io. See https://curl.se/libcurl",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Gamma App",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/gamma",
+    "candidate_tried": "https://jobs.ashbyhq.com/gamma",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Captions",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/mirage",
+    "candidate_tried": "https://www.captions.ai/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "HeyGen",
+    "segment": "global_ai_startup",
+    "career_url": "https://boards.greenhouse.io/heygen",
+    "candidate_tried": "https://jobs.ashbyhq.com/heygen",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "manual_verified: job-boards.greenhouse.io/heygen confirmed"
+  },
+  {
+    "company": "The Browser Company",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.thebrowser.company/careers",
+    "candidate_tried": "https://thebrowser.company/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Luma AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://lumalabs.ai/careers",
+    "candidate_tried": "https://lumalabs.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "known_ats: jobs.ashbyhq.com/luma"
+  },
+  {
+    "company": "Jenni AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jenni.ai/careers",
+    "candidate_tried": "https://jenni.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Consensus",
+    "segment": "global_ai_startup",
+    "career_url": "https://consensus.app/home/careers",
+    "candidate_tried": "https://consensus.app/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Glif",
+    "segment": "global_ai_startup",
+    "career_url": "https://glif.app/",
+    "candidate_tried": "https://glif.app/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Decart AI (Oasis)",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/decart",
+    "candidate_tried": "https://jobs.ashbyhq.com/decart",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA"
+  },
+  {
+    "company": "Ideogram",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/ideogram",
+    "candidate_tried": "https://jobs.ashbyhq.com/ideogram",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Pika Labs",
+    "segment": "global_ai_startup",
+    "career_url": "https://pika.art/careers",
+    "candidate_tried": "https://pika.art/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "classification_source": "known_ats: jobs.ashbyhq.com/pika"
+  },
+  {
+    "company": "Viggle AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/viggle",
+    "candidate_tried": "https://www.viggle.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Granola",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.granola.ai/jobs",
+    "candidate_tried": "https://www.granola.so/jobs",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Opal",
+    "segment": "global_ai_startup",
+    "career_url": "https://opalapp.com/careers",
+    "candidate_tried": "https://www.opal.so/jobs",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "AudioPen",
+    "segment": "global_ai_startup",
+    "career_url": "https://audiopen.ai/",
+    "candidate_tried": "https://audiopen.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Poised",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/poised",
+    "candidate_tried": "https://www.poised.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Tavus",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/tavus",
+    "candidate_tried": "https://jobs.ashbyhq.com/tavus",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Rosebud AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://rosebud.ai/",
+    "candidate_tried": "https://www.rosebud.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Morph Studio",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/morph-studio",
+    "candidate_tried": "https://jobs.ashbyhq.com/morph-studio",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA"
+  },
+  {
+    "company": "Hume AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.hume.ai/careers",
+    "candidate_tried": "https://www.hume.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Bland AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.bland.ai/careers",
+    "candidate_tried": "https://www.bland.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Photoroom",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/photoroom",
+    "candidate_tried": "https://www.photoroom.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Opus Clip",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/opusclip",
+    "candidate_tried": "https://www.opus.pro/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Podcastle",
+    "segment": "global_ai_startup",
+    "career_url": "https://async.com/careers",
+    "candidate_tried": "https://podcastle.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Copilot Money",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.copilot.money/careers",
+    "candidate_tried": "https://copilot.money/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Reka AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://reka.ai/careers",
+    "candidate_tried": "https://reka.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Play.ht",
+    "segment": "global_ai_startup",
+    "career_url": "https://apply.workable.com/play-ai",
+    "candidate_tried": "https://play.ht/jobs",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: play.ht. See https://curl.se/libcurl/c/libcurl-",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Lex (Every)",
+    "segment": "global_ai_startup",
+    "career_url": "https://every.to/",
+    "candidate_tried": "https://every.to/jobs",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Cognition AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://cognition.ai/careers",
+    "candidate_tried": "https://www.cognition.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Speak",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.speak.com/careers",
+    "candidate_tried": "https://www.speak.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Julius AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/julius?utm_source=b7Q8WxXqpk",
+    "candidate_tried": "https://julius.ai/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "classification_source": "curl_cffi_redirect_url"
+  },
+  {
+    "company": "Jan AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jan.ai/",
+    "candidate_tried": "https://jan.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Type",
+    "segment": "global_ai_startup",
+    "career_url": "https://type.ai/",
+    "candidate_tried": "https://type.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "You.com",
+    "segment": "global_ai_startup",
+    "career_url": "https://you.com/careers",
+    "candidate_tried": "https://you.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Fathom",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/fathom",
+    "candidate_tried": "https://jobs.ashbyhq.com/fathom",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Poe (Quora)",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.quora.com/careers/",
+    "candidate_tried": "https://www.quora.com/about/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Otter.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://otter.ai/careers",
+    "candidate_tried": "https://otter.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "QuillBot",
+    "segment": "global_ai_startup",
+    "career_url": "https://job-boards.greenhouse.io/quillbot",
+    "candidate_tried": "https://boards.greenhouse.io/quillbot",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse"
+  },
+  {
+    "company": "Minion AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://minion.ai/careers",
+    "candidate_tried": "https://minion.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Leonardo.AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/leonardo-ai",
+    "candidate_tried": "https://jobs.ashbyhq.com/leonardo-ai",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA"
+  },
+  {
+    "company": "Sizzle AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.linkedin.com/company/sizzle-ai-inc/",
+    "candidate_tried": "https://sizzle.ai/careers",
+    "http_status": 999,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: sizzle.ai. See https://curl.se/libcurl/c/libcur",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Talkie AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.talkie-ai.com/",
+    "candidate_tried": "https://www.talkie-ai.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Superwhisper",
+    "segment": "global_ai_startup",
+    "career_url": "https://superwhisper.com/careers",
+    "candidate_tried": "https://superwhisper.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "MyShell",
+    "segment": "global_ai_startup",
+    "career_url": "https://job-boards.greenhouse.io/myshell",
+    "candidate_tried": "https://jobs.ashbyhq.com/myshell",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Andi Search",
+    "segment": "global_ai_startup",
+    "career_url": "https://andisearch.com/",
+    "candidate_tried": "https://andisearch.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Magical",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/magical",
+    "candidate_tried": "https://www.getmagical.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Voicify AI (Jammable)",
+    "segment": "global_ai_startup",
+    "career_url": "https://voicify.com/company/careers/software-developer",
+    "candidate_tried": "https://jammable.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Reface",
+    "segment": "global_ai_startup",
+    "career_url": "https://apply.workable.com/reface",
+    "candidate_tried": "https://reface.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Lovo.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://lovo.ai/",
+    "candidate_tried": "https://lovo.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Genspark",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/genspark",
+    "candidate_tried": "https://jobs.ashbyhq.com/genspark",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby"
+  },
+  {
+    "company": "Tome",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/tome",
+    "candidate_tried": "https://tome.app/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Confido Health",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/confido",
+    "candidate_tried": "https://confidohealth.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Dot (New Computer)",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/new-computer",
+    "candidate_tried": "https://jobs.ashbyhq.com/new-computer",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA"
+  },
+  {
+    "company": "Gushwork AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.lever.co/gushwork",
+    "candidate_tried": "https://www.gushwork.ai/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Lever",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Rive",
+    "segment": "global_ai_startup",
+    "career_url": "https://apply.workable.com/rivecareers/",
+    "candidate_tried": "https://rive.app/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workable",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "CodiumAI (Qodo)",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.qodo.ai/careers/",
+    "candidate_tried": "https://www.codium.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Linum AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/linum",
+    "candidate_tried": "https://jobs.ashbyhq.com/linum",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA"
+  },
+  {
+    "company": "Nekton AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://nekton.ai/",
+    "candidate_tried": "https://nekton.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Jivi",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.jivi.ai/careers",
+    "candidate_tried": "https://www.jivi.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Descript",
+    "segment": "global_ai_startup",
+    "career_url": "https://job-boards.greenhouse.io/descript",
+    "candidate_tried": "https://www.descript.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Chai AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.chai-research.com/",
+    "candidate_tried": "https://www.chai-research.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Voicenotes",
+    "segment": "global_ai_startup",
+    "career_url": "https://voicenotes.com/",
+    "candidate_tried": "https://voicenotes.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Monica AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://monica.im/",
+    "candidate_tried": "https://monica.im/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workable",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "HyperWrite",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/hyperwrite",
+    "candidate_tried": "https://hyperwriteai.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Mindy AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://mindy.ai/login?next=/careers",
+    "candidate_tried": "https://mindy.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Veed.io",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.veed.io/jobs",
+    "candidate_tried": "https://www.veed.io/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workable",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Sana Labs",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/sana-roles",
+    "candidate_tried": "https://www.sanalabs.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "NovelAI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.lever.co/Anlatan",
+    "candidate_tried": "https://novelai.net/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Kaiber.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://kaiber.ai/careers",
+    "candidate_tried": "https://kaiber.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Hedra AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/hedra",
+    "candidate_tried": "https://www.hedra.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Kling AI (Kuaishou)",
+    "segment": "global_ai_startup",
+    "career_url": "https://klingai.com/careers",
+    "candidate_tried": "https://klingai.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Hailuo AI (MiniMax)",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.minimax.io/careers",
+    "candidate_tried": "https://www.minimax.io/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Harmonic",
+    "segment": "global_ai_startup",
+    "career_url": "https://job-boards.greenhouse.io/harmonic",
+    "candidate_tried": "https://harmonic.ai/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "LM Arena (LMSYS)",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/lmarena",
+    "candidate_tried": "https://jobs.ashbyhq.com/lmarena",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA"
+  },
+  {
+    "company": "Sider AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://sider.ai/",
+    "candidate_tried": "https://sider.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Epicenter",
+    "segment": "global_ai_startup",
+    "career_url": "https://epicenter.so/careers",
+    "candidate_tried": "https://epicenter.so/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Rask AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://apply.workable.com/rask-ai",
+    "candidate_tried": "https://www.rask.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "D-ID",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.d-id.com/careers",
+    "candidate_tried": "https://www.d-id.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workable",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Klap",
+    "segment": "global_ai_startup",
+    "career_url": "https://klap.app/",
+    "candidate_tried": "https://klap.app/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Thinking Machines Lab",
+    "segment": "global_ai_startup",
+    "career_url": "https://job-boards.greenhouse.io/thinkingmachines",
+    "candidate_tried": "https://jobs.ashbyhq.com/thinking-machines",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Blue AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://blue.ai/",
+    "candidate_tried": "https://blue.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Meteor AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://meteor.ai/",
+    "candidate_tried": "https://meteor.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Cocreate AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/cocreate",
+    "candidate_tried": "https://jobs.ashbyhq.com/cocreate",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA"
+  },
+  {
+    "company": "Interface AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://job-boards.greenhouse.io/interfaceai",
+    "candidate_tried": "https://interface.ai/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Udio",
+    "segment": "global_ai_startup",
+    "career_url": "https://job-boards.greenhouse.io/udio",
+    "candidate_tried": "https://www.udio.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse"
+  },
+  {
+    "company": "OpenRouter",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/openrouter",
+    "candidate_tried": "https://openrouter.ai/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Clay (CRM)",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/claylabs",
+    "candidate_tried": "https://www.clay.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Listen Labs",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/listenlabs",
+    "candidate_tried": "https://listenlabs.ai/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "classification_source": "agent_verified"
+  },
+  {
+    "company": "Vanna AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://vanna.ai/",
+    "candidate_tried": "https://vanna.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Careem",
+    "segment": "dubai_visa",
+    "career_url": "https://jobs.careem.com/",
+    "candidate_tried": "https://boards.greenhouse.io/careem",
+    "http_status": 200,
+    "portal_type": "ATS_Greenhouse",
+    "classification_source": "known_ats: boards.greenhouse.io/careem"
+  },
+  {
+    "company": "Noon",
+    "segment": "dubai_visa",
+    "career_url": "https://apply.workable.com/nooncom",
+    "candidate_tried": "https://careers.noon.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "known_ats: noon.com/careers - custom SPA"
+  },
+  {
+    "company": "Talabat",
+    "segment": "dubai_visa",
+    "career_url": "https://apply.workable.com/talabat",
+    "candidate_tried": "https://jobs.talabat.com",
+    "http_status": 200,
+    "portal_type": "ATS_Workable",
+    "classification_source": "corrected: workable/talabat"
+  },
+  {
+    "company": "Majid Al Futtaim (MAF)",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.majidalfuttaim.com/global/en",
+    "candidate_tried": "https://careers.majidalfuttaim.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Binance",
+    "segment": "dubai_visa",
+    "career_url": "https://jobs.lever.co/binance",
+    "candidate_tried": "https://jobs.lever.co/binance",
+    "http_status": 200,
+    "portal_type": "ATS_Lever"
+  },
+  {
+    "company": "Crypto.com",
+    "segment": "dubai_visa",
+    "career_url": "https://crypto.com/en/careers",
+    "candidate_tried": "https://crypto.com/en/careers.html",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (28) Connection timed out after 12001 milliseconds. See https://curl.se/lib",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Kitopi",
+    "segment": "dubai_visa",
+    "career_url": "https://www.kitopi.com/careers",
+    "candidate_tried": "https://www.kitopi.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Yassir",
+    "segment": "dubai_visa",
+    "career_url": "https://jobs.lever.co/Yassir",
+    "candidate_tried": "https://yassir.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Astra Tech (Botim)",
+    "segment": "dubai_visa",
+    "career_url": "https://astratech.ae/careers",
+    "candidate_tried": "https://www.astratech.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: www.astratech.com. See https://curl.se/libcurl/",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Tether",
+    "segment": "dubai_visa",
+    "career_url": "https://tether.to/en/careers",
+    "candidate_tried": "https://tether.to/en/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Property Finder",
+    "segment": "dubai_visa",
+    "career_url": "https://propertyfinder.teamtailor.com/jobs",
+    "candidate_tried": "https://www.propertyfinder.ae/en/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Teamtailor",
+    "classification_source": "corrected: teamtailor/propertyfinder"
+  },
+  {
+    "company": "Dubizzle (EMPG)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.dubizzle.com/careers/",
+    "candidate_tried": "https://careers.dubizzle.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: careers.dubizzle.com. See https://curl.se/libcu",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Wio Bank",
+    "segment": "dubai_visa",
+    "career_url": "https://wio.io/careers",
+    "candidate_tried": "https://www.wio.io/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Deliveroo UAE",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.deliveroo.co.uk/",
+    "candidate_tried": "https://careers.deliveroo.co.uk",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Mashreq Neo (Mashreq)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.mashreq.com/en/uae/about-us/careers/",
+    "candidate_tried": "https://www.mashreqbank.com/uae/en/about-us/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Baraka",
+    "segment": "dubai_visa",
+    "career_url": "https://getbaraka.com/careers",
+    "candidate_tried": "https://getbaraka.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Chalhoub Group",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.chalhoubgroup.com/",
+    "candidate_tried": "https://careers.chalhoubgroup.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Al Tayer Digital (Ounass)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.altayer.com/careers",
+    "candidate_tried": "https://www.altayergroup.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Landmark Group",
+    "segment": "dubai_visa",
+    "career_url": "https://apply.workable.com/landmarkgroup",
+    "candidate_tried": "https://landmarkgroup.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Postpay",
+    "segment": "dubai_visa",
+    "career_url": "https://www.linkedin.com/company/postpay/",
+    "candidate_tried": "https://postpay.io/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: postpay.io. See https://curl.se/libcurl/c/libcu",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Revolut",
+    "segment": "dubai_visa",
+    "career_url": "https://www.revolut.com/careers/",
+    "candidate_tried": "https://www.revolut.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Almosafer",
+    "segment": "dubai_visa",
+    "career_url": "https://global.almosafer.com/en/careers",
+    "candidate_tried": "https://www.almosafer.com/en/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "webook.com",
+    "segment": "dubai_visa",
+    "career_url": "https://webook.com/en/careers",
+    "candidate_tried": "https://webook.com/en/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Qlub",
+    "segment": "dubai_visa",
+    "career_url": "https://qlub.io/careers",
+    "candidate_tried": "https://qlub.io/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Sarwa",
+    "segment": "dubai_visa",
+    "career_url": "https://www.sarwa.co/careers",
+    "candidate_tried": "https://www.sarwa.co/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "SmartCrowd",
+    "segment": "dubai_visa",
+    "career_url": "https://apply.workable.com/smartcrowd?lng=en",
+    "candidate_tried": "https://www.smartcrowd.ae/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Emirates Group",
+    "segment": "dubai_visa",
+    "career_url": "https://www.emiratesgroupcareers.com/",
+    "candidate_tried": "https://www.emiratesgroupcareers.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Flydubai",
+    "segment": "dubai_visa",
+    "career_url": "https://jobs.smartrecruiters.com/Flydubai",
+    "candidate_tried": "https://www.flydubai.com/en/flying-with-us/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "known_ats: flydubai.com/en/careers - custom"
+  },
+  {
+    "company": "Emaar Properties (Digital)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.emaar.com/en/careers",
+    "candidate_tried": "https://www.emaar.com/en/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Lean Technologies",
+    "segment": "dubai_visa",
+    "career_url": "https://www.leantech.me/uae/en/careers",
+    "candidate_tried": "https://www.leantech.me/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Tabby",
+    "segment": "dubai_visa",
+    "career_url": "https://tabby.ai/en-AE/careers",
+    "candidate_tried": "https://tabby.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Tamara",
+    "segment": "dubai_visa",
+    "career_url": "https://tamara.co/en-sa/careers",
+    "candidate_tried": "https://tamara.co/en/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Anghami",
+    "segment": "dubai_visa",
+    "career_url": "https://anghami.zenats.com/en/careers_page",
+    "candidate_tried": "https://www.anghami.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Trukker",
+    "segment": "dubai_visa",
+    "career_url": "https://trukker.com/careers",
+    "candidate_tried": "https://trukker.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Alshaya Group (Digital)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.alshaya.com/en/careers/",
+    "candidate_tried": "https://careers.alshaya.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "GrubTech",
+    "segment": "dubai_visa",
+    "career_url": "https://www.grubtech.com/careers",
+    "candidate_tried": "https://www.grubtech.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Tarabut Gateway",
+    "segment": "dubai_visa",
+    "career_url": "https://tarabut.com/",
+    "candidate_tried": "https://tarabut.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "BitOasis",
+    "segment": "dubai_visa",
+    "career_url": "https://bitoasis.net/en/careers",
+    "candidate_tried": "https://bitoasis.net/en/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Eyewa",
+    "segment": "dubai_visa",
+    "career_url": "https://eyewa.com/ae-en/careers",
+    "candidate_tried": "https://www.eyewa.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Mumzworld",
+    "segment": "dubai_visa",
+    "career_url": "https://apply.workable.com/mumzworld",
+    "candidate_tried": "https://www.mumzworld.com/en/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Bayut",
+    "segment": "dubai_visa",
+    "career_url": "https://jobs.smartrecruiters.com/Bayut1",
+    "candidate_tried": "https://www.bayut.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_SmartRecruiters",
+    "classification_source": "corrected: sr/Bayut1"
+  },
+  {
+    "company": "Fetchr",
+    "segment": "dubai_visa",
+    "career_url": "https://fetchr.com/careers/",
+    "candidate_tried": "https://www.fetchr.us/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Desert Control",
+    "segment": "dubai_visa",
+    "career_url": "https://desertcontrol.com/careers/",
+    "candidate_tried": "https://desertcontrol.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Cari",
+    "segment": "dubai_visa",
+    "career_url": "https://www.linkedin.com/company/get-cari/",
+    "candidate_tried": "https://www.cari.ae/careers",
+    "http_status": 999,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: www.cari.ae. See https://curl.se/libcurl/c/libc",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Swvl",
+    "segment": "dubai_visa",
+    "career_url": "https://apply.workable.com/swvl",
+    "candidate_tried": "https://www.swvl.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Denarii Cash",
+    "segment": "dubai_visa",
+    "career_url": "https://www.linkedin.com/company/denarii-cash/",
+    "candidate_tried": "https://denariicash.com/careers",
+    "http_status": 999,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: denariicash.com. See https://curl.se/libcurl/c/",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Netaq",
+    "segment": "dubai_visa",
+    "career_url": "https://netaq.ae/careers/",
+    "candidate_tried": "https://netaq.ae/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Sprii",
+    "segment": "dubai_visa",
+    "career_url": "https://www.sprii.com/careers",
+    "candidate_tried": "https://www.sprii.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Eureeca",
+    "segment": "dubai_visa",
+    "career_url": "https://eureeca.com/careers",
+    "candidate_tried": "https://eureeca.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Beehive",
+    "segment": "dubai_visa",
+    "career_url": "https://www.beehive.ae/",
+    "candidate_tried": "https://www.beehive.ae/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Network International",
+    "segment": "dubai_visa",
+    "career_url": "https://www.networkinternational.ae/en/about/careers",
+    "candidate_tried": "https://www.networkinternational.ae/en/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Commercial Bank of Dubai (CBD)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.cbd.ae/home/contact-us/careers",
+    "candidate_tried": "https://www.cbd.ae/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Invygo",
+    "segment": "dubai_visa",
+    "career_url": "https://apply.workable.com/invygo",
+    "candidate_tried": "https://www.invygo.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Zand Bank",
+    "segment": "dubai_visa",
+    "career_url": "https://www.zand.ae/",
+    "candidate_tried": "https://www.zand.ae/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "ServiceMarket",
+    "segment": "dubai_visa",
+    "career_url": "https://servicemarket.com/en/careers",
+    "candidate_tried": "https://www.servicemarket.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Huspy",
+    "segment": "dubai_visa",
+    "career_url": "https://www.huspy.com/careers",
+    "candidate_tried": "https://www.huspy.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Hala",
+    "segment": "dubai_visa",
+    "career_url": "https://hala.com/careers",
+    "candidate_tried": "https://hala.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Rain",
+    "segment": "dubai_visa",
+    "career_url": "https://rain.bh/",
+    "candidate_tried": "https://rain.bh/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Salla",
+    "segment": "dubai_visa",
+    "career_url": "https://salla.com/en/careers",
+    "candidate_tried": "https://salla.sa/careers",
+    "http_status": 200,
+    "portal_type": "Tier3_ProtectedAPI",
+    "classification_source": "curl_cffi_403"
+  },
+  {
+    "company": "Liv. Bank (Emirates NBD)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.liv.me/careers",
+    "candidate_tried": "https://www.liv.me/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Hoxton Wealth",
+    "segment": "dubai_visa",
+    "career_url": "https://hoxtonwealth.com/company/careers",
+    "candidate_tried": "https://hoxtonwealth.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Life Pharmacy",
+    "segment": "dubai_visa",
+    "career_url": "https://www.lifepharmacy.com/careers",
+    "candidate_tried": "https://www.lifepharmacy.com/en/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Yalla Group",
+    "segment": "dubai_visa",
+    "career_url": "https://www.yalla.com/careers",
+    "candidate_tried": "https://www.yallagroup.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "The Open Platform (TOP)",
+    "segment": "dubai_visa",
+    "career_url": "https://jobs.ton.org/companies/the-open-platform-2",
+    "candidate_tried": "https://toplatform.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: toplatform.com. See https://curl.se/libcurl/c/l",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Erad",
+    "segment": "dubai_visa",
+    "career_url": "https://www.linkedin.com/jobs/erad-jobs-worldwide?f_C=80444776",
+    "candidate_tried": "https://erad.co/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Bamboo Card",
+    "segment": "dubai_visa",
+    "career_url": "https://bamboocard.com/careers",
+    "candidate_tried": "https://bamboocard.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "ZainTECH",
+    "segment": "dubai_visa",
+    "career_url": "https://zaintech.com/en/careers",
+    "candidate_tried": "https://zaintech.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Midis Group",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.midisgroup.com/",
+    "candidate_tried": "https://www.midisgroup.com/careers",
+    "http_status": 200,
+    "portal_type": "ATS_SAP_SuccessFactors",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Future Group",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.smartrecruiters.com/FutureGroup1",
+    "candidate_tried": "https://futuregroup.ae/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "KreupAI Technologies",
+    "segment": "dubai_visa",
+    "career_url": "https://www.linkedin.com/company/kreupai-technologies-llc/",
+    "candidate_tried": "https://kreupai.com/careers",
+    "http_status": 999,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: kreupai.com. See https://curl.se/libcurl/c/libc",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Lenskart (Middle East Hub)",
+    "segment": "dubai_visa",
+    "career_url": "https://ainterviews.com/job_board/lenskart_ho/",
+    "candidate_tried": "https://careers.lenskart.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Paymentology",
+    "segment": "dubai_visa",
+    "career_url": "https://apply.workable.com/paymentology",
+    "candidate_tried": "https://www.paymentology.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Amana Capital",
+    "segment": "dubai_visa",
+    "career_url": "https://www.amana-capital.com/en/careers",
+    "candidate_tried": "https://www.amana.inc/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: www.amana.inc. See https://curl.se/libcurl/c/li",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Edfundo",
+    "segment": "dubai_visa",
+    "career_url": "https://edfundo.com/careers/",
+    "candidate_tried": "https://edfundo.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Opontia",
+    "segment": "dubai_visa",
+    "career_url": "https://www.careers-page.com/opontia-careers",
+    "candidate_tried": "https://opontia.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Seva Stories",
+    "segment": "dubai_visa",
+    "career_url": "https://www.linkedin.com/company/sevaexperience/",
+    "candidate_tried": "https://seva.ae/careers",
+    "http_status": 999,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (35) TLS connect error: error:10000458:SSL routines:OPENSSL_internal:TLSV1_",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Telr",
+    "segment": "dubai_visa",
+    "career_url": "https://apply.workable.com/telr",
+    "candidate_tried": "https://telr.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Nomod",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.nomod.com/",
+    "candidate_tried": "https://nomod.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Wakecap",
+    "segment": "dubai_visa",
+    "career_url": "https://www.wakecap.com/careers",
+    "candidate_tried": "https://wakecap.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Klaim",
+    "segment": "dubai_visa",
+    "career_url": "https://klaim.ai/",
+    "candidate_tried": "https://klaim.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Bybit",
+    "segment": "dubai_visa",
+    "career_url": "https://www.bybit.com/en/careers/",
+    "candidate_tried": "https://careers.bybit.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "known_ats: bybit.com/en/careers - custom SPA"
+  },
+  {
+    "company": "Mamo Pay",
+    "segment": "dubai_visa",
+    "career_url": "https://www.mamopay.com/careers/jobs/explore",
+    "candidate_tried": "https://mamo.io/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: mamo.io. See https://curl.se/libcurl/c/libcurl-",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "OKX Middle East",
+    "segment": "dubai_visa",
+    "career_url": "https://www.okx.com/careers",
+    "candidate_tried": "https://www.okx.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (28) Connection timed out after 12001 milliseconds. See https://curl.se/lib",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "PureHealth",
+    "segment": "dubai_visa",
+    "career_url": "https://www.purehealth.ae/careers",
+    "candidate_tried": "https://purehealth.ae/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "The Luxury Closet",
+    "segment": "dubai_visa",
+    "career_url": "https://theluxurycloset.com/careers",
+    "candidate_tried": "https://www.theluxurycloset.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Justlife (Justmop)",
+    "segment": "dubai_visa",
+    "career_url": "http://career.justlife.com",
+    "candidate_tried": "https://justlife.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Zywa",
+    "segment": "dubai_visa",
+    "career_url": "https://zywa.app/careers",
+    "candidate_tried": "https://zywa.app/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "StashAway",
+    "segment": "dubai_visa",
+    "career_url": "https://www.stashaway.sg/careers",
+    "candidate_tried": "https://www.stashaway.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Deriv",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.deriv.com/",
+    "candidate_tried": "https://deriv.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Daman Insurance",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.smartrecruiters.com/Daman",
+    "candidate_tried": "https://www.damanhealth.ae/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "Starzplay",
+    "segment": "dubai_visa",
+    "career_url": "https://starzplay.com/careers",
+    "candidate_tried": "https://starzplay.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "InstaShop",
+    "segment": "dubai_visa",
+    "career_url": "https://instashop.com/careers",
+    "candidate_tried": "https://www.instashop.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Emirates NBD (Digital Hub)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.emiratesnbd.com/en/careers",
+    "candidate_tried": "https://www.emiratesnbd.com/en/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "First Abu Dhabi Bank (FAB Tech)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.bankfab.com/en-ae/about-fab/careers",
+    "candidate_tried": "https://www.bankfab.com/en-ae/about-fab/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "curl_cffi_body"
+  },
+  {
+    "company": "Al Futtaim Group (Digital)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.alfuttaim.com/en/careers",
+    "candidate_tried": "https://careers.alfuttaim.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "fetch_error": "Failed to perform, curl: (6) Could not resolve host: careers.alfuttaim.com. See https://curl.se/libc",
+    "classification_source": "fallback_tier2"
+  },
+  {
+    "company": "GEMS EdTech",
+    "segment": "dubai_visa",
+    "career_url": "https://www.gemseducation.com/careers",
+    "candidate_tried": "https://gemsworld.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "known_ats: gemsworld.com/careers"
+  },
+  {
+    "company": "Seera Group",
+    "segment": "dubai_visa",
+    "career_url": "https://www.seeragroup.com/en/careers",
+    "candidate_tried": "https://www.seeragroup.com/en/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: seera via Workday"
+  },
+  {
+    "company": "Omnix International",
+    "segment": "dubai_visa",
+    "career_url": "https://omnix.com/careers/",
+    "candidate_tried": "https://omnix.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "known_ats: omnix.com/careers"
+  },
+  {
+    "company": "Cigna Middle East",
+    "segment": "dubai_visa",
+    "career_url": "https://www.cigna.com/careers",
+    "candidate_tried": "https://www.cigna.ae/about-us/careers",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "classification_source": "known_ats: cigna.wd5.myworkdayjobs.com"
+  },
+  {
+    "company": "YallaHub",
+    "segment": "dubai_visa",
+    "career_url": "https://yallahub.com/careers",
+    "candidate_tried": "https://yallahub.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "classification_source": "known_ats: jobs.ashbyhq.com/yallahub"
+  },
+  {
+    "company": "Postman",
+    "segment": "india_mnc",
+    "career_url": "https://www.postman.com/company/careers/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.postman.com/careers"
+  },
+  {
+    "company": "BrowserStack",
+    "segment": "india_mnc",
+    "career_url": "https://www.browserstack.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.browserstack.com/careers"
+  },
+  {
+    "company": "Innovaccer",
+    "segment": "india_mnc",
+    "career_url": "https://innovaccer.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://innovaccer.com/careers"
+  },
+  {
+    "company": "Chargebee",
+    "segment": "india_mnc",
+    "career_url": "https://jobs.chargebee.com/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.chargebee.com"
+  },
+  {
+    "company": "Druva",
+    "segment": "india_mnc",
+    "career_url": "https://www.druva.com/why-druva/explore/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.druva.com/careers"
+  },
+  {
+    "company": "HighRadius",
+    "segment": "india_mnc",
+    "career_url": "https://www.highradius.com/careers/",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "source_candidate": "https://www.highradius.com/careers"
+  },
+  {
+    "company": "CleverTap",
+    "segment": "india_mnc",
+    "career_url": "https://clevertap.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://clevertap.com/careers"
+  },
+  {
+    "company": "Icertis",
+    "segment": "india_mnc",
+    "career_url": "https://www.icertis.com/company/careers/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.icertis.com/careers"
+  },
+  {
+    "company": "Zenoti",
+    "segment": "india_mnc",
+    "career_url": "https://www.zenoti.com/company/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.zenoti.com/careers"
+  },
+  {
+    "company": "Pine Labs",
+    "segment": "india_mnc",
+    "career_url": "https://www.pinelabs.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.pinelabs.com/careers"
+  },
+  {
+    "company": "Darwinbox",
+    "segment": "india_mnc",
+    "career_url": "https://darwinbox.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.darwinbox.com"
+  },
+  {
+    "company": "Whatfix",
+    "segment": "india_mnc",
+    "career_url": "https://whatfix.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://whatfix.com/careers"
+  },
+  {
+    "company": "LeadSquared",
+    "segment": "india_mnc",
+    "career_url": "https://www.leadsquared.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.leadsquared.com/careers"
+  },
+  {
+    "company": "Porter",
+    "segment": "india_mnc",
+    "career_url": "https://porter.in/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.porter.in"
+  },
+  {
+    "company": "Capillary Technologies",
+    "segment": "india_mnc",
+    "career_url": "https://www.capillarytech.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.capillarytech.com/careers"
+  },
+  {
+    "company": "Khatabook",
+    "segment": "india_mnc",
+    "career_url": "https://khatabook.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://khatabook.com/careers"
+  },
+  {
+    "company": "Classplus",
+    "segment": "india_mnc",
+    "career_url": "https://classplusapp.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.classplusapp.com"
+  },
+  {
+    "company": "Uniphore",
+    "segment": "india_mnc",
+    "career_url": "https://www.uniphore.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.uniphore.com/careers"
+  },
+  {
+    "company": "Hubilo",
+    "segment": "india_mnc",
+    "career_url": "https://careers.hubilo.com",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://careers.hubilo.com"
+  },
+  {
+    "company": "Shadowfax",
+    "segment": "india_mnc",
+    "career_url": "https://www.shadowfax.in/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.shadowfax.in/careers"
+  },
+  {
+    "company": "Venice AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://venice.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://venice.ai/careers"
+  },
+  {
+    "company": "Sekai",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/sekai",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "source_candidate": "https://jobs.ashbyhq.com/sekai"
+  },
+  {
+    "company": "222",
+    "segment": "global_ai_startup",
+    "career_url": "https://careers.222.place",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.222.place"
+  },
+  {
+    "company": "Boomy",
+    "segment": "global_ai_startup",
+    "career_url": "https://careers.boomy.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.boomy.com"
+  },
+  {
+    "company": "Welcome AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.welcome.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.welcome.ai/careers"
+  },
+  {
+    "company": "Inflection AI (Pi)",
+    "segment": "global_ai_startup",
+    "career_url": "https://inflection.ai/about",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://inflection.ai/careers"
+  },
+  {
+    "company": "Rewatch",
+    "segment": "global_ai_startup",
+    "career_url": "https://careers.rewatch.com",
+    "http_status": 0,
+    "portal_type": "URL_Not_Verified",
+    "source_candidate": "https://careers.rewatch.com"
+  },
+  {
+    "company": "MindOS",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.mindverse.ai",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://mindos.com/careers"
+  },
+  {
+    "company": "Flowith",
+    "segment": "global_ai_startup",
+    "career_url": "https://apply.workable.com/flowith/",
+    "http_status": 200,
+    "portal_type": "ATS_Workable",
+    "source_candidate": "https://flowith.io/careers"
+  },
+  {
+    "company": "Vetted AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://wellfound.com/company/vettedai",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://vetted.ai/jobs"
+  },
+  {
+    "company": "Visily",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.visily.ai/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.visily.ai/careers"
+  },
+  {
+    "company": "Cody AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://meetcody.ai/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://meetcody.ai/careers"
+  },
+  {
+    "company": "Personal AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://careers.personal.ai",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.personal.ai"
+  },
+  {
+    "company": "Inworld AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://inworld.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://inworld.ai/careers"
+  },
+  {
+    "company": "Replika",
+    "segment": "global_ai_startup",
+    "career_url": "https://careers.replika.com/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.replika.com/"
+  },
+  {
+    "company": "Mirror AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.gritbrokerage.com/inquiry",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.mirror.ai"
+  },
+  {
+    "company": "Mapify",
+    "segment": "global_ai_startup",
+    "career_url": "https://careers.mapify.cc",
+    "http_status": 0,
+    "portal_type": "URL_Not_Verified",
+    "source_candidate": "https://careers.mapify.cc"
+  },
+  {
+    "company": "Glow AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/glow",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "source_candidate": "https://jobs.ashbyhq.com/glow"
+  },
+  {
+    "company": "Swell",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.swell.life/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.swell.life/careers"
+  },
+  {
+    "company": "Kindo AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.kindo.ai/company",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://kindo.ai/team"
+  },
+  {
+    "company": "Dukkantek",
+    "segment": "dubai_visa",
+    "career_url": "https://www.dukkantek.com/",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.dukkantek.com"
+  },
+  {
+    "company": "Kibsons (Digital Hub)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.kibsons.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.kibsons.com/careers"
+  },
+  {
+    "company": "Cashew Payments",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.cashewpayments.com",
+    "http_status": 0,
+    "portal_type": "URL_Not_Verified",
+    "source_candidate": "https://careers.cashewpayments.com"
+  },
+  {
+    "company": "Smiles (by e&)",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.etisalat.ae/",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.smiles.etisalat.ae"
+  },
+  {
+    "company": "CoinMENA",
+    "segment": "dubai_visa",
+    "career_url": "https://www.coinmena.com/en",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.coinmena.com"
+  },
+  {
+    "company": "FlexxPay",
+    "segment": "dubai_visa",
+    "career_url": "https://flexxpay.com/",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.flexxpay.com"
+  },
+  {
+    "company": "Now Money",
+    "segment": "dubai_visa",
+    "career_url": "https://nowmoney.me/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://nowmoney.me/careers"
+  },
+  {
+    "company": "Yallacompare",
+    "segment": "dubai_visa",
+    "career_url": "https://yallacompare.com/uae/en/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://yallacompare.com/careers"
+  },
+  {
+    "company": "Emaratech",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.emaratech.ae/zajel/job/Dubai-Bike-Courier/732972322/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.emaratech.ae/zajel/job/Dubai-Bike-Courier/732972322/"
+  },
+  {
+    "company": "Cartlow",
+    "segment": "dubai_visa",
+    "career_url": "https://www.cartlow.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.cartlow.com/careers"
+  },
+  {
+    "company": "Snoonu (Dubai Hub)",
+    "segment": "dubai_visa",
+    "career_url": "https://snoonu.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://snoonu.com"
+  },
+  {
+    "company": "Algbra (MENA Hub)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.algbra.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.algbra.com/careers"
+  },
+  {
+    "company": "Derq",
+    "segment": "dubai_visa",
+    "career_url": "https://en.derq.com/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://derq.com"
+  },
+  {
+    "company": "Carasti",
+    "segment": "dubai_visa",
+    "career_url": "https://carasti.com/AE/en",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://carasti.com/careers"
+  },
+  {
+    "company": "Wellx AI",
+    "segment": "dubai_visa",
+    "career_url": "https://wellxai.com/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.wellxai.com"
+  },
+  {
+    "company": "Zenda",
+    "segment": "dubai_visa",
+    "career_url": "https://www.zenda.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.zenda.com"
+  },
+  {
+    "company": "Supy",
+    "segment": "dubai_visa",
+    "career_url": "https://supy.io/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.supy.io/careers"
+  },
+  {
+    "company": "Mulk Health",
+    "segment": "dubai_visa",
+    "career_url": "https://mulkhealth.com/",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.mulkhealth.com"
+  },
+  {
+    "company": "Pemo",
+    "segment": "dubai_visa",
+    "career_url": "https://pemo.me/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.pemo.me"
+  },
+  {
+    "company": "Urbanic (MENA)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.urbanic.com/",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.shopurbanic.com"
+  },
+  {
+    "company": "MoEngage",
+    "segment": "india_mnc",
+    "career_url": "https://www.moengage.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.moengage.com/careers"
+  },
+  {
+    "company": "Wingify",
+    "segment": "india_mnc",
+    "career_url": "https://wingify.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://wingify.com/careers"
+  },
+  {
+    "company": "Shiprocket",
+    "segment": "india_mnc",
+    "career_url": "https://careers.shiprocket.in",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://careers.shiprocket.in"
+  },
+  {
+    "company": "Yellow.ai",
+    "segment": "india_mnc",
+    "career_url": "https://careers.yellow.ai/jobs/Careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.yellow.ai"
+  },
+  {
+    "company": "WebEngage",
+    "segment": "india_mnc",
+    "career_url": "https://webengage.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://webengage.com/careers"
+  },
+  {
+    "company": "LeapWallet",
+    "segment": "india_mnc",
+    "career_url": "https://www.leapwallet.io/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.leapwallet.io"
+  },
+  {
+    "company": "Signzy",
+    "segment": "india_mnc",
+    "career_url": "https://www.signzy.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://signzy.com/careers"
+  },
+  {
+    "company": "Plum",
+    "segment": "india_mnc",
+    "career_url": "https://www.plumhq.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.plumhq.com"
+  },
+  {
+    "company": "Jupiter",
+    "segment": "india_mnc",
+    "career_url": "https://jupiter.money/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://jupiter.money/careers"
+  },
+  {
+    "company": "Fi Money",
+    "segment": "india_mnc",
+    "career_url": "https://fi.money/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://fi.money/careers"
+  },
+  {
+    "company": "Slice",
+    "segment": "india_mnc",
+    "career_url": "https://slice.bank.in/careers/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.sliceit.com"
+  },
+  {
+    "company": "OneCard",
+    "segment": "india_mnc",
+    "career_url": "https://getonecard.app/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://getonecard.app/careers"
+  },
+  {
+    "company": "Simpl",
+    "segment": "india_mnc",
+    "career_url": "https://getsimpl.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://getsimpl.com"
+  },
+  {
+    "company": "Turtlemint",
+    "segment": "india_mnc",
+    "career_url": "https://careers.turtlemint.com/jobs",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.turtlemint.com"
+  },
+  {
+    "company": "Quizizz",
+    "segment": "india_mnc",
+    "career_url": "https://wayground.com/home/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://quizizz.com/careers"
+  },
+  {
+    "company": "Eruditus",
+    "segment": "india_mnc",
+    "career_url": "https://eruditus.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://eruditus.com"
+  },
+  {
+    "company": "upGrad",
+    "segment": "india_mnc",
+    "career_url": "https://careers.upgrad.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.upgrad.com"
+  },
+  {
+    "company": "Bizongo",
+    "segment": "india_mnc",
+    "career_url": "https://www.bizongo.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.bizongo.com/careers"
+  },
+  {
+    "company": "Infra.Market",
+    "segment": "india_mnc",
+    "career_url": "https://infra.market/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://infra.market/careers"
+  },
+  {
+    "company": "ElasticRun",
+    "segment": "india_mnc",
+    "career_url": "https://elastic.run/careers",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.elasticrun.in"
+  },
+  {
+    "company": "Writesonic",
+    "segment": "global_ai_startup",
+    "career_url": "https://writesonic.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://writesonic.com/careers"
+  },
+  {
+    "company": "Murf AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://murf.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://murf.ai"
+  },
+  {
+    "company": "Glasp",
+    "segment": "global_ai_startup",
+    "career_url": "https://glasp.co/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://glasp.co/careers"
+  },
+  {
+    "company": "Scenario",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.scenario.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.scenario.com"
+  },
+  {
+    "company": "Fireflies.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.gem.com/fireflies",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://fireflies.ai/careers"
+  },
+  {
+    "company": "Vapi",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/vapi",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "source_candidate": "https://jobs.vapi.ai"
+  },
+  {
+    "company": "Retell AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.retellai.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.retellai.com"
+  },
+  {
+    "company": "Pixelcut",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.pixelcut.ai",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.pixelcut.ai"
+  },
+  {
+    "company": "Beatoven.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.beatoven.ai",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.beatoven.ai"
+  },
+  {
+    "company": "Mubert",
+    "segment": "global_ai_startup",
+    "career_url": "https://mubert.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://mubert.com"
+  },
+  {
+    "company": "Soundful",
+    "segment": "global_ai_startup",
+    "career_url": "https://soundful.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://soundful.com"
+  },
+  {
+    "company": "Dumme",
+    "segment": "global_ai_startup",
+    "career_url": "https://dumme.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://dumme.com"
+  },
+  {
+    "company": "tldv",
+    "segment": "global_ai_startup",
+    "career_url": "https://tldv.io/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://tldv.io"
+  },
+  {
+    "company": "Continue.dev",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.continue.dev/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.continue.dev/careers"
+  },
+  {
+    "company": "Tabnine",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.tabnine.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.tabnine.com/careers"
+  },
+  {
+    "company": "Kindroid",
+    "segment": "global_ai_startup",
+    "career_url": "https://kindroid.ai",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://kindroid.ai"
+  },
+  {
+    "company": "Nomi AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://nomi.ai/team/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://nomi.ai/team"
+  },
+  {
+    "company": "Scribe",
+    "segment": "global_ai_startup",
+    "career_url": "https://scribe.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://scribehow.com/careers"
+  },
+  {
+    "company": "Bending Spoons",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.bendingspoons.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://jobs.bendingspoons.com"
+  },
+  {
+    "company": "Humata AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.humata.ai",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.humata.ai"
+  },
+  {
+    "company": "Airalo",
+    "segment": "dubai_visa",
+    "career_url": "https://jobs.lever.co/airalo",
+    "http_status": 200,
+    "portal_type": "ATS_Lever",
+    "source_candidate": "https://jobs.lever.co/airalo"
+  },
+  {
+    "company": "Stake",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.getstake.com/jobs",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.getstake.com/"
+  },
+  {
+    "company": "Stella Stays",
+    "segment": "dubai_visa",
+    "career_url": "https://stellastays.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://stellastays.com/careers"
+  },
+  {
+    "company": "Silkhaus",
+    "segment": "dubai_visa",
+    "career_url": "https://www.silkhaus.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.silkhaus.com/careers"
+  },
+  {
+    "company": "Nomad Homes",
+    "segment": "dubai_visa",
+    "career_url": "https://nomadhomes.com/company/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://nomadhomes.com/company/careers"
+  },
+  {
+    "company": "Bayzat",
+    "segment": "dubai_visa",
+    "career_url": "https://www.bayzat.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.bayzat.com/careers"
+  },
+  {
+    "company": "EatApp",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.eatapp.co",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.eatapp.co"
+  },
+  {
+    "company": "Okadoc",
+    "segment": "dubai_visa",
+    "career_url": "https://www.okadoc.com/en-ae",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.okadoc.com/work-with-us"
+  },
+  {
+    "company": "Vezeeta",
+    "segment": "dubai_visa",
+    "career_url": "https://www.vezeeta.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.vezeeta.com/careers"
+  },
+  {
+    "company": "Altibbi",
+    "segment": "dubai_visa",
+    "career_url": "https://altibbi.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://altibbi.com"
+  },
+  {
+    "company": "TruDoc",
+    "segment": "dubai_visa",
+    "career_url": "https://trudocgroup.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.trudoc.com"
+  },
+  {
+    "company": "ZenHR",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.zenhr.com/en/careers_page",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.zenhr.com"
+  },
+  {
+    "company": "BulkWhiz",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.bulkwhiz.com",
+    "http_status": 0,
+    "portal_type": "URL_Not_Verified",
+    "source_candidate": "https://careers.bulkwhiz.com"
+  },
+  {
+    "company": "Pluto",
+    "segment": "dubai_visa",
+    "career_url": "https://www.getpluto.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://plutocard.io/careers"
+  },
+  {
+    "company": "Tribal Credit",
+    "segment": "dubai_visa",
+    "career_url": "https://www.tribal.credit/",
+    "http_status": 0,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.tribal.credit"
+  },
+  {
+    "company": "NymCard",
+    "segment": "dubai_visa",
+    "career_url": "https://www.nymcard.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.nymcard.com/careers"
+  },
+  {
+    "company": "Codebase Technologies",
+    "segment": "dubai_visa",
+    "career_url": "https://www.codebasetechnologies.com/",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.codebasetechnologies.com"
+  },
+  {
+    "company": "Bankiom",
+    "segment": "dubai_visa",
+    "career_url": "https://bankiom.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://bankiom.com/careers"
+  },
+  {
+    "company": "Pyypl",
+    "segment": "dubai_visa",
+    "career_url": "https://apply.workable.com/pyypl/",
+    "http_status": 200,
+    "portal_type": "ATS_Workable",
+    "source_candidate": "https://www.pyypl.com"
+  },
+  {
+    "company": "Seez",
+    "segment": "dubai_visa",
+    "career_url": "https://seez.co",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://seez.co"
+  },
+  {
+    "company": "Hasura",
+    "segment": "india_mnc",
+    "career_url": "https://promptql.io/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://hasura.io/careers"
+  },
+  {
+    "company": "Hevo Data",
+    "segment": "india_mnc",
+    "career_url": "https://hevodata.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://hevodata.com/careers"
+  },
+  {
+    "company": "Licious",
+    "segment": "india_mnc",
+    "career_url": "https://careers.licious.com/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.licious.in"
+  },
+  {
+    "company": "Ninjacart",
+    "segment": "india_mnc",
+    "career_url": "https://www.ninjacart.in/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.ninjacart.in"
+  },
+  {
+    "company": "DeHaat",
+    "segment": "india_mnc",
+    "career_url": "https://agrevolution.in/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://agrevolution.in/careers"
+  },
+  {
+    "company": "GoKwik",
+    "segment": "india_mnc",
+    "career_url": "https://gokwik.keka.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.gokwik.co/careers"
+  },
+  {
+    "company": "KredX",
+    "segment": "india_mnc",
+    "career_url": "https://www.kredx.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.kredx.com/careers"
+  },
+  {
+    "company": "Indifi",
+    "segment": "india_mnc",
+    "career_url": "https://www.indifi.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.indifi.com/careers"
+  },
+  {
+    "company": "OfBusiness",
+    "segment": "india_mnc",
+    "career_url": "https://www.ofbcareers.com/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.ofbusiness.com"
+  },
+  {
+    "company": "Moglix",
+    "segment": "india_mnc",
+    "career_url": "https://www.moglix.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.moglix.com"
+  },
+  {
+    "company": "Zetwerk",
+    "segment": "india_mnc",
+    "career_url": "https://www.zetwerk.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.zetwerk.com/careers"
+  },
+  {
+    "company": "BlackBuck",
+    "segment": "india_mnc",
+    "career_url": "https://www.blackbuck.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.blackbuck.com"
+  },
+  {
+    "company": "Shipsy",
+    "segment": "india_mnc",
+    "career_url": "https://www.shipsy.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://shipsy.io/careers"
+  },
+  {
+    "company": "LocoNav",
+    "segment": "india_mnc",
+    "career_url": "https://loconav.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://loconav.com/careers"
+  },
+  {
+    "company": "FarEye",
+    "segment": "india_mnc",
+    "career_url": "https://fareye.com/about/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://getfareye.com/careers"
+  },
+  {
+    "company": "Observe.ai",
+    "segment": "india_mnc",
+    "career_url": "https://www.observe.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.observe.ai/careers"
+  },
+  {
+    "company": "Pocket FM",
+    "segment": "india_mnc",
+    "career_url": "https://www.pocketfm.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.pocketfm.com/careers"
+  },
+  {
+    "company": "CoinDCX",
+    "segment": "india_mnc",
+    "career_url": "https://careers.coindcx.com",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://careers.coindcx.com"
+  },
+  {
+    "company": "Multipl",
+    "segment": "india_mnc",
+    "career_url": "https://multipl.xyz/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://multipl.xyz/careers"
+  },
+  {
+    "company": "LogiNext",
+    "segment": "india_mnc",
+    "career_url": "https://loginext.hire.trakstar.com/?",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://jobs.loginextsolutions.com"
+  },
+  {
+    "company": "Sunflower",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.ycombinator.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.ycombinator.com/careers"
+  },
+  {
+    "company": "Meteor",
+    "segment": "global_ai_startup",
+    "career_url": "https://meteor.ai",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://meteor.ai"
+  },
+  {
+    "company": "Lovable",
+    "segment": "global_ai_startup",
+    "career_url": "https://lovable.dev/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://lovable.dev/careers"
+  },
+  {
+    "company": "Wabi",
+    "segment": "global_ai_startup",
+    "career_url": "https://wabi.ai",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://wabi.ai"
+  },
+  {
+    "company": "Magnific AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.magnific.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://magnific.ai"
+  },
+  {
+    "company": "Photo AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://photoai.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://photoai.com"
+  },
+  {
+    "company": "Interior AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://interiorai.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://interiorai.com"
+  },
+  {
+    "company": "HeadshotPro",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.headshotpro.com/jobs",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.headshotpro.com/jobs"
+  },
+  {
+    "company": "Readwise Reader",
+    "segment": "global_ai_startup",
+    "career_url": "https://readwise.io/read",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://readwise.io/read"
+  },
+  {
+    "company": "Shortwave",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.shortwave.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.shortwave.com"
+  },
+  {
+    "company": "ChatPDF",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.chatpdf.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.chatpdf.com"
+  },
+  {
+    "company": "PDF.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://pdf.ai",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://pdf.ai"
+  },
+  {
+    "company": "Notion AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.notion.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.notion.so/careers"
+  },
+  {
+    "company": "Superhuman AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://superhuman.com/company/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://superhuman.com/careers"
+  },
+  {
+    "company": "Taskade AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.taskade.com/jobs",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.taskade.com/jobs"
+  },
+  {
+    "company": "Mindstudio",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.mindstudio.ai/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://mindstudio.ai"
+  },
+  {
+    "company": "V0 by Vercel",
+    "segment": "global_ai_startup",
+    "career_url": "https://v0.app/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://v0.dev/careers"
+  },
+  {
+    "company": "Bolt.new",
+    "segment": "global_ai_startup",
+    "career_url": "https://bolt.new/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://bolt.new/careers"
+  },
+  {
+    "company": "Replit Agent",
+    "segment": "global_ai_startup",
+    "career_url": "https://replit.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.replit.com"
+  },
+  {
+    "company": "ADCB (Digital Hub)",
+    "segment": "dubai_visa",
+    "career_url": "https://adcb.wd3.myworkdayjobs.com/ADCB",
+    "http_status": 403,
+    "portal_type": "ATS_Workday",
+    "source_candidate": "https://www.adcb.com/careers"
+  },
+  {
+    "company": "Dubai Islamic Bank (DIB)",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.dib.ae",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.dib.ae"
+  },
+  {
+    "company": "Al Hilal Bank",
+    "segment": "dubai_visa",
+    "career_url": "https://www.alhilalbank.ae/en/general/careers",
+    "http_status": 403,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.alhilalbank.ae/careers"
+  },
+  {
+    "company": "Hubpay",
+    "segment": "dubai_visa",
+    "career_url": "https://hubpay.ae/",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.hubpay.ae"
+  },
+  {
+    "company": "Aldar Properties (Digital)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.aldar.com/en/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.aldar.com/careers"
+  },
+  {
+    "company": "Houza",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.houza.com",
+    "http_status": 0,
+    "portal_type": "URL_Not_Verified",
+    "source_candidate": "https://careers.houza.com"
+  },
+  {
+    "company": "Realiste AI",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.realiste.ai",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.realiste.ai"
+  },
+  {
+    "company": "Ziina",
+    "segment": "dubai_visa",
+    "career_url": "https://ziina.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://ziina.com/careers"
+  },
+  {
+    "company": "Tap Payments",
+    "segment": "dubai_visa",
+    "career_url": "https://tap.company/careers",
+    "http_status": 0,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.tap.payments"
+  },
+  {
+    "company": "Checkout.com (MENA Hub)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.checkout.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.checkout.com/careers"
+  },
+  {
+    "company": "Adyen (MENA Hub)",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.adyen.com/sitemap-en.xml",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.adyen.com/sitemap-en.xml"
+  },
+  {
+    "company": "Geidea",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.geidea.net/job/Bangalore-Tech-Lead/855048923/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.geidea.net/job/Bangalore-Tech-Lead/855048923/"
+  },
+  {
+    "company": "PayTabs",
+    "segment": "dubai_visa",
+    "career_url": "https://paytabs.com/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.paytabs.com"
+  },
+  {
+    "company": "SellAnyCar.com",
+    "segment": "dubai_visa",
+    "career_url": "https://jobs.sellanycar.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://jobs.sellanycar.com"
+  },
+  {
+    "company": "YallaMotor",
+    "segment": "dubai_visa",
+    "career_url": "https://www.yallamotor.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.yallamotor.com/careers"
+  },
+  {
+    "company": "CarSwitch",
+    "segment": "dubai_visa",
+    "career_url": "https://carswitch.com/uae",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://carswitch.com"
+  },
+  {
+    "company": "Jeebly",
+    "segment": "dubai_visa",
+    "career_url": "https://www.jeebly.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.jeebly.com/careers"
+  },
+  {
+    "company": "Quiqup",
+    "segment": "dubai_visa",
+    "career_url": "https://www.quiqup.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.quiqup.com"
+  },
+  {
+    "company": "Lyve Global",
+    "segment": "dubai_visa",
+    "career_url": "https://lyveglobal.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://lyveglobal.com/careers"
+  },
+  {
+    "company": "Bitget (MENA Hub)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.bitget.com/en/careers",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.bitget.com"
+  },
+  {
+    "company": "Ather Energy",
+    "segment": "india_mnc",
+    "career_url": "https://careers.atherenergy.com",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://careers.atherenergy.com"
+  },
+  {
+    "company": "Practo",
+    "segment": "india_mnc",
+    "career_url": "https://careers.practo.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.practo.com"
+  },
+  {
+    "company": "Clear",
+    "segment": "india_mnc",
+    "career_url": "https://www.clear.in/s/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://clear.in"
+  },
+  {
+    "company": "Zeta",
+    "segment": "india_mnc",
+    "career_url": "https://www.zeta.tech/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.zeta.tech/careers"
+  },
+  {
+    "company": "Mensa Brands",
+    "segment": "india_mnc",
+    "career_url": "https://www.mensabrands.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.mensabrands.com/careers"
+  },
+  {
+    "company": "Amagi",
+    "segment": "india_mnc",
+    "career_url": "https://www.amagi.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.amagi.com/careers"
+  },
+  {
+    "company": "CoinSwitch",
+    "segment": "india_mnc",
+    "career_url": "https://recruiterflow.com/coinswitch/jobs",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://coinswitch.co"
+  },
+  {
+    "company": "Lead School",
+    "segment": "india_mnc",
+    "career_url": "https://leadschool.in/careers/",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://leadschool.in/careers"
+  },
+  {
+    "company": "NoBroker",
+    "segment": "india_mnc",
+    "career_url": "https://www.nobroker.in/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.nobroker.in/careers"
+  },
+  {
+    "company": "Droom",
+    "segment": "india_mnc",
+    "career_url": "https://droom.in/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://droom.in/team"
+  },
+  {
+    "company": "Chalo",
+    "segment": "india_mnc",
+    "career_url": "https://chalo.com/jobs",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://chalo.com/jobs"
+  },
+  {
+    "company": "Perfios",
+    "segment": "india_mnc",
+    "career_url": "https://perfios.ai/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.perfios.com/careers"
+  },
+  {
+    "company": "HealthifyMe",
+    "segment": "india_mnc",
+    "career_url": "https://www.healthifyme.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.healthifyme.com/careers"
+  },
+  {
+    "company": "MyGate",
+    "segment": "india_mnc",
+    "career_url": "https://mygate.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://mygate.com/careers"
+  },
+  {
+    "company": "Scripbox",
+    "segment": "india_mnc",
+    "career_url": "https://scripbox.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://scripbox.com"
+  },
+  {
+    "company": "Pratilipi",
+    "segment": "india_mnc",
+    "career_url": "https://www.pratilipi.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.pratilipi.com/careers"
+  },
+  {
+    "company": "Spinny",
+    "segment": "india_mnc",
+    "career_url": "https://www.spinny.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.spinny.com/careers"
+  },
+  {
+    "company": "Progcap",
+    "segment": "india_mnc",
+    "career_url": "https://www.progcap.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.progcap.com"
+  },
+  {
+    "company": "Bijak",
+    "segment": "india_mnc",
+    "career_url": "https://bijak.keka.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.bijak.in/careers"
+  },
+  {
+    "company": "Lendingkart",
+    "segment": "india_mnc",
+    "career_url": "https://www.lendingkart.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.lendingkart.com/careers"
+  },
+  {
+    "company": "Pieces for Developers",
+    "segment": "global_ai_startup",
+    "career_url": "https://pieces.app",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://pieces.app"
+  },
+  {
+    "company": "Submagic",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.submagic.co",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.submagic.co"
+  },
+  {
+    "company": "Vizard.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://vizard.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://vizard.ai/careers"
+  },
+  {
+    "company": "Fliki",
+    "segment": "global_ai_startup",
+    "career_url": "https://fliki.ai/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://fliki.ai/careers"
+  },
+  {
+    "company": "Riverside.fm",
+    "segment": "global_ai_startup",
+    "career_url": "https://careers.riverside.com/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.riverside.fm"
+  },
+  {
+    "company": "Krisp.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://krisp.ai/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://jobs.krisp.ai"
+  },
+  {
+    "company": "LanguageTool",
+    "segment": "global_ai_startup",
+    "career_url": "https://languagetooler.workwise.io/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://languagetool.org/careers"
+  },
+  {
+    "company": "Resemble.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.resemble.ai/company/about-us",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.resemble.ai/team"
+  },
+  {
+    "company": "Artbreeder",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.artbreeder.com/team",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.artbreeder.com/team"
+  },
+  {
+    "company": "Anima App",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.animaapp.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.animaapp.com"
+  },
+  {
+    "company": "Mutable.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://careers.mutable.ai",
+    "http_status": 0,
+    "portal_type": "URL_Not_Verified",
+    "source_candidate": "https://careers.mutable.ai"
+  },
+  {
+    "company": "Wordtune",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.ai21.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.wordtune.com/careers"
+  },
+  {
+    "company": "WellSaid Labs",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.wellsaid.io/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://wellsaidlabs.com/careers"
+  },
+  {
+    "company": "Decktopus",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.decktopus.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.decktopus.com"
+  },
+  {
+    "company": "Elicit",
+    "segment": "global_ai_startup",
+    "career_url": "https://elicit.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://elicit.com/careers"
+  },
+  {
+    "company": "SciSpace",
+    "segment": "global_ai_startup",
+    "career_url": "https://careers.typeset.io/",
+    "http_status": 0,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.typeset.io"
+  },
+  {
+    "company": "Mem.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://mem.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://mem.ai/careers"
+  },
+  {
+    "company": "GitMind",
+    "segment": "global_ai_startup",
+    "career_url": "https://gitmind.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://gitmind.com"
+  },
+  {
+    "company": "UseMotion (Motion)",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.usemotion.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.usemotion.com/careers"
+  },
+  {
+    "company": "Reclaim.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://reclaim.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://reclaim.ai/careers"
+  },
+  {
+    "company": "Tenderd",
+    "segment": "dubai_visa",
+    "career_url": "https://tenderd.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.tenderd.com/careers"
+  },
+  {
+    "company": "Ekar",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.ekar.me",
+    "http_status": 0,
+    "portal_type": "URL_Not_Verified",
+    "source_candidate": "https://careers.ekar.me"
+  },
+  {
+    "company": "Udrive",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.udrive.ae",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://careers.udrive.ae"
+  },
+  {
+    "company": "Washmen",
+    "segment": "dubai_visa",
+    "career_url": "https://www.washmen.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.getwashmen.com"
+  },
+  {
+    "company": "Souqalmal",
+    "segment": "dubai_visa",
+    "career_url": "https://www.souqalmal.com/",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.souqalmal.com"
+  },
+  {
+    "company": "Sharaf DG (Digital)",
+    "segment": "dubai_visa",
+    "career_url": "https://sharafdg.zohorecruit.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.sharafdg.com"
+  },
+  {
+    "company": "One Moto",
+    "segment": "dubai_visa",
+    "career_url": "https://one-moto.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://one-moto.com/careers"
+  },
+  {
+    "company": "Floward",
+    "segment": "dubai_visa",
+    "career_url": "https://floward.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://floward.com/careers"
+  },
+  {
+    "company": "Joi Gifts",
+    "segment": "dubai_visa",
+    "career_url": "https://www.joigifts.com/",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.joigifts.com"
+  },
+  {
+    "company": "MySyara",
+    "segment": "dubai_visa",
+    "career_url": "https://www.mysyara.com/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://mysyara.com"
+  },
+  {
+    "company": "Valeo Health",
+    "segment": "dubai_visa",
+    "career_url": "https://feelvaleo.com/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.feelvaleo.com"
+  },
+  {
+    "company": "InvoiceMate",
+    "segment": "dubai_visa",
+    "career_url": "https://invoicemate.net",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://invoicemate.net"
+  },
+  {
+    "company": "Aramex (Digital Hub)",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.aramex.com/job/Johannesburg-Fleet-Manager/8202-en_US/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.aramex.com/job/Johannesburg-Fleet-Manager/1390885733/"
+  },
+  {
+    "company": "7X (Emirates Post)",
+    "segment": "dubai_visa",
+    "career_url": "https://7x.ae/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://7x.ae/careers"
+  },
+  {
+    "company": "Dubai Holding (Digital)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.dubaiholding.com/en",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://dubaiholding.com"
+  },
+  {
+    "company": "Nshama",
+    "segment": "dubai_visa",
+    "career_url": "https://nshama.ae/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.nshama.ae"
+  },
+  {
+    "company": "OneRoad Mobility",
+    "segment": "dubai_visa",
+    "career_url": "https://www.oneroadgroup.com/jobs/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://oneroadgroup.com/jobs"
+  },
+  {
+    "company": "Mashreq Bank (Tech)",
+    "segment": "dubai_visa",
+    "career_url": "https://www.mashreq.com/en/uae/about-us/careers/careers-portal",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.mashreq.com"
+  },
+  {
+    "company": "Emaar Malls Digital",
+    "segment": "dubai_visa",
+    "career_url": "https://emhm.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/requisitions",
+    "http_status": 200,
+    "portal_type": "ATS_Workday",
+    "source_candidate": "https://careers.emaar.com"
+  },
+  {
+    "company": "SquatWolf",
+    "segment": "dubai_visa",
+    "career_url": "https://squatwolf.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://squatwolf.com"
+  },
+  {
+    "company": "GreyOrange",
+    "segment": "india_mnc",
+    "career_url": "https://careers.greyorange.com/greyorange/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.greyorange.com"
+  },
+  {
+    "company": "Exotel",
+    "segment": "india_mnc",
+    "career_url": "https://exotel.com/about-us/careers/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://exotel.com/careers"
+  },
+  {
+    "company": "Route Mobile",
+    "segment": "india_mnc",
+    "career_url": "https://routemobile.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://routemobile.com/careers"
+  },
+  {
+    "company": "Affle",
+    "segment": "india_mnc",
+    "career_url": "https://affle.com/about",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://affle.com"
+  },
+  {
+    "company": "Keka HR",
+    "segment": "india_mnc",
+    "career_url": "https://careers.keka.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.keka.com"
+  },
+  {
+    "company": "Capgrid",
+    "segment": "india_mnc",
+    "career_url": "https://www.capgrid.in/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://capgrid.in/careers"
+  },
+  {
+    "company": "Dunzo",
+    "segment": "india_mnc",
+    "career_url": "https://careers.dunzo.com",
+    "http_status": 0,
+    "portal_type": "URL_Not_Verified",
+    "source_candidate": "https://careers.dunzo.com"
+  },
+  {
+    "company": "Fisdom",
+    "segment": "india_mnc",
+    "career_url": "https://www.fisdom.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.fisdom.com/careers"
+  },
+  {
+    "company": "Wint Wealth",
+    "segment": "india_mnc",
+    "career_url": "https://www.wintwealth.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.wintwealth.com"
+  },
+  {
+    "company": "Jar",
+    "segment": "india_mnc",
+    "career_url": "https://changejar.applytojob.com/apply",
+    "http_status": 0,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.ithjar.com"
+  },
+  {
+    "company": "Rupifi",
+    "segment": "india_mnc",
+    "career_url": "https://www.rupifi.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.rupifi.com/careers"
+  },
+  {
+    "company": "Uni Cards",
+    "segment": "india_mnc",
+    "career_url": "https://careers.uni.cards",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://careers.uni.cards"
+  },
+  {
+    "company": "M2P Fintech",
+    "segment": "india_mnc",
+    "career_url": "https://careers.m2pfintech.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.m2pfintech.com"
+  },
+  {
+    "company": "Setu",
+    "segment": "india_mnc",
+    "career_url": "https://setu.co/careers/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.setu.co"
+  },
+  {
+    "company": "Cashfree Payments",
+    "segment": "india_mnc",
+    "career_url": "https://www.cashfree.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.cashfree.com/careers"
+  },
+  {
+    "company": "Zaggle",
+    "segment": "india_mnc",
+    "career_url": "https://www.zaggle.in/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.zaggle.in"
+  },
+  {
+    "company": "Awign",
+    "segment": "india_mnc",
+    "career_url": "https://careers.awign.com",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.awign.com"
+  },
+  {
+    "company": "Betterplace",
+    "segment": "india_mnc",
+    "career_url": "https://www.betterplace.co.in/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.betterplace.co.in/careers"
+  },
+  {
+    "company": "Locofast",
+    "segment": "india_mnc",
+    "career_url": "https://app.locofast.com/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://careers.locofast.com"
+  },
+  {
+    "company": "Procol",
+    "segment": "india_mnc",
+    "career_url": "https://www.procol.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.procol.io/careers"
+  },
+  {
+    "company": "Quilter",
+    "segment": "global_ai_startup",
+    "career_url": "https://careers.quilter.com/application-process/questions-and-answers/i-have-a-disability.-what-support-will-be-available-to-me-during-the-application-process-and-beyond",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.quilter.com/application-process/questions-and-answers/i-have-a-disability.-what-support-will-be-available-to-me-during-the-application-process-and-beyond"
+  },
+  {
+    "company": "Haiper AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://haiper.ai",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://haiper.ai"
+  },
+  {
+    "company": "Colossyan",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.colossyan.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.colossyan.com/careers"
+  },
+  {
+    "company": "Ello",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/ello",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "source_candidate": "https://www.ello.com/careers"
+  },
+  {
+    "company": "Hebbia",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.hebbia.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.hebbia.ai/careers"
+  },
+  {
+    "company": "Beautiful.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.beautiful.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.beautiful.ai/careers"
+  },
+  {
+    "company": "Clipdrop",
+    "segment": "global_ai_startup",
+    "career_url": "https://clipdrop.co",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://clipdrop.co"
+  },
+  {
+    "company": "Jasper AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.jasper.ai/careers",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.jasper.ai/careers"
+  },
+  {
+    "company": "Copy.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.copy.ai/jobs",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.copy.ai"
+  },
+  {
+    "company": "Spike",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.spikenow.com/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.spikenow.com"
+  },
+  {
+    "company": "JanitorAI",
+    "segment": "global_ai_startup",
+    "career_url": "https://janitorai.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://janitorai.com/careers"
+  },
+  {
+    "company": "Candy.ai",
+    "segment": "global_ai_startup",
+    "career_url": "https://candy.ai",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://candy.ai"
+  },
+  {
+    "company": "DreamGen",
+    "segment": "global_ai_startup",
+    "career_url": "https://dreamgen.com/jobs",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://dreamgen.com/jobs"
+  },
+  {
+    "company": "Sudowrite",
+    "segment": "global_ai_startup",
+    "career_url": "https://sudowrite.com/jobs/designer",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.sudowrite.com/jobs"
+  },
+  {
+    "company": "Codeium",
+    "segment": "global_ai_startup",
+    "career_url": "https://jobs.ashbyhq.com/cognition",
+    "http_status": 200,
+    "portal_type": "ATS_Ashby",
+    "source_candidate": "https://codeium.com/careers"
+  },
+  {
+    "company": "Mintlify",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.mintlify.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://mintlify.com/careers"
+  },
+  {
+    "company": "Blackbox AI",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.blackbox.ai",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.blackbox.ai"
+  },
+  {
+    "company": "Greptile",
+    "segment": "global_ai_startup",
+    "career_url": "https://www.greptile.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.greptile.com/careers"
+  },
+  {
+    "company": "Aider",
+    "segment": "global_ai_startup",
+    "career_url": "https://aider.chat",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://aider.chat"
+  },
+  {
+    "company": "Hapi",
+    "segment": "dubai_visa",
+    "career_url": "https://hapi.my/",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.hapi.my"
+  },
+  {
+    "company": "Provis",
+    "segment": "dubai_visa",
+    "career_url": "https://www.provis.ae/",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.provis.ae"
+  },
+  {
+    "company": "Meraas",
+    "segment": "dubai_visa",
+    "career_url": "https://meraas.com/en/team",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.meraas.com/team"
+  },
+  {
+    "company": "Al-Futtaim Automotive",
+    "segment": "dubai_visa",
+    "career_url": "https://www.alfuttaim.com/careers/",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.alfuttaim.com/careers"
+  },
+  {
+    "company": "Azizi Developments",
+    "segment": "dubai_visa",
+    "career_url": "https://www.azizidevelopments.com/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://azizidevelopments.com/careers"
+  },
+  {
+    "company": "DAMAC Properties",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.damacproperties.com/global/en/jointalentcommunity",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.damacproperties.com/global/en"
+  },
+  {
+    "company": "Sweetheart Kitchen",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.bythesk.com",
+    "http_status": 0,
+    "portal_type": "URL_Not_Verified",
+    "source_candidate": "https://careers.bythesk.com"
+  },
+  {
+    "company": "RightBite",
+    "segment": "dubai_visa",
+    "career_url": "https://rightbite.com/en-ae/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.rightbite.com/careers"
+  },
+  {
+    "company": "Sivvi",
+    "segment": "dubai_visa",
+    "career_url": "https://www.sivvi.com/uae-en/careers",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://www.sivvi.com/careers"
+  },
+  {
+    "company": "Namshi",
+    "segment": "dubai_visa",
+    "career_url": "https://www.namshi.com/",
+    "http_status": 0,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.en-ae.namshi.com"
+  },
+  {
+    "company": "Desert Cart",
+    "segment": "dubai_visa",
+    "career_url": "https://www.desertcart.ae/careers",
+    "http_status": 403,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.desertcart.ae/careers"
+  },
+  {
+    "company": "OurShopee",
+    "segment": "dubai_visa",
+    "career_url": "https://www.ourshopee.com/careers",
+    "http_status": 403,
+    "portal_type": "Tier3_ProtectedAPI",
+    "source_candidate": "https://www.ourshopee.com/careers"
+  },
+  {
+    "company": "Ounass",
+    "segment": "dubai_visa",
+    "career_url": "https://www.ounass.ae",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.ounass.ae"
+  },
+  {
+    "company": "Golden Scent",
+    "segment": "dubai_visa",
+    "career_url": "https://careers.goldenscent.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://careers.goldenscent.com"
+  },
+  {
+    "company": "Magrabi",
+    "segment": "dubai_visa",
+    "career_url": "https://www.magrabi.com/sa-en/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://magrabi.com"
+  },
+  {
+    "company": "Foloosi",
+    "segment": "dubai_visa",
+    "career_url": "https://www.foloosi.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.foloosi.com"
+  },
+  {
+    "company": "Clara",
+    "segment": "dubai_visa",
+    "career_url": "https://clara.co",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://clara.co"
+  },
+  {
+    "company": "Policybazaar UAE",
+    "segment": "dubai_visa",
+    "career_url": "https://www.policybazaar.ae",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.policybazaar.ae"
+  },
+  {
+    "company": "InsuranceMarket.ae",
+    "segment": "dubai_visa",
+    "career_url": "https://insurancemarket.ae/careers/",
+    "http_status": 200,
+    "portal_type": "Tier2_CSR_SPA",
+    "source_candidate": "https://insurancemarket.ae/careers"
+  },
+  {
+    "company": "Dubicars",
+    "segment": "dubai_visa",
+    "career_url": "https://www.dubicars.com",
+    "http_status": 200,
+    "portal_type": "Tier1_StaticHTML",
+    "source_candidate": "https://www.dubicars.com"
+  }
+]

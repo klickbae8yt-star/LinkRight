@@ -1,0 +1,101 @@
+{
+  "company_slug": "faire",
+  "company_name": "Faire",
+  "website": "https://www.faire.com",
+  "career_portal_url": "https://www.faire.com/careers",
+  "ats_platform": "greenhouse",
+  "ats_slug": "faire",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 69,
+  "industry": "Ecommerce & Dropshipping",
+  "industry_grade": "A-",
+  "industry_score": 8,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W17",
+  "team_size": 900,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "San Francisco"
+  ],
+  "summary": "The global online platform empowering independent retail.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/faire",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/fairewholesale/",
+  "founders": [
+    {
+      "name": "Max Rhodes",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/max-rhodes",
+      "twitter": "",
+      "bio": "",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 9,
+      "career_signals": [
+        "linkedin"
+      ],
+      "exit_score": 10,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Marcelo Cortes",
+      "title": "Founder/CTO",
+      "linkedin": "https://www.linkedin.com/in/marcelo-cortes-b34317",
+      "twitter": "",
+      "bio": "",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 9,
+      "career_signals": [
+        "google"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Daniele Perito",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/danieleperito",
+      "twitter": "",
+      "bio": "",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 19,
+      "career_signals": [
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 92,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 19,
+    "past_exits": 10,
+    "industry_match": 8,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

@@ -1,0 +1,32 @@
+# W7. System Improvement. Reads what performed, makes the system better.
+workflow:
+  code: system-optimizer
+  name: System Improvement
+  purpose: Read performance, update the knowledge base and scoring weights, catch voice drift
+  cadence: weekly light pass, monthly deep pass
+
+  config_source: config/
+  output_folder: runs/
+
+  agents:
+    - data-analyst       # what performed, with experiment rigor
+    - knowledge-curator  # updates the knowledge base, logs every change
+    - voice-drift-auditor # checks recent posts still match the voice profile
+
+  validation: evals/stats-sanity.md
+  primary_output: templates/optimization-report.md
+
+  inputs:
+    - config/user-config.yaml
+    - knowledge-base/performance-data/posts.csv
+    - knowledge-base/scoring-rubrics.md
+    - knowledge-base/voice-profile.md
+    - knowledge-base/voice-build/voice-metrics.csv
+    - recent published posts
+
+  permissions:
+    note: this is the only workflow allowed to edit the knowledge base, every edit is logged
+
+  execution_hints:
+    interactive: false
+    resumable: true

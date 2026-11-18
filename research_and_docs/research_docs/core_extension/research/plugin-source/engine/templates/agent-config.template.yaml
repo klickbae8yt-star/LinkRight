@@ -1,0 +1,58 @@
+# Agent config template, BMAD aligned. Copy this to agents/<workflow>/<code>.agent.yaml
+# One file per agent. The skill runtime reads this and behaves. Keep steps out, keep intent in.
+
+agent:
+  code: ""                 # stable id, kebab-case, matches the file name
+  title: ""                # role title, for example Forensic Linguist
+  icon: ""                 # single emoji
+  role: ""                 # one line functional role
+  agent_type: ""           # stateless | memory | autonomous
+  workflow: ""             # the workflow code this agent belongs to
+
+  persona:
+    identity: >            # who this agent is, 2 to 4 sentences, the lens it sees through
+    communication_style: > # how it talks, to the owner and to peer agents
+    principles:            # the convictions that drive its judgement, not steps
+      - ""
+
+  responsibilities:        # what this agent owns, stated as outcomes
+    - ""
+
+  dos:                     # explicit positive rules, these get scored
+    - ""
+  donts:                   # explicit negative rules, gate worthy, a breach means reject
+    - ""
+
+  dependencies:
+    knowledge:             # knowledge-base files loaded at run time
+      - ""
+    checklists:            # evals the agent runs on itself before handoff
+      - ""
+    templates:
+      reads:               # input contracts from upstream agents
+        - ""
+      writes:              # output contract this agent produces
+        - ""
+    memory:                # omit this whole block for stateless agents
+      sanctum: ""          # memory/<code>/
+      captures:            # what it stores to get better over time
+        - ""
+      improves: ""         # the future quality this memory lifts
+
+  team:                    # agent to agent coordination, named I/O
+    receives_from:
+      - agent: ""
+        input: ""
+    hands_off_to:
+      - agent: ""
+        output: ""
+    coordinates_with:      # peers it syncs with but does not hand off to
+      - agent: ""
+        via: ""
+
+  activation:
+    persistent_facts:      # always in mind. literal sentence, or file: path
+      - ""
+    execution_hints:
+      interactive: false   # true if it needs the owner live, like the interview
+      iterative: false     # true if it loops over many items

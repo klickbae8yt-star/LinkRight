@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCTA PM Interview Master Cheat Sheet & Executive Playbook</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        octaOrange: '#FF5722',
+                        octaOrangeDark: '#E64A19',
+                        octaOrangeLight: '#FFF3E0',
+                        octaOrangeBorder: '#FFCCBC',
+                        octaBg: '#F8FAFC',
+                        octaCard: '#FFFFFF',
+                        octaBorder: '#E2E8F0',
+                        octaTextDark: '#0F172A',
+                        octaTextMuted: '#475569',
+                        octaPurple: '#7C3AED',
+                        octaCyan: '#0891B2',
+                        octaGreen: '#059669',
+                        octaAmber: '#D97706',
+                        octaRed: '#DC2626'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F8FAFC;
+            color: #0F172A;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: #ffffff !important; color: #0f172a !important; }
+            .print-card { background-color: #ffffff !important; border: 1px solid #cbd5e1 !important; color: #0f172a !important; page-break-inside: avoid; shadow: none !important; }
+        }
+        .glow-accent-orange {
+            box-shadow: 0 10px 30px -5px rgba(255, 87, 34, 0.15);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #F1F5F9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 max-w-7xl mx-auto space-y-8 custom-scrollbar">
+
+    <!-- Action Header -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 bg-white p-6 rounded-2xl border border-orange-200 shadow-md glow-accent-orange">
+        <div>
+            <div class="flex flex-wrap items-center gap-2 mb-2">
+                <span class="px-3 py-1 bg-orange-100 text-octaOrangeDark font-bold text-xs rounded-full border border-orange-300">CONFIDENTIAL PM PREP</span>
+                <span class="px-3 py-1 bg-amber-100 text-amber-800 font-bold text-xs rounded-full border border-amber-300">OCTA EXECUTIVE INTERVIEW</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-800 font-bold text-xs rounded-full border border-purple-300">CFO + IB + BANKING INSIGHTS</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                OCTA <span class="text-octaOrange">PM Interview Master Cheat Sheet</span>
+            </h1>
+            <p class="text-slate-600 text-sm mt-1">End-to-End Playbook: Market Context, Vikas Sir Notes, Megha Ma'am Call, IB/Finance MBA Insights & Nupur Mittal Q&A (Romanised Hindi)</p>
+        </div>
+        <button onclick="window.print()" class="no-print bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold py-3 px-6 rounded-xl flex items-center gap-2 shadow-md hover:shadow-lg transition-all transform active:scale-95">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 000-4H9a2 2 0 000 4zm8-12V5a2 2 0 00-2-2H7a2 2 0 00-2 2v4h14z"></path></svg>
+            Print / Save PDF
+        </button>
+    </div>
+
+    <!-- SECTION 1: OCTA COMPANY OVERVIEW & PRODUCTS -->
+    <section class="space-y-4">
+        <h2 class="text-xl font-bold text-octaOrangeDark flex items-center gap-2">
+            <span class="w-3 h-3 bg-octaOrange rounded-full inline-block animate-pulse"></span>
+            1. OCTA Company Profile & Product Ecosystem
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-4">
+            <!-- Company Facts -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                <h3 class="font-bold text-lg text-slate-900 border-b border-slate-200 pb-2 flex justify-between items-center">
+                    <span>Company Essentials</span>
+                    <span class="text-xs text-orange-700 bg-orange-100 font-semibold px-2 py-0.5 rounded border border-orange-200">Abu Dhabi / KSA</span>
+                </h3>
+                <ul class="space-y-2 text-xs md:text-sm text-slate-700">
+                    <li><strong class="text-slate-900">Co-Founders:</strong> Jon Edward Santillan (ex-CEO Denarii.com acquired by Careem) & <strong>Nupur Mittal</strong> (COO).</li>
+                    <li><strong class="text-slate-900">Funding & Scale:</strong> $2.25M Pre-Seed (Quona Capital, 500 Global, Sadu Capital) + <strong class="text-octaOrangeDark">$20M Credit Facility</strong> (Sukna Fund, KSA).</li>
+                    <li><strong class="text-slate-900">Traction:</strong> 500+ Businesses, $290M+ Invoices Processed, $50M+ Payments Handled (Clients: Careem, Lean, Gameball, ZenHR).</li>
+                </ul>
+            </div>
+
+            <!-- OCTA Core -->
+            <div class="print-card bg-white p-5 rounded-xl border-2 border-orange-200 shadow-sm space-y-3 relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-octaOrange text-[10px] font-extrabold uppercase text-white px-2.5 py-1 rounded-bl">Product 1: B2B SMEs</div>
+                <h3 class="font-bold text-lg text-octaOrangeDark">OCTA Core</h3>
+                <p class="text-xs text-slate-500 font-medium">Target: SMEs & Growth Enterprises</p>
+                <p class="text-sm text-slate-700">
+                    Focuses on <strong>Accounts Receivable (A/R) Automation</strong> & <strong>Embedded Working Capital Financing</strong>. Automated collection workflows, instant invoice generation, smart multi-channel reminders (WhatsApp/Email), and embedded cash advances on unpaid invoices.
+                </p>
+            </div>
+
+            <!-- OCTA Flow -->
+            <div class="print-card bg-white p-5 rounded-xl border-2 border-purple-200 shadow-sm space-y-3 relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-purple-600 text-[10px] font-extrabold uppercase text-white px-2.5 py-1 rounded-bl">Product 2: Accounting Firms</div>
+                <h3 class="font-bold text-lg text-purple-700">OCTA Flow</h3>
+                <p class="text-xs text-slate-500 font-medium">Target: Accounting, CA & CFO Advisory Firms</p>
+                <p class="text-sm text-slate-700">
+                    <strong>AI Operating System / AI Workforce</strong> for accounting firms. Multi-client reconciliation, 3-way matching, audit prep automation, automated document chasing, and routine tasks execution so firms scale clients without hiring headcount.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: DOMAIN KNOWLEDGE DICTIONARY -->
+    <section class="space-y-4">
+        <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+            <span class="w-3 h-3 bg-amber-500 rounded-full inline-block"></span>
+            2. Domain Knowledge Dictionary (Zero-Knowledge Conceptual Glossary)
+        </h2>
+
+        <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-4">
+            <div class="print-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2 hover:border-orange-300 transition-colors">
+                <div class="text-orange-600 text-[10px] font-bold uppercase tracking-wider">Concept 1</div>
+                <h4 class="font-bold text-slate-900 text-base">Accounts Receivable (A/R) & DSO</h4>
+                <p class="text-xs text-slate-600">
+                    <strong class="text-slate-800">A/R:</strong> Customers ko beche gaye saamaan/services ka phasa hua uncollected cash.<br>
+                    <strong class="text-slate-800">DSO (Days Sales Outstanding):</strong> Saamaan bechne ke kitne din baad paisa aata hai. Target: 60 days ➔ &lt; 20 days.
+                </p>
+            </div>
+
+            <div class="print-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2 hover:border-orange-300 transition-colors">
+                <div class="text-orange-600 text-[10px] font-bold uppercase tracking-wider">Concept 2</div>
+                <h4 class="font-bold text-slate-900 text-base">Embedded Working Capital</h4>
+                <p class="text-xs text-slate-600">
+                    <strong class="text-slate-800">Simple Meaning:</strong> ERP ya invoicing portal ke andar hi direct instant credit advance link kar dena.<br>
+                    <em>OCTA Advantage:</em> Invoice issue karte hi 80% capital upfront le lo, repayment customer collection se link.
+                </p>
+            </div>
+
+            <div class="print-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2 hover:border-orange-300 transition-colors">
+                <div class="text-orange-600 text-[10px] font-bold uppercase tracking-wider">Concept 3</div>
+                <h4 class="font-bold text-slate-900 text-base">Trial Balance & GL Matching</h4>
+                <p class="text-xs text-slate-600">
+                    <strong class="text-slate-800">Trial Balance:</strong> Company ke sabhi Accounts (Debit = Credit) ka summary check.<br>
+                    <em>Pain Point:</em> Manual mismatch hone par accounting teams days tak individual ledger entries search karti hain.
+                </p>
+            </div>
+
+            <div class="print-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2 hover:border-orange-300 transition-colors">
+                <div class="text-orange-600 text-[10px] font-bold uppercase tracking-wider">Concept 4</div>
+                <h4 class="font-bold text-slate-900 text-base">TDS (Tax Deducted at Source)</h4>
+                <p class="text-xs text-slate-600">
+                    <strong class="text-slate-800">Simple Meaning:</strong> B2B payment karte waqt buyer Govt rules ke tahat tax kaat kar baki pay karta hai.<br>
+                    <em>Friction:</em> Section mapping (194C, 194J) & filing errors se severe penalties lagti hain.
+                </p>
+            </div>
+
+            <div class="print-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2 hover:border-orange-300 transition-colors">
+                <div class="text-orange-600 text-[10px] font-bold uppercase tracking-wider">Concept 5</div>
+                <h4 class="font-bold text-slate-900 text-base">MIS Reporting (Management Info Systems)</h4>
+                <p class="text-xs text-slate-600">
+                    <strong class="text-slate-800">Simple Meaning:</strong> CXOs aur board ke liye daily/weekly executive performance dashboards.<br>
+                    <em>Automation Goal:</em> Zero manual Excel aggregation; real-time cashflow & margin tracking.
+                </p>
+            </div>
+
+            <div class="print-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2 hover:border-orange-300 transition-colors">
+                <div class="text-orange-600 text-[10px] font-bold uppercase tracking-wider">Concept 6</div>
+                <h4 class="font-bold text-slate-900 text-base">Year-End Annual Close</h4>
+                <p class="text-xs text-slate-600">
+                    <strong class="text-slate-800">Simple Meaning:</strong> Financial year khatam hone par final balance sheets, audit packages aur books Freeze karna.<br>
+                    <em>OCTA Value:</em> 25-day painful audit preparation ko 4-day automated workflow mein badalna.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: BANKING & UNDERWRITING INSIGHTS (VIKAS SIR CALL) -->
+    <section class="space-y-4">
+        <h2 class="text-xl font-bold text-amber-700 flex items-center gap-2">
+            <span class="w-3 h-3 bg-amber-500 rounded-full inline-block"></span>
+            3. Banking Ground Reality & Credit Underwriting (Vikas Sir Notes)
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-4">
+            <!-- Overdue Timeline Diagram -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                <h3 class="font-bold text-slate-900 border-b border-slate-200 pb-2">A. Loan Stress Categorization (Overdue Timeline)</h3>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between bg-amber-50/80 p-3 rounded-lg border-l-4 border-amber-500 text-xs">
+                        <div>
+                            <span class="font-bold text-amber-900">SMA 1 (Special Mention Account 1)</span>
+                            <div class="text-slate-600">30 days overdue</div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-amber-100 text-amber-800 rounded font-semibold border border-amber-300">Early Warning Signal</span>
+                    </div>
+
+                    <div class="flex items-center justify-between bg-orange-50/80 p-3 rounded-lg border-l-4 border-orange-500 text-xs">
+                        <div>
+                            <span class="font-bold text-orange-900">SMA 2 (Special Mention Account 2)</span>
+                            <div class="text-slate-600">60 days overdue</div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-orange-100 text-orange-800 rounded font-semibold border border-orange-300">High Risk Stress</span>
+                    </div>
+
+                    <div class="flex items-center justify-between bg-red-50/80 p-3 rounded-lg border-l-4 border-red-500 text-xs">
+                        <div>
+                            <span class="font-bold text-red-900">NPA (Non-Performing Asset)</span>
+                            <div class="text-slate-600">90+ days overdue</div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-red-100 text-red-800 rounded font-semibold border border-red-300">Default / Bad Debt</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Underwriting Parameters Table -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                <h3 class="font-bold text-slate-900 border-b border-slate-200 pb-2">B. Mandatory Credit Underwriting Checks</h3>
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                        <strong class="text-orange-700">PAN & CIBIL Verification:</strong> Individual promoter score + Commercial LLP history.
+                    </div>
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                        <strong class="text-orange-700">Sales vs Inventory Ratio:</strong> Sales &gt; Inventory (Benchmark ~1.2x healthy turnover).
+                    </div>
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                        <strong class="text-orange-700">Physical KYB Inspection:</strong> Geotagged GPS photos & physical site verification.
+                    </div>
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                        <strong class="text-orange-700">GST Regularity Check:</strong> GSTR-1 & 3B filing consistency + cashflow validation.
+                    </div>
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                        <strong class="text-orange-700">Turnover Benchmark:</strong> ~1 Lakh loan limit requires min ~5 Lakh monthly turnover.
+                    </div>
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                        <strong class="text-orange-700">Approval Escalation:</strong> Asst. Manager Recommends ➔ Branch Manager Sanctions.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: MEGHA MA'AM CALL SCRIPT & PM DISCOVERY -->
+    <section class="space-y-4">
+        <div class="bg-purple-50 border border-purple-200 p-5 rounded-xl">
+            <h2 class="text-xl font-bold text-purple-900 flex items-center gap-2">
+                <span class="w-3 h-3 bg-purple-600 rounded-full inline-block"></span>
+                4. Megha Ma'am Call Insights & Discovery Question Bank (OCTA Flow Focus)
+            </h2>
+            <p class="text-xs text-purple-700 mt-1">
+                Context: Megha Ma'am (ex-PWC, CA/CFO expert) se discovery questions se operational friction nikalna aur unhe interview prioritization/architecture response mein map karna.
+            </p>
+        </div>
+
+        <div class="space-y-3">
+            <!-- Question 1 -->
+            <div class="print-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm grid md:col-span-12 md:grid-cols-12 gap-4 items-start">
+                <div class="md:col-span-5 space-y-1">
+                    <span class="px-2 py-0.5 bg-orange-100 text-orange-800 text-[10px] font-bold rounded uppercase border border-orange-200">Capacity Bottleneck</span>
+                    <h4 class="font-bold text-slate-900 text-sm">Sawal to ask Megha Ma'am:</h4>
+                    <p class="text-xs text-slate-600 italic">
+                        "Ma'am, jab ek accounting firm 50-60 clients handle karti hai, toh team ki zyaada capacity kahan freeze hoti hai? Client document chase karne mein ya month-end reconciliation audit mein?"
+                    </p>
+                </div>
+                <div class="md:col-span-3 bg-amber-50 p-3 rounded-lg text-xs space-y-1 border border-amber-200">
+                    <strong class="text-amber-800">Kyun Poochhna Hai?</strong>
+                    <p class="text-slate-700">User pain severity rank pata chalega ki WhatsApp automated chasing features pehle banayein ya auto-match algorithms.</p>
+                </div>
+                <div class="md:col-span-4 bg-orange-50 border border-orange-200 p-3 rounded-lg text-xs space-y-1">
+                    <strong class="text-octaOrangeDark">PM Interview Defense Script:</strong>
+                    <p class="text-slate-700">
+                        "Mera prioritization framework <strong>'Hours Recovered per Client per Month'</strong> metric par based hai."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="print-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm grid md:col-span-12 md:grid-cols-12 gap-4 items-start">
+                <div class="md:col-span-5 space-y-1">
+                    <span class="px-2 py-0.5 bg-purple-100 text-purple-800 text-[10px] font-bold rounded uppercase border border-purple-200">Human-In-The-Loop Trust</span>
+                    <h4 class="font-bold text-slate-900 text-sm">Sawal to ask Megha Ma'am:</h4>
+                    <p class="text-xs text-slate-600 italic">
+                        "Kya CFOs/CAs 100% full AI automated approvals par trust karenge, ya unhe threshold-based manual approval queue chahiye?"
+                    </p>
+                </div>
+                <div class="md:col-span-3 bg-amber-50 p-3 rounded-lg text-xs space-y-1 border border-amber-200">
+                    <strong class="text-amber-800">Kyun Poochhna Hai?</strong>
+                    <p class="text-slate-700">Risk boundaries define karne ke liye (e.g., transactions &le; $5,000 auto-approve, above $5,000 flags CFO queue).</p>
+                </div>
+                <div class="md:col-span-4 bg-purple-50 border border-purple-200 p-3 rounded-lg text-xs space-y-1">
+                    <strong class="text-purple-800">PM Interview Defense Script:</strong>
+                    <p class="text-slate-700">
+                        "Hum full automation build nahi kar rahe; hum <strong>Human-in-the-Loop Exception Routing Engine</strong> build kar rahe hain."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: ENTERPRISE, IB & CORPORATE FINANCE INSIGHTS (MBA/IB FRIEND CALL) -->
+    <section class="space-y-4">
+        <div class="bg-gradient-to-r from-orange-100 via-amber-50 to-purple-100 border border-orange-200 p-5 rounded-xl">
+            <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                <span class="w-3 h-3 bg-octaOrange rounded-full inline-block animate-ping"></span>
+                5. Enterprise, IB & Corporate Finance Deep-Dive (MBA Friend Call Insights)
+            </h2>
+            <p class="text-xs text-slate-700 mt-1">
+                Crucial additions: Enterprise Conglomerate Reconciliations (Reliance Example), Trial Balance Automation, TDS Compliance Engine, Real-time MIS Dashboards & Year-End Close Workflows.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+            <!-- A. Reliance / Enterprise Multi-Subsidiary Mismatch -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                    <h3 class="font-bold text-slate-900 text-base">A. Enterprise Conglomerate Model (Reliance Case Study)</h3>
+                    <span class="px-2 py-0.5 bg-orange-100 text-orange-800 text-[10px] font-bold rounded border border-orange-200">Inter-Company & Scale</span>
+                </div>
+                <div class="space-y-2 text-xs text-slate-700">
+                    <p>
+                        <strong>Ground Reality:</strong> Reliance/Tata jaisi giant enterprises ya unke vendor ecosystem mein thousands of daily invoices exchange hote hain. Inter-company transfers aur vendor ledger mismatch main issue hota hai.
+                    </p>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 space-y-1">
+                        <strong class="text-amber-700">Friction Point:</strong>
+                        <p>Vendor ka Trial Balance enterprise ke Purchase Ledger se mismatch kar jata hai. Is wajeh se millions ka payment withhold ho jata hai.</p>
+                    </div>
+                    <div class="p-3 bg-orange-50 rounded-lg border border-orange-200 space-y-1">
+                        <strong class="text-octaOrangeDark">OCTA Solution Narrative:</strong>
+                        <p>"OCTA flow Enterprise Vendor Portals to automates <strong>Cross-Entity Ledger Matching</strong>. Continuous 2-way sync ensures Trial Balance zero-difference guarantee before month-end."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B. Balance Sheet & Trial Balance Automation -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                    <h3 class="font-bold text-slate-900 text-base">B. Balance Sheet & Trial Balance Reconciliation Engine</h3>
+                    <span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 text-[10px] font-bold rounded border border-emerald-200">GL Integrity</span>
+                </div>
+                <div class="space-y-2 text-xs text-slate-700">
+                    <p>
+                        <strong>Ground Reality:</strong> CA and Finance teams spent 40% time searching why Debit does not equal Credit in Trial Balance during monthly close.
+                    </p>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 space-y-1">
+                        <strong class="text-emerald-700">Automated Variance Detection:</strong>
+                        <p>OCTA AI scans General Ledger (GL) against Sub-Ledgers and Bank Statements, tagging un-reconciled lines automatically with confidence scores.</p>
+                    </div>
+                    <div class="p-3 bg-emerald-50 rounded-lg border border-emerald-200 space-y-1">
+                        <strong class="text-emerald-800">PM Pitch:</strong>
+                        <p>"We turn Trial Balance reconciliation from a 10-day retroactive audit into a <strong>real-time background thread</strong>."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C. TDS Filing Automation -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                    <h3 class="font-bold text-slate-900 text-base">C. Automated TDS Filing & Tax Compliance Workflow</h3>
+                    <span class="px-2 py-0.5 bg-amber-100 text-amber-800 text-[10px] font-bold rounded border border-amber-200">Tax & Compliance</span>
+                </div>
+                <div class="space-y-2 text-xs text-slate-700">
+                    <p>
+                        <strong>Ground Reality:</strong> Vendors ka TDS cut hota hai (e.g. 194C contractor, 194J professional). Misclassification se tax notices aur penal interest lagta hai.
+                    </p>
+                    <ul class="list-disc pl-4 space-y-1 text-slate-600">
+                        <li>Invoice line-item scan ➔ Automatic Section Tagging (10% vs 2% TDS).</li>
+                        <li>Automated Form 26AS vs Vendor Ledger Match.</li>
+                        <li>Quarterly TDS Return (Form 26Q/27Q) generation in one-click.</li>
+                    </ul>
+                    <div class="p-2.5 bg-amber-50 rounded-lg border border-amber-200">
+                        <strong class="text-amber-800">PM Value Prop:</strong> Zero Tax Penalties & 95% reduction in TDS return filing manual work.
+                    </div>
+                </div>
+            </div>
+
+            <!-- D. MIS Automation (Management Information Systems) -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                    <h3 class="font-bold text-slate-900 text-base">D. Real-Time Executive MIS Automation</h3>
+                    <span class="px-2 py-0.5 bg-purple-100 text-purple-800 text-[10px] font-bold rounded border border-purple-200">CFO Intelligence</span>
+                </div>
+                <div class="space-y-2 text-xs text-slate-700">
+                    <p>
+                        <strong>Ground Reality:</strong> CFOs ko weekly board/management update dene ke liye junior accountants 3 din Excel copy-paste karte hain.
+                    </p>
+                    <div class="grid grid-cols-2 gap-2 text-[11px]">
+                        <div class="p-2 bg-slate-50 rounded border border-slate-200">
+                            <strong class="text-purple-800">A/R Aging Buckets:</strong> 0-30, 31-60, 61-90, 90+ days live cash risks.
+                        </div>
+                        <div class="p-2 bg-slate-50 rounded border border-slate-200">
+                            <strong class="text-purple-800">Cash Burn Runway:</strong> Real-time collection vs payout projection.
+                        </div>
+                    </div>
+                    <div class="p-2.5 bg-purple-50 rounded-lg border border-purple-200">
+                        <strong class="text-purple-800">PM Value Prop:</strong> "Instant Live CFO Dashboards without a single Excel formula manually calculated."
+                    </div>
+                </div>
+            </div>
+
+            <!-- E. Year-End Annual Close & Audit Preparedness -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3 md:col-span-2">
+                <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                    <h3 class="font-bold text-slate-900 text-base">E. Year-End Annual Financial Close & Audit Automation</h3>
+                    <span class="px-2 py-0.5 bg-cyan-100 text-cyan-800 text-[10px] font-bold rounded border border-cyan-200">Audit Acceleration</span>
+                </div>
+                <div class="grid md:grid-cols-3 gap-3 text-xs text-slate-700">
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 space-y-1">
+                        <strong class="text-slate-900">1. Pre-Audit Freeze:</strong>
+                        <p>Automated locking of sub-ledgers, GL accounts, and physical asset verification reports.</p>
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 space-y-1">
+                        <strong class="text-slate-900">2. External Auditor Vault:</strong>
+                        <p>Single-click export of sample invoices, bank statements & 3-way match audit proof logs for Big 4 / statutory auditors.</p>
+                    </div>
+                    <div class="p-3 bg-orange-50 rounded-lg border border-orange-200 space-y-1">
+                        <strong class="text-octaOrangeDark">3. Cycle Reduction Impact:</strong>
+                        <p>Compresses annual audit prep time from <strong>25 days down to 4 days</strong>, saving massive auditor fees and internal burnout.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: PM PRIORITIZATION & TECHNICAL ARCHITECTURE FRAMEWORK -->
+    <section class="space-y-4">
+        <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+            <span class="w-3 h-3 bg-octaOrange rounded-full inline-block"></span>
+            6. PM Prioritization Matrix & Technical Architecture Blueprint
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Prioritization Matrix -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                <h3 class="font-bold text-slate-900 text-base">A. Feature Prioritization Matrix (OCTA Product Roadmap)</h3>
+                
+                <div class="grid grid-cols-2 gap-2 text-xs text-center font-semibold">
+                    <!-- P0 -->
+                    <div class="bg-emerald-50 border border-emerald-300 p-3 rounded-lg flex flex-col justify-between">
+                        <span class="text-emerald-800 font-bold uppercase text-[10px]">P0 - Immediate Quick Wins</span>
+                        <div class="text-slate-800 mt-2">Bank Rec AI Auto-Match + Automated WhatsApp/Email Document Chasing + Basic MIS Dashboard</div>
+                        <span class="text-[10px] text-emerald-700 mt-2">High Impact / Low-Med Effort</span>
+                    </div>
+
+                    <!-- P1 -->
+                    <div class="bg-orange-50 border border-orange-300 p-3 rounded-lg flex flex-col justify-between">
+                        <span class="text-octaOrangeDark font-bold uppercase text-[10px]">P1 - Core Strategic Bets</span>
+                        <div class="text-slate-800 mt-2">Embedded Credit Scoring Engine + Real-time QuickBooks/Tally/Xero Sync + TDS Section Engine</div>
+                        <span class="text-[10px] text-orange-700 mt-2">High Impact / High Effort</span>
+                    </div>
+
+                    <!-- P2 -->
+                    <div class="bg-slate-50 border border-slate-200 p-3 rounded-lg flex flex-col justify-between">
+                        <span class="text-slate-700 font-bold uppercase text-[10px]">P2 - Secondary Enhancements</span>
+                        <div class="text-slate-600 mt-2">Custom Invoice Branding Templates & Basic Notification Preferences</div>
+                        <span class="text-[10px] text-slate-500 mt-2">Low Impact / Low Effort</span>
+                    </div>
+
+                    <!-- Avoid -->
+                    <div class="bg-red-50 border border-red-200 p-3 rounded-lg flex flex-col justify-between">
+                        <span class="text-red-700 font-bold uppercase text-[10px]">Deprioritize / Avoid</span>
+                        <div class="text-slate-600 mt-2">Building Custom In-house Full ERP from scratch (Competing with Tally/Xero)</div>
+                        <span class="text-[10px] text-red-600 mt-2">Low Impact / Extreme Effort</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Pipeline Diagram -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                <h3 class="font-bold text-slate-900 text-base">B. Technical Architecture & Data Pipeline</h3>
+                
+                <div class="space-y-2 text-xs">
+                    <div class="p-2.5 bg-slate-50 rounded-lg border-l-4 border-orange-500">
+                        <strong class="text-orange-700">1. Multimodal Data Ingestion Layer:</strong>
+                        <p class="text-slate-700">OCR Engine (PDF Invoices) + Banking Webhooks (Open Banking APIs) + ERP Connectors (QuickBooks, Xero, Tally).</p>
+                    </div>
+
+                    <div class="p-2.5 bg-slate-50 rounded-lg border-l-4 border-purple-500">
+                        <strong class="text-purple-700">2. Processing & AI Match Engine:</strong>
+                        <p class="text-slate-700">Rule-based 3-Way Matching (PO vs Invoice vs Receipt) + Fuzzy Logic for TDS & Trial Balance matching.</p>
+                    </div>
+
+                    <div class="p-2.5 bg-slate-50 rounded-lg border-l-4 border-amber-500">
+                        <strong class="text-amber-700">3. Human-In-The-Loop Exception Queue:</strong>
+                        <p class="text-slate-700">Score &gt; 95% &amp; Amount &le; $5k ➔ Auto-Reconciled.<br>Score &lt; 95% OR High Amount ➔ Dispatched to CFO Approval Dashboard.</p>
+                    </div>
+
+                    <div class="p-2.5 bg-slate-50 rounded-lg border-l-4 border-emerald-500">
+                        <strong class="text-emerald-700">4. Ledger Immutable Sync & Audit Trail:</strong>
+                        <p class="text-slate-700">Automated GL posting + immutable audit log for statutory year-end close.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: KEY METRICS & INTERVIEW SCRIPT CHEAT SHEET -->
+    <section class="space-y-4">
+        <h2 class="text-xl font-bold text-emerald-800 flex items-center gap-2">
+            <span class="w-3 h-3 bg-emerald-500 rounded-full inline-block"></span>
+            7. Core Metrics & Quick Interview Revision Playbook (Romanised Hindi)
+        </h2>
+
+        <div class="overflow-x-auto shadow-sm rounded-xl border border-slate-200">
+            <table class="w-full text-left text-xs text-slate-700 print-card bg-white">
+                <thead class="bg-slate-100 text-slate-800 uppercase text-[10px] tracking-wider border-b border-slate-200">
+                    <tr>
+                        <th class="p-3">Interview Question Theme</th>
+                        <th class="p-3">Core Metric to Quote</th>
+                        <th class="p-3">Best PM Answer Script (Romanised Hindi)</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                    <tr class="bg-white">
+                        <td class="p-3 font-bold text-slate-900">OCTA Core Success</td>
+                        <td class="p-3 text-orange-700 font-mono font-semibold">DSO Reduction % &amp; Collection Rate</td>
+                        <td class="p-3 text-slate-800">"Core ka primary metric clients ka DSO 60 days se 20 days par laana aur automated reminders ke through collection conversion rate badhana hai."</td>
+                    </tr>
+                    <tr class="bg-slate-50/50">
+                        <td class="p-3 font-bold text-slate-900">OCTA Flow Adoption</td>
+                        <td class="p-3 text-purple-700 font-mono font-semibold">Hours Saved / Week &amp; Client Capacity Multiplier</td>
+                        <td class="p-3 text-slate-800">"Flow tool accounting firms ko bina extra headcount hire kiye 2x-3x clients manage karne ka capacity deta hai. 25 hours/week saved humara North Star metric hai."</td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td class="p-3 font-bold text-slate-900">Risk & Credit Facility</td>
+                        <td class="p-3 text-amber-700 font-mono font-semibold">Loan Default Rate &amp; SMA 1 ➔ NPA Transition Rate</td>
+                        <td class="p-3 text-slate-800">"Embedded finance mein underwriting algorithms ka success isme hai ki accounts ko SMA 1 se NPA na hone diya jaye, maintaining strict CIBIL & GST checks."</td>
+                    </tr>
+                    <tr class="bg-slate-50/50">
+                        <td class="p-3 font-bold text-slate-900">Enterprise & Trial Balance</td>
+                        <td class="p-3 text-cyan-700 font-mono font-semibold">Trial Balance Mismatch % &amp; Close Cycle Days</td>
+                        <td class="p-3 text-slate-800">"Enterprise clients like Reliance ecosystem mein Trial Balance mismatch zero karna aur year-end close cycle ko 25 days se 4 days par laana primary win metric hai."</td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td class="p-3 font-bold text-slate-900">Tax Compliance & TDS</td>
+                        <td class="p-3 text-amber-800 font-mono font-semibold">TDS Form 26AS Match Accuracy %</td>
+                        <td class="p-3 text-slate-800">"TDS filing automation me 98%+ automated section tagging target karenge taaki penalty zero ho and quarter-end tax return filing friction खत्म ho."</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- SECTION 8: KILLER QUESTIONS TO ASK NUPUR MITTAL (END OF INTERVIEW) -->
+    <section class="space-y-4">
+        <div class="bg-gradient-to-r from-orange-50 via-amber-50 to-orange-100 p-5 rounded-xl border border-orange-200 shadow-sm">
+            <h2 class="text-xl font-bold text-slate-900 flex items-center justify-between">
+                <span class="flex items-center gap-2">
+                    <span class="w-3 h-3 bg-octaOrange rounded-full inline-block"></span>
+                    8. Strategic Killer Questions to Ask Co-Founder Nupur Mittal
+                </span>
+                <span class="text-xs bg-octaOrange text-white font-bold px-3 py-1 rounded-full shadow-sm">End-of-Interview Impact</span>
+            </h2>
+            <p class="text-xs text-slate-700 mt-1">
+                Jab interview ke end mein Nupur puchhein <em>"Do you have any questions for me?"</em>, tab inme se 3-4 deep business/product questions puchhna taaki full dominance show ho:
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+            <!-- Question 1: KSA Credit Facility & Underwriting -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-2">
+                <div class="flex justify-between items-center">
+                    <span class="px-2.5 py-0.5 bg-orange-100 text-orange-800 font-bold text-[10px] rounded uppercase border border-orange-200">Strategic Financing & Credit Risk</span>
+                    <span class="text-slate-400 text-[10px] font-mono">Q1</span>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm">1. Sukna Fund $20M Credit Facility Deployment in KSA</h4>
+                <p class="text-xs text-slate-700 italic">
+                    "Nupur, recently OCTA ne Sukna Fund se $20M credit facility secure ki hai KSA SMEs ke liye. As a PM, jab hum direct credit line embedded finance me deliver karte hain, toh core product challenge underwriting signals (invoicing patterns, payment cadence) ko risk partner ke saath sync karna hota hai. OCTA underwriting algorithms me non-performing loan risks ko prevent karne ke liye sabse primary signal kaunsa track kar raha hai?"
+                </p>
+                <div class="p-2 bg-orange-50 text-[11px] text-orange-900 rounded border border-orange-200">
+                    <strong>Why it wins:</strong> Demonstrates you read their recent news ($20M Sukna credit facility) and understand credit risk/underwriting logic.
+                </div>
+            </div>
+
+            <!-- Question 2: OCTA Core vs OCTA Flow Product Synergy -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-2">
+                <div class="flex justify-between items-center">
+                    <span class="px-2.5 py-0.5 bg-purple-100 text-purple-800 font-bold text-[10px] rounded uppercase border border-purple-200">Product Synergies</span>
+                    <span class="text-slate-400 text-[10px] font-mono">Q2</span>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm">2. OCTA Core & OCTA Flow Ecosystem Flywheel</h4>
+                <p class="text-xs text-slate-700 italic">
+                    "OCTA Core direct SMEs ko target karta hai aur OCTA Flow Accounting Firms ko AI workforce deta hai. Long term mein, kya aap dekh rahi hain ki Accounting Firms (Flow) hi OCTA Core ke liye primary distribution channel (GTM engine) ban jayengi? Internal product level par dono products ke beech data sharing aur ecosystem flywheel kaise move ho raha hai?"
+                </p>
+                <div class="p-2 bg-purple-50 text-[11px] text-purple-900 rounded border border-purple-200">
+                    <strong>Why it wins:</strong> Shows executive product strategy thinking & understanding of distribution flywheels.
+                </div>
+            </div>
+
+            <!-- Question 3: Enterprise vs SME Product Architecture -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-2">
+                <div class="flex justify-between items-center">
+                    <span class="px-2.5 py-0.5 bg-cyan-100 text-cyan-800 font-bold text-[10px] rounded uppercase border border-cyan-200">Enterprise Expansion</span>
+                    <span class="text-slate-400 text-[10px] font-mono">Q3</span>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm">3. Enterprise Conglomerates & Complex Reconciliations</h4>
+                <p class="text-xs text-slate-700 italic">
+                    "SMEs mein standard invoice chasing challenge hota hai, lekin jab hum enterprise ya multi-subsidiary conglomerates (like Reliance or large MENA groups) ki taraf scale karte hain, toh main pain point Trial Balance mismatches, TDS compliance filing aur complex inter-company reconciliations hota hai. Near-term product roadmap mein OCTA mid-market SME se Enterprise features par transition accelerate kar raha hai?"
+                </p>
+                <div class="p-2 bg-cyan-50 text-[11px] text-cyan-900 rounded border border-cyan-200">
+                    <strong>Why it wins:</strong> Integrates your IB friend's enterprise insights (Reliance/TDS/Trial balance) into a high-level strategic roadmap question.
+                </div>
+            </div>
+
+            <!-- Question 4: AI Workforce Trust & Human-in-the-Loop -->
+            <div class="print-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-2">
+                <div class="flex justify-between items-center">
+                    <span class="px-2.5 py-0.5 bg-emerald-100 text-emerald-800 font-bold text-[10px] rounded uppercase border border-emerald-200">AI & Product Trust</span>
+                    <span class="text-slate-400 text-[10px] font-mono">Q4</span>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm">4. AI Agent Accuracy & User Trust Calibration</h4>
+                <p class="text-xs text-slate-700 italic">
+                    "OCTA positioning itself as an 'AI Workforce for Accounting Firms'. Accounting me risk tolerance zero hota hai—ek galat GL entry audit issue create kar sakti hai. OCTA AI agents me Human-in-the-loop validation threshold designing par team ka kya feedback raha hai? Users kitne time baad full automated mode switch karte hain?"
+                </p>
+                <div class="p-2 bg-emerald-50 text-[11px] text-emerald-900 rounded border border-emerald-200">
+                    <strong>Why it wins:</strong> Shows deep appreciation for AI product management, accuracy bounds, and user trust building in fintech.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CHECKLIST BEFORE INTERVIEW -->
+    <div class="print-card bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 p-6 rounded-2xl shadow-lg flex flex-col md:flex-row justify-between items-center gap-4 text-white">
+        <div>
+            <h3 class="font-extrabold text-white text-lg">Pre-Interview Final Mental Checklist</h3>
+            <p class="text-xs text-orange-50 mt-1 space-y-1">
+                <span>✓ <strong>Vikas Sir:</strong> SMA 1 (30d) ➔ SMA 2 (60d) ➔ NPA (90d), Underwriting (CIBIL + GST + Sales:Inventory 1.2x).</span><br>
+                <span>✓ <strong>Megha Ma'am:</strong> Capacity limits, 3-way matching engine, document chasing, threshold sign-offs (&le; $5k auto).</span><br>
+                <span>✓ <strong>IB/Finance Friend:</strong> Reliance inter-company Trial balance matching, TDS tax section filing, real-time MIS dashboards, 4-day annual close.</span><br>
+                <span>✓ <strong>Nupur Mittal Q&A:</strong> $20M Sukna credit line deployment & OCTA Flow GTM flywheel.</span>
+            </p>
+        </div>
+        <div class="text-right no-print flex-shrink-0">
+            <span class="px-5 py-3 bg-white text-octaOrangeDark font-extrabold text-sm rounded-xl shadow-md inline-block">Ready to Ace the Interview!</span>
+        </div>
+    </div>
+
+</body>
+</html>

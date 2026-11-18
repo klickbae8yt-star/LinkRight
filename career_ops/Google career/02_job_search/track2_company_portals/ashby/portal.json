@@ -1,0 +1,62 @@
+{
+  "portal_id": "ashby",
+  "company": "Ashby ATS (Multi-Company Template)",
+  "enabled": true,
+  "parser_type": "ashby_v1",
+  "search_query": "Product Manager",
+  "search_location": "Remote",
+  "max_jobs": 0,
+  "max_pages": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://api.ashbyhq.com/posting-api/job-board/{{company_slug}}",
+    "query": {
+      "includeCompensation": "true"
+    },
+    "headers": {
+      "Accept": "application/json",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+    },
+    "body": null
+  },
+  "parser_config": {
+    "items_path": "jobs",
+    "fields": {
+      "job_id": "id",
+      "title": "title",
+      "locations": "locationName",
+      "job_url": "jobUrl",
+      "apply_url": "applyUrl",
+      "about_the_job": "descriptionHtml",
+      "job_published_at": "publishedDate",
+      "department": "departmentName",
+      "employment_type": "employmentType",
+      "compensation_tier": "compensationTierSummary",
+      "is_remote": "isRemote"
+    }
+  },
+  "company_slugs": [
+    "vercel",
+    "supabase",
+    "railway",
+    "resend",
+    "cal",
+    "trigger",
+    "neon",
+    "posthog",
+    "dub",
+    "papermark",
+    "midday",
+    "twenty",
+    "documenso",
+    "infisical",
+    "openbb",
+    "typebot",
+    "crowd",
+    "formbricks",
+    "rallly",
+    "inbox-zero"
+  ],
+  "notes": "Template portal: loops over company_slugs. Ashby public API: api.ashbyhq.com/posting-api/job-board/<slug>?includeCompensation=true. BONUS: returns compensation data when available. Heavily used by YC-backed and Series A startups."
+}
+

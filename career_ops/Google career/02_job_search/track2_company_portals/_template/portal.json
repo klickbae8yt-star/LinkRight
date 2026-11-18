@@ -1,0 +1,34 @@
+{
+  "portal_id": "example_company",
+  "company": "Example Company",
+  "enabled": false,
+  "parser_type": "json_path",
+  "search_query": "Product Manager",
+  "search_location": "India",
+  "max_jobs": 0,
+  "max_pages": 5,
+  "request": {
+    "method": "GET",
+    "url": "https://example.com/api/jobs",
+    "query": {},
+    "headers": {
+      "Accept": "application/json",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+    },
+    "body": null
+  },
+  "parser_config": {
+    "items_path": "jobs",
+    "fields": {
+      "job_id": "id",
+      "title": "title",
+      "locations": "location",
+      "job_url": "url",
+      "apply_url": "applyUrl",
+      "about_the_job": "description",
+      "job_published_at": "publishedAt"
+    }
+  },
+  "notes": "Generated template. Drop HAR capture in captures/ and run scripts/har_to_api.py."
+}
+

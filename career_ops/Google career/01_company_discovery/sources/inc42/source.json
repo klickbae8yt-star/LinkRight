@@ -1,0 +1,15 @@
+{
+  "source_id": "inc42",
+  "name": "Inc42 — India Startup Funding News",
+  "status": "needs_har",
+  "url_to_visit": "https://inc42.com/buzz/",
+  "what_to_do": "Visit the URL, scroll to load multiple pages, export HAR",
+  "expected_api_pattern": "inc42.com/wp-json/wp/v2/posts or GraphQL",
+  "output_shape": "list of articles with title, date, excerpt, link",
+  "filters": {
+    "keywords": ["Series A", "Series B", "funding", "raises", "remote"],
+    "india_specific": true
+  },
+  "notes": "Best single source for India-first funded startups. Covers rounds that TechCrunch ignores entirely."
+}
+

@@ -1,0 +1,79 @@
+{
+  "company_slug": "givecampus",
+  "company_name": "GiveCampus",
+  "website": "http://go.givecampus.com",
+  "career_portal_url": "https://go.givecampus.com/about-us/careers/",
+  "ats_platform": "greenhouse",
+  "ats_slug": "givecampus",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 12,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S15",
+  "team_size": 130,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Fully Remote",
+    "Washington, DC, USA"
+  ],
+  "summary": "The fundraising platform for schools.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/givecampus",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/givecampus/",
+  "founders": [
+    {
+      "name": "Kestrel Linder",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/pub/kestrel-linder/b3/677/403?domainCountryName=&csrfToken=ajax%3A4508253911625070148",
+      "twitter": "",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Michael Kong",
+      "title": "Founder/CTO",
+      "linkedin": "https://www.linkedin.com/pub/michael-kong/10/bb1/353",
+      "twitter": "",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 44,
+  "recommendation": "watch_needs_intel",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 0,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

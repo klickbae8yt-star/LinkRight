@@ -1,0 +1,15 @@
+{
+  "source_id": "antler",
+  "name": "Antler — Global Accelerator (India cohorts)",
+  "status": "needs_har",
+  "url_to_visit": "https://www.antler.co/portfolio?location=India",
+  "what_to_do": "Visit portfolio filtered to India, let it load, export HAR",
+  "expected_api_pattern": "REST or GraphQL JSON feed",
+  "output_shape": "list of companies with name, description, country, sector, website",
+  "filters": {
+    "locations": ["India", "Singapore", "Remote"],
+    "sectors": ["AI", "SaaS", "Fintech", "Ecommerce"]
+  },
+  "notes": "Antler India is very active. Portfolio companies are early-stage, remote-first, often looking for first PMs. Strong Tier 2 investor signal."
+}
+

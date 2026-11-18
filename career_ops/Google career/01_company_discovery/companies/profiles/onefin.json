@@ -1,0 +1,77 @@
+{
+  "company_slug": "onefin",
+  "company_name": "OneFin",
+  "website": "https://www.onefin.in",
+  "career_portal_url": "https://www.onefin.in/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "Ecommerce & Dropshipping",
+  "industry_grade": "A-",
+  "industry_score": 8,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W17",
+  "team_size": 50,
+  "locations": [
+    "India",
+    "South Asia",
+    "Bengaluru"
+  ],
+  "summary": "Shopify for Financial Services",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/onefin",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/onefinin/",
+  "founders": [
+    {
+      "name": "Pratish Gandhi",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/pratishgandhi",
+      "twitter": "",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Harshit Vaishnav",
+      "title": "Founder",
+      "linkedin": "https://in.linkedin.com/in/harshitv",
+      "twitter": "",
+      "bio": "Co-founder, OneFin",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 48,
+  "recommendation": "watch_needs_intel",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 0,
+    "past_exits": 0,
+    "industry_match": 8,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

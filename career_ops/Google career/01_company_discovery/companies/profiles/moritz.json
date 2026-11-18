@@ -1,0 +1,87 @@
+{
+  "company_slug": "moritz",
+  "company_name": "Moritz",
+  "website": "http://moritzlegal.com",
+  "career_portal_url": "http://moritzlegal.com/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "AI & Automation",
+  "industry_grade": "A",
+  "industry_score": 9,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W26",
+  "team_size": 10,
+  "locations": [
+    "Norway",
+    "Europe",
+    "Remote",
+    "Partly Remote",
+    "Oslo, Norway"
+  ],
+  "summary": "Global AI-native law firm handling legal work with same-day turnaround",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/moritz",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/moritzlaw",
+  "founders": [
+    {
+      "name": "Pamir Ehsas",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/pamirehsas/",
+      "twitter": "https://x.com/pamirehsas",
+      "bio": "We handle your startup\u2019s legal work, with elite lawyers & same-day turnaround | Ex-outside counsel to OpenAI, Google",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 20,
+      "career_signals": [
+        "google",
+        "openai",
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    },
+    {
+      "name": "Stefan Mandaric",
+      "title": "Founder/CTO",
+      "linkedin": "https://www.linkedin.com/in/stefan-mandaric/",
+      "twitter": "",
+      "bio": "AI-native lawyers handling startup legal work in hours | CTO, ex-Fulbright scholar at MIT",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 19,
+      "career_signals": [
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 80,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 20,
+    "past_exits": 0,
+    "industry_match": 9,
+    "location_compliance": 10,
+    "product_stage_fit": 6
+  },
+  "needs_linkedin_burner_lookup": false
+}

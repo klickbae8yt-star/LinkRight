@@ -1,0 +1,77 @@
+{
+  "company_slug": "model-ml",
+  "company_name": "Model ML",
+  "website": "https://www.modelml.com",
+  "career_portal_url": "https://www.modelml.com/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "AI & Automation",
+  "industry_grade": "A",
+  "industry_score": 9,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W24",
+  "team_size": 180,
+  "locations": [
+    "United Kingdom",
+    "Europe",
+    "London"
+  ],
+  "summary": "The AI for Financial Services.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/model-ml",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/model-ml/posts/?feedView=all",
+  "founders": [
+    {
+      "name": "Arnie Englander",
+      "title": "Founder",
+      "linkedin": "https://linkedin.com/in/arnie-englander",
+      "twitter": "",
+      "bio": "2x YC founder. \nFancy (S20) - Acquired by Gopuff.\nModelML (W24).\nLove building cool stuff.",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 10,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Chaz Englander",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/chazenglander",
+      "twitter": "",
+      "bio": "2x YC Founder. \nFat Llama (S17) - acquired by Hygglo \nModeML (W24)",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 10,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 57,
+  "recommendation": "consider",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 0,
+    "past_exits": 10,
+    "industry_match": 9,
+    "location_compliance": 8,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

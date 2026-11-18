@@ -1,0 +1,64 @@
+{
+  "company_slug": "prolific",
+  "company_name": "Prolific",
+  "website": "https://www.prolific.com",
+  "career_portal_url": "https://www.prolific.com/careers",
+  "ats_platform": "greenhouse",
+  "ats_slug": "prolific",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 26,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S19",
+  "team_size": 180,
+  "locations": [
+    "United Kingdom",
+    "Europe",
+    "Remote",
+    "Partly Remote",
+    "London"
+  ],
+  "summary": "Making diverse, high-quality data easily available to anyone, anywhere",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/prolific",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/prolific-academic",
+  "founders": [
+    {
+      "name": "Phelim Bradley",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/phelim-bradley-84300826",
+      "twitter": "https://twitter.com/phelimb",
+      "bio": "Co-Founder and CEO of prolific.co.Prolific is a platform that makes it easy to run high quality online research. We manage a diverse pool of 100,000+ verified participants and provide access to an ecosystem of tools to run research on them. \n\nPreviously, I did a PhD in Bioinformatics, where I wrote software to analyze and search bacterial data sets using graph data structures.",
+      "education_score": 5,
+      "education_signal": "University degree mentioned",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 54,
+  "recommendation": "watch_needs_intel",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 5,
+    "founder_career": 5,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

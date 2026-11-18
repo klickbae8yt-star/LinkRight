@@ -1,0 +1,14 @@
+# Dark Signal
+### A Design Philosophy
+
+---
+
+**Dark Signal** is the visual language of detection — the aesthetic discipline of finding truth buried inside noise. It borrows its grammar from scientific instrumentation: the oscilloscope trace, the network topology map, the seismograph reading a fault before it ruptures. The world it depicts is invisible to most, but legible to those trained to read it. Everything in this philosophy is built on the paradox that the most powerful signals are also the quietest — anomalies that reveal themselves only through sustained, systematic observation.
+
+The compositional principle is contrast as tension. A deep, saturated ground — near-black, the colour of unlit data — serves as the field against which signals emerge. Geometric forms: nodes, edges, vertices, traces. The network is always present, always dense, always suggesting scale beyond the frame. Most of it is ambient, murmured. A small number of elements carry full intensity — the flagged signal, the detected anomaly — and their brightness earns meaning only because everything else is restrained. This is meticulously calibrated contrast, the product of painstaking chromatic deliberation: every luminance value chosen not for beauty alone, but for communicative precision.
+
+Color is a single-signal system. One chromatic accent — precise, electric, unwavering — cuts through the dark ground. It appears sparingly: a vertical rule, a highlighted node, a label, a hairline. Its recurrence is what gives it authority. The palette is otherwise near-monochromatic: dark navy, dim blue-grey, white. The accent earns every use. This chromatic economy is not minimalism for its own sake; it is the visual equivalent of signal-to-noise ratio, engineered at master level with the precision of someone who has spent years calibrating instruments.
+
+Typography is clinical and geometric — monospaced or grotesque, never decorative. Text appears only where it anchors meaning that form cannot carry alone. A name. A date. A classification. Nothing is set to draw attention to itself; everything is set to serve the composition. Letterforms are placed with the care of someone who treats typography as spatial punctuation, not decoration — thin strokes, generous tracking, perfect optical alignment. The result should feel like a field annotation in an imaginary scientific discipline, not a designed document.
+
+Space and rhythm carry the philosophical weight. The network background is the breathing room; the text is the finding. Between them, horizontal rules and hairlines act as time signatures — the rhythm of the analytical process. This is the work of someone at the absolute top of their field: every interval considered, every margin the result of deliberate decision rather than default. The whole should feel like an artifact pulled from a research archive — credible, earned, austere — and utterly impossible to fake.

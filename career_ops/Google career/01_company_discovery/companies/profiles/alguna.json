@@ -1,0 +1,79 @@
+{
+  "company_slug": "alguna",
+  "company_name": "Alguna",
+  "website": "https://alguna.com",
+  "career_portal_url": "https://alguna.com/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "AI & Automation",
+  "industry_grade": "A",
+  "industry_score": 9,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S23",
+  "team_size": 10,
+  "locations": [
+    "United Kingdom",
+    "Europe",
+    "Remote",
+    "Fully Remote",
+    "London"
+  ],
+  "summary": "AI-Native CPQ & Billing for Modern Pricing Models",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/alguna",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/algunahq/",
+  "founders": [
+    {
+      "name": "Aleks \u0110eki\u0107",
+      "title": "Founder",
+      "linkedin": "https://linkedin.com/in/aleksdjekic",
+      "twitter": "https://twitter.com/aleks_djekic",
+      "bio": "Co-Founder and CEO of Alguna (S23) \u2013 Spent most of his career building payment products and apps in Fintech. At Dojo (Square for the UK), built a custom revenue management platform for 600 people in GTM org. Most recently, at Primer.io, a global payment orchestration fintech, scaled payments and commerce ecosystems to 100+ connections.",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Jamie MacLeod",
+      "title": "Founder",
+      "linkedin": "https://linkedin.com/in/jamie-macleod",
+      "twitter": "",
+      "bio": "Co-founder and CTO of Alguna. Passionate about driving efficiency through software and building effective engineering teams. Previously a founding engineer at Primer, a payment orchestration fintech, scaling the engineering org from 30 to 100 and leading a group of ~20 engineers.",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 50,
+  "recommendation": "watch_needs_intel",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 5,
+    "past_exits": 0,
+    "industry_match": 9,
+    "location_compliance": 10,
+    "product_stage_fit": 6
+  },
+  "needs_linkedin_burner_lookup": true
+}

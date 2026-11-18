@@ -1,0 +1,68 @@
+{
+  "company_slug": "lob",
+  "company_name": "Lob",
+  "website": "http://lob.com",
+  "career_portal_url": "https://www.lob.com/careers",
+  "ats_platform": "greenhouse",
+  "ats_slug": "lob",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 5,
+  "industry": "AI & Automation",
+  "industry_grade": "A",
+  "industry_score": 9,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S13",
+  "team_size": 150,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "New York City"
+  ],
+  "summary": "Lob is the only automation platform that transforms direct mail into\u2026",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/lob",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/lob/mycompany/",
+  "founders": [
+    {
+      "name": "Harry Zhang",
+      "title": "Founder",
+      "linkedin": "https://linkedIn.com/in/zhangha",
+      "twitter": "",
+      "bio": "Founder of Lob (YC S13)",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 20,
+      "career_signals": [
+        "microsoft",
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 79,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 10,
+    "founder_career": 20,
+    "past_exits": 0,
+    "industry_match": 9,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": false
+}

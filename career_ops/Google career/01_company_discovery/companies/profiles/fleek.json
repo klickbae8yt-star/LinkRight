@@ -1,0 +1,86 @@
+{
+  "company_slug": "fleek",
+  "company_name": "Fleek",
+  "website": "https://www.joinfleek.com",
+  "career_portal_url": "https://www.joinfleek.com/careers",
+  "ats_platform": "ashby",
+  "ats_slug": "fleek",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 6,
+  "industry": "Ecommerce & Dropshipping",
+  "industry_grade": "A-",
+  "industry_score": 8,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W22",
+  "team_size": 100,
+  "locations": [
+    "United Kingdom",
+    "Europe",
+    "Remote",
+    "Partly Remote",
+    "London"
+  ],
+  "summary": "A B2B marketplace for wholesale second hand fashion",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/fleek",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/joinfleek/",
+  "founders": [
+    {
+      "name": "Abhi Arora",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/abhishekarora7/",
+      "twitter": "",
+      "bio": "Abhi has scaled startups in San Francisco, Berlin, and London. Most recently, he co-founded a video AI startup for media creators. Before that, he was an early employee at Dubsmash and led growth to 300M users (acquired by Reddit). Abhi has a BS from Berkeley and an MBA from Cambridge.",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 15,
+      "career_signals": [
+        "serial_founder"
+      ],
+      "exit_score": 10,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    },
+    {
+      "name": "Sanket Agarwal",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/sanket-agarwal-32209641/",
+      "twitter": "",
+      "bio": "Sanket is a seasoned tech enterpreneur who has been part of companies at all stages. Most recently he was leading 30 people Consumer and Marketing Eng & Product Org with 20M DAU and 5M/mo marketing spend.\n\nBefore that Sanket has experience working on ground up startups at Suki where he was a founding engineer building a audio streaming stack. He helped the company raise Seed and Series A and grew to $1M ARR before he left.",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 20,
+      "career_signals": [
+        "google",
+        "uber",
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 10,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 93,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 20,
+    "past_exits": 10,
+    "industry_match": 8,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": false
+}

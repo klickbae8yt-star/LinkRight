@@ -1,0 +1,31 @@
+# Next 300 — Bug Log
+
+- **parse_md** | `Crushon.AI` | no URL found in row
+- **duplicate** | `Epicenter` | already in career_urls_result.json — skipping
+- **discovery** | `Rewatch` | no candidate reached 200/30x/403
+- **discovery** | `Mapify` | no candidate reached 200/30x/403
+- **discovery** | `Dukkantek` | no candidate reached 200/30x/403
+- **discovery** | `Cashew Payments` | no candidate reached 200/30x/403
+- **discovery** | `Smiles (by e&)` | no candidate reached 200/30x/403
+- **discovery** | `FlexxPay` | no candidate reached 200/30x/403
+- **discovery** | `Mulk Health` | no candidate reached 200/30x/403
+- **discovery** | `Urbanic (MENA)` | no candidate reached 200/30x/403
+- **discovery** | `ElasticRun` | no candidate reached 200/30x/403
+- **discovery** | `BulkWhiz` | no candidate reached 200/30x/403
+- **discovery** | `Tribal Credit` | no candidate reached 200/30x/403
+- **discovery** | `Codebase Technologies` | no candidate reached 200/30x/403
+- **discovery** | `Hubpay` | no candidate reached 200/30x/403
+- **discovery** | `Houza` | no candidate reached 200/30x/403
+- **discovery** | `Tap Payments` | no candidate reached 200/30x/403
+- **discovery** | `Bitget (MENA Hub)` | no candidate reached 200/30x/403
+- **discovery** | `Mutable.ai` | no candidate reached 200/30x/403
+- **discovery** | `SciSpace` | no candidate reached 200/30x/403
+- **discovery** | `Ekar` | no candidate reached 200/30x/403
+- **discovery** | `Souqalmal` | no candidate reached 200/30x/403
+- **discovery** | `Joi Gifts` | no candidate reached 200/30x/403
+- **discovery** | `Dunzo` | no candidate reached 200/30x/403
+- **discovery** | `Jar` | no candidate reached 200/30x/403
+- **discovery** | `Hapi` | no candidate reached 200/30x/403
+- **discovery** | `Provis` | no candidate reached 200/30x/403
+- **discovery** | `Sweetheart Kitchen` | no candidate reached 200/30x/403
+- **discovery** | `Namshi` | no candidate reached 200/30x/403

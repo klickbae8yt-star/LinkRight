@@ -1,0 +1,70 @@
+\input{preamble_fit.tex}
+% KARTA one-pager v7 (2026-10-23): fitted edge to edge; AI for customer support. Selected from master v7.
+
+\newsavebox{\skbox}
+\newcommand{\skillLine}[1]{\item[]\small{\sbox\skbox{#1}\typeout{SKMEAS \the\inputlineno\space\the\wd\skbox\space\the\linewidth}\setlength{\parfillskip}{0pt}#1\endgraf\message{SKLINES \the\inputlineno\space\the\prevgraf}}}
+\newcommand{\summaryPara}[1]{{\small\sbox\skbox{#1}\typeout{SUMMEAS \the\inputlineno\space\the\wd\skbox\space\the\linewidth}\setlength{\parfillskip}{0pt}#1\endgraf\message{SUMLINES \the\inputlineno\space\the\prevgraf}}}
+\begin{document}
+\begin{center}
+{\Huge \scshape Satvik Jain}\\[3pt]
+\small Gurugram, India (open to Bangalore) $|$ +91-7678296693 $|$ \href{mailto:satvik.jain@iitdalumni.com}{satvik.jain@iitdalumni.com} $|$
+\href{https://linkedin.com/in/satvik-jain-iitd}{linkedin.com/in/satvik-jain-iitd} $|$
+\href{https://github.com/satvik-jain-iitd}{github.com/satvik-jain-iitd}
+\end{center}
+\section{Summary}
+\summaryPara{Product manager at American Express, on corporate payments after two years on its AML risk-rating platform. Earlier led AI root-cause delivery for Walmart driver support (100K+ contacts a month) at Sprinklr, and builds voice and LLM tools. IIT Delhi.}
+\section{Experience}
+\resumeHeadingListStart
+\roleHeading{American Express}{Gurugram, India}{Senior Associate, Enterprise Payments Product Development}{Aug 2026 -- Present}
+\resumeItemListStart
+\resumeItem{Drive product delivery for AmEx's corporate payments platform, which moves about \$3.5B a month in card and account payments for corporate clients across stablecoin, real-time, direct-debit and wire rails in 14 markets in the US, EU and Australia}
+\resumeItem{Triaged all 10 production incidents on the payments platform since August, leading 3 to resolution as incident commander}
+\resumeItem{Closed a duplicate-payment risk within 2 hours during a live incident, where retry logic could resend a payment, by specifying an idempotency key so each payment is processed once and a dead-letter queue for failed retries; no client was affected}
+\resumeItemListEnd
+\roleSub{Senior Associate, Digital Product Management -- AML Customer Risk Rating}{Jul 2024 -- Aug 2026}
+\resumeItemListStart
+\resumeItem{As sole PM for its first 10 sprints, turned AmEx's AML customer risk-rating modernisation from a 21-requirement business brief into a 3-year roadmap, choosing a modular in-house build with the test sandbox first and ML-based scoring in a later phase}
+\resumeItem{Redesigned rule setup and automated the approval steps so a market's risk-rule change takes 3 days instead of 10 (70\% faster), measured in UK user-acceptance testing, for a compliance team that makes about 450 rule changes a year across its markets}
+\resumeItem{Found in 20+ analyst interviews that the same data was retyped into 3 systems, so moved a single list manager into the MVP}
+\resumeItemListEnd
+\roleHeading{Sprinklr}{Gurugram, India $\cdot$ Apr 2022 -- Jul 2024}{Implementation Consultant $\rightarrow$ Senior Implementation Consultant (Apr 2023) $\rightarrow$ Senior Product Analyst (May 2024)}{}
+\resumeItemListStart
+\resumeItem{Covered the lead PM's role for 6 months during her leave, running roadmap prioritisation, grooming and QA for a self-serve setup product built by 2 squads of 9 engineers, while still running client delivery as a senior implementation consultant}
+\resumeItem{Led delivery of an AI root-cause tool for Walmart's Spark driver support that about 450 support agents used daily, joining 100K+ monthly calls, chats, app reviews and social posts in 2023 into a single daily view of why gig drivers contacted support}
+\resumeItem{Surfaced the root causes that led Walmart to ship 2 app fixes and a policy change, cutting driver support contacts by 18\%}
+\resumeItem{Showed Walmart's VP and directors within 24 hours that 62\% of Black Friday driver contacts were about incentive payouts}
+\resumeItem{Ran the Walmart proof-of-concept, including a live 4-day Black Friday pilot for Walmart's VP and directors that tested whether AI could find root causes the same day instead of in 7 days; the account team then converted it into a \$1.2M contract}
+\resumeItem{Configured AI skill-based routing for Mars Foods' customer-care team, sending each of its $\sim$40K monthly cases to an agent with the right skills, which lifted the share of cases answered within the first-response SLA from 72\% to 82\% over 6 months}
+\resumeItem{Piloted speech-to-text for phone-menu (IVR) and voice-call analytics at Sprinklr, taking the proof of concept to one client}
+\resumeItem{Won Sprinklr's global gold medal in 6 months of joining, ranking 1st of 28 implementation consultants on 10/10 client scores}
+\resumeItemListEnd
+\resumeHeadingListEnd
+\section{AI \& Voice Work}
+\resumeHeadingListStart
+\projHeading{ContentStack $|$ \emph{Freelance AI Product Manager, part-time}}{Nov 2024 -- Jun 2025}
+\resumeItemListStart
+\resumeItem{Shipped 3 AI features to ContentStack customers, one per product (AI ghost writing, website editing and site performance monitoring), writing the PRDs and launch notes for the Head of Product; each is now used by 8 to 15 enterprise customers}
+\resumeItem{Built a 40-prompt rubric and test set for ContentStack's three AI features and raised the LLM output pass rate from 61\% to 88\% through prompt A/B tests, benchmarking 10+ competitor tools per product to set feature priorities for each launch}
+\resumeItemListEnd
+\projHeading{LinkRight $|$ \emph{AI resume and career CLI, solo build}}{Jun 2025 -- Present}
+\resumeItemListStart
+\resumeItem{Coded checks that strip unsupported numbers, company names and job-description keywords from AI drafts before saving}
+\resumeItemListEnd
+\projHeading{Hinglish voice-ordering bot $|$ \emph{personal demo}}{Oct 2026}
+\resumeItemListStart
+\resumeItem{Prototyped a Telegram bot that takes Hinglish voice orders for a quick-commerce startup, transcribes them on a self-hosted Whisper server, answers only from the store's FAQ and refuses stock questions; backed by 35 unit tests, demoed to its founder}
+\resumeItemListEnd
+\resumeHeadingListEnd
+\section{Skills}
+\resumeHeadingListStart
+\skillLine{\textbf{Product:} Roadmaps, PRDs, PI planning (Certified SAFe Product Owner/Product Manager), UX research, Figma, Jira, Rally}
+\skillLine{\textbf{Data \& AI:} SQL, Python, LLM evaluation, prompt design, n8n, Claude plugins, Whisper speech-to-text; English and Hindi}
+\resumeHeadingListEnd
+\section{Education}
+\resumeHeadingListStart
+\roleHeading{Indian Institute of Technology (IIT) Delhi}{New Delhi, India}{B.Tech, Civil Engineering}{2017 -- 2021}
+\resumeItemListStart
+\resumeItem{JEE Advanced All-India Rank 2446, top 0.2\% of 1.2M+ candidates; Chhatarpur district rank 1 in Class 12 (94.2\% overall)}
+\resumeItemListEnd
+\resumeHeadingListEnd
+\par\typeout{PAGEREM \the\pagegoal\space\the\pagetotal}\end{document}

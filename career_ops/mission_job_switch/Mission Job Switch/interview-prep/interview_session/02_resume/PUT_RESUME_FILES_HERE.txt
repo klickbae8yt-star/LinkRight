@@ -1,0 +1,12 @@
+Drop your resume and/or career profile here.
+
+Accepted formats: .txt  .md  .pdf  .docx  .html
+
+You can drop multiple files — e.g. a formatted resume AND a career narrative doc.
+The coach treats all files here as candidate background material.
+Numbers on the submitted resume are the source of truth for metrics.
+
+Examples:
+  - resume.pdf
+  - career_profile.md
+  - satvik_jain_resume.html

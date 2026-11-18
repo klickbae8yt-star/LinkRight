@@ -1,0 +1,208 @@
+{
+  "_meta": {
+    "what": "Registry of all company discovery sources",
+    "why": "Before searching for jobs, we find companies worth watching. These are the signals that surface great companies.",
+    "how": "Each source has a folder under sources/. Drop a HAR capture there, run har_to_api.py, get a live feed of new companies."
+  },
+
+  "sources": [
+
+    {
+      "id": "yc_companies",
+      "name": "Y Combinator Company Directory",
+      "url": "https://www.ycombinator.com/companies",
+      "folder": "sources/yc_companies/",
+      "signal_type": "funding + quality_badge",
+      "signal_quality": "very_high",
+      "why": "Every YC company is pre-vetted. Founders are top-tier. Investors are Tier 1 by definition. Filter by: batch=recent, remote=true, industry=AI/B2B/Hiring.",
+      "needs_login": false,
+      "needs_har": true,
+      "api_hint": "YC has a filterable JSON API powering ycombinator.com/companies. HAR will expose it.",
+      "update_frequency": "per_batch_twice_yearly",
+      "filters_to_apply": ["remote", "AI", "B2C", "hiring_tech", "ecommerce", "fintech"],
+      "india_relevance": "high"
+    },
+
+    {
+      "id": "techcrunch_funding",
+      "name": "TechCrunch Funding & Startups",
+      "url": "https://techcrunch.com/category/venture/",
+      "folder": "sources/techcrunch/",
+      "signal_type": "funding_announcement",
+      "signal_quality": "high",
+      "why": "Companies just announcing Series A/B are in active hiring mode. The press release comes the same day or day after the round closes.",
+      "needs_login": false,
+      "needs_har": true,
+      "api_hint": "TechCrunch uses WordPress REST API. HAR will show /wp-json/wp/v2/posts?categories=... calls.",
+      "update_frequency": "daily",
+      "keywords_to_watch": ["Series A", "Series B", "raises", "led by", "a16z", "Sequoia", "Accel"],
+      "india_relevance": "medium"
+    },
+
+    {
+      "id": "inc42",
+      "name": "Inc42 — India Startup News",
+      "url": "https://inc42.com/buzz/",
+      "folder": "sources/inc42/",
+      "signal_type": "funding_announcement",
+      "signal_quality": "high",
+      "why": "Best source for India-first funded startups. Covers rounds that TechCrunch ignores. Signals remote-India-friendly companies.",
+      "needs_login": false,
+      "needs_har": true,
+      "api_hint": "WordPress REST API likely. HAR will expose it.",
+      "update_frequency": "daily",
+      "keywords_to_watch": ["Series A", "Series B", "raises", "funding", "remote"],
+      "india_relevance": "very_high"
+    },
+
+    {
+      "id": "the_ken",
+      "name": "The Ken — Indian Tech Journalism",
+      "url": "https://the-ken.com/",
+      "folder": "sources/the_ken/",
+      "signal_type": "deep_company_signal",
+      "signal_quality": "very_high",
+      "why": "In-depth reporting on Indian startups. When The Ken writes about a company, that company is making real moves. High signal-to-noise.",
+      "needs_login": true,
+      "needs_har": true,
+      "api_hint": "Subscription site. MHTML capture of article list pages may be needed.",
+      "update_frequency": "weekly",
+      "india_relevance": "very_high"
+    },
+
+    {
+      "id": "producthunt",
+      "name": "Product Hunt — New Product Launches",
+      "url": "https://www.producthunt.com/",
+      "folder": "sources/producthunt/",
+      "signal_type": "product_launch",
+      "signal_quality": "medium_high",
+      "why": "AI products gaining traction on PH = real user demand + likely funded + small team = hiring soon. Filter: AI category, top 5 of day/week.",
+      "needs_login": false,
+      "needs_har": true,
+      "api_hint": "ProductHunt has a GraphQL API. HAR will show api.producthunt.com/v2/api/graphql calls.",
+      "update_frequency": "daily",
+      "filters_to_apply": ["AI", "developer_tools", "productivity", "top_of_day"],
+      "india_relevance": "medium"
+    },
+
+    {
+      "id": "hacker_news_hiring",
+      "name": "Hacker News — Who Is Hiring (Monthly Thread)",
+      "url": "https://news.ycombinator.com/",
+      "folder": "sources/hacker_news/",
+      "signal_type": "direct_job_signal",
+      "signal_quality": "high",
+      "why": "Monthly 'Ask HN: Who is Hiring?' thread. Companies post directly. Remote + India-friendly roles common. High quality companies post here.",
+      "needs_login": false,
+      "needs_har": false,
+      "api_hint": "HN has a public Firebase API: hacker-news.firebaseio.com/v0/item/<id>.json — no HAR needed.",
+      "public_api": "https://hacker-news.firebaseio.com/v0/",
+      "update_frequency": "monthly_thread",
+      "filters_to_apply": ["remote", "India", "product", "AI"],
+      "india_relevance": "medium_high"
+    },
+
+    {
+      "id": "crunchbase",
+      "name": "Crunchbase — Funding Database",
+      "url": "https://www.crunchbase.com/discover/organization.companies",
+      "folder": "sources/crunchbase/",
+      "signal_type": "funding_database",
+      "signal_quality": "very_high",
+      "why": "Structured funding data. Filter: Series A+, last 18 months, remote-friendly, AI/ecommerce/hiring-tech. Use for enriching companies found elsewhere.",
+      "needs_login": true,
+      "needs_har": true,
+      "api_hint": "Crunchbase uses a REST API internally. HAR will show api.crunchbase.com/api/v4/searches/organizations calls.",
+      "update_frequency": "weekly",
+      "primary_use": "enrichment_not_discovery",
+      "india_relevance": "high"
+    },
+
+    {
+      "id": "antler",
+      "name": "Antler — Global VC / Accelerator",
+      "url": "https://www.antler.co/portfolio",
+      "folder": "sources/antler/",
+      "signal_type": "accelerator_portfolio",
+      "signal_quality": "high",
+      "why": "Antler has a strong India presence (Antler India). Portfolio companies are early-stage, well-vetted, often fully remote, AI-native.",
+      "needs_login": false,
+      "needs_har": true,
+      "api_hint": "Portfolio page likely uses a JSON feed or GraphQL. HAR will reveal it.",
+      "update_frequency": "per_cohort",
+      "india_relevance": "very_high"
+    },
+
+    {
+      "id": "surge_peakxv",
+      "name": "Surge by Peak XV (Sequoia India)",
+      "url": "https://www.surgeahead.com/companies",
+      "folder": "sources/surge_peakxv/",
+      "signal_type": "accelerator_portfolio",
+      "signal_quality": "very_high",
+      "why": "Peak XV (formerly Sequoia India) backs Surge cohorts. India-first, well-funded, top-tier investor signal automatically. Best for India remote roles.",
+      "needs_login": false,
+      "needs_har": true,
+      "api_hint": "Static or CMS-backed portfolio page. HAR may show a CMS API.",
+      "update_frequency": "per_cohort",
+      "india_relevance": "very_high"
+    },
+
+    {
+      "id": "linkedin_funding_posts",
+      "name": "LinkedIn — Funding Announcement Posts",
+      "url": "https://www.linkedin.com/search/results/content/",
+      "folder": "sources/linkedin_funding_posts/",
+      "signal_type": "social_funding_signal",
+      "signal_quality": "high",
+      "why": "Founders announce their funding rounds on LinkedIn before or alongside press. These posts name the company, the round size, and often mention the team is growing. Same-day signal.",
+      "needs_login": true,
+      "needs_har": true,
+      "api_hint": "LinkedIn Voyager API: voyager/api/search/blended?keywords=raised+Series+A&type=CONTENT. HAR will show this.",
+      "search_queries": [
+        "excited to announce Series A",
+        "raised $M led by",
+        "thrilled to share our funding",
+        "we are hiring after our raise"
+      ],
+      "update_frequency": "daily",
+      "india_relevance": "high"
+    },
+
+    {
+      "id": "twitter_founders",
+      "name": "Twitter/X — Founder Funding & Hiring Announcements",
+      "url": "https://twitter.com/search",
+      "folder": "sources/twitter_founders/",
+      "signal_type": "social_founding_signal",
+      "signal_quality": "medium_high",
+      "why": "Many founders announce rounds and hiring on X before anywhere else. Fast signal but noisy. Filter to verified accounts + min engagement.",
+      "needs_login": true,
+      "needs_har": true,
+      "search_queries": [
+        "raised Series A hiring filter:verified",
+        "we're hiring PM product manager remote India",
+        "just closed our round AND hiring"
+      ],
+      "update_frequency": "daily",
+      "india_relevance": "medium"
+    },
+
+    {
+      "id": "betalist",
+      "name": "BetaList — Early-Stage Product Launches",
+      "url": "https://betalist.com/",
+      "folder": "sources/betalist/",
+      "signal_type": "pre_launch_signal",
+      "signal_quality": "medium",
+      "why": "Pre-launch products = very early stage. Use only as a watchlist seed — monitor them until they raise a round, then evaluate properly.",
+      "needs_login": false,
+      "needs_har": true,
+      "update_frequency": "weekly",
+      "india_relevance": "low"
+    }
+
+  ]
+}
+

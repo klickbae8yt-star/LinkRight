@@ -1,0 +1,58 @@
+{
+  "results": [
+    {
+      "company": "Airbnb",
+      "title": "Product Manager, EMEA",
+      "url": "https://careers.airbnb.com/positions/7775427?gh_jid=7775427",
+      "status": "submitted",
+      "resume": "consumer-pm-resume.pdf",
+      "portal": "Greenhouse",
+      "timestamp": "2026-05-24T10:12:07.086706Z",
+      "notes": "Greenhouse form. Verification code required from satvik.jain@iitdalumni.com."
+    },
+    {
+      "url": "https://jobicy.com/jobs/142517-product-manager-6",
+      "status": "blocked",
+      "notes": "Cloudflare CAPTCHA",
+      "timestamp": "2026-05-24T15:43:06.688179"
+    },
+    {
+      "url": "https://jobicy.com/jobs/144634-senior-technical-product-manager-ads-ml-platform",
+      "status": "blocked",
+      "notes": "Cloudflare CAPTCHA",
+      "timestamp": "2026-05-24T15:43:06.688218"
+    },
+    {
+      "url": "https://jobicy.com/jobs/142135-canada-product-manager-senior-care",
+      "status": "blocked",
+      "notes": "Cloudflare CAPTCHA",
+      "timestamp": "2026-05-24T15:43:06.688221"
+    },
+    {
+      "company": "Airbnb",
+      "title": "Product Manager, Trip Quality Merchandising and AI",
+      "url": "https://careers.airbnb.com/positions/7651661?gh_jid=7651661",
+      "status": "submitted",
+      "resume": "consumer-pm-resume.pdf",
+      "portal": "Greenhouse",
+      "timestamp": "2026-05-24T10:31:54.517771Z",
+      "notes": "Greenhouse form. EEO fields required toggle flyout. Verification code required from satvik.jain@iitdalumni.com."
+    },
+    {
+      "company": "Airbnb",
+      "title": "Product Manager, Relevance and Personalization",
+      "url": "https://careers.airbnb.com/positions/7905365?gh_jid=7905365",
+      "status": "submitted",
+      "resume": "consumer-pm-resume.pdf",
+      "portal": "Greenhouse",
+      "timestamp": "2026-05-24T16:13:54.097136Z",
+      "notes": "Greenhouse form. EEO via toggle flyout. Verification code from satvik.jain@iitdalumni.com."
+    }
+  ],
+  "stats": {
+    "submitted": 3,
+    "blocked": 3,
+    "error": 0,
+    "skipped": 0
+  }
+}

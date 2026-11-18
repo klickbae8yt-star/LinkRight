@@ -1,0 +1,17 @@
+{
+  "source_id": "yc_companies",
+  "name": "Y Combinator Company Directory",
+  "status": "needs_har",
+  "url_to_visit": "https://www.ycombinator.com/companies?batch=W25&batch=S25&batch=W24&batch=S24&isHiring=true&regions=Remote",
+  "what_to_do": "Visit the URL above with filters set, scroll to load all companies, export HAR",
+  "expected_api_pattern": "api.ycombinator.com/companies or similar JSON feed",
+  "output_shape": "list of companies with name, description, batch, website, team_size, tags",
+  "filters": {
+    "batches": ["W25", "S25", "W24", "S24", "W23"],
+    "isHiring": true,
+    "regions": ["Remote", "India"],
+    "industries": ["B2B Software", "AI", "Recruiting", "E-commerce", "Fintech"]
+  },
+  "notes": "YC pre-vets founders. Any YC company = Tier 1 investor signal by default. High batting average."
+}
+

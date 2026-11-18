@@ -1,0 +1,23 @@
+# W0. Onboarding. Runs first, before any content work. Captures settings once.
+workflow:
+  code: onboarding
+  name: Onboarding
+  purpose: Capture all of the owner's settings and preferences once, write the central user config every agent reads
+  cadence: once at setup, re run only when a setting changes
+
+  config_source: config/
+  output_folder: config/
+
+  agents:
+    - onboarding-concierge
+
+  validation: evals/config-completeness.md
+  primary_output: config/user-config.yaml
+
+  inputs:
+    - config/user-config.yaml          # seeded config, source_files lists the project brief and ground truth
+    - templates/user-config.template.yaml
+
+  execution_hints:
+    interactive: true        # asks the owner to confirm and fill gaps
+    resumable: true

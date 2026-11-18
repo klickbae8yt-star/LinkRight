@@ -1,0 +1,69 @@
+\input{preamble_fit.tex}
+% GENERAL one-pager v7 (2026-10-23): fitted edge to edge; FAANG / payments-platform PM. Selected from master v7.
+
+\newsavebox{\skbox}
+\newcommand{\skillLine}[1]{\item[]\small{\sbox\skbox{#1}\typeout{SKMEAS \the\inputlineno\space\the\wd\skbox\space\the\linewidth}\setlength{\parfillskip}{0pt}#1\endgraf\message{SKLINES \the\inputlineno\space\the\prevgraf}}}
+\newcommand{\summaryPara}[1]{{\small\sbox\skbox{#1}\typeout{SUMMEAS \the\inputlineno\space\the\wd\skbox\space\the\linewidth}\setlength{\parfillskip}{0pt}#1\endgraf\message{SUMLINES \the\inputlineno\space\the\prevgraf}}}
+\begin{document}
+\begin{center}
+{\Huge \scshape Satvik Jain}\\[3pt]
+\small Gurugram, India (open to Bangalore, Hyderabad) $|$ +91-7678296693 $|$ \href{mailto:satvik.jain@iitdalumni.com}{satvik.jain@iitdalumni.com} $|$
+\href{https://linkedin.com/in/satvik-jain-iitd}{linkedin.com/in/satvik-jain-iitd} $|$
+\href{https://github.com/satvik-jain-iitd}{github.com/satvik-jain-iitd}
+\end{center}
+\section{Experience}
+\resumeHeadingListStart
+\roleHeading{American Express}{Gurugram, India}{Senior Associate, Enterprise Payments Product Development}{Aug 2026 -- Present}
+\resumeItemListStart
+\resumeItem{Drive product delivery for AmEx's corporate payments platform, which moves about \$3.5B a month in card and account payments for corporate clients across stablecoin, real-time, direct-debit and wire rails in 14 markets in the US, EU and Australia}
+\resumeItem{Picked 18 of 63 candidate features for the Oct--Dec 2026 quarter, weighing business value against regulatory deadlines, deferring the other 45 with reasons (regulatory dependency, next quarter or cut) and winning VP and steering-committee sign-off}
+\resumeItem{Prepared EU direct-debit (SEPA) collections in 4 markets, about 120,000 a month, for go-live, owning requirements, user acceptance sign-off and bank coordination; end-of-day balancing cut daily reconciliation from 3.5 hours to 20 minutes in testing}
+\resumeItem{Specified ISO 20022 message checks and duplicate-payment protection across 10 stories for stablecoin and direct-debit flows}
+\resumeItem{Moved a stablecoin deposit and withdrawal integration with a global bank into pre-production, writing 30 of its user stories}
+\resumeItem{Triaged all 10 production incidents on the payments platform since August, leading 3 to resolution as incident commander}
+\resumeItem{Closed a duplicate-payment risk in 2 hours by adding an idempotency key and a dead-letter retry queue; no client affected}
+\resumeItemListEnd
+\roleSub{Senior Associate, Digital Product Management -- AML Customer Risk Rating}{Jul 2024 -- Aug 2026}
+\resumeItemListStart
+\resumeItem{As sole PM for its first 10 sprints, turned AmEx's AML customer risk-rating modernisation from a 21-requirement business brief into a 3-year roadmap, choosing a modular in-house build with the test sandbox first and ML-based scoring in a later phase}
+\resumeItem{Won an SVP's Leadership in Action award for Q4 2024, given to 6 of about 400 eligible people, for the risk-rating program}
+\resumeItem{Redesigned rule setup and automated the approval steps so a market's risk-rule change takes 3 days instead of 10 (70\% faster), measured in UK user-acceptance testing, for a compliance team that makes about 450 rule changes a year across its markets}
+\resumeItem{Took 60+ MVP features to staging, owning 24 of them, from the drag-and-drop rule builder and list manager to an audit trail}
+\resumeItem{Re-planned the whole backlog within a week when leadership cut the delivery timeline from 2 years to 1, keeping the 38 of 64 features needed to retire the legacy risk-rating system, deferring the other 26 and holding the first release to its planned date}
+\resumeItem{Found in 20+ analyst interviews that the same data was retyped into 3 systems, so moved a single list manager into the MVP}
+\resumeItem{Owned the taxonomy and review rules that mapped 521K raw industry codes from source systems into 98 business categories, so the risk engine's rules run on one standard set of data instead of free-text codes, cutting duplicate risk rules by about 30\%}
+\resumeItem{Rated top performer among 14 peer product owners in the VP's organisation in the latest review, the highest rating given}
+\resumeItem{Aligned 7 teams and 12 senior stakeholders, including 2 SVPs, across 6 regions behind one 3-year modernisation roadmap}
+\resumeItemListEnd
+\roleHeading{Sprinklr}{Gurugram, India $\cdot$ Apr 2022 -- Jul 2024}{Implementation Consultant $\rightarrow$ Senior Implementation Consultant (Apr 2023) $\rightarrow$ Senior Product Analyst (May 2024)}{}
+\resumeItemListStart
+\resumeItem{Covered the lead PM's role for 6 months during her leave, running roadmap prioritisation, grooming and QA for a self-serve setup product built by 2 squads of 9 engineers, while still running client delivery as a senior implementation consultant}
+\resumeItem{Led delivery of an AI root-cause tool for Walmart's Spark driver support that about 450 support agents used daily, joining 100K+ monthly calls, chats, app reviews and social posts in 2023 into a single daily view of why gig drivers contacted support}
+\resumeItem{Surfaced the root causes that led Walmart to ship 2 app fixes and a policy change, cutting driver support contacts by 18\%}
+\resumeItem{Ran the Walmart proof-of-concept, including a live 4-day Black Friday pilot for Walmart's VP and directors that tested whether AI could find root causes the same day instead of in 7 days; the account team then converted it into a \$1.2M contract}
+\resumeItem{Configured AI skill-based routing for Mars Foods' customer-care team, sending each of its $\sim$40K monthly cases to an agent with the right skills, which lifted the share of cases answered within the first-response SLA from 72\% to 82\% over 6 months}
+\resumeItem{Delivered the insights layer for Qatar's \$32M, 40-ministry citizen-feedback program, Sprinklr's largest new deal at the time}
+\resumeItem{Shaped the Arabic, right-to-left mobile app for Qatar's ministers, lifting its 7-day retention from 40\% to 55\% in 5 months}
+\resumeItemListEnd
+\resumeHeadingListEnd
+\section{Projects}
+\resumeHeadingListStart
+\projHeading{LinkRight $|$ \emph{AI resume and career CLI, solo build}}{Jun 2025 -- Present}
+\resumeItemListStart
+\resumeItem{Built LinkRight, a Python command-line tool that tailors a resume to a job description with large language models while keeping every claim traceable to the user's own career history, cutting tailoring time per application from 25 minutes to 4}
+\resumeItem{Coded checks that strip unsupported numbers, company names and job-description keywords from AI drafts before saving}
+\resumeItemListEnd
+\resumeHeadingListEnd
+\section{Skills}
+\resumeHeadingListStart
+\skillLine{\textbf{Product:} Roadmaps, PRDs, PI planning (Certified SAFe Product Owner/Product Manager), UX research, Figma, Jira, Rally}
+\skillLine{\textbf{Payments \& data:} SEPA direct debit, ISO 20022, real-time and wire payments, SQL, Python, LLM evaluation, prompt design}
+\resumeHeadingListEnd
+\section{Education}
+\resumeHeadingListStart
+\roleHeading{Indian Institute of Technology (IIT) Delhi}{New Delhi, India}{B.Tech, Civil Engineering}{2017 -- 2021}
+\resumeItemListStart
+\resumeItem{JEE Advanced All-India Rank 2446, top 0.2\% of 1.2M+ candidates; Chhatarpur district rank 1 in Class 12 (94.2\% overall)}
+\resumeItemListEnd
+\resumeHeadingListEnd
+\par\typeout{PAGEREM \the\pagegoal\space\the\pagetotal}\end{document}

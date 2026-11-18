@@ -1,0 +1,68 @@
+{
+  "company_slug": "circuithub",
+  "company_name": "CircuitHub",
+  "website": "https://circuithub.com",
+  "career_portal_url": "https://www.circuithub.com/company/careers",
+  "ats_platform": "ashby",
+  "ats_slug": "circuithub",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 13,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W12",
+  "team_size": 58,
+  "locations": [
+    "United Kingdom",
+    "Europe",
+    "Remote",
+    "Partly Remote",
+    "London"
+  ],
+  "summary": "On-Demand Electronics Manufacturing",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/circuithub",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/circuithub",
+  "founders": [
+    {
+      "name": "Andrew Seddon",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/seddonandrew/",
+      "twitter": "https://x.com/seddonandrew",
+      "bio": "I'm building CircuitHub to automate and simplify electronics manufacturing\u2014making it as seamless as writing software. Our platform helps hardware teams prototype and launch faster by tightly integrating design, sourcing, and assembly. Previously, I led teams working on computer vision and robotics at Cambridge Signal Processing and Oxford Metrics. Background in ECE from the University of Leeds. Passionate about closing the gap between software agility and hardware development.",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 20,
+      "career_signals": [
+        "google",
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 10,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 84,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 10,
+    "founder_career": 20,
+    "past_exits": 10,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": false
+}

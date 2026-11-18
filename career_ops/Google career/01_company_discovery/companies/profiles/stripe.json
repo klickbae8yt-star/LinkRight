@@ -1,0 +1,79 @@
+{
+  "company_slug": "stripe",
+  "company_name": "Stripe",
+  "website": "http://stripe.com",
+  "career_portal_url": "https://stripe.com/in/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S09",
+  "team_size": 7000,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "San Francisco"
+  ],
+  "summary": "Economic infrastructure for the internet.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/stripe",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/stripe/",
+  "founders": [
+    {
+      "name": "Patrick Collison",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/patrickcollison/",
+      "twitter": "https://twitter.com/patrickc",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "John Collison",
+      "title": "Founder/President",
+      "linkedin": "https://www.linkedin.com/in/johnbcollison/",
+      "twitter": "https://twitter.com/collision",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 44,
+  "recommendation": "watch_needs_intel",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 0,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

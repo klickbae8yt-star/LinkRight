@@ -1,0 +1,92 @@
+{
+  "company_slug": "solve-intelligence",
+  "company_name": "Solve Intelligence",
+  "website": "https://www.solveintelligence.com",
+  "career_portal_url": "https://www.solveintelligence.com/careers",
+  "ats_platform": "ashby",
+  "ats_slug": "solveintelligence",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 18,
+  "industry": "AI & Automation",
+  "industry_grade": "A",
+  "industry_score": 9,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S23",
+  "team_size": 70,
+  "locations": [
+    "United Kingdom",
+    "Europe",
+    "London"
+  ],
+  "summary": "AI patent drafting, prosecution, litigation and more for legal teams.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/solve-intelligence",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/solve-intelligence/",
+  "founders": [
+    {
+      "name": "Chris Parsonson",
+      "title": "Founder/CEO",
+      "linkedin": "https://linkedin.com/in/christopher-parsonson-381830a3",
+      "twitter": "https://twitter.com/chrisparsonson",
+      "bio": "Chris did his PhD in machine learning at UCL, publishing and winning awards in top AI conferences and journals. He holds an MRes from the University of Cambridge and an MEng from Imperial College London. Prior to founding Solve Intelligence, Chris worked at leading tech organisations, including The Alan Turing Institute, InstaDeep, and Dyson.",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Sanj Ahilan",
+      "title": "Founder",
+      "linkedin": "https://linkedin.com/in/sanjeevan-ahilan-844b33137",
+      "twitter": "https://twitter.com/sanjeevanahilan",
+      "bio": "Sanj completed his PhD in machine learning at UCL, won awards at top AI conferences, and developed popular open-source code for fine-tuning large language models. Before founding Solve Intelligence, he worked at Magic Carpet AI and Huawei Technologies. He holds an MSci in Physics from the University of Cambridge.",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Angus Parsonson",
+      "title": "Founder",
+      "linkedin": "https://linkedin.com/in/angus-parsonson-24935914b",
+      "twitter": "https://twitter.com/angusparsonson",
+      "bio": "Angus completed his MEng degree in computer science at the University of Bristol, during which he received a cyber security scholarship from GCHQ. He has since worked as a Quantitative Developer at Coremont LLP, a spin-off from hedge fund Brevan Howard.",
+      "education_score": 5,
+      "education_signal": "University degree mentioned",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 62,
+  "recommendation": "consider",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 10,
+    "founder_career": 5,
+    "past_exits": 0,
+    "industry_match": 9,
+    "location_compliance": 8,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

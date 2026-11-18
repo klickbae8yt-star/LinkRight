@@ -1,0 +1,32 @@
+# W2. Content Strategy. Decides what the next post should be.
+workflow:
+  code: content-strategist
+  name: Content Strategy
+  purpose: From candidate topics, decide the next post's topic, type, media, angle, and triggers
+  cadence: per post or per batch
+
+  config_source: config/
+  output_folder: runs/
+
+  agents:
+    - audience-mapper          # tags which reader each candidate serves
+    - positioning-guard        # checks pillar fit and the positioning ladder
+    - distribution-strategist  # picks the type and media for reach
+    - topic-selector           # ranks, picks one, assembles the brief
+
+  validation: evals/strategy-signoff.md
+  primary_output: templates/strategy-brief.yaml
+
+  inputs:
+    - config/user-config.yaml
+    - knowledge-base/voice-profile.md
+    - knowledge-base/audience-icp.md
+    - knowledge-base/positioning-pillars.md
+    - knowledge-base/algorithm-mechanics.md
+    - knowledge-base/post-types.md
+    - knowledge-base/performance-data/posts.csv
+    - candidate topics, from the topic hunt or from the user
+
+  execution_hints:
+    interactive: false
+    resumable: true

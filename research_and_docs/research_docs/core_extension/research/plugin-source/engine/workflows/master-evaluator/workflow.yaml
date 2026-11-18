@@ -1,0 +1,29 @@
+# W5. Evaluation. The gatekeeper. Cross cutting, runs after W2, W3, and W4.
+workflow:
+  code: master-evaluator
+  name: Evaluation
+  purpose: Sign off each stage from a discerning, higher bar perspective before it passes to the next
+  cadence: cross cutting, a gate after strategy, after drafting, after media
+
+  config_source: config/
+  output_folder: runs/
+
+  agents:
+    - strategy-reviewer        # gate after W2
+    - copy-reviewer            # gate after W3
+    - media-reviewer           # gate after W4
+    - ethics-and-risk-reviewer # runs alongside the copy and media gates
+
+  gates:
+    after_w2: strategy-reviewer, evals/strategy-signoff.md
+    after_w3: copy-reviewer plus ethics-and-risk-reviewer, evals/copy-signoff.md and evals/risk.md
+    after_w4: media-reviewer plus ethics-and-risk-reviewer, evals/media-signoff.md and evals/risk.md
+
+  primary_output: templates/signoff.md
+
+  model_note: this workflow is meant to run on a larger, more discerning model than the agents it reviews
+
+  execution_hints:
+    interactive: false
+    resumable: true
+    on_fail: return the stage to its workflow with the reason, only a pass lets the run proceed

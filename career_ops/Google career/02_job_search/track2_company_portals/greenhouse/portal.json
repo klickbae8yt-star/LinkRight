@@ -1,0 +1,69 @@
+{
+  "portal_id": "greenhouse",
+  "company": "Greenhouse ATS (Multi-Company Template)",
+  "enabled": true,
+  "parser_type": "greenhouse_v1",
+  "search_query": "Product Manager",
+  "search_location": "Remote India",
+  "max_jobs": 0,
+  "max_pages": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://boards-api.greenhouse.io/v1/boards/{{company_slug}}/jobs",
+    "query": {
+      "content": "true"
+    },
+    "headers": {
+      "Accept": "application/json",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+    },
+    "body": null
+  },
+  "parser_config": {
+    "items_path": "jobs",
+    "fields": {
+      "job_id": "id",
+      "title": "title",
+      "locations": "location.name",
+      "job_url": "absolute_url",
+      "apply_url": "absolute_url",
+      "about_the_job": "content",
+      "job_published_at": "updated_at",
+      "department": "departments[0].name"
+    }
+  },
+  "company_slugs": [
+    "figma",
+    "notion",
+    "linear",
+    "stripe",
+    "airtable",
+    "scaleai",
+    "brex",
+    "plaid",
+    "loom",
+    "retool",
+    "mercury",
+    "ramp",
+    "ironclad",
+    "persona",
+    "watershed",
+    "dbt-labs",
+    "hex",
+    "preset",
+    "samsara",
+    "databricks",
+    "miro",
+    "coda",
+    "browserbase",
+    "perplexity",
+    "glean",
+    "harvey",
+    "typeface",
+    "writer",
+    "jasper",
+    "copy-ai"
+  ],
+  "notes": "Template portal: loops over company_slugs. Each company using Greenhouse has a free public API at boards-api.greenhouse.io/v1/boards/<slug>/jobs?content=true. No auth needed. Add more slugs from crunchbase/wellfound funded companies."
+}
+

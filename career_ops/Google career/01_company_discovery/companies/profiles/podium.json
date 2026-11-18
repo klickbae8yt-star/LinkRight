@@ -1,0 +1,85 @@
+{
+  "company_slug": "podium",
+  "company_name": "Podium",
+  "website": "https://podium.com",
+  "career_portal_url": "https://www.podium.com/careers",
+  "ats_platform": "greenhouse",
+  "ats_slug": "podium81",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 70,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W16",
+  "team_size": 1000,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "Lehi, UT, USA"
+  ],
+  "summary": "Get more leads. Make more money.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/podium",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/podium/",
+  "founders": [
+    {
+      "name": "Eric Rea",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/ericrea",
+      "twitter": "",
+      "bio": "",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 19,
+      "career_signals": [
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    },
+    {
+      "name": "Dennis Steele",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/steeledennis",
+      "twitter": "",
+      "bio": "Co-founder of Podium\n\n1,100 employees\n$400M+ Raised (Accel, IVP, YC Continuity, GV)\n100,000 Businesses on Podium",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 19,
+      "career_signals": [
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 73,
+  "recommendation": "consider",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 10,
+    "founder_career": 19,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

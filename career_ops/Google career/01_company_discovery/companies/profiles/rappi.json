@@ -1,0 +1,103 @@
+{
+  "company_slug": "rappi",
+  "company_name": "Rappi",
+  "website": "http://www.rappi.com",
+  "career_portal_url": "https://www.rappi.com.mx/",
+  "ats_platform": "workday",
+  "ats_slug": "rappi.wd12.myworkdayjobs.com/es/Rappi_jobs",
+  "has_portal_api": false,
+  "portal_needs_har": false,
+  "open_jobs_detected": 0,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W16",
+  "team_size": 4800,
+  "locations": [
+    "Colombia",
+    "Latin America",
+    "Remote",
+    "Partly Remote",
+    "Bogot\u00e1, Bogota, Colombia"
+  ],
+  "summary": "On-demand delivery and financial services for Latin America.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/rappi",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/rappi/",
+  "founders": [
+    {
+      "name": "Simon Borrero",
+      "title": "Founder/CEO",
+      "linkedin": "https://co.linkedin.com/in/simonborrero",
+      "twitter": "",
+      "bio": "",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 19,
+      "career_signals": [
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    },
+    {
+      "name": "Sebastian Mejia",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/sebastianmejia",
+      "twitter": "https://twitter.com/mejiasebas",
+      "bio": "Rappi founder. Rappi is the category leader in e-commerce + delivery across Latin America. Rappi has played an essential role in the transformation of the tech ecosystem in the region. Builder at heart and investor in +100 companies.",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 19,
+      "career_signals": [
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    },
+    {
+      "name": "Felipe Villamarin",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/felipe-villamarin-85518161",
+      "twitter": "",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 19,
+      "career_signals": [
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 78,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 19,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

@@ -1,0 +1,10 @@
+Drop your job description file here.
+
+Accepted formats: .txt  .md  .pdf  .docx  .html
+
+One file only. Name it anything — the coach reads all files in this folder.
+
+Examples:
+  - jd.txt
+  - software_engineer_google.md
+  - job_posting.pdf

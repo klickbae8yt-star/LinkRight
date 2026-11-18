@@ -1,0 +1,77 @@
+{
+  "company_slug": "salarybox",
+  "company_name": "SalaryBox",
+  "website": "https://salarybox.in",
+  "career_portal_url": "https://salarybox.in/careers/",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S21",
+  "team_size": 40,
+  "locations": [
+    "India",
+    "South Asia",
+    "Gurugram, Haryana, India"
+  ],
+  "summary": "Gusto for India",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/salarybox",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/salaryboxapp/",
+  "founders": [
+    {
+      "name": "Nikhil Goel",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/nikhil-goel/",
+      "twitter": "https://twitter.com/nikhilgoel03",
+      "bio": "Co-Founder at SalaryBox",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Peeyush Goyal",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/peeyushgoyal1991/",
+      "twitter": "",
+      "bio": "Founder at Salarybox",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 44,
+  "recommendation": "watch_needs_intel",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 0,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

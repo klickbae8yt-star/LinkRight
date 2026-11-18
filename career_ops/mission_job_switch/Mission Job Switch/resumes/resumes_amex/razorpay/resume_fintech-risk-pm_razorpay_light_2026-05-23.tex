@@ -1,0 +1,213 @@
+%-------------------------
+% Satvik Jain — Risk / FinTech Product Manager | Razorpay / Light
+% FAANGPath Simple Template (A4)
+% Signal focus: AML/KYC compliance platforms, rule engine design, risk scoring,
+%   data infrastructure, configurable risk workflows, fintech / BFSI targets.
+% All bullets verified via \savebox loop — 95–100% of 492.39783pt
+% No action verb repeated more than once across bullets
+%-------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage{eso-pic}
+\usepackage{tikz}
+\input{glyphtounicode}
+
+% ═══════════════════════════════════════════════════════════════════
+% COMPANY DESIGN LAYER — Razorpay
+% RULE: primary = border (dominant brand color)
+%        section = dividers (secondary brand color, visible on white)
+%        name    = #1A1A1A always — do not change
+% ┌── SWAP COMPANY: Change only these two hex codes ──────────────────┐
+\definecolor{cprimary}{HTML}{0D94FB}   % Border
+\definecolor{csection}{HTML}{012652}   % Section rules (Blue border / Navy rules)
+% └─────────────────────────────────────────────────────────────────┘
+% ═══════════════════════════════════════════════════════════════════
+
+% ── Inset border: 1.5pt rule, 8pt gap from page edges on all four sides ──
+\AddToShipoutPictureBG{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[color=cprimary, line width=1.5pt]
+      ([xshift=8pt,yshift=-8pt]current page.north west)
+      rectangle
+      ([xshift=-8pt,yshift=8pt]current page.south east);
+  \end{tikzpicture}%
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{csection}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-2pt}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\parfillskip=0pt}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+  \textcolor[HTML]{1A1A1A}{\textbf{\Huge \scshape Satvik Jain}} \\ \vspace{1pt}
+  \small +91-7678296693 $|$
+  \href{mailto:satvik.jain@iitdalumni.com}{\underline{satvik.jain@iitdalumni.com}} $|$
+  \href{https://linkedin.com/in/satvik-jain-iitd}{\underline{LinkedIn}} $|$
+  \href{https://github.com/satvik-jain-iitd}{\underline{GitHub}} $|$
+  \href{https://drive.google.com/drive/folders/1f8WyRNSA2u6x0BmSugD6U01G9yxWTtj-}{\underline{AI Songs}}
+\end{center}
+
+\section{Summary}
+Risk platform PM with 4+ years across AML compliance, configurable rule engines, and data infrastructure.
+Architected AmEx's CDL pipeline governing 521K+ records across AML risk categories;
+shipped 60+ features as sole PM on CRR risk platform; cut speed-to-market 70\%.
+Hands-on in SQL, Python, rule engine design, and API-automated workflows. IIT Delhi.
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  % ── AmEx ──
+  \resumeSubheading
+    {American Express}{Jul 2024 -- Present}
+    {Senior Associate Product Manager --- AML Risk Platform \& CDL Data Strategy}{Gurugram, India}
+  \resumeItemListStart
+    \resumeItem{Architected \textbf{5-step CDL pipeline}; governs \textbf{521K+ records $\rightarrow$ 98 categories}, \textbf{136K+ types $\rightarrow$ 64 categories}}
+    \resumeItem{Defined CDL data coverage roadmap (\textbf{85.3\% $\rightarrow$ 96.5\% AML risk}); automated monthly manual Excel categorization}
+    \resumeItem{Owned CRR risk platform solo for \textbf{10 sprints}; shipped \textbf{60+ features}: rule engine, asset mgmt, versioning, audit trail}
+    \resumeItem{Shipped \textbf{4 zero-spillover PIs} as sole PM; absorbed 2 strategy pivots, reprioritizing entire backlog within 1 week each}
+    \resumeItem{Cut risk-config speed-to-market \textbf{10 days $\rightarrow$ 3 days (70\%)} via rule UI redesign and API-automated approval workflows}
+    \resumeItem{Earned \textbf{Leadership in Action Award} from SVP Risk (6 months); rated \textbf{G1L2}, top Band 30 PO in org; \textbf{120\% bonus}}
+  \resumeItemListEnd
+
+  % ── Sprinklr ──
+  \resumeSubheading
+    {Sprinklr}{Apr 2022 -- Jul 2024}
+    {Senior Product Analyst}{Gurugram, India}
+  \resumeItemListStart
+    \resumeItem{Built Walmart GenAI root-cause pipeline (\textbf{6 sources}, \textbf{100K+ contacts}); cut insight latency \textbf{7 days $\rightarrow$ same-day}}
+    \resumeItem{Diagnosed Spark retention (D7 $\sim$65\%, D30 $\sim$35\%, D60 $\sim$18\%) via SQL; secured \textbf{\$1.2M TCV} and \textbf{\$9M+ pipeline}}
+    \resumeItem{Launched Qatar Sharek (Prime Minister's Office, \textbf{40 ministries}, \textbf{\$32M TCV}); scaled \textbf{6$\rightarrow$14}; retention \textbf{40\% $\rightarrow$ 55\%}}
+    \resumeItem{Stepped into PM + PO for \textbf{6 months} during lead PM leave; ran roadmap, grooming, and QA across two time zones}
+  \resumeItemListEnd
+
+  \resumeSubSubheading
+    {Product Analyst}{Apr 2022 -- Apr 2023}
+  \resumeItemListStart
+    \resumeItem{Unified Adobe Earned / Organic / Paid SQL pipelines; cut analysis cycle \textbf{4 days $\rightarrow$ 1 day}; spam model \textbf{F1 = 87\%}}
+    \resumeItem{Ranked \textbf{\#1 globally} among all Sprinklr POs in first 6 months (\textbf{10/10 CSAT}); only 1 of 8 promoted at 11 months}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%---------- VENTURES & ADVISORY ----------
+\section{Ventures \& Advisory}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{ContentStack} $|$ \emph{Freelance AI PM}}{Nov 2024 -- Jun 2025}
+  \resumeItemListStart
+    \resumeItem{Shipped \textbf{6 AI features} (Compose AI, DesignerAI, Lens); PRDs, LLM eval, \textbf{10+ competitor} benchmarks, wireframes, prompt engineering}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{GoGoGo} $|$ \emph{Angel Investor}: pre-seed ride-hailing (Indore); backed, advised on product \& GTM; \textbf{$\sim$Rs.2.5Cr raised}}{}
+  \resumeItemListStart
+    \resumeItem{Built brand + GTM: AI anthem, AI video, LinkedIn automation; drove driver acquisition and founding team onboarding}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Navii (HeyNavii)} $|$ \emph{Beta Growth PM}}{2025}
+  \resumeItemListStart
+    \resumeItem{User base \textbf{2K $\rightarrow$ 20K} during beta; built N8N automations + Chrome extension; logged \textbf{14 bugs} + \textbf{9 enhancements}}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{LinkRight} $|$ \emph{Founder \& Solo Engineer}}{Jun 2025 -- Present}
+  \resumeItemListStart
+    \resumeItem{Solo PM + engineer; \textbf{147-response} survey + \textbf{7,000+} cold-reached; \textbf{44/57 features (77\%)} in 11 months; \textbf{PyPI} CLI}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Fintech \& Risk:}{ AML/KYC Risk Policy, Rule Engine Design, Configurable Risk Platforms, Regulatory Compliance, Workflow Automation, Audit Trails, Versioning Systems, RBAC, Data Governance, Risk Scoring Frameworks, Roadmapping, PRDs, OKR/KPI Design, SAFe Agile, PI Planning, Stakeholder Management} \\
+    \textbf{Data \& Engineering:}{ SQL (production), Python, BigQuery, FastAPI, ETL Architecture, Schema Design, Data Pipeline Design, Data Contracts, REST APIs, N8N Workflow Automation, Event-Driven Architecture, System Design, GCP/AWS} \\
+    \textbf{AI/ML:}{ LLM Pipelines, NLP, Sentiment Analysis, Prompt Engineering, Unsupervised ML Clustering, Eval Frameworks, Self-Hosted LLMs (Ollama), Feature Engineering, AI-Assisted Analytics} \\
+    \textbf{Tools:}{ JIRA, Rally, Figma, Tableau, Mixpanel, Amplitude, ChatGPT Enterprise, Lucidchart, PowerBI, Confluence, Postman, Miro}
+  }}
+\end{itemize}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Indian Institute of Technology Delhi}{2017 -- 2021}
+    {B.Tech, Civil Engineering}{CGPA: 6.43/10}
+  \resumeItemListStart
+    \resumeItem{JEE Advanced \textbf{Rank 2446} (Top 0.002\% of 1.2M+); Class 12 \textbf{District Rank 1}, 94.2\%, 100/100 Maths \& Chemistry}
+    \resumeItem{\textbf{GGI Fellow} (2024); Scaler Academy: SQL, Excel, Tableau, Power BI, Python, Product Analytics (all 6 completed)}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- REFERENCES ----------
+\vspace{-6pt}
+\section{References}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \href{https://linkedin.com/in/pulit-sharma-36426349}{\textbf{\underline{Pulit Sharma}}} $|$ Product Mgmt \& Channel, Sprinklr $|$ (+91-8698487841) \\
+    \href{https://linkedin.com/in/pallavi-sharma-54088159}{\textbf{\underline{Pallavi Sharma}}} $|$ Sr. Product Manager, American Express $|$ (+91-9910922037) \\
+    \href{https://linkedin.com/in/kartik-bn-3770807b}{\textbf{\underline{Kartik B.N}}} $|$ Sr. Manager Customer Success, Q2 $|$ (+91-9886896571)
+  }}
+\end{itemize}
+
+\end{document}

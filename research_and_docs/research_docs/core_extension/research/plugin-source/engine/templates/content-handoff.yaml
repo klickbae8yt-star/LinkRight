@@ -1,0 +1,47 @@
+# Content Handoff template. The Media Scripter assembles this from the W3 agents.
+# The contract the Media Creator builds from, and the near final post. Filled, no blanks.
+content_handoff:
+  final_post_copy: |
+    # the exact formatted post, hook plus body, ready to publish once media is attached
+
+  hook: ""                   # the chosen hook block
+  alternative_hook: ""       # the runner up, kept for A and B later
+  hashtags: []
+
+  media_script:
+    format: ""               # image | document carousel | video | gif | poll | text
+    # for a carousel
+    slides:
+      - number: 1
+        role: cover
+        headline: ""
+        visual: ""
+        text_overlay: ""
+    # for a video
+    video:
+      scenes:
+        - timing: ""          # for example 0 to 5s
+          visual: ""
+          on_screen_text: ""
+          audio: ""
+      captions: ""            # caption text or srt note
+    # for a single image
+    image:
+      message: ""
+      text_overlay: ""
+
+  scoring_summary:
+    hard_gates: pass          # must be pass to ship
+    voice_authenticity: 0
+    human_texture: 0
+    hook_impact: 0
+    value_density: 0
+    emotional_connect: 0
+    algorithm_fit: 0
+    positioning_ladder: 0
+    media_script_clarity: 0
+    weighted_average: 0
+    iterations: 0
+
+  metrics_used: []            # numbers in the post, each matching the ledger
+  notes_for_media: ""

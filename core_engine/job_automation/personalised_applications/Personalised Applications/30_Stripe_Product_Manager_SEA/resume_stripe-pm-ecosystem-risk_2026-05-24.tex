@@ -1,0 +1,261 @@
+%-------------------------
+% Satvik Jain — AI & Risk Product Manager
+% Stripe Product Manager, Ecosystem Risk Variant
+% FAANGPath Simple Template (A4)
+% Archetype: FT+AI (Risk/FinTech + AI) — distinct from Job 04 (GR+AI)
+% Gate 6 applied: cprimary=#635BFF (Stripe Blurple) | csection=#0A2540 (Stripe Dark Navy)
+% Same Stripe palette as Job 04; different archetype + content
+% Base: resume_stripe-pm-growth-ai_2026-05-24.tex → rearchetyped FT+AI
+% Changes from Job 04 base:
+%   ROLE: AI Outreach Motion → Ecosystem Risk (financial crimes, AML, investigator tools)
+%   SUMMARY: FT+AI — CDL/AML pipeline leads (521K+ records, 96.5% coverage); GenAI + LLM depth
+%   AmEx reorder: A1(Architected/CDL)→A2(Defined/coverage roadmap)→A4(Cut/speed-to-mkt)
+%               →A3(Owned/CRR 60+ features)→A5(Earned/award)
+%   SPA reorder: S4a-AI(Led/Walmart GenAI)→S4b(Mapped/ML taxonomy fresh variant)
+%                →S7-AI(Lifted/Arabic NLP)→S9-DA(Unified/Adobe SQL+spam model)→S6-AI(Secured/TCV)
+%   PA: P1-FT (Ranked) — single bullet
+%   Skills bucket 1: "Fintech & Risk" leads (AML/KYC, Financial Crime Prevention, Rule Engine...)
+%   Skills bucket 2: "AI/ML" (AI-Powered Detection, LLM Pipeline, NLP, Eval Frameworks...)
+%   All 18 action verbs unique: Architected/Defined/Cut/Owned/Earned/
+%     Led/Mapped/Lifted/Unified/Secured/Ranked/
+%     Wrote/Built/Partnered/Designed/Deployed/Validated/Launched
+%   [NEW] Appended to bank: S4b-FT variant — "Mapped L1/L2/L3 issue taxonomy..."
+%-------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage{eso-pic}
+\usepackage{tikz}
+\input{glyphtounicode}
+
+% ═══════════════════════════════════════════════════════════════════
+% COMPANY DESIGN LAYER — Stripe
+% RULE: cprimary = border (dominant brand color)
+%        csection = section dividers (secondary brand color)
+%        name    = #1A1A1A always
+% ┌── SWAP COMPANY: Change only these two hex codes ──────────────────┐
+\definecolor{cprimary}{HTML}{635BFF}   % Border: Stripe Blurple
+\definecolor{csection}{HTML}{0A2540}   % Section rules: Stripe Dark Navy
+% └─────────────────────────────────────────────────────────────────┘
+% ═══════════════════════════════════════════════════════════════════
+
+% ── Inset border: 1.5pt rule, 8pt gap from page edges on all four sides ──
+\AddToShipoutPictureBG{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[color=cprimary, line width=1.5pt]
+      ([xshift=8pt,yshift=-8pt]current page.north west)
+      rectangle
+      ([xshift=-8pt,yshift=8pt]current page.south east);
+  \end{tikzpicture}%
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{csection}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-2pt}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\parfillskip=0pt}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%--- HEADER ---
+\begin{center}
+  \textcolor[HTML]{1A1A1A}{\textbf{\Huge \scshape Satvik Jain}} \\ \vspace{1pt}
+  \small +91-7678296693 $|$
+  \href{mailto:satvik.jain@iitdalumni.com}{\underline{satvik.jain@iitdalumni.com}} $|$
+  \href{https://linkedin.com/in/satvik-jain-iitd}{\underline{LinkedIn}} $|$
+  \href{https://github.com/satvik-jain-iitd}{\underline{GitHub}}
+\end{center}
+
+%--- SUMMARY ---
+\section{Summary}
+AI and risk PM with 4+ years building financial crime controls, AI-powered detection pipelines, and compliance infrastructure.
+Architected AmEx CDL pipeline governing \textbf{521K+ records $\rightarrow$ 96.5\% AML risk coverage}; sole PM on 60+ features: rule engine, audit trail, versioning.
+Led Walmart GenAI root-cause pipeline (6 data sources, \textbf{100K+ contacts}); built spam model \textbf{F1 = 87\%}; cut latency \textbf{7 days $\rightarrow$ same-day}.
+Solo-built LLM eval framework, fabrication guard, and \textbf{9 self-hosted models}; \textbf{\$1.2M TCV} from AI product motion. IIT Delhi.
+
+%--- EXPERIENCE ---
+\section{Experience}
+\resumeSubHeadingListStart
+
+  % ── American Express ────────────────────────────────────────────────────
+  \resumeSubheading
+    {American Express}{Jul 2024 -- Present}
+    {Senior Associate Product Manager}{Gurugram, India}
+  \resumeItemListStart
+    % A1 — DA/PL/FT (CDL pipeline architecture; AML infrastructure = primary signal for Ecosystem Risk)
+    \resumeItem{Architected \textbf{5-step CDL pipeline}; governs \textbf{521K+ records $\rightarrow$ 98 categories}, \textbf{136K+ types $\rightarrow$ 64 categories}}
+    % A2 — DA/PL/FT (AML risk coverage roadmap; 85.3%→96.5% = direct financial crimes signal)
+    \resumeItem{Defined CDL data coverage roadmap (\textbf{85.3\% $\rightarrow$ 96.5\% AML risk}); automated monthly manual Excel categorization}
+    % A4 — DA/PL/ST (speed-to-market 70%; rule UI + API automation = investigator tools signal)
+    \resumeItem{Cut risk-config speed-to-market \textbf{10 days $\rightarrow$ 3 days (70\%)} via rule UI redesign and API-automated approval workflows}
+    % A3 — DA/PL (CRR: rule engine, versioning, audit trail = directly mirrors Ecosystem Risk scope)
+    \resumeItem{Owned CRR risk platform solo for \textbf{10 sprints}; shipped \textbf{60+ features}: rule engine, asset mgmt, versioning, audit trail}
+    % A5 — All (credibility signal from SVP Risk)
+    \resumeItem{Earned \textbf{Leadership in Action Award} from SVP Risk (6 months); rated \textbf{G1L2}, top Band 30 PO in org; \textbf{120\% bonus}}
+  \resumeItemListEnd
+
+  % ── Sprinklr — combined under one company heading ────────────────────────
+  \resumeSubheading
+    {Sprinklr}{Apr 2022 -- Jul 2024}
+    {Senior Product Analyst}{Gurugram, India}
+  \resumeItemListStart
+    % S4a-AI — Walmart GenAI pipeline (AI-powered detection analogue; 6-source multi-signal)
+    \resumeItem{Led Walmart GenAI root-cause analysis pipeline across \textbf{6 data sources}, covering \textbf{100K+ monthly driver contacts}}
+    % S4b-FT (fresh variant) — ML taxonomy pipeline (agentic/AI architecture; L1/L2/L3 signals)
+    \resumeItem{Mapped L1/L2/L3 issue taxonomy and unsupervised ML clustering pipeline; cut latency from \textbf{7 days to same-day}}
+    % S7-AI/DA — Arabic NLP (ML model performance; F1 signal for AI-powered risk models)
+    \resumeItem{Lifted Arabic sentiment \textbf{F1 +11\%} and intuition \textbf{+13\%}; Qatar Sharek \textbf{40-ministry} government platform (\$32M TCV)}
+    % S9-DA — Adobe SQL + spam model (multi-schema infrastructure + ML detection signal)
+    \resumeItem{Unified Adobe Earned / Organic / Paid via SQL; built spam detection model \textbf{F1 = 87\%}; cut analysis cycle \textbf{4 days $\rightarrow$ 1 day}}
+    % S6-AI — TCV + pipeline (commercial outcome from AI product; Stripe values revenue accountability)
+    \resumeItem{Secured \textbf{\$1.2M TCV} POC-to-deal and \textbf{\$9M+ Q4 pipeline}; GenAI pipeline foundation closed \textbf{\$2M follow-on deal}}
+  \resumeItemListEnd
+
+  % ── Sprinklr — earlier role (SubSubheading: same company, promotion) ────
+  \resumeSubSubheading
+    {Product Analyst}{Apr 2022 -- Apr 2023}
+  \resumeItemListStart
+    % P1-FT — ranking (credibility in competitive risk/fintech PM environment)
+    \resumeItem{Ranked \textbf{\#1 globally} among all Sprinklr POs in first 6 months (\textbf{10/10 CSAT}); only 1 of 8 promoted at 11 months}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%--- VENTURES & ADVISORY ---
+\section{Ventures \& Advisory}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{ContentStack} $|$ \emph{Freelance AI PM}}{Nov 2024 -- Jun 2025}
+  \resumeItemListStart
+    % V1 B1-All — "Wrote" verb
+    \resumeItem{Wrote PRDs and shipped \textbf{6 AI features} across Compose AI, DesignerAI, and Lens at ContentStack (freelance AI PM)}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{GoGoGo} $|$ \emph{Angel Investor}: pre-seed ride-hailing (Indore); backed, advised on product \& GTM; \textbf{$\sim$Rs.2.5Cr raised}}{}
+  \resumeItemListStart
+    % V2 B2 — "Built" verb
+    \resumeItem{Built brand + GTM: AI anthem, AI video, LinkedIn automation; drove driver acquisition and founding team onboarding}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Navii (HeyNavii)} $|$ \emph{Beta Growth PM}}{2025}
+  \resumeItemListStart
+    % V3 B1-alt — "Partnered" starting verb (pedigree signal)
+    \resumeItem{Partnered with ex-Google product leaders; scaled user base \textbf{2K $\rightarrow$ 20K} during beta; built N8N automations + Chrome extension}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%--- PROJECTS ---
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{LinkRight} $|$ \emph{Founder \& Solo Engineer}}{Jun 2025 -- Present}
+  \resumeItemListStart
+    % L1-AI/ST — "Designed" verb
+    \resumeItem{Designed and built solo LLM pipeline: hybrid resume parser, \textbf{16-dim eval scorecard}, fabrication guard, feedback loop}
+    % L2-AI/ST — "Deployed" verb
+    \resumeItem{Deployed \textbf{9 self-hosted LLMs} on Oracle VPS (Ollama, fallback chain); built FastAPI backend, CLI published to \textbf{PyPI}}
+    % L5+L3 combined — "Validated" verb
+    \resumeItem{Validated via \textbf{147-response} survey + \textbf{7,000+} cold-reached; shipped \textbf{44/57 features (77\%)} in 11 months}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Sukha Education} $|$ \emph{Digital Transformation Lead}}{Jan 2025 -- May 2025}
+  \resumeItemListStart
+    % K1-AI — "Launched" verb
+    \resumeItem{Launched digital transformation for Chennai NGO (2,000+ students); Salesforce + Workspace rollout; \textbf{$\sim$Rs.60K/year}}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%--- SKILLS ---
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Fintech \& Risk:}{ AML/KYC Risk Policy, Financial Crime Prevention, Rule Engine Design, Configurable Risk Platforms, Regulatory Compliance, Workflow Automation, Audit Trails, Versioning Systems, RBAC, Data Governance, Risk Scoring Frameworks, Roadmapping, PRDs, OKR/KPI Design, SAFe Agile, PI Planning, Stakeholder Management} \\
+    \textbf{AI/ML:}{ AI-Powered Detection, LLM Pipeline Design, NLP, Sentiment Analysis, Unsupervised ML Clustering, Prompt Engineering, Evaluation Frameworks, Fabrication Guard Systems, Self-Hosted LLMs (Ollama), Feature Engineering, RAG Architecture, MLOps, AI Safety} \\
+    \textbf{Data \& Engineering:}{ SQL (production), Python, BigQuery, FastAPI, REST APIs, Schema Design, Data Architecture, ETL Pipelines, Data Modeling, System Design, GCP, Tableau, Mixpanel, Amplitude} \\
+    \textbf{Tools:}{ JIRA, Rally, Figma, Lucidchart, ChatGPT Enterprise, N8N, PowerBI, Postman, GitHub, Confluence, Miro}
+  }}
+\end{itemize}
+
+%--- EDUCATION ---
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Indian Institute of Technology Delhi}{2017 -- 2021}
+    {B.Tech, Civil Engineering}{CGPA: 6.43/10}
+  \resumeItemListStart
+    \resumeItem{JEE Advanced \textbf{Rank 2446} (Top 0.002\% of 1.2M+); Class 12 \textbf{District Rank 1}, 94.2\%, 100/100 Maths \& Chemistry}
+    \resumeItem{\textbf{GGI Fellow} (2024); Scaler Academy: SQL, Excel, Tableau, Power BI, Python, Product Analytics (all 6 completed)}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%--- REFERENCES ---
+\vspace{-6pt}
+\section{References}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \href{https://linkedin.com/in/pulit-sharma-36426349}{\textbf{\underline{Pulit Sharma}}} $|$ Product Mgmt \& Channel, Sprinklr $|$ (+91-8698487841) \\
+    \href{https://linkedin.com/in/pallavi-sharma-54088159}{\textbf{\underline{Pallavi Sharma}}} $|$ Sr. Product Manager, American Express $|$ (+91-9910922037) \\
+    \href{https://linkedin.com/in/kartik-bn-3770807b}{\textbf{\underline{Kartik B.N}}} $|$ Sr. Manager Customer Success, Q2 $|$ (+91-9886896571)
+  }}
+\end{itemize}
+
+\end{document}

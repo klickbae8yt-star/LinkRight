@@ -1,0 +1,390 @@
+# Bullet bank — fitted master v7 (2026-10-23)
+
+Append-only. Every line below is measured off the real compiled master (`resume_master_base_2026-10-23.tex`), justified, hyphenation off, at a line width of 512.23pt (A4, 0.5in margins, 0.18in bullet indent, 9pt Computer Modern).
+L1 = one full line; L2 = two full lines; L1b = verb variant. Fill = natural width / (lines x 512.23pt). Pass band: 95-100.5%, no underfull or overfull box.
+Older wordings stay in `resume_master_base_2026-10-18.tex` and `bullet_bank.md`; nothing was deleted.
+
+Used on: G = General one-pager v7, K = Karta one-pager v7.
+
+
+## AmEx Enterprise Payments
+
+| ID | Ver | Fill | Width (pt) | On | Bullet |
+|---|---|---|---|---|---|
+| PAY-SCOPE | L1 | 99.6% | 510.2 |  | Drive product delivery for AmEx's corporate payments platform, moving about $3.5B a month in card and account payments |
+| PAY-SCOPE | L2 | 99.2% | 1016.3 | GK | Drive product delivery for AmEx's corporate payments platform, which moves about $3.5B a month in card and account payments for corporate clients across stablecoin, real-time, direct-debit and wire rails in 14 markets in the US, EU and Australia |
+| PAY-PLAN | L1 | 98.6% | 505.1 |  | Picked 18 of 63 candidate features for the Oct-Dec 2026 quarter by business value and regulatory deadline, with VP sign-off |
+| PAY-PLAN | L2 | 98.5% | 1009.1 | G | Picked 18 of 63 candidate features for the Oct-Dec 2026 quarter, weighing business value against regulatory deadlines, deferring the other 45 with reasons (regulatory dependency, next quarter or cut) and winning VP and steering-committee sign-off |
+| PAY-ALIGN | L1 | 98.8% | 506.1 |  | Aligned 6 engineering squads and ~40 business, operations, compliance and bank-partner stakeholders on one quarterly plan |
+| PAY-ALIGN | L2 | 99.9% | 1023.4 |  | Aligned 6 engineering squads and about 40 people from 4 stakeholder groups (business owners, operations, compliance and bank partners) on one quarterly plan covering stablecoin, real-time, direct-debit and wire payments in the US, EU and Australia |
+| PAY-SEPA | L1 | 99.6% | 510.2 |  | Built end-of-day balancing for EU direct-debit collections that cut daily reconciliation from 3.5 hours to 20 minutes in testing |
+| PAY-SEPA | L2 | 98.8% | 1012.2 | G | Prepared EU direct-debit (SEPA) collections in 4 markets, about 120,000 a month, for go-live, owning requirements, user acceptance sign-off and bank coordination; end-of-day balancing cut daily reconciliation from 3.5 hours to 20 minutes in testing |
+| PAY-DESIGN | L1 | 97.9% | 501.5 | G | Specified ISO 20022 message checks and duplicate-payment protection across 10 stories for stablecoin and direct-debit flows |
+| PAY-DESIGN | L2 | 98.7% | 1011.1 |  | Specified ISO 20022 message checks, duplicate-payment protection, retries with backoff and a payment-status state machine across 10 user stories for the stablecoin and EU direct-debit flows, so every payment is sent once and ends in a known status |
+| PAY-INC | L1 | 97.0% | 496.9 | GK | Triaged all 10 production incidents on the payments platform since August, leading 3 to resolution as incident commander |
+| PAY-INC | L2 | 99.2% | 1016.3 |  | Triaged all 10 production incidents on the payments platform since August, leading 3 as incident commander and coordinating engineering, operations and bank partners to protect the straight-through payment success rate that the team is judged on |
+| PAY-DUP | L1 | 97.1% | 497.4 | G | Closed a duplicate-payment risk in 2 hours by adding an idempotency key and a dead-letter retry queue; no client affected |
+| PAY-DUP | L2 | 97.3% | 996.8 | K | Closed a duplicate-payment risk within 2 hours during a live incident, where retry logic could resend a payment, by specifying an idempotency key so each payment is processed once and a dead-letter queue for failed retries; no client was affected |
+| PAY-STABLE | L1 | 98.0% | 502.0 | G | Moved a stablecoin deposit and withdrawal integration with a global bank into pre-production, writing 30 of its user stories |
+| PAY-STABLE | L2 | 99.5% | 1019.3 |  | Moved the stablecoin deposit and withdrawal integration with a global bank's blockchain network into pre-production validation, writing 30 of its user stories since joining in August and deferring the pilot's scope until the regulatory position was clear |
+| PAY-PAYTO | L1 | 100.0% | 512.2 |  | Prepared the production release and post-launch checks for Australia's upgraded real-time PayTo payments, writing 15 stories |
+| PAY-WIRES | L1 | 100.2% | 513.3 |  | Specified next quarter's wire work: domestic and cross-border wires through a US bank, plus discovery for a second wire route |
+
+## AmEx AML Customer Risk Rating
+
+| ID | Ver | Fill | Width (pt) | On | Bullet |
+|---|---|---|---|---|---|
+| AML-OWN | L1 | 98.3% | 503.5 |  | As sole PM for its first 10 sprints, turned AmEx's AML customer risk-rating brief of 21 requirements into a 3-year roadmap |
+| AML-OWN | L2 | 100.4% | 1028.6 | GK | As sole PM for its first 10 sprints, turned AmEx's AML customer risk-rating modernisation from a 21-requirement business brief into a 3-year roadmap, choosing a modular in-house build with the test sandbox first and ML-based scoring in a later phase |
+| AML-AWARD | L1 | 97.5% | 499.4 | G | Won an SVP's Leadership in Action award for Q4 2024, given to 6 of about 400 eligible people, for the risk-rating program |
+| AML-AWARD | L2 | 99.2% | 1016.3 |  | Won an SVP's Leadership in Action award for Q4 2024, given to only 6 of about 400 eligible people across the organisation, for taking ownership of AmEx's AML customer risk-rating engine modernisation and delivering its prioritised 3-year roadmap |
+| AML-USERS | L1 | 98.8% | 506.1 |  | Shaped a risk-rating platform for ~140 compliance analysts in 12 planned markets, who rate customers low, medium or high |
+| AML-USERS | L2 | 100.4% | 1028.6 |  | Shaped a customer risk-rating platform for about 140 compliance analysts across 12 planned markets, who rate every customer as low, medium or high risk, and ran user-acceptance testing in the staging environment with 35 of these compliance analysts |
+| AML-SPEED | L1 | 100.4% | 514.3 |  | Cut a market's risk-rule change from 10 days to 3 by redesigning rule setup and approvals, measured in UK acceptance testing |
+| AML-SPEED | L2 | 99.9% | 1023.4 | GK | Redesigned rule setup and automated the approval steps so a market's risk-rule change takes 3 days instead of 10 (70% faster), measured in UK user-acceptance testing, for a compliance team that makes about 450 rule changes a year across its markets |
+| AML-STAGING | L1 | 100.2% | 513.3 | G | Took 60+ MVP features to staging, owning 24 of them, from the drag-and-drop rule builder and list manager to an audit trail |
+| AML-STAGING | L2 | 98.6% | 1010.1 |  | Took 60+ MVP features to staging before the program pivoted to fixing its data first, personally writing and owning 24 of them, including the drag-and-drop rule builder, central list manager, test sandbox and audit trail, built by an 18-person team |
+| AML-REPLAN | L1 | 98.5% | 504.5 |  | Re-planned the backlog in a week when the timeline halved, keeping the 38 of 64 features needed to retire the legacy system |
+| AML-REPLAN | L2 | 99.6% | 1020.4 | G | Re-planned the whole backlog within a week when leadership cut the delivery timeline from 2 years to 1, keeping the 38 of 64 features needed to retire the legacy risk-rating system, deferring the other 26 and holding the first release to its planned date |
+| AML-RESEARCH | L1 | 100.1% | 512.7 | GK | Found in 20+ analyst interviews that the same data was retyped into 3 systems, so moved a single list manager into the MVP |
+| AML-RESEARCH | L2 | 97.2% | 995.8 |  | Found in 20+ interviews with compliance analysts across 6 regions that they retyped the same data into 3 separate systems, so moved a single list manager with bulk upload into the MVP and designed the list-manager and rule screens in Figma |
+| AML-DESIGNER | L1 | 97.8% | 501.0 |  | Hired the team's UX designer through a 12-round process and directed her work, producing 40 screens and a design system |
+| AML-DESIGNER | L2 | 97.0% | 993.7 |  | Hired the team's UX designer through a 12-round selection process and managed her work day to day, directing the 40 screens and the design system behind the MVP's list-manager, advanced-rule and sandbox-versioning flows for ~140 analysts |
+| AML-MAP | L1 | 97.0% | 496.9 |  | Mapped 521K raw industry codes into 98 business categories for the risk engine, cutting duplicate risk rules by about 30% |
+| AML-MAP | L2 | 100.0% | 1024.5 | G | Owned the taxonomy and review rules that mapped 521K raw industry codes from source systems into 98 business categories, so the risk engine's rules run on one standard set of data instead of free-text codes, cutting duplicate risk rules by about 30% |
+| AML-MAPSPEED | L1 | 98.7% | 505.6 |  | Finished mapping 521K industry codes in 9 weeks against a 14-week estimate by combining rules, scripts and manual review |
+| AML-REVIEW | L1 | 96.8% | 495.8 | G | Rated top performer among 14 peer product owners in the VP's organisation in the latest review, the highest rating given |
+| AML-REVIEW | L2 | 99.8% | 1022.4 |  | Rated top performer among 14 peer product owners in the VP's organisation in the latest review cycle, with the highest rating given that cycle, judged on rule-change cycle time and the number of audit findings closed for the AML risk-rating platform |
+| AML-ALIGN | L1 | 96.4% | 493.8 | G | Aligned 7 teams and 12 senior stakeholders, including 2 SVPs, across 6 regions behind one 3-year modernisation roadmap |
+| AML-ALIGN | L2 | 99.0% | 1014.2 |  | Aligned 7 teams and 12 senior stakeholders, including 2 SVPs, across 6 regions behind one 3-year roadmap for AmEx's AML risk-rating platform, and settled a dispute with compliance over which fields must be mandatory by splitting them into tiers |
+| AML-VENDOR | L1 | 99.0% | 507.1 |  | Co-led the vendor evaluation that cut 15+ risk-rating vendors to 2 finalists and recommended building the platform in-house |
+| AML-VENDOR | L2 | 96.2% | 985.5 |  | Co-led the vendor evaluation that cut 15+ risk-rating vendors to 2 finalists and recommended a modular in-house build, replacing a legacy system that cost ~$2M a year in licences, had drawn 2 audit findings and took 10 days per rule change |
+| AML-SOLO | L1 | 100.1% | 512.7 |  | Ran the first 10 sprints as sole PM for an 18-person team of engineers, data engineers and QA, before a senior manager joined |
+| AML-SPILL | L1 | 99.9% | 511.7 |  | Delivered 4 straight quarters with zero spillover for an 18-person team: every committed feature landed in its planned quarter |
+| AML-COACH | L1 | 98.2% | 503.0 |  | Coached 3 newly joined product owners and 1 intern on backlog craft, user-story writing and updates to senior stakeholders |
+| AML-COVER | L1 | 97.6% | 499.9 |  | Planned the move off monthly manual Excel mapping, with a phased roadmap to cover 96.5% of the platform's risk factors |
+| AML-HACK | L1 | 99.6% | 510.2 |  | Captained a 6-person team to 21st of 400+ teams at AmEx's internal hackathon with an AI Slack bot that drafts user stories |
+| AML-GPT | L1 | 100.5% | 514.8 |  | Introduced ChatGPT Enterprise into sprint planning, bringing AI-assisted drafting to 80% of the 18-person team's user stories |
+| AML-GPT | L2 | 95.8% | 981.4 |  | Introduced ChatGPT Enterprise into sprint planning, bringing AI-assisted drafting to 80% of the team's user stories, and prototyped an LLM that suggests new risk rules to compliance analysts, plus n8n automations, kept outside production |
+
+## Sprinklr
+
+| ID | Ver | Fill | Width (pt) | On | Bullet |
+|---|---|---|---|---|---|
+| SPR-COVER | L1 | 99.3% | 508.6 |  | Covered the lead PM's role for 6 months, running roadmap, grooming and QA for a self-serve setup product with 9 engineers |
+| SPR-COVER | L2 | 96.7% | 990.7 | GK | Covered the lead PM's role for 6 months during her leave, running roadmap prioritisation, grooming and QA for a self-serve setup product built by 2 squads of 9 engineers, while still running client delivery as a senior implementation consultant |
+| SPR-TEMPL | L1 | 97.3% | 498.4 |  | Studied 1,500+ client dashboards across 15 industries to design ready-made templates that let small clients set up unaided |
+| SPR-ADOPT | L1 | 96.6% | 494.8 |  | Laid the template groundwork for the launch that lifted small-client adoption from ~35% to ~85%, per the product team |
+| SPR-WMT | L1 | 97.1% | 497.4 |  | Led delivery of an AI root-cause tool that ~450 Walmart driver-support agents used daily across 100K+ monthly contacts |
+| SPR-WMT | L2 | 99.0% | 1014.2 | GK | Led delivery of an AI root-cause tool for Walmart's Spark driver support that about 450 support agents used daily, joining 100K+ monthly calls, chats, app reviews and social posts in 2023 into a single daily view of why gig drivers contacted support |
+| SPR-SPEED | L1 | 98.8% | 506.1 |  | Designed a 3-level issue taxonomy and clustering criteria for Walmart that cut root-cause discovery from 7 days to same-day |
+| SPR-SPEED | L2 | 99.9% | 1023.4 |  | Designed the 3-level issue taxonomy, such as Delivery > Earnings > Incentive not credited, and the clustering criteria that Sprinklr's data scientists built into ML models, cutting the time to find a driver-support root cause from 7 days to the same day |
+| SPR-IMPACT | L1 | 97.2% | 497.9 | GK | Surfaced the root causes that led Walmart to ship 2 app fixes and a policy change, cutting driver support contacts by 18% |
+| SPR-CSAT | L1 | 95.7% | 490.2 |  | Surfaced driver issues that led Walmart to 2 app fixes and a policy change, lifting driver satisfaction (CSAT) by 6 points |
+| SPR-POC | L1 | 97.9% | 501.5 |  | Ran the Walmart proof-of-concept and live 4-day Black Friday pilot that the account team converted into a $1.2M contract |
+| SPR-POC | L2 | 98.0% | 1004.0 | GK | Ran the Walmart proof-of-concept, including a live 4-day Black Friday pilot for Walmart's VP and directors that tested whether AI could find root causes the same day instead of in 7 days; the account team then converted it into a $1.2M contract |
+| SPR-BF | L1 | 98.2% | 503.0 | K | Showed Walmart's VP and directors within 24 hours that 62% of Black Friday driver contacts were about incentive payouts |
+| SPR-CHURN | L1 | 98.9% | 506.6 |  | Traced churn in 8,000 Walmart drivers over 6 months in SQL cohorts: retention fell from ~65% at day 7 to ~18% by day 60 |
+| SPR-QATAR | L1 | 97.5% | 499.4 | G | Delivered the insights layer for Qatar's $32M, 40-ministry citizen-feedback program, Sprinklr's largest new deal at the time |
+| SPR-QATAR | L2 | 99.0% | 1014.2 |  | Delivered the insights layer for the Government of Qatar's $32M, 40-ministry citizen-feedback program, then Sprinklr's largest new deal, as consultant across all 5 Sprinklr Insights products, from listening to dashboards for the Prime Minister's Office |
+| SPR-QAPP | L1 | 96.4% | 493.8 | G | Shaped the Arabic, right-to-left mobile app for Qatar's ministers, lifting its 7-day retention from 40% to 55% in 5 months |
+| SPR-QAPP | L2 | 96.4% | 987.6 |  | Owned design, QA and testing of the Arabic, right-to-left mobile app that Qatar's Prime Minister's Office used to track ministries, lifting 7-day retention from 40% to 55% in 5 months with a new onboarding flow and better-timed notifications |
+| SPR-QALERT | L1 | 99.8% | 511.2 |  | Cut time-to-insight on Qatar ministers' dashboards from 2 days to 2 hours with smart alerts for negative sentiment and crises |
+| SPR-QDASH | L1 | 96.1% | 492.3 |  | Led 8 consultants to ship 120 custom Arabic dashboards for 40 Qatar ministries in 4 weeks, built from one base template |
+| SPR-QDASH | L2 | 98.5% | 1009.1 |  | Led 8 consultants to ship 120 custom Arabic dashboards for 40 Qatar government ministries in 4 weeks by building one base template, teaching the customisation steps and personally reviewing every dashboard's filters, tags and sharing permissions |
+| SPR-ONBOARD | L1 | 97.8% | 501.0 |  | Onboarded 8 new consultants in 3 months as the Qatar team grew from 6 to 14, using recorded knowledge-transfer sessions |
+| SPR-F1 | L1 | 98.3% | 503.5 |  | Raised the Arabic sentiment model's accuracy (F1) from 0.68 to 0.79 by validating its output with in-house Arabic linguists |
+| SPR-GOLD | L1 | 98.9% | 506.6 | K | Won Sprinklr's global gold medal in 6 months of joining, ranking 1st of 28 implementation consultants on 10/10 client scores |
+| SPR-PROMO | L1 | 96.3% | 493.3 |  | Promoted to senior implementation consultant at 11 months, the only one of 8 peers on the team promoted within a year |
+| SPR-WINTER | L1 | 98.4% | 504.0 |  | Covered all 18 live client projects as the team's only backup over the 2022 winter break, including Snapchat's 4-week go-live |
+| SPR-ADOBE | L1 | 98.7% | 505.6 |  | Unified Adobe's earned, organic and paid social data into one SQL pipeline, cutting each analysis cycle from 4 days to 1 day |
+| SPR-SPAM | L1 | 98.7% | 505.6 |  | Trained a no-code spam classifier for Adobe in Sprinklr AI Studio by labelling its training data, reaching an F1 score of 87% |
+| SPR-UCD | L1 | 98.5% | 504.5 |  | Set up crisis monitoring for UC Davis within hours with a colleague, during a vendor switch, earning a client commendation |
+| SPR-SNAP | L1 | 99.6% | 510.2 |  | Recommended content strategies that grew Snapchat's month-over-month brand engagement 15% in music, sport and fashion |
+| SPR-MARS | L1 | 95.9% | 491.2 |  | Configured AI skill-based routing for Mars Foods, lifting cases answered within the SLA from 72% to 82% over 6 months |
+| SPR-MARS | L2 | 98.1% | 1005.0 | GK | Configured AI skill-based routing for Mars Foods' customer-care team, sending each of its ~40K monthly cases to an agent with the right skills, which lifted the share of cases answered within the first-response SLA from 72% to 82% over 6 months |
+| SPR-MARSAHT | L1 | 97.4% | 498.9 |  | Cut Mars Foods' average customer-care handle time by 14% by routing each case to an agent with the right skills using AI |
+| SPR-DISCORD | L1 | 99.9% | 511.7 |  | Labelled training data for, and validated, a no-code hate-comment classifier for Discord, cutting brand-reputation risk by 25% |
+| SPR-IVR | L1 | 96.2% | 492.8 |  | Ran a speech-to-text proof of concept for phone-menu (IVR) and voice-call analytics at Sprinklr, taken to one client pilot |
+
+## Ventures & freelance
+
+| ID | Ver | Fill | Width (pt) | On | Bullet |
+|---|---|---|---|---|---|
+| MIR-LEADS | L1 | 98.4% | 504.0 |  | Built an n8n lead engine that finds and scores brands and decision-makers with AI; its first 3 runs surfaced 47 priority leads |
+| MIR-PLUGIN | L1 | 97.3% | 498.4 |  | Packaged the agency's content process as a 5-skill Claude plugin, from brief intake to post drafting with compliance checks |
+| CS-SHIP | L1 | 98.4% | 504.0 |  | Shipped 3 AI features to ContentStack's enterprise clients, from ghost writing to site monitoring, each used by 8-15 of them |
+| CS-SHIP | L2 | 97.8% | 1001.9 | K | Shipped 3 AI features to ContentStack customers, one per product (AI ghost writing, website editing and site performance monitoring), writing the PRDs and launch notes for the Head of Product; each is now used by 8 to 15 enterprise customers |
+| CS-EVAL | L1 | 99.2% | 508.1 |  | Raised LLM output pass rate from 61% to 88% on a 40-prompt rubric and test set built for ContentStack's three AI features |
+| CS-EVAL | L2 | 97.7% | 1000.9 | K | Built a 40-prompt rubric and test set for ContentStack's three AI features and raised the LLM output pass rate from 61% to 88% through prompt A/B tests, benchmarking 10+ competitor tools per product to set feature priorities for each launch |
+| GOGOGO | L1 | 99.3% | 508.6 |  | Invested in and advised a pre-seed ride-hailing startup in Indore on product and go-to-market; it has since raised ~Rs 2.5 Cr |
+| NAVII | L1 | 97.8% | 501.0 |  | Logged 23 bugs and enhancements in 5+ user journeys of an AI career app in beta, plus n8n flows and a Chrome extension |
+| SUKHA | L1 | 100.0% | 512.2 |  | Charted a Google Workspace, Slack and Salesforce rollout for an NGO with 2,000+ students, projected to save Rs 60K a year |
+
+## Projects
+
+| ID | Ver | Fill | Width (pt) | On | Bullet |
+|---|---|---|---|---|---|
+| LR-BUILD | L1 | 96.6% | 494.8 |  | Built LinkRight, a Python CLI that tailors resumes to job descriptions with LLMs, cutting tailoring from 25 minutes to 4 |
+| LR-BUILD | L2 | 96.6% | 989.6 | G | Built LinkRight, a Python command-line tool that tailors a resume to a job description with large language models while keeping every claim traceable to the user's own career history, cutting tailoring time per application from 25 minutes to 4 |
+| LR-GUARD | L1 | 96.9% | 496.4 | GK | Coded checks that strip unsupported numbers, company names and job-description keywords from AI drafts before saving |
+| LR-SCORE | L1 | 99.5% | 509.7 |  | Engineered a 16-dimension scorecard that grades every tailored resume, which lifted the average job-match score by 12 points |
+| LR-TESTS | L1 | 98.8% | 506.1 |  | Backed ~45K lines of Python with 1,335 automated tests so a one-person build could change fast without breaking anything |
+| LR-FALLBACK | L1 | 98.4% | 504.0 |  | Routed LLM calls through an 8-tier fallback ending on a self-hosted model, keeping the tool at 99.4% uptime over 2 months |
+| LR-VALIDATE | L1 | 97.9% | 501.5 |  | Validated the problem before writing any code, through a 147-response user survey and cold outreach to 7,000+ job seekers |
+| PLUGINS | L1 | 96.5% | 494.3 |  | Authored 4 Claude plugins, for resume writing, n8n operations, LinkedIn posts and agency content, now used by 5 people |
+| N8N-TIME | L1 | 96.8% | 495.8 |  | Automated resume tailoring and sales-lead enrichment as n8n workflows, saving about 6 hours of manual work every week |
+| N8N-POST | L1 | 99.3% | 508.6 |  | Automated a voice-note-to-LinkedIn-post pipeline in n8n with post-metric tracking, while growing to 9K+ LinkedIn followers |
+| VOICE-BOT | L1 | 96.0% | 491.7 |  | Prototyped a Telegram bot that takes Hinglish voice orders and answers only from a store's FAQ; demoed to the founder |
+| VOICE-BOT | L2 | 99.5% | 1019.3 | K | Prototyped a Telegram bot that takes Hinglish voice orders for a quick-commerce startup, transcribes them on a self-hosted Whisper server, answers only from the store's FAQ and refuses stock questions; backed by 35 unit tests, demoed to its founder |
+| AI-VIDEO | L1 | 96.9% | 496.4 |  | Produced a 15-second AI video ad that a quick-commerce startup used in its marketing, through a script-to-video pipeline |
+| GOSERVE | L1 | 97.6% | 499.9 |  | Built GoServe, a React and Node food-delivery app, to a working MVP in 5 days with CI/CD pipelines and ~30 test users |
+| DHANDHA | L1 | 96.5% | 494.3 |  | Developed Dhandha, an Indian-themed card game, as a React web app with WebRTC multiplayer, live after 119 commits |
+| BHAVNA | L1 | 98.1% | 502.5 |  | Made Bhavna, a local Hinglish dictation tool that doubles as a voice assistant, on Whisper speech models with CI and tests |
+
+## Education
+
+| ID | Ver | Fill | Width (pt) | On | Bullet |
+|---|---|---|---|---|---|
+| EDU-RANKS | L1 | 98.6% | 505.1 |  | JEE Advanced All-India Rank 2446 (top 0.2% of 1.2M+ candidates); GATE 2022 All-India Rank 1463 (top 1.5% of 100K+) |
+| EDU-CLASS12 | L1 | 96.8% | 495.8 |  | Chhatarpur district rank 1 in Class 12 (94.2%), with 100/100 in Maths and Chemistry; a perfect 10/10 CGPA in Class 10 |
+| EDU-JEE12 | L1 | 97.4% | 498.9 | GK | JEE Advanced All-India Rank 2446, top 0.2% of 1.2M+ candidates; Chhatarpur district rank 1 in Class 12 (94.2% overall) |
+
+## Sprinklr
+
+| ID | Ver | Fill | Width (pt) | On | Bullet |
+|---|---|---|---|---|---|
+| SPR-IVR | L1b | 96.7% | 495.3 | K | Piloted speech-to-text for phone-menu (IVR) and voice-call analytics at Sprinklr, taking the proof of concept to one client |
+
+## LaTeX lines
+
+```latex
+% [PAY-SCOPE L1]
+\resumeItem{Drive product delivery for AmEx's corporate payments platform, moving about \$3.5B a month in card and account payments}
+% [PAY-SCOPE L2]
+\resumeItem{Drive product delivery for AmEx's corporate payments platform, which moves about \$3.5B a month in card and account payments for corporate clients across stablecoin, real-time, direct-debit and wire rails in 14 markets in the US, EU and Australia}
+% [PAY-PLAN L1]
+\resumeItem{Picked 18 of 63 candidate features for the Oct--Dec 2026 quarter by business value and regulatory deadline, with VP sign-off}
+% [PAY-PLAN L2]
+\resumeItem{Picked 18 of 63 candidate features for the Oct--Dec 2026 quarter, weighing business value against regulatory deadlines, deferring the other 45 with reasons (regulatory dependency, next quarter or cut) and winning VP and steering-committee sign-off}
+% [PAY-ALIGN L1]
+\resumeItem{Aligned 6 engineering squads and $\sim$40 business, operations, compliance and bank-partner stakeholders on one quarterly plan}
+% [PAY-ALIGN L2]
+\resumeItem{Aligned 6 engineering squads and about 40 people from 4 stakeholder groups (business owners, operations, compliance and bank partners) on one quarterly plan covering stablecoin, real-time, direct-debit and wire payments in the US, EU and Australia}
+% [PAY-SEPA L1]
+\resumeItem{Built end-of-day balancing for EU direct-debit collections that cut daily reconciliation from 3.5 hours to 20 minutes in testing}
+% [PAY-SEPA L2]
+\resumeItem{Prepared EU direct-debit (SEPA) collections in 4 markets, about 120,000 a month, for go-live, owning requirements, user acceptance sign-off and bank coordination; end-of-day balancing cut daily reconciliation from 3.5 hours to 20 minutes in testing}
+% [PAY-DESIGN L1]
+\resumeItem{Specified ISO 20022 message checks and duplicate-payment protection across 10 stories for stablecoin and direct-debit flows}
+% [PAY-DESIGN L2]
+\resumeItem{Specified ISO 20022 message checks, duplicate-payment protection, retries with backoff and a payment-status state machine across 10 user stories for the stablecoin and EU direct-debit flows, so every payment is sent once and ends in a known status}
+% [PAY-INC L1]
+\resumeItem{Triaged all 10 production incidents on the payments platform since August, leading 3 to resolution as incident commander}
+% [PAY-INC L2]
+\resumeItem{Triaged all 10 production incidents on the payments platform since August, leading 3 as incident commander and coordinating engineering, operations and bank partners to protect the straight-through payment success rate that the team is judged on}
+% [PAY-DUP L1]
+\resumeItem{Closed a duplicate-payment risk in 2 hours by adding an idempotency key and a dead-letter retry queue; no client affected}
+% [PAY-DUP L2]
+\resumeItem{Closed a duplicate-payment risk within 2 hours during a live incident, where retry logic could resend a payment, by specifying an idempotency key so each payment is processed once and a dead-letter queue for failed retries; no client was affected}
+% [PAY-STABLE L1]
+\resumeItem{Moved a stablecoin deposit and withdrawal integration with a global bank into pre-production, writing 30 of its user stories}
+% [PAY-STABLE L2]
+\resumeItem{Moved the stablecoin deposit and withdrawal integration with a global bank's blockchain network into pre-production validation, writing 30 of its user stories since joining in August and deferring the pilot's scope until the regulatory position was clear}
+% [PAY-PAYTO L1]
+\resumeItem{Prepared the production release and post-launch checks for Australia's upgraded real-time PayTo payments, writing 15 stories}
+% [PAY-WIRES L1]
+\resumeItem{Specified next quarter's wire work: domestic and cross-border wires through a US bank, plus discovery for a second wire route}
+% [AML-OWN L1]
+\resumeItem{As sole PM for its first 10 sprints, turned AmEx's AML customer risk-rating brief of 21 requirements into a 3-year roadmap}
+% [AML-OWN L2]
+\resumeItem{As sole PM for its first 10 sprints, turned AmEx's AML customer risk-rating modernisation from a 21-requirement business brief into a 3-year roadmap, choosing a modular in-house build with the test sandbox first and ML-based scoring in a later phase}
+% [AML-AWARD L1]
+\resumeItem{Won an SVP's Leadership in Action award for Q4 2024, given to 6 of about 400 eligible people, for the risk-rating program}
+% [AML-AWARD L2]
+\resumeItem{Won an SVP's Leadership in Action award for Q4 2024, given to only 6 of about 400 eligible people across the organisation, for taking ownership of AmEx's AML customer risk-rating engine modernisation and delivering its prioritised 3-year roadmap}
+% [AML-USERS L1]
+\resumeItem{Shaped a risk-rating platform for $\sim$140 compliance analysts in 12 planned markets, who rate customers low, medium or high}
+% [AML-USERS L2]
+\resumeItem{Shaped a customer risk-rating platform for about 140 compliance analysts across 12 planned markets, who rate every customer as low, medium or high risk, and ran user-acceptance testing in the staging environment with 35 of these compliance analysts}
+% [AML-SPEED L1]
+\resumeItem{Cut a market's risk-rule change from 10 days to 3 by redesigning rule setup and approvals, measured in UK acceptance testing}
+% [AML-SPEED L2]
+\resumeItem{Redesigned rule setup and automated the approval steps so a market's risk-rule change takes 3 days instead of 10 (70\% faster), measured in UK user-acceptance testing, for a compliance team that makes about 450 rule changes a year across its markets}
+% [AML-STAGING L1]
+\resumeItem{Took 60+ MVP features to staging, owning 24 of them, from the drag-and-drop rule builder and list manager to an audit trail}
+% [AML-STAGING L2]
+\resumeItem{Took 60+ MVP features to staging before the program pivoted to fixing its data first, personally writing and owning 24 of them, including the drag-and-drop rule builder, central list manager, test sandbox and audit trail, built by an 18-person team}
+% [AML-REPLAN L1]
+\resumeItem{Re-planned the backlog in a week when the timeline halved, keeping the 38 of 64 features needed to retire the legacy system}
+% [AML-REPLAN L2]
+\resumeItem{Re-planned the whole backlog within a week when leadership cut the delivery timeline from 2 years to 1, keeping the 38 of 64 features needed to retire the legacy risk-rating system, deferring the other 26 and holding the first release to its planned date}
+% [AML-RESEARCH L1]
+\resumeItem{Found in 20+ analyst interviews that the same data was retyped into 3 systems, so moved a single list manager into the MVP}
+% [AML-RESEARCH L2]
+\resumeItem{Found in 20+ interviews with compliance analysts across 6 regions that they retyped the same data into 3 separate systems, so moved a single list manager with bulk upload into the MVP and designed the list-manager and rule screens in Figma}
+% [AML-DESIGNER L1]
+\resumeItem{Hired the team's UX designer through a 12-round process and directed her work, producing 40 screens and a design system}
+% [AML-DESIGNER L2]
+\resumeItem{Hired the team's UX designer through a 12-round selection process and managed her work day to day, directing the 40 screens and the design system behind the MVP's list-manager, advanced-rule and sandbox-versioning flows for $\sim$140 analysts}
+% [AML-MAP L1]
+\resumeItem{Mapped 521K raw industry codes into 98 business categories for the risk engine, cutting duplicate risk rules by about 30\%}
+% [AML-MAP L2]
+\resumeItem{Owned the taxonomy and review rules that mapped 521K raw industry codes from source systems into 98 business categories, so the risk engine's rules run on one standard set of data instead of free-text codes, cutting duplicate risk rules by about 30\%}
+% [AML-MAPSPEED L1]
+\resumeItem{Finished mapping 521K industry codes in 9 weeks against a 14-week estimate by combining rules, scripts and manual review}
+% [AML-REVIEW L1]
+\resumeItem{Rated top performer among 14 peer product owners in the VP's organisation in the latest review, the highest rating given}
+% [AML-REVIEW L2]
+\resumeItem{Rated top performer among 14 peer product owners in the VP's organisation in the latest review cycle, with the highest rating given that cycle, judged on rule-change cycle time and the number of audit findings closed for the AML risk-rating platform}
+% [AML-ALIGN L1]
+\resumeItem{Aligned 7 teams and 12 senior stakeholders, including 2 SVPs, across 6 regions behind one 3-year modernisation roadmap}
+% [AML-ALIGN L2]
+\resumeItem{Aligned 7 teams and 12 senior stakeholders, including 2 SVPs, across 6 regions behind one 3-year roadmap for AmEx's AML risk-rating platform, and settled a dispute with compliance over which fields must be mandatory by splitting them into tiers}
+% [AML-VENDOR L1]
+\resumeItem{Co-led the vendor evaluation that cut 15+ risk-rating vendors to 2 finalists and recommended building the platform in-house}
+% [AML-VENDOR L2]
+\resumeItem{Co-led the vendor evaluation that cut 15+ risk-rating vendors to 2 finalists and recommended a modular in-house build, replacing a legacy system that cost $\sim$\$2M a year in licences, had drawn 2 audit findings and took 10 days per rule change}
+% [AML-SOLO L1]
+\resumeItem{Ran the first 10 sprints as sole PM for an 18-person team of engineers, data engineers and QA, before a senior manager joined}
+% [AML-SPILL L1]
+\resumeItem{Delivered 4 straight quarters with zero spillover for an 18-person team: every committed feature landed in its planned quarter}
+% [AML-COACH L1]
+\resumeItem{Coached 3 newly joined product owners and 1 intern on backlog craft, user-story writing and updates to senior stakeholders}
+% [AML-COVER L1]
+\resumeItem{Planned the move off monthly manual Excel mapping, with a phased roadmap to cover 96.5\% of the platform's risk factors}
+% [AML-HACK L1]
+\resumeItem{Captained a 6-person team to 21st of 400+ teams at AmEx's internal hackathon with an AI Slack bot that drafts user stories}
+% [AML-GPT L1]
+\resumeItem{Introduced ChatGPT Enterprise into sprint planning, bringing AI-assisted drafting to 80\% of the 18-person team's user stories}
+% [AML-GPT L2]
+\resumeItem{Introduced ChatGPT Enterprise into sprint planning, bringing AI-assisted drafting to 80\% of the team's user stories, and prototyped an LLM that suggests new risk rules to compliance analysts, plus n8n automations, kept outside production}
+% [SPR-COVER L1]
+\resumeItem{Covered the lead PM's role for 6 months, running roadmap, grooming and QA for a self-serve setup product with 9 engineers}
+% [SPR-COVER L2]
+\resumeItem{Covered the lead PM's role for 6 months during her leave, running roadmap prioritisation, grooming and QA for a self-serve setup product built by 2 squads of 9 engineers, while still running client delivery as a senior implementation consultant}
+% [SPR-TEMPL L1]
+\resumeItem{Studied 1,500+ client dashboards across 15 industries to design ready-made templates that let small clients set up unaided}
+% [SPR-ADOPT L1]
+\resumeItem{Laid the template groundwork for the launch that lifted small-client adoption from $\sim$35\% to $\sim$85\%, per the product team}
+% [SPR-WMT L1]
+\resumeItem{Led delivery of an AI root-cause tool that $\sim$450 Walmart driver-support agents used daily across 100K+ monthly contacts}
+% [SPR-WMT L2]
+\resumeItem{Led delivery of an AI root-cause tool for Walmart's Spark driver support that about 450 support agents used daily, joining 100K+ monthly calls, chats, app reviews and social posts in 2023 into a single daily view of why gig drivers contacted support}
+% [SPR-SPEED L1]
+\resumeItem{Designed a 3-level issue taxonomy and clustering criteria for Walmart that cut root-cause discovery from 7 days to same-day}
+% [SPR-SPEED L2]
+\resumeItem{Designed the 3-level issue taxonomy, such as Delivery $>$ Earnings $>$ Incentive not credited, and the clustering criteria that Sprinklr's data scientists built into ML models, cutting the time to find a driver-support root cause from 7 days to the same day}
+% [SPR-IMPACT L1]
+\resumeItem{Surfaced the root causes that led Walmart to ship 2 app fixes and a policy change, cutting driver support contacts by 18\%}
+% [SPR-CSAT L1]
+\resumeItem{Surfaced driver issues that led Walmart to 2 app fixes and a policy change, lifting driver satisfaction (CSAT) by 6 points}
+% [SPR-POC L1]
+\resumeItem{Ran the Walmart proof-of-concept and live 4-day Black Friday pilot that the account team converted into a \$1.2M contract}
+% [SPR-POC L2]
+\resumeItem{Ran the Walmart proof-of-concept, including a live 4-day Black Friday pilot for Walmart's VP and directors that tested whether AI could find root causes the same day instead of in 7 days; the account team then converted it into a \$1.2M contract}
+% [SPR-BF L1]
+\resumeItem{Showed Walmart's VP and directors within 24 hours that 62\% of Black Friday driver contacts were about incentive payouts}
+% [SPR-CHURN L1]
+\resumeItem{Traced churn in 8,000 Walmart drivers over 6 months in SQL cohorts: retention fell from $\sim$65\% at day 7 to $\sim$18\% by day 60}
+% [SPR-QATAR L1]
+\resumeItem{Delivered the insights layer for Qatar's \$32M, 40-ministry citizen-feedback program, Sprinklr's largest new deal at the time}
+% [SPR-QATAR L2]
+\resumeItem{Delivered the insights layer for the Government of Qatar's \$32M, 40-ministry citizen-feedback program, then Sprinklr's largest new deal, as consultant across all 5 Sprinklr Insights products, from listening to dashboards for the Prime Minister's Office}
+% [SPR-QAPP L1]
+\resumeItem{Shaped the Arabic, right-to-left mobile app for Qatar's ministers, lifting its 7-day retention from 40\% to 55\% in 5 months}
+% [SPR-QAPP L2]
+\resumeItem{Owned design, QA and testing of the Arabic, right-to-left mobile app that Qatar's Prime Minister's Office used to track ministries, lifting 7-day retention from 40\% to 55\% in 5 months with a new onboarding flow and better-timed notifications}
+% [SPR-QALERT L1]
+\resumeItem{Cut time-to-insight on Qatar ministers' dashboards from 2 days to 2 hours with smart alerts for negative sentiment and crises}
+% [SPR-QDASH L1]
+\resumeItem{Led 8 consultants to ship 120 custom Arabic dashboards for 40 Qatar ministries in 4 weeks, built from one base template}
+% [SPR-QDASH L2]
+\resumeItem{Led 8 consultants to ship 120 custom Arabic dashboards for 40 Qatar government ministries in 4 weeks by building one base template, teaching the customisation steps and personally reviewing every dashboard's filters, tags and sharing permissions}
+% [SPR-ONBOARD L1]
+\resumeItem{Onboarded 8 new consultants in 3 months as the Qatar team grew from 6 to 14, using recorded knowledge-transfer sessions}
+% [SPR-F1 L1]
+\resumeItem{Raised the Arabic sentiment model's accuracy (F1) from 0.68 to 0.79 by validating its output with in-house Arabic linguists}
+% [SPR-GOLD L1]
+\resumeItem{Won Sprinklr's global gold medal in 6 months of joining, ranking 1st of 28 implementation consultants on 10/10 client scores}
+% [SPR-PROMO L1]
+\resumeItem{Promoted to senior implementation consultant at 11 months, the only one of 8 peers on the team promoted within a year}
+% [SPR-WINTER L1]
+\resumeItem{Covered all 18 live client projects as the team's only backup over the 2022 winter break, including Snapchat's 4-week go-live}
+% [SPR-ADOBE L1]
+\resumeItem{Unified Adobe's earned, organic and paid social data into one SQL pipeline, cutting each analysis cycle from 4 days to 1 day}
+% [SPR-SPAM L1]
+\resumeItem{Trained a no-code spam classifier for Adobe in Sprinklr AI Studio by labelling its training data, reaching an F1 score of 87\%}
+% [SPR-UCD L1]
+\resumeItem{Set up crisis monitoring for UC Davis within hours with a colleague, during a vendor switch, earning a client commendation}
+% [SPR-SNAP L1]
+\resumeItem{Recommended content strategies that grew Snapchat's month-over-month brand engagement 15\% in music, sport and fashion}
+% [SPR-MARS L1]
+\resumeItem{Configured AI skill-based routing for Mars Foods, lifting cases answered within the SLA from 72\% to 82\% over 6 months}
+% [SPR-MARS L2]
+\resumeItem{Configured AI skill-based routing for Mars Foods' customer-care team, sending each of its $\sim$40K monthly cases to an agent with the right skills, which lifted the share of cases answered within the first-response SLA from 72\% to 82\% over 6 months}
+% [SPR-MARSAHT L1]
+\resumeItem{Cut Mars Foods' average customer-care handle time by 14\% by routing each case to an agent with the right skills using AI}
+% [SPR-DISCORD L1]
+\resumeItem{Labelled training data for, and validated, a no-code hate-comment classifier for Discord, cutting brand-reputation risk by 25\%}
+% [SPR-IVR L1]
+\resumeItem{Ran a speech-to-text proof of concept for phone-menu (IVR) and voice-call analytics at Sprinklr, taken to one client pilot}
+% [MIR-LEADS L1]
+\resumeItem{Built an n8n lead engine that finds and scores brands and decision-makers with AI; its first 3 runs surfaced 47 priority leads}
+% [MIR-PLUGIN L1]
+\resumeItem{Packaged the agency's content process as a 5-skill Claude plugin, from brief intake to post drafting with compliance checks}
+% [CS-SHIP L1]
+\resumeItem{Shipped 3 AI features to ContentStack's enterprise clients, from ghost writing to site monitoring, each used by 8--15 of them}
+% [CS-SHIP L2]
+\resumeItem{Shipped 3 AI features to ContentStack customers, one per product (AI ghost writing, website editing and site performance monitoring), writing the PRDs and launch notes for the Head of Product; each is now used by 8 to 15 enterprise customers}
+% [CS-EVAL L1]
+\resumeItem{Raised LLM output pass rate from 61\% to 88\% on a 40-prompt rubric and test set built for ContentStack's three AI features}
+% [CS-EVAL L2]
+\resumeItem{Built a 40-prompt rubric and test set for ContentStack's three AI features and raised the LLM output pass rate from 61\% to 88\% through prompt A/B tests, benchmarking 10+ competitor tools per product to set feature priorities for each launch}
+% [GOGOGO L1]
+\resumeItem{Invested in and advised a pre-seed ride-hailing startup in Indore on product and go-to-market; it has since raised $\sim$Rs.\,2.5 Cr}
+% [NAVII L1]
+\resumeItem{Logged 23 bugs and enhancements in 5+ user journeys of an AI career app in beta, plus n8n flows and a Chrome extension}
+% [SUKHA L1]
+\resumeItem{Charted a Google Workspace, Slack and Salesforce rollout for an NGO with 2,000+ students, projected to save Rs.\,60K a year}
+% [LR-BUILD L1]
+\resumeItem{Built LinkRight, a Python CLI that tailors resumes to job descriptions with LLMs, cutting tailoring from 25 minutes to 4}
+% [LR-BUILD L2]
+\resumeItem{Built LinkRight, a Python command-line tool that tailors a resume to a job description with large language models while keeping every claim traceable to the user's own career history, cutting tailoring time per application from 25 minutes to 4}
+% [LR-GUARD L1]
+\resumeItem{Coded checks that strip unsupported numbers, company names and job-description keywords from AI drafts before saving}
+% [LR-SCORE L1]
+\resumeItem{Engineered a 16-dimension scorecard that grades every tailored resume, which lifted the average job-match score by 12 points}
+% [LR-TESTS L1]
+\resumeItem{Backed $\sim$45K lines of Python with 1,335 automated tests so a one-person build could change fast without breaking anything}
+% [LR-FALLBACK L1]
+\resumeItem{Routed LLM calls through an 8-tier fallback ending on a self-hosted model, keeping the tool at 99.4\% uptime over 2 months}
+% [LR-VALIDATE L1]
+\resumeItem{Validated the problem before writing any code, through a 147-response user survey and cold outreach to 7,000+ job seekers}
+% [PLUGINS L1]
+\resumeItem{Authored 4 Claude plugins, for resume writing, n8n operations, LinkedIn posts and agency content, now used by 5 people}
+% [N8N-TIME L1]
+\resumeItem{Automated resume tailoring and sales-lead enrichment as n8n workflows, saving about 6 hours of manual work every week}
+% [N8N-POST L1]
+\resumeItem{Automated a voice-note-to-LinkedIn-post pipeline in n8n with post-metric tracking, while growing to 9K+ LinkedIn followers}
+% [VOICE-BOT L1]
+\resumeItem{Prototyped a Telegram bot that takes Hinglish voice orders and answers only from a store's FAQ; demoed to the founder}
+% [VOICE-BOT L2]
+\resumeItem{Prototyped a Telegram bot that takes Hinglish voice orders for a quick-commerce startup, transcribes them on a self-hosted Whisper server, answers only from the store's FAQ and refuses stock questions; backed by 35 unit tests, demoed to its founder}
+% [AI-VIDEO L1]
+\resumeItem{Produced a 15-second AI video ad that a quick-commerce startup used in its marketing, through a script-to-video pipeline}
+% [GOSERVE L1]
+\resumeItem{Built GoServe, a React and Node food-delivery app, to a working MVP in 5 days with CI/CD pipelines and $\sim$30 test users}
+% [DHANDHA L1]
+\resumeItem{Developed Dhandha, an Indian-themed card game, as a React web app with WebRTC multiplayer, live after 119 commits}
+% [BHAVNA L1]
+\resumeItem{Made Bhavna, a local Hinglish dictation tool that doubles as a voice assistant, on Whisper speech models with CI and tests}
+% [EDU-RANKS L1]
+\resumeItem{JEE Advanced All-India Rank 2446 (top 0.2\% of 1.2M+ candidates); GATE 2022 All-India Rank 1463 (top 1.5\% of 100K+)}
+% [EDU-CLASS12 L1]
+\resumeItem{Chhatarpur district rank 1 in Class 12 (94.2\%), with 100/100 in Maths and Chemistry; a perfect 10/10 CGPA in Class 10}
+% [EDU-JEE12 L1]
+\resumeItem{JEE Advanced All-India Rank 2446, top 0.2\% of 1.2M+ candidates; Chhatarpur district rank 1 in Class 12 (94.2\% overall)}
+% [SPR-IVR L1b]
+\resumeItem{Piloted speech-to-text for phone-menu (IVR) and voice-call analytics at Sprinklr, taking the proof of concept to one client}
+```

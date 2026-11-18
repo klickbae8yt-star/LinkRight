@@ -1,0 +1,85 @@
+{
+  "company_slug": "amplitude",
+  "company_name": "Amplitude",
+  "website": "https://amplitude.com",
+  "career_portal_url": "https://amplitude.com/careers",
+  "ats_platform": "ashby",
+  "ats_slug": "amplitude",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 0,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W12",
+  "team_size": 750,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "San Francisco"
+  ],
+  "summary": "Digital Analytics Platform",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/amplitude",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/amplitude-analytics/",
+  "founders": [
+    {
+      "name": "Spenser Skates",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/spenserskates",
+      "twitter": "https://x.com/spenserskates",
+      "bio": "Spenser Skates is the CEO and cofounder of Amplitude. Amplitude started in 2012 to help organizations build better products through product analytics. Became a public company in 2021. Today, Amplitude serves more than 3,000 paying customers, guiding teams to clearer insights, faster action, and trusted data.\n\nMIT 2010, Course 20 (Bioengineering). Won MIT's largest programming competition, Battlecode, 2 years in a row.",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 15,
+      "career_signals": [
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    },
+    {
+      "name": "Curtis Liu",
+      "title": "Founder/CTO",
+      "linkedin": "https://www.linkedin.com/in/curtisliu/?isSelfProfile=false",
+      "twitter": "",
+      "bio": "",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 20,
+      "career_signals": [
+        "google",
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 10,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 89,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 20,
+    "past_exits": 10,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": false
+}

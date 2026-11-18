@@ -1,0 +1,32 @@
+# W4. Media Production. Turns the media script into a finished, on brand asset.
+workflow:
+  code: media-creator
+  name: Media Production
+  purpose: Build the finished visual asset from the media script, on brand and accessible
+  cadence: per post
+
+  config_source: config/
+  output_folder: runs/
+
+  agents:
+    - art-director       # sets the brand system for the asset
+    - asset-builder      # renders the asset, branches by media type
+    - accessibility      # alt text and captions
+
+  validation: evals/media-signoff.md
+  primary_output: templates/media-handoff.yaml
+
+  inputs:
+    - config/user-config.yaml
+    - templates/content-handoff.yaml   # the media_script from W3
+    - knowledge-base/brand-identity.md
+    - knowledge-base/design-principles.md
+    - knowledge-base/media-types.md
+
+  render:
+    primary: sandbox render at zero cost
+    fallback: ChatGPT image generator pinned in Chrome, only when a render is not good enough
+
+  execution_hints:
+    interactive: false
+    resumable: true

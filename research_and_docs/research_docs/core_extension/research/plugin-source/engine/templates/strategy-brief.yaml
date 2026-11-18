@@ -1,0 +1,39 @@
+# Strategy Brief template. The Topic Selector fills this, assembled from all four W2 agents.
+# This is the contract the Content Drafter and Media Creator build from. Every field filled, no blanks.
+strategy_brief:
+  chosen_topic: ""           # the one topic picked for this post
+  reason: ""                 # one line, why this topic now, tied to the owner's goal
+
+  post_type: ""              # from post-types.md, for example Teardown, Career and Builder
+  pillar: ""                 # which positioning pillar this serves
+  media_type: ""             # from media-types.md, for example document carousel
+
+  audience:
+    primary_reader: ""       # the one named reader, from the ICP
+    pain: ""                 # the exact nerve this post touches for them
+    why_amplified: ""        # how the secondary reader carries it in the first hour
+
+  positioning:
+    ladder: ""               # how this ladders to the through line
+    balances_pillar: ""      # the thin pillar this fills, if any
+
+  distribution:
+    format_reason: ""        # the current mechanic behind the format call
+    best_time: ""            # if the owner's data supports one
+    reach_risks: ""          # for example outbound link penalty, route around it
+
+  angle: ""                  # the specific take, not the broad topic
+  psychological_triggers: [] # for example curiosity gap, social proof
+
+  do_patterns: []            # post specific dos, on top of the voice profile
+  dont_patterns: []          # post specific donts
+
+  voice_notes: ""            # any voice profile signals to lean on for this topic
+  hook_direction: ""         # the hard fact or contrast to open on, drafter writes the final hook
+  estimated_length: ""       # rough character range
+  hashtags: []
+
+  notes_for_drafter: ""      # anything the Content Drafter needs
+  notes_for_media: ""        # anything the Media Creator needs
+
+  metrics_to_use: []         # real numbers from the career files or the ledger, if any, kept consistent

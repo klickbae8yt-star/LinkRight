@@ -1,0 +1,79 @@
+{
+  "company_slug": "cosine",
+  "company_name": "Cosine",
+  "website": "http://www.cosine.sh",
+  "career_portal_url": "https://jobs.ashbyhq.com/cosine",
+  "ats_platform": "ashby",
+  "ats_slug": "cosine",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 2,
+  "industry": "AI & Automation",
+  "industry_grade": "A",
+  "industry_score": 9,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W23",
+  "team_size": 12,
+  "locations": [
+    "United Kingdom",
+    "Europe",
+    "Remote",
+    "Partly Remote",
+    "London"
+  ],
+  "summary": "Fully Agentic SWE",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/cosine",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/cosine-ai/",
+  "founders": [
+    {
+      "name": "Alistair Pullen",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/alistair-pullen-616129226/",
+      "twitter": "https://twitter.com/AlistairPullen",
+      "bio": "Full-stack Software Engineer with 15 years experience with deep applied knowledge of LLMs and Embeddings. Currently building an AI dev tool. Experienced an exit with Fancy (YC S20,\u00a0acq.\u00a0GoPuff).",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Yang Li",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/yangli92/",
+      "twitter": "https://twitter.com/yangli_",
+      "bio": "1 IPO, 2 Acquisitions, 3 Unicorns.  Ex VP of Europe for Digital Currency Group's consumer arm, Luno. Launched Ziglu (acquired by Robinhood) and scaled to 100,000 customers in the first year. Previously Commercial Director for Mobike (acquired by Meituan) growing it to 220M MAUs until the $55B IPO. Yang is one of the 2021 Forbes 30 under 30 cohort.",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 15,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 65,
+  "recommendation": "consider",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 5,
+    "past_exits": 15,
+    "industry_match": 9,
+    "location_compliance": 10,
+    "product_stage_fit": 6
+  },
+  "needs_linkedin_burner_lookup": true
+}

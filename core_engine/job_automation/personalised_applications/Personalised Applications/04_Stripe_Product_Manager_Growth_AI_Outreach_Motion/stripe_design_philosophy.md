@@ -1,0 +1,15 @@
+# Signal Architecture
+
+A design philosophy.
+
+---
+
+One color carries the entire chromatic argument. A single saturated frequency — the precise blurple of a circuit under load — establishes identity through intensity, not variety. Everything that surrounds it is either deep navy, the substrate of serious infrastructure, or wide white space, the medium through which value silently travels. The chromatic logic is binary and deliberate: the signal, and what carries it. The relationship between these two states is the compositional center of gravity, calibrated by someone who has spent countless hours studying exactly how much white must surround a charged color before it reaches its full amplitude.
+
+Geometry governs. Horizontal bands divide the field with the confidence of someone who has measured the same alignment a hundred times before committing. Rule lines at specific intervals create rhythm, like data packets moving across a network layer — not decoration, but evidence of system. Circles appear as the only soft intrusion: continuous forms that suggest the flow of value through the grid, their placement the product of painstaking spatial calibration against the hard right angles of the surrounding architecture. Nothing is approximate. Every element occupies exactly the space it deserves.
+
+Typography inhabits two registers. The primary voice is a monospace declaration — a font that honors the developer substrate, the engineers who built the invisible plumbing. It appears only as labels, identifiers, anchors: precise and terse, like a system log entry that contains more meaning than its character count suggests. The secondary voice is clean sans-serif at a smaller scale, carrying information without competing. There is no intermediate register. The hierarchy is internally complete, the product of countless refinements that removed every unnecessary scale until only what was essential remained.
+
+Color function follows infrastructure logic. The primary color defines the origin: the zone where energy enters the system. It then moves — gradually, across a gradient band — into the dark substrate, enacting a directional migration that suggests both velocity and grounding. When the accent color reappears as a structural bar or label, it carries the full charge of the primary signal. The body remains neutral and wide, so that each chromatic restatement lands with full force. This is not decoration. It is system communication expressed through visual grammar.
+
+The finished work should feel as though it emerged from discipline, not inspiration — as if someone at the absolute top of their craft spent countless hours verifying every margin, every color relationship, every weight decision. The result reads as self-evident, inevitable, correct. That quality of inevitability is the signature of master-level execution: the difficulty made invisible through labor. The work should feel as precise as a well-written API — everything where it must be, nothing where it should not be, the entire composition earning trust through exactness.

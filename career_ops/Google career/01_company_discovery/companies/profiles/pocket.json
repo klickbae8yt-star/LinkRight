@@ -1,0 +1,79 @@
+{
+  "company_slug": "pocket",
+  "company_name": "Pocket",
+  "website": "https://heypocket.com/now",
+  "career_portal_url": "https://jobs.ashbyhq.com/pocket",
+  "ats_platform": "ashby",
+  "ats_slug": "pocket",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 16,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W26",
+  "team_size": 35,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "San Francisco"
+  ],
+  "summary": "Take Notes in the Real World",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/pocket",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/heypocketai",
+  "founders": [
+    {
+      "name": "Akshay Narisetti",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/akshaynarisetti",
+      "twitter": "https://x.com/AkshayNarisetti",
+      "bio": "Co-founder & CEO of Pocket (YC W26). Previously built one of the world\u2019s largest open-source AI note-taking devices and shipped multiple hardware + AI products used by thousands of users.",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Gabriel Dymowski",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/gabrieldymowski/",
+      "twitter": "https://x.com/gabrieldymowski",
+      "bio": "Co-founder at Pocket (YC W26). Previously CEO & co-founder of DoxyChain (blockchain document infrastructure for enterprises/public sector).",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 49,
+  "recommendation": "watch_needs_intel",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 5,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

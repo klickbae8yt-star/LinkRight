@@ -1,0 +1,79 @@
+{
+  "company_slug": "imt-care",
+  "company_name": "IMT Care",
+  "website": "https://www.imt.care",
+  "career_portal_url": "https://www.imt.care/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W22",
+  "team_size": 23,
+  "locations": [
+    "India",
+    "South Asia",
+    "Remote",
+    "Partly Remote",
+    "Mumbai, Maharashtra, India"
+  ],
+  "summary": "Disrupting Indian Insurance space by empowering distrubutors",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/imt-care",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "",
+  "founders": [
+    {
+      "name": "Rachit Puri",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/rachit-puri/",
+      "twitter": "https://twitter.com/raecha06",
+      "bio": "Entrepreneur || Engineer || Product Manager. 11+ years of experience in building health tech and fintech products worked as an engineer, team leader, product management, people, and stakeholder management.",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Kunal Popat",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/kunal-popat-93884114/",
+      "twitter": "",
+      "bio": "I have worked as CEO of a successful insurance broking company for more than 5 years in my previous assignment . I loved the role but was excited about innovating through technology and spread health care and insurance deeply within the country . This motivated us to start www.insuremyteam.com along with my cofounder ,Rachit Puri. We are on an fun filled journey to make healthcare accessible and affordable to millions of employees and thier families . Thanks.",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 49,
+  "recommendation": "watch_needs_intel",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 5,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

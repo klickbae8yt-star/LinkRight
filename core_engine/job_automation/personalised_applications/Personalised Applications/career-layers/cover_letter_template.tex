@@ -1,0 +1,228 @@
+%------------------------
+% Cover Letter Template — Satvik Jain
+% Design: Horizontal gradient header band + clean letter body
+% Inspired by: Simple Cover Letter (Sid Lacy / Overleaf, CC BY 4.0)
+%
+% WCAG CONTRAST NOTES (white text on cprimary band):
+%   Name at 26pt bold scshape  = WCAG "large text" -> 3:1 minimum required.
+%   Contact row at ~9pt small  = standard text     -> 4.5:1 minimum required.
+%   Google Blue #4285F4 vs white: ~4.2:1 (passes large text; near-miss small).
+%   Gradient darkens 45% toward right edge, improving contrast there.
+%   For strict AA on contact row: choose cprimary with luminance below 0.18
+%   (example: darken Google Blue to #3A78E0 -> ~4.7:1 with white).
+%   Checker: https://webaim.org/resources/contrastchecker/
+%
+% Rules:  No em-dashes or en-dashes anywhere in body text.
+%         No AI-smell openers ("I am writing to express", "I am excited to").
+%         Achievement labels appear in csection color; body text stays black.
+%         Replace ALL bracketed placeholders before sending.
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{geometry}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\geometry{
+  a4paper,
+  top=0.45in,
+  bottom=0.75in,
+  left=0.75in,
+  right=0.75in
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+% ═══════════════════════════════════════════════════════════════════════
+% COMPANY DESIGN LAYER
+%   cprimary  = header band gradient, left anchor  (dominant brand color)
+%   csection  = thin accent rule at band base + achievement label color
+%   Band text: always white (#FFFFFF) -- do not change for any company
+%   Name text: #FFFFFF  |  Contact text: #FFFFFF  |  Body text: black
+%
+% WCAG rule of thumb for small contact text (~9pt):
+%   R+G+B sum of cprimary hex < 450 -> white text is broadly safe.
+%   Examples that pass: #4285F4 (Google Blue, ~4.2:1), #0061FF (Jira),
+%   #1E88E5 (Material Blue), #006699 (any mid-navy). If borderline, darken
+%   cprimary by 10-15% (add !85!black in the shade definition below).
+%
+% ┌── SWAP COMPANY: Change only these two hex codes ────────────────────┐
+\definecolor{cprimary}{HTML}{4285F4}   % Header gradient anchor (left)
+\definecolor{csection}{HTML}{EA4335}   % Accent rule + achievement labels
+% └───────────────────────────────────────────────────────────────────┘
+% ═══════════════════════════════════════════════════════════════════════
+
+% HEADER BAND (drawn as page background, appears on every page of this letter)
+%
+% Horizontal gradient:
+%   Left  = cprimary (full brand color, strongest brand signal)
+%   Right = cprimary!55!black (brand color darkened ~45%)
+%
+% Why darken the right side?
+%   (1) Creates depth and a premium feel -- reads as "designed", not a solid bar.
+%   (2) Improves WCAG contrast at the right margin where lighter primaries
+%       would otherwise fall below 3:1 against white.
+%   (3) The gradient direction (L->R) mirrors natural reading flow.
+%
+% csection rule (2.5pt) at band base:
+%   Visually closes the band and introduces the secondary brand color.
+%   This is the same accent color used for achievement labels in the body,
+%   creating a consistent two-color brand identity across the document.
+\AddToShipoutPictureBG{%
+  \begin{tikzpicture}[remember picture, overlay]
+    % Gradient band: full page width, 1.55in tall from top
+    \shade[left color=cprimary, right color=cprimary!55!black]
+      (current page.north west)
+      rectangle
+      ([yshift=-1.55in]current page.north east);
+    % Accent rule at base of band (csection color, 2.5pt)
+    \draw[color=csection, line width=2.5pt]
+      ([yshift=-1.55in]current page.north west)
+      --
+      ([yshift=-1.55in]current page.north east);
+  \end{tikzpicture}%
+}
+
+\begin{document}
+
+% ─────────────────────────────────────────────────────────────────────
+% HEADER BLOCK (centered inside the gradient band)
+%
+% Geometry: top=0.45in places the text area inside the band from line 1.
+% Name block (~0.55in tall) + \vspace{0.65in} = ~1.65in total from top,
+% clearing the 1.55in band and the 2.5pt rule with breathing room.
+% ─────────────────────────────────────────────────────────────────────
+\begin{center}
+  {\color{white}\textbf{\fontsize{26}{30}\selectfont\scshape Satvik Jain}} \\[5pt]
+  {\color{white}\small
+    \href{tel:+917678296693}{\faPhone\enspace +91-7678296693}
+    \enspace $|$ \enspace
+    \href{mailto:satvik.jain@iitdalumni.com}{\faEnvelope\enspace satvik.jain@iitdalumni.com}
+    \enspace $|$ \enspace
+    \href{https://linkedin.com/in/satvik-jain-iitd}{\faLinkedin\enspace linkedin.com/in/satvik-jain-iitd}
+  }
+\end{center}
+
+\vspace{0.65in}   % clears band + rule; letter body begins here
+
+% ─────────────────────────────────────────────────────────────────────
+% LETTER BODY
+% ─────────────────────────────────────────────────────────────────────
+
+\noindent
+[DATE -- e.g., 24 May 2026]
+
+\vspace{0.2in}
+
+\noindent
+Dear [HIRING MANAGER NAME or Hiring Team],
+
+\vspace{0.2in}
+
+% SECTION 1: HOOK + IDENTITY
+%
+% Do NOT open with any of these:
+%   "I am writing to express my interest in..."
+%   "I am excited to apply for..."
+%   "I believe I would be a great fit..."
+%   "I am passionate about..."
+%
+% DO open with something specific and real -- a product the company ships,
+% a challenge they have named publicly, or a decision they made that you
+% noticed. Then introduce yourself through what you build, not a job title.
+% Be direct. Two or three sentences is enough.
+\noindent
+[OPENING PARAGRAPH: 2-3 sentences. Start with a specific named thing about
+this company or role. Introduce yourself through your work, not your title.
+Human, direct, and impossible to confuse with a template.]
+
+\vspace{0.2in}
+
+% SECTION 2: EVIDENCE (3 achievements, each labeled in brand color)
+%
+% Label = short noun phrase describing what the achievement is about.
+% Body = 2-3 sentences: what you did, what resulted, why it is relevant here.
+% One strong metric beats three weak ones. Do not stack metrics for its own sake.
+% Write the story of what the problem actually was, not just what the number was.
+\noindent
+[CONTEXT SENTENCE: one sentence that bridges your background to their specific need.]
+
+\vspace{0.12in}
+
+\noindent
+{\textcolor{csection}{\textbf{[ACHIEVEMENT 1 LABEL].}}}
+[What you did, what resulted, and why it maps directly to what this role needs.
+2-3 sentences. One strong metric. Let the problem context do the heavy lifting.]
+
+\vspace{0.12in}
+
+\noindent
+{\textcolor{csection}{\textbf{[ACHIEVEMENT 2 LABEL].}}}
+[Stay specific and human. Do not let metrics replace the story of what the problem
+actually was and how you decided to approach it the way you did.]
+
+\vspace{0.12in}
+
+\noindent
+{\textcolor{csection}{\textbf{[ACHIEVEMENT 3 LABEL].}}}
+[End with something that shows how you operate in ambiguity, make ownership calls,
+or build things that did not exist before you showed up.]
+
+\vspace{0.2in}
+
+% SECTION 3: COMPANY ALIGNMENT + MOTIVATION
+%
+% This paragraph must be impossible to copy-paste unchanged to a different
+% company's cover letter. Name a product, a stated roadmap direction, or a
+% specific challenge they have talked about. Say what draws you there beyond
+% the job title and the pay. If you cannot write something specific here,
+% you are not ready to write this paragraph yet -- go read more first.
+\noindent
+[MOTIVATION PARAGRAPH: 2-3 sentences. Something specific about this company.
+Why you want to be here, not just why you are qualified to be here. Different companies
+build the same products differently -- say which part of how they do it you care about.]
+
+\vspace{0.2in}
+
+% SECTION 4: CLOSE
+%
+% One sentence. Confident, not desperate. A specific human ask to continue
+% the conversation. Do NOT write "thank you for your time and consideration."
+% Do NOT write "I look forward to hearing from you." Both read as filler.
+% Write something that sounds like you, not like a template.
+\noindent
+[CLOSING SENTENCE: A confident, specific, human ask to connect.]
+
+\vspace{0.3in}
+
+\noindent
+Sincerely,
+
+\vspace{0.35in}
+
+% Optional: signature image -- place sig.png in same folder as .tex file,
+% then uncomment the line below.
+% \includegraphics[width=1.3in]{sig.png}\\[-4pt]
+
+\noindent
+\textbf{Satvik Jain}
+
+\end{document}

@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Ladder · Bhanzu Interview OS</title>
+    <style>
+        /* --- RESET & BASE --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f4f4f4;
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            color: #1e1e1e;
+        }
+        .app {
+            display: flex;
+            height: 100vh;
+            background: #ffffff;
+        }
+
+        /* --- LEFT SIDEBAR --- */
+        .sidebar {
+            width: 180px;
+            background: #fafafa;
+            border-right: 2px solid #d0d0d0;
+            padding: 24px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            flex-shrink: 0;
+            overflow-y: auto;
+        }
+        .sidebar .brand {
+            font-weight: 800;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 3px solid #000;
+            padding-bottom: 14px;
+            margin-bottom: 12px;
+            color: #000;
+        }
+        .sidebar .brand small {
+            font-weight: 400;
+            color: #666;
+            display: block;
+            font-size: 10px;
+            letter-spacing: 0.2px;
+        }
+        .nav-item {
+            padding: 10px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #555;
+            border-left: 4px solid transparent;
+            cursor: pointer;
+            transition: all 0.1s;
+            background: transparent;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+            text-align: left;
+            width: 100%;
+            border-radius: 2px;
+        }
+        .nav-item:hover {
+            background: #ececec;
+            color: #000;
+        }
+        .nav-item.active {
+            border-left-color: #000;
+            background: #ececec;
+            color: #000;
+        }
+        .nav-item .sub {
+            font-weight: 400;
+            font-size: 10px;
+            color: #888;
+            display: block;
+        }
+        .nav-item.active .sub {
+            color: #444;
+        }
+
+        /* --- CENTER --- */
+        .center {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            border-right: 1px solid #e0e0e0;
+        }
+
+        /* TOP PANE */
+        .top-pane {
+            flex: 1;
+            padding: 22px 28px;
+            overflow-y: auto;
+            background: #ffffff;
+            border-bottom: 2px solid #eaeaea;
+        }
+        .top-pane .section-title {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #888;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+        .top-pane .headline {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            color: #000;
+        }
+        .script-box {
+            background: #000;
+            color: #fff;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            border: 1px solid #000;
+        }
+        .script-box .label {
+            color: #aaa;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .script-box .text {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #fff;
+        }
+        .script-box .text em {
+            color: #ccc;
+            font-style: italic;
+        }
+        .script-box .text strong {
+            color: #fff;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .checklist-box {
+            background: #f9f9f9;
+            border: 1px solid #d0d0d0;
+            padding: 14px 18px;
+            margin-bottom: 4px;
+        }
+        .checklist-box .label {
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #555;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .checklist-box label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            padding: 4px 0;
+            color: #222;
+            cursor: pointer;
+        }
+        .checklist-box label input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: #000;
+            cursor: pointer;
+        }
+        .checklist-box label.done {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        /* BOTTOM PANE */
+        .bottom-pane {
+            flex: 0 0 44%;
+            padding: 14px 24px 20px 24px;
+            background: #fafafa;
+            border-top: 2px solid #d0d0d0;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .bottom-pane .pane-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 700;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            flex: 1;
+        }
+        .option-card {
+            border: 2px solid #d0d0d0;
+            background: #ffffff;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 2px;
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(to right, #d0d0d0, #d0d0d0);
+            transition: background-size 0.2s ease, border-color 0.1s ease;
+        }
+        .option-card:hover {
+            border-color: #888;
+        }
+        .option-card .tag {
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #777;
+            letter-spacing: 0.3px;
+            position: relative;
+            z-index: 2;
+        }
+        .option-card .quote {
+            font-size: 14px;
+            line-height: 1.4;
+            color: #111;
+            margin-top: 2px;
+            position: relative;
+            z-index: 2;
+        }
+        .option-card .quote em {
+            color: #333;
+            font-style: italic;
+        }
+        .option-card.active {
+            border-color: #000;
+            background-color: #000 !important;
+            background-image: none !important;
+        }
+        .option-card.active .tag {
+            color: #aaa;
+        }
+        .option-card.active .quote {
+            color: #fff;
+        }
+        .option-card.active .quote em {
+            color: #ccc;
+        }
+        .option-card .pct-label {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #555;
+            z-index: 2;
+            background: rgba(255,255,255,0.8);
+            padding: 0 6px;
+            border-radius: 2px;
+        }
+        .option-card.active .pct-label {
+            color: #aaa;
+            background: transparent;
+        }
+
+        /* --- RIGHT SIDEBAR (Chat) --- */
+        .right-side {
+            width: 380px;
+            background: #fcfcfc;
+            border-left: 2px solid #d0d0d0;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+        .chat-header {
+            padding: 16px 18px 10px 18px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #888;
+            background: #fcfcfc;
+            flex-shrink: 0;
+        }
+        .chat-log {
+            flex: 1;
+            padding: 12px 16px;
+            overflow-y: auto;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-log .entry {
+            font-size: 13px;
+            padding: 8px 14px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            max-width: 92%;
+            word-wrap: break-word;
+            line-height: 1.4;
+            border: 1px solid transparent;
+        }
+        .chat-log .entry.you {
+            background: #f0f0f0;
+            align-self: flex-start;
+            border-left: 3px solid #000;
+            margin-right: auto;
+        }
+        .chat-log .entry.candidate {
+            background: #eaeaea;
+            align-self: flex-end;
+            border-right: 3px solid #888;
+            margin-left: auto;
+            text-align: left;
+        }
+        .chat-log .entry .who {
+            font-weight: 700;
+            font-size: 10px;
+            text-transform: uppercase;
+            color: #555;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .chat-log .entry.you .who { color: #000; }
+        .chat-log .entry.candidate .who { color: #777; }
+        .chat-log .entry .text {
+            color: #1e1e1e;
+        }
+
+        /* Checklist Accordion inside chat */
+        .chat-checklist {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px dashed #ccc;
+        }
+        .chat-checklist summary {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #555;
+            cursor: pointer;
+            letter-spacing: 0.3px;
+        }
+        .chat-checklist summary:hover {
+            color: #000;
+        }
+        .chat-checklist .items {
+            padding: 6px 0 2px 10px;
+        }
+        .chat-checklist .items label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            padding: 2px 0;
+            color: #222;
+            cursor: pointer;
+        }
+        .chat-checklist .items label input[type="checkbox"] {
+            width: 14px;
+            height: 14px;
+            accent-color: #000;
+            cursor: pointer;
+        }
+        .chat-checklist .items label.done {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .chat-input-area {
+            padding: 12px 16px;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            gap: 8px;
+            background: #fcfcfc;
+            flex-shrink: 0;
+        }
+        .chat-input-area textarea {
+            flex: 1;
+            border: 2px solid #ccc;
+            padding: 8px 10px;
+            font-family: inherit;
+            font-size: 13px;
+            line-height: 1.4;
+            resize: none;
+            background: #fff;
+            color: #000;
+            border-radius: 2px;
+            height: 44px;
+            transition: border 0.1s;
+        }
+        .chat-input-area textarea:focus {
+            border-color: #000;
+            outline: none;
+        }
+        .chat-input-area button {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 0 16px;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: opacity 0.1s;
+            white-space: nowrap;
+            height: 44px;
+        }
+        .chat-input-area button:hover {
+            opacity: 0.8;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 1100px) {
+            .app { flex-direction: column; height: auto; overflow-y: auto; }
+            .sidebar { width: 100%; flex-direction: row; flex-wrap: wrap; border-right: none; border-bottom: 2px solid #d0d0d0; padding: 12px; }
+            .right-side { width: 100%; border-left: none; border-top: 2px solid #d0d0d0; }
+            .center { height: 80vh; }
+            .options-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 700px) {
+            .options-grid { grid-template-columns: 1fr; }
+            .right-side { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="app">
+    <!-- LEFT SIDEBAR -->
+    <div class="sidebar">
+        <div class="brand">PM Ladder <small>Bhanzu OS</small></div>
+        <button class="nav-item active" data-level="0"><span>Level 0 · Intro</span><span class="sub">Narrative & Rapport</span></button>
+        <button class="nav-item" data-level="1"><span>Level 1 · Execution</span><span class="sub">Feature Shipping</span></button>
+        <button class="nav-item" data-level="2"><span>Level 2 · Data</span><span class="sub">Experiments & Metrics</span></button>
+        <button class="nav-item" data-level="3"><span>Level 3 · Strategy</span><span class="sub">Roadmapping</span></button>
+        <button class="nav-item" data-level="4"><span>Level 4 · Stakeholder</span><span class="sub">Cross-functional</span></button>
+        <button class="nav-item" data-level="5"><span>Level 5 · Scaling</span><span class="sub">70k → 1M</span></button>
+        <button class="nav-item" data-level="6"><span>Level 6 · Closing</span><span class="sub">Questions for me</span></button>
+    </div>
+
+    <!-- CENTER -->
+    <div class="center">
+        <div class="top-pane" id="topPane">
+            <!-- Injected by JS -->
+        </div>
+        <div class="bottom-pane">
+            <span class="pane-label" id="bottomLabel">👇 Select the follow-up category</span>
+            <div class="options-grid" id="optionsGrid">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDEBAR (CHAT) -->
+    <div class="right-side">
+        <div class="chat-header">💬 Conversation Log</div>
+        <div class="chat-log" id="chatLog">
+            <div class="entry you"><span class="who">You:</span><span class="text">Interview started. Ready for Level 0.</span></div>
+        </div>
+        <div class="chat-input-area">
+            <textarea id="transcriptInput" placeholder="Paste candidate's response here..." rows="2"></textarea>
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // ============================================================
+    //  DATA: The PM Ladder (Levels 0-6)
+    // ============================================================
+    const levelData = {
+        0: {
+            label: "Level 0 · Intro",
+            script: '"Tell me about yourself and your journey into product management. I\'m interested in the <strong>pivots</strong> and <strong>lessons</strong> that shaped you."',
+            checklist: [
+                "Clear narrative arc (beginning, middle, now).",
+                "Mentions a specific failure or lesson learned.",
+                "Connects personal motivation to product work.",
+                "Shows self-awareness about their strengths/weaknesses."
+            ],
+            followups: {
+                A: { label: "A · Strong narrative", text: '"That\'s compelling. Tell me about a time you had to convince a skeptical stakeholder using just data."', checklist: ["Uses specific data points.", "Shows persuasion skills."] },
+                B: { label: "B · Vague / Rambling", text: '"Thanks for sharing. Let\'s focus on metrics. Can you give me one KPI you\'re most proud of moving and why?"', checklist: ["Names a specific KPI.", "Explains their direct impact."] },
+                C: { label: "C · Too technical / Micro", text: '"I appreciate the depth. Zoom out for me—how did that feature tie back to the company\'s top-line OKRs?"', checklist: ["Connects work to business goals.", "Shows strategic awareness."] },
+                D: { label: "D · Humble / Learning", text: '"Great. What\'s the biggest mistake you made as a PM, and how did you course-correct?"', checklist: ["Shows vulnerability.", "Demonstrates growth mindset."] }
+            }
+        },
+        1: {
+            label: "Level 1 · Execution",
+            script: '"Walk me through a feature you shipped that you are <strong>genuinely proud of</strong>. Start from the problem, go through the spec, and end with the launch."',
+            checklist: [
+                "Defined the user problem clearly.",
+                "Wrote a PRD or spec that unblocked engineering.",
+                "Described a rollback or launch plan.",
+                "Measured impact post-launch."
+            ],
+            followups: {
+                A: { label: "A · Strong execution", text: '"Solid execution. How did you handle a scope creep or a missed deadline during that build?"', checklist: ["Shows project management.", "Describes trade-offs."] },
+                B: { label: "B · Lacked metrics", text: '"Good process. But how did you <strong>measure</strong> success after launch? What was the actual outcome?"', checklist: ["Defines success metrics.", "Shows data-driven validation."] },
+                C: { label: "C · No user validation", text: '"I notice you didn\'t mention user feedback. How did you validate the problem before writing the first line of code?"', checklist: ["Mentions user research.", "Shows empathy."] },
+                D: { label: "D · Too smooth", text: '"It sounds like everything went perfectly. What went <strong>wrong</strong> during that launch, and how did you fix it?"', checklist: ["Shows resilience.", "Acknowledges failure."] }
+            }
+        },
+        2: {
+            label: "Level 2 · Data",
+            script: '"Tell me about a time you used <strong>data to kill a feature</strong> or change direction. What was the data, and how did you convince the team to pivot?"',
+            checklist: [
+                "Described the specific data (SQL, Mixpanel, etc.).",
+                "Showed a hypothesis before the test.",
+                "Made a decision based on the results (pivot or kill).",
+                "Communicated the data story to stakeholders."
+            ],
+            followups: {
+                A: { label: "A · Strong data autonomy", text: '"Great. You pulled the data yourself. How do you balance <strong>speed</strong> with <strong>rigor</strong> when running experiments?"', checklist: ["Mentions sample size/confidence.", "Shows bias for action."] },
+                B: { label: "B · Relied on data team", text: '"So you asked the data team for the report. In a scaling startup, you might not have that luxury. Walk me through how you would <strong>self-serve</strong> that analysis."', checklist: ["Names tools (SQL, Amplitude).", "Shows independence."] },
+                C: { label: "C · Ignored qualitative", text: '"Numbers tell you *what* happened. How did you validate the *why* with user sentiment or interviews?"', checklist: ["Shows mixed-methods thinking.", "Mentions user empathy."] },
+                D: { label: "D · Analytical but indecisive", text: '"You have the data, but leadership is impatient. How do you <strong>cut through</strong> the analysis paralysis and make a call?"', checklist: ["Shows decisiveness.", "Acknowledges risk."] }
+            }
+        },
+        3: {
+            label: "Level 3 · Strategy",
+            script: '"You are given a vague goal: <strong>Grow our daily active users by 20% in two quarters.</strong> You have no data yet. Walk me through your first 90-day plan."',
+            checklist: [
+                "Breaks down the problem into phases.",
+                "Defines success metrics early.",
+                "Proposes a mix of quick wins and long-term bets.",
+                "Identifies cross-functional dependencies (Marketing, Eng)."
+            ],
+            followups: {
+                A: { label: "A · Structured & Balanced", text: '"Excellent structure. How do you <strong>communicate</strong> this 90-day plan to a skeptical engineering lead who only wants to build the hard stuff?"', checklist: ["Shows stakeholder empathy.", "Negotiates priorities."] },
+                B: { label: "B · Too research-heavy", text: '"I love the research, but we need momentum. What\'s the <strong>one quick experiment</strong> you would run in the first 2 weeks to learn fast?"', checklist: ["Shows bias for action.", "Proposes a fast MVP."] },
+                C: { label: "C · Too tactical", text: '"You\'re thinking tactically. But what\'s the <strong>north star</strong> metric that connects this 20% DAU growth to our long-term business health?"', checklist: ["Connects to business outcomes.", "Shows strategic depth."] },
+                D: { label: "D · No trade-offs", text: '"You\'ve listed 10 things. You have capacity for 3. How do you <strong>prioritize</strong> ruthlessly?"', checklist: ["Uses a framework (RICE).", "Shows decisiveness."] }
+            }
+        },
+        4: {
+            label: "Level 4 · Stakeholder",
+            script: '"Marketing wants a <strong>quick growth hack</strong> (like a discount pop-up). Sales is demanding a <strong>custom feature</strong> for a big client. Ops is worried about support overhead. Your data is inconclusive. How do you navigate this week?"',
+            checklist: [
+                "Acknowledges all three stakeholders.",
+                "Does not say 'yes' to everyone (shows boundaries).",
+                "Proposes a compromise or small experiment.",
+                "Uses a framework to make the decision (e.g., Impact/Ease)."
+            ],
+            followups: {
+                A: { label: "A · Diplomatic & data-led", text: '"Great diplomacy. But you still have to ship something. What\'s the <strong>single concrete deliverable</strong> you commit to by Friday?"', checklist: ["Shows execution focus.", "Defines a tangible output."] },
+                B: { label: "B · Favors Marketing", text: '"You sided with growth. How do you handle the <strong>fallout</strong> from Sales when they lose the deal?"', checklist: ["Shows accountability.", "Mentions relationship repair."] },
+                C: { label: "C · Favors Sales", text: '"You gave Sales what they wanted. How do you <strong>measure</strong> if this custom feature actually moves the needle for our broader user base?"', checklist: ["Shows long-term thinking.", "Defines guardrails."] },
+                D: { label: "D · Paralysis", text: '"You\'re stuck between them. If you had to make a decision in 1 hour, what <strong>non-negotiable principle</strong> would you anchor on?"', checklist: ["Shows conviction.", "Has a clear North Star."] }
+            }
+        },
+        5: {
+            label: "Level 5 · Scaling",
+            script: '"We are at 70,000 learners. We want to hit <strong>1 million</strong> in two years. What <strong>breaks</strong> first, and how do you fix it?"',
+            checklist: [
+                "Identifies systemic risks (tech, operations, content).",
+                "Thinks about localization/internationalization.",
+                "Proposes automation over manual processes.",
+                "Shows ability to prioritize at scale."
+            ],
+            followups: {
+                A: { label: "A · Tech & Ops focus", text: '"Solid infrastructure thinking. But how does this <strong>affect the learning experience</strong>? How do you ensure quality doesn\'t degrade at 1M?"', checklist: ["Protects pedagogy.", "Mentions QA/feedback loops."] },
+                B: { label: "B · Product-centric", text: '"Great product vision. But scaling requires a <strong>repeatable go-to-market</strong>. How do you enable Marketing and Sales to replicate success across 20+ countries?"', checklist: ["Shows GTM strategy.", "Cross-functional scalability."] },
+                C: { label: "C · Naive optimism", text: '"It sounds easy. What\'s the <strong>dark scenario</strong>—the one thing that could completely derail this growth?"', checklist: ["Shows risk assessment.", "Thinks about failure modes."] },
+                D: { label: "D · Overwhelmed", text: '"1M is intimidating. Let\'s break it down. What is the <strong>first milestone</strong> you would set at 150k, and how do you know you\'re on track?"', checklist: ["Sets progressive goals.", "Defines leading indicators."] }
+            }
+        },
+        6: {
+            label: "Level 6 · Closing",
+            script: '"We\'ve covered a lot today. <strong>Do you have any questions for me?</strong>"',
+            checklist: [
+                "Asks about metrics / success (Business focus).",
+                "Asks about team culture / process (Execution focus).",
+                "Asks about product vision / strategy (Strategic focus).",
+                "Shows genuine curiosity about the role."
+            ],
+            followups: {
+                A: { label: "A · Great questions", text: '"Those were excellent. You\'ve shown you think like a leader. I\'ll make sure we follow up."', checklist: [] },
+                B: { label: "B · Generic questions", text: '"Those are fair. Let me ask you: based on our conversation, what <strong>one thing</strong> excites you most about this opportunity?"', checklist: ["Shows enthusiasm.", "Mentions a specific part of the JD."] },
+                C: { label: "C · No questions", text: '"No questions? I\'ll give you a moment. Think about what you\'d want to know if you joined tomorrow."', checklist: ["Encourages curiosity."] },
+                D: { label: "D · Self-serving", text: '"You\'ve asked mostly about comp/perks. Tell me: what kind of <strong>impact</strong> do you hope to make in the first 6 months?"', checklist: ["Shifts to mission-driven mindset."] }
+            }
+        }
+    };
+
+    // ============================================================
+    //  STATE
+    // ============================================================
+    let currentLevel = 0;
+    let activeOptionKey = null; // A, B, C, D
+
+    // ============================================================
+    //  DOM REFS
+    // ============================================================
+    const topPane = document.getElementById('topPane');
+    const optionsGrid = document.getElementById('optionsGrid');
+    const bottomLabel = document.getElementById('bottomLabel');
+    const chatLog = document.getElementById('chatLog');
+    const transcriptInput = document.getElementById('transcriptInput');
+    const sendBtn = document.getElementById('sendBtn');
+
+    // ============================================================
+    //  HELPERS
+    // ============================================================
+    function addChatMessage(who, text, checklistItems = null) {
+        const entry = document.createElement('div');
+        entry.className = `entry ${who === 'You' ? 'you' : 'candidate'}`;
+        let html = `<span class="who">${who}:</span><span class="text">${text}</span>`;
+
+        // If candidate message and we have checklist items, add accordion
+        if (who === 'Candidate' && checklistItems && checklistItems.length > 0) {
+            let itemsHtml = checklistItems.map(item => `
+                <label>
+                    <input type="checkbox" onchange="this.parentElement.classList.toggle('done')">
+                    ${item}
+                </label>
+            `).join('');
+            html += `
+                <div class="chat-checklist">
+                    <details>
+                        <summary>📋 Show Checklist</summary>
+                        <div class="items">${itemsHtml}</div>
+                    </details>
+                </div>
+            `;
+        }
+        entry.innerHTML = html;
+        chatLog.appendChild(entry);
+        chatLog.scrollTop = chatLog.scrollHeight;
+    }
+
+    // ============================================================
+    //  RENDER FUNCTIONS
+    // ============================================================
+    function renderLevel(level) {
+        currentLevel = level;
+        const data = levelData[level];
+        if (!data) return;
+
+        // 1. Top Pane: Script + Checklist
+        let checklistHtml = data.checklist.map((item) => `
+            <label>
+                <input type="checkbox" onchange="this.parentElement.classList.toggle('done')">
+                ${item}
+            </label>
+        `).join('');
+
+        topPane.innerHTML = `
+            <div class="section-title">${data.label}</div>
+            <div class="headline">Your Script</div>
+            <div class="script-box">
+                <span class="label">📌 SAY THIS VERBATIM</span>
+                <div class="text">${data.script}</div>
+            </div>
+            <div class="checklist-box">
+                <span class="label">✅ Live Checklist (click as they speak)</span>
+                ${checklistHtml}
+            </div>
+        `;
+
+        // 2. Bottom Pane: Shaded Options (A/B/C/D)
+        const followups = data.followups;
+        const keys = Object.keys(followups);
+        optionsGrid.innerHTML = '';
+        activeOptionKey = null; // reset active option when level changes
+        keys.forEach(key => {
+            const f = followups[key];
+            const card = document.createElement('div');
+            card.className = 'option-card';
+            card.dataset.key = key;
+            card.dataset.level = level;
+            card.innerHTML = `
+                <span class="tag">${f.label}</span>
+                <div class="quote">${f.text}</div>
+                <span class="pct-label" id="pct_${key}_${level}">0%</span>
+            `;
+            card.addEventListener('click', function() {
+                // Remove active from others
+                optionsGrid.querySelectorAll('.option-card').forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+                activeOptionKey = this.dataset.key;
+
+                // Update Top Pane with the selected follow-up script and its checklist
+                const key = this.dataset.key;
+                const followupData = levelData[currentLevel].followups[key];
+                if (followupData) {
+                    let followChecklist = followupData.checklist.map(item => `
+                        <label>
+                            <input type="checkbox" onchange="this.parentElement.classList.toggle('done')">
+                            ${item}
+                        </label>
+                    `).join('');
+
+                    // Update top pane to show follow-up instead of main script
+                    document.querySelector('.top-pane .headline').innerHTML = `⚡ Follow-up for ${followupData.label}`;
+                    document.querySelector('.top-pane .script-box .text').innerHTML = followupData.text;
+                    document.querySelector('.top-pane .checklist-box').innerHTML = `
+                        <span class="label">✅ Follow-up Checklist (for this question)</span>
+                        ${followChecklist || '<p style="color:#888;font-size:13px;">No specific checklist for this follow-up.</p>'}
+                    `;
+
+                    // Add to chat log as "You" (this is the question asked)
+                    addChatMessage('You', followupData.text);
+                }
+            });
+            optionsGrid.appendChild(card);
+        });
+
+        // Reset shading
+        updateShading({ A: 0, B: 0, C: 0, D: 0 });
+    }
+
+    // ============================================================
+    //  PROBABILITY ENGINE & SHADING
+    // ============================================================
+    function analyzeText(text) {
+        const lower = text.toLowerCase();
+        const kwA = ['gamif', 'streak', 'badge', 'point', 'reward', 'incentive', 'dau', 'engagement', 'daily active', 'quick win', 'fast test', 'growth hack'];
+        const kwB = ['interview', 'talk to', 'parent', 'kid', 'user', 'qualitative', 'empathy', 'understand', 'research', 'user research'];
+        const kwC = ['pedagogy', 'cognitive', 'intrinsic', 'motivation', 'quality', 'mastery', 'integrity', 'rigor', 'confidence', 'protect', 'learning'];
+        const kwD = ['align', 'stakeholder', 'prioritize', 'framework', 'process', 'agile', 'depends', 'structure', 'roadmap', 'it depends'];
+
+        let sA = 0, sB = 0, sC = 0, sD = 0;
+        kwA.forEach(w => { if (lower.includes(w)) sA += 2; });
+        kwB.forEach(w => { if (lower.includes(w)) sB += 2; });
+        kwC.forEach(w => { if (lower.includes(w)) sC += 2; });
+        kwD.forEach(w => { if (lower.includes(w)) sD += 2; });
+
+        if (lower.includes('let\'s test') || lower.includes('quick test')) sA += 3;
+        if (lower.includes('need to talk') || lower.includes('understand the user')) sB += 3;
+        if (lower.includes('cannot') || lower.includes('must not')) sC += 3;
+        if (lower.includes('align') && lower.includes('stakeholder')) sD += 3;
+
+        const total = sA + sB + sC + sD || 1;
+        return {
+            A: Math.round((sA / total) * 100),
+            B: Math.round((sB / total) * 100),
+            C: Math.round((sC / total) * 100),
+            D: Math.round((sD / total) * 100)
+        };
+    }
+
+    function updateShading(probs) {
+        const cards = optionsGrid.querySelectorAll('.option-card');
+        cards.forEach(card => {
+            const key = card.dataset.key;
+            const pct = probs[key] || 0;
+            card.style.backgroundSize = pct + '% 100%';
+            const label = card.querySelector('.pct-label');
+            if (label) label.textContent = pct + '%';
+        });
+    }
+
+    // ============================================================
+    //  HANDLE SEND (Candidate Answer)
+    // ============================================================
+    function handleSend() {
+        const text = transcriptInput.value.trim();
+        if (!text) return;
+
+        // 1. Get the active option's checklist (if any)
+        let checklistForAnswer = null;
+        if (activeOptionKey) {
+            const currentFollowups = levelData[currentLevel].followups;
+            if (currentFollowups && currentFollowups[activeOptionKey]) {
+                checklistForAnswer = currentFollowups[activeOptionKey].checklist || [];
+            }
+        }
+
+        // 2. Add candidate message to chat with checklist accordion
+        addChatMessage('Candidate', text, checklistForAnswer);
+
+        // 3. Clear input
+        transcriptInput.value = '';
+
+        // 4. Analyze and update shading in real-time
+        const probs = analyzeText(text);
+        updateShading(probs);
+
+        // 5. Update bottom label
+        bottomLabel.textContent = '👇 Click the follow-up category (shading indicates probability)';
+
+        // 6. Reset activeOptionKey so we don't attach the same checklist to the next answer accidentally
+        // (but keep the selection highlighted for reference)
+        // We'll keep activeOptionKey as is, but the next time they paste, it will use the currently selected one.
+        // If they want to change, they click a different card.
+    }
+
+    // ============================================================
+    //  NAVIGATION
+    // ============================================================
+    document.querySelectorAll('.nav-item').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const level = parseInt(this.dataset.level);
+            renderLevel(level);
+            // We DO NOT log this navigation to the chat log as per user request.
+            // Only bottom-pane selections and candidate answers are logged.
+        });
+    });
+
+    // ============================================================
+    //  INIT
+    // ============================================================
+    renderLevel(0);
+
+    // Send button
+    sendBtn.addEventListener('click', handleSend);
+    transcriptInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            handleSend();
+        }
+    });
+
+    // Initial shading
+    updateShading({ A: 0, B: 0, C: 0, D: 0 });
+    console.log('PM Ladder OS ready.');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "company_slug": "ignition-benefits",
+  "company_name": "Ignition Benefits",
+  "website": "https://www.ignitionbenefits.com",
+  "career_portal_url": "https://www.ignitionbenefits.com/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "AI & Automation",
+  "industry_grade": "A",
+  "industry_score": 9,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC F26",
+  "team_size": 12,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "Los Angeles"
+  ],
+  "summary": "The AI-Native Benefits Brokerage",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/ignition-benefits",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/ignition-benefits",
+  "founders": [
+    {
+      "name": "Nick Taranto",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/nicktaranto/",
+      "twitter": "https://x.com/NickTaranto",
+      "bio": "Founder at Ignition Benefits. Previously founded Plated, the first American meal kit company (sold to Albertsons for $300M in 2017). Former US Marine Corps. MBA from Harvard; BA from Dartmouth. While scaling Plated, I wore every HR hat from doing payroll myself, to managing a PEO, to eventually hiring an employee benefits broker on our way to 1,500 employees. We wasted over $4M on benefits over 5 years, and I'm building Ignition to help companies under 200 employees avoid making my mistakes.",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 15,
+      "career_signals": [
+        "serial_founder"
+      ],
+      "exit_score": 10,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 85,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 15,
+    "past_exits": 10,
+    "industry_match": 9,
+    "location_compliance": 10,
+    "product_stage_fit": 6
+  },
+  "needs_linkedin_burner_lookup": false
+}

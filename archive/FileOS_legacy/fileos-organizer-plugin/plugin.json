@@ -1,0 +1,15 @@
+{
+  "name": "fileos-organizer",
+  "version": "1.0.0",
+  "description": "Local-first, deterministic-first file organization skill with strict AI token budget",
+  "author": {
+    "name": "Satvik Jain"
+  },
+  "skills": [
+    {
+      "name": "fileos-organizer",
+      "path": "skills/fileos-organizer"
+    }
+  ]
+}
+

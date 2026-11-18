@@ -1,0 +1,113 @@
+{
+  "scenarios": [
+    {
+      "id": "GF-01",
+      "name": "exact_duplicate",
+      "description": "Same bytes, different names and paths",
+      "expected_duplicate_groups": 1,
+      "expected_extra_copies": 1,
+      "expected_status": "complete"
+    },
+    {
+      "id": "GF-02",
+      "name": "renamed_duplicate",
+      "description": "Same bytes, unrelated filenames",
+      "expected_duplicate_groups": 1,
+      "expected_extra_copies": 1
+    },
+    {
+      "id": "GF-03",
+      "name": "different_content_same_name",
+      "description": "Same filename, different bytes",
+      "expected_duplicate_groups": 0
+    },
+    {
+      "id": "GF-04",
+      "name": "version_tokens",
+      "description": "Plan_v1, Plan_v2, Plan_final grouped",
+      "expected_families": 1,
+      "authoritative_detected": true
+    },
+    {
+      "id": "GF-05",
+      "name": "branch_like_versions",
+      "description": "Plan_internal, Plan_client",
+      "expected_linear_supersession": false
+    },
+    {
+      "id": "GF-06",
+      "name": "nested_hierarchy_12_levels",
+      "description": "Root/Project/Folder/File at 12+ levels",
+      "min_depth": 12
+    },
+    {
+      "id": "GF-07",
+      "name": "parent_mismatch",
+      "description": "File fits child folder, child conflicts with parent",
+      "expected_anomalies": 1
+    },
+    {
+      "id": "GF-08",
+      "name": "mixed_folder",
+      "description": "One folder contains two unrelated synthetic topics",
+      "folder_classified": true
+    },
+    {
+      "id": "GF-09",
+      "name": "empty_folder",
+      "description": "Directory with no files",
+      "direct_file_count": 0,
+      "descendant_file_count": 0
+    },
+    {
+      "id": "GF-10",
+      "name": "hidden_file",
+      "description": "Dotfile in a scanned folder",
+      "is_hidden": true
+    },
+    {
+      "id": "GF-11",
+      "name": "excluded_subtree",
+      "description": "A folder excluded by rule",
+      "directories_excluded": 1,
+      "descendants_fabricated": false
+    },
+    {
+      "id": "GF-12",
+      "name": "symlink_cases",
+      "description": "Loop protection terminates safely",
+      "infinite_loop": false
+    },
+    {
+      "id": "GF-13",
+      "name": "unstable_file",
+      "description": ".part or .crdownload marked unstable",
+      "readiness": "unstable"
+    },
+    {
+      "id": "GF-14",
+      "name": "inaccessible_path",
+      "description": "Permission denied recorded in coverage",
+      "permission_errors_ge": 1
+    },
+    {
+      "id": "GF-15",
+      "name": "unicode_and_long_names",
+      "description": "UTF-8 preserved in inventory paths",
+      "path_corrupted": false
+    },
+    {
+      "id": "GF-16",
+      "name": "destination_collision",
+      "description": "Apply refused when destination exists",
+      "overwrite_occurred": false
+    },
+    {
+      "id": "GF-17",
+      "name": "file_changes_during_scan",
+      "description": "Atomic check verifies stability",
+      "trusted_hash_on_mutation": false
+    }
+  ]
+}
+

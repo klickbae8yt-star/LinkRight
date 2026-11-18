@@ -1,0 +1,84 @@
+{
+  "company_slug": "codingal",
+  "company_name": "Codingal",
+  "website": "https://www.codingal.com/?utm_source=yc",
+  "career_portal_url": "https://www.codingal.com/?utm_source=yc/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "AI & Automation",
+  "industry_grade": "A",
+  "industry_score": 9,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W21",
+  "team_size": 100,
+  "locations": [
+    "India",
+    "South Asia",
+    "Remote",
+    "Partly Remote",
+    "Bengaluru"
+  ],
+  "summary": "Leading online after-school for kids & teens to learn AI & coding",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/codingal",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/codingal",
+  "founders": [
+    {
+      "name": "Vivek Prakash",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/prakashvivek/",
+      "twitter": "https://twitter.com/vivekprakash",
+      "bio": "Vivek completed his B.Tech. and M.Tech. in Computer Science from IIT Roorkee (India) in 2013. After that, he co-founded HackerEarth - India\u2019s largest platform for 5M+ Computer Science students in universities to become a better programmer via competitions and hackathons, with $6M+ in annual revenue. He is a hacker at heart. 8 years later, he co-founded Codingal to continue on the mission and journey to inspire school kids to fall in love with coding.",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 15,
+      "career_signals": [
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    },
+    {
+      "name": "Satyam Baranwal",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/satyam-baranwal/",
+      "twitter": "https://twitter.com/satyambaranwal",
+      "bio": "Satyam has a professional exp. of over 11 yrs. He is an IIT, Dhanbad alumnus, and has helped to start one of the largest private-sector coal mines of India belonging to Reliance Power.\n\nHe has been teaching school kids since his school days and even during college days he focused on providing quality education as well as computer literacy programs to school kids via various NGOs.\n\nHe is in Edtech since last 5 years and successfully built a coding company for kids called Skillovate Learning",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 19,
+      "career_signals": [
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 83,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 19,
+    "past_exits": 0,
+    "industry_match": 9,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": false
+}

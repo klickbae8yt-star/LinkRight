@@ -1,0 +1,86 @@
+{
+  "company_slug": "algolia",
+  "company_name": "Algolia",
+  "website": "http://www.algolia.com",
+  "career_portal_url": "https://www.algolia.com/careers",
+  "ats_platform": "greenhouse",
+  "ats_slug": "algolia",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 27,
+  "industry": "Marketing & Sales Tech",
+  "industry_grade": "B+",
+  "industry_score": 7,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W14",
+  "team_size": 810,
+  "locations": [
+    "United States of America",
+    "France",
+    "America / Canada",
+    "Europe",
+    "Remote",
+    "Partly Remote",
+    "San Francisco"
+  ],
+  "summary": "A developer-friendly and enterprise-grade search API.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/algolia",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/algolia/",
+  "founders": [
+    {
+      "name": "Nicolas Dessaigne",
+      "title": "Founder/Board Member",
+      "linkedin": "https://www.linkedin.com/in/nicolasdessaigne/",
+      "twitter": "https://twitter.com/dessaigne",
+      "bio": "Nicolas is a general partner at YC. He is also the co-founder of Algolia (YC W14), a growth stage Search API used by millions of developers. He led the company as CEO up to 350 people before hiring a successor in 2020. Originally from France, he currently lives in El Cerrito, CA with his wife and 3 kids. He has a PhD in Computer Science from the University of Nantes.",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 15,
+      "career_signals": [
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    },
+    {
+      "name": "Julien Lemoine",
+      "title": "Founder/CTO",
+      "linkedin": "https://linkedin.com/in/julienlemoine",
+      "twitter": "https://twitter.com/jlemoine_algo",
+      "bio": "Julien is a search veteran who\u2019s been working in the search landscape for over 10 years, with work experience in Thales and Exalead. He participated in the design of three different search engines prior to co-founding Algolia with Nicolas and is the author of the different algorithms responsible for Algolia's super fast performance. Julien is also passionate about imparting knowledge and spent some time teaching at his Alma Mater, EPITA. He holds an engineering degree from the same institution.",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 19,
+      "career_signals": [
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 10,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 86,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 10,
+    "founder_career": 19,
+    "past_exits": 10,
+    "industry_match": 7,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": false
+}

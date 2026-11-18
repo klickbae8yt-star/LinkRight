@@ -1,0 +1,16 @@
+{
+  "source_id": "techcrunch_funding",
+  "name": "TechCrunch Funding & Startups",
+  "status": "needs_har",
+  "url_to_visit": "https://techcrunch.com/category/venture/",
+  "what_to_do": "Visit the URL, scroll down to load 2-3 pages of articles, export HAR",
+  "expected_api_pattern": "techcrunch.com/wp-json/wp/v2/posts?categories=... (WordPress REST API)",
+  "output_shape": "list of articles with title, date, excerpt, link",
+  "post_processing": "extract company names and round sizes from article titles and excerpts",
+  "filters": {
+    "keywords": ["Series A", "Series B", "raises", "led by"],
+    "exclude": ["acqui", "IPO", "SPAC", "layoff", "shutdown"]
+  },
+  "notes": "Article title format: '[Company] raises $XM Series A led by [Investor]'. Easy to parse."
+}
+

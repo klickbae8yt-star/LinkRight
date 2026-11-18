@@ -1,0 +1,67 @@
+{
+  "company_slug": "clinikally",
+  "company_name": "Clinikally",
+  "website": "https://www.clinikally.com",
+  "career_portal_url": "https://www.clinikally.com/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S22",
+  "team_size": 125,
+  "locations": [
+    "India",
+    "South Asia",
+    "Remote",
+    "Partly Remote",
+    "Gurugram, Haryana, India"
+  ],
+  "summary": "India's Telemedicine Platform & Online Pharmacy for Dermatology Care",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/clinikally",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/clinikally",
+  "founders": [
+    {
+      "name": "Arjun Soin",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/arjun-soin-97a568114/",
+      "twitter": "https://twitter.com/arjunssoin",
+      "bio": "Previously, Arjun worked in Data Engineering & AI Research at Amazon, Microsoft Healthcare & Curai Health. Later, he was a Founding Member of Web3 infrastructure project GetSafle. \n\nArjun is a Stanford Grad, where he was a Graduate Researcher at the Center for Artificial Intelligence in Medical Imaging (AIMI) focused on building digital health tools for Radiology & Dermatology imaging use cases.",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 18,
+      "career_signals": [
+        "amazon",
+        "microsoft"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 77,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 18,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": false
+}

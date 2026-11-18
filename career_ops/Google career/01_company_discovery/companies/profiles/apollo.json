@@ -1,0 +1,94 @@
+{
+  "company_slug": "apollo",
+  "company_name": "Apollo",
+  "website": "http://apollographql.com",
+  "career_portal_url": "https://www.apollographql.com/careers",
+  "ats_platform": "ashby",
+  "ats_slug": "apollo-graphql",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 8,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S11",
+  "team_size": 200,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Fully Remote",
+    "San Francisco"
+  ],
+  "summary": "Apollo helps engineering teams accelerate delivery",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/apollo",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/apollo-graphql/",
+  "founders": [
+    {
+      "name": "Geoff Schmidt",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/gschmidt/",
+      "twitter": "http://twitter.com/GeoffQL",
+      "bio": ".",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "matt debergalis",
+      "title": "Founder/CTO",
+      "linkedin": "https://linkedin.com/debergalis",
+      "twitter": "https://twitter.com/debergalis",
+      "bio": "-",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Nick Martin",
+      "title": "Founder/CTO",
+      "linkedin": "",
+      "twitter": "",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 44,
+  "recommendation": "watch_needs_intel",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 0,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

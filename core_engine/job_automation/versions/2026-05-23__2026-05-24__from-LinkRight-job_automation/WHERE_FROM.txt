@@ -1,0 +1,3 @@
+Moved here on 2026-10-09.
+Old path: /Users/satvikjain/Documents/LinkRight/job_automation/Job automate
+A symlink at the old path points here.

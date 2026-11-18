@@ -1,0 +1,66 @@
+{
+  "company_slug": "clipboard",
+  "company_name": "Clipboard",
+  "website": "https://www.clipboardworks.com/careers",
+  "career_portal_url": "https://www.clipboard.com/careers",
+  "ats_platform": "ashby",
+  "ats_slug": "clipboard",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 0,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W17",
+  "team_size": 1000,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "San Francisco"
+  ],
+  "summary": "Every shift, Covered.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/clipboard",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/clipboard/",
+  "founders": [
+    {
+      "name": "Wei Deng",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/dengwei",
+      "twitter": "",
+      "bio": "I'm a graduate of Yale and Yale Law School. Have done law, finance, product and operations, and am currently running a company that matches healthcare facilities with available nurses nearby.",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 15,
+      "career_signals": [
+        "serial_founder"
+      ],
+      "exit_score": 10,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 84,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 15,
+    "past_exits": 10,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": false
+}

@@ -1,0 +1,5957 @@
+{
+  "generated_at": "2026-11-10T22:26:53.274082+00:00",
+  "total_candidates": 215,
+  "candidates": [
+    {
+      "company_name": "Bolna AI",
+      "slug": "bolna-ai",
+      "website": "https://bolna.ai",
+      "domain": "bolna.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/bolna-ai",
+      "batch_or_round": "YC F25",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 21,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "Voice AI to enable India's next billion",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Checkr",
+      "slug": "checkr",
+      "website": "http://www.checkr.com",
+      "domain": "checkr.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/checkr",
+      "batch_or_round": "YC S14",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 800,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "People infrastructure for the future of work",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Clipboard",
+      "slug": "clipboard",
+      "website": "https://www.clipboardworks.com/careers",
+      "domain": "clipboardworks.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/clipboard",
+      "batch_or_round": "YC W17",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 1000,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "Every shift, Covered.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Deel",
+      "slug": "deel",
+      "website": "https://www.deel.com/",
+      "domain": "deel.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/deel",
+      "batch_or_round": "YC W19",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 7000,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "San Francisco"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "The all-in-one HR and payroll platform for global teams",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Go1",
+      "slug": "go1",
+      "website": "https://go1.com",
+      "domain": "go1.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/go1",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 650,
+      "locations": [
+        "Australia",
+        "United States of America",
+        "Oceania",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "Brisbane QLD, Australia"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "A learning platform that enables you to train your staff or customers.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Gusto",
+      "slug": "gusto",
+      "website": "https://gusto.com",
+      "domain": "gusto.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/gusto",
+      "batch_or_round": "YC W12",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 2400,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "Provides growing businesses with everything to take care of their team",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Happl",
+      "slug": "happl",
+      "website": "https://happl.com/",
+      "domain": "happl.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/happl",
+      "batch_or_round": "YC W22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 11,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "Your personalised benefits and engagement platform for global teams",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Helloverify",
+      "slug": "helloverify",
+      "website": "https://www.helloverify.ae",
+      "domain": "helloverify.ae",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/helloverify",
+      "batch_or_round": "YC W18",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 600,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Noida, Uttar Pradesh, India"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "Helloverify is a background screening platform (Checkr for India).",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Human Interest",
+      "slug": "human-interest",
+      "website": "http://humaninterest.com",
+      "domain": "humaninterest.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/human-interest",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 765,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "San Francisco"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "The 401(k) for small and medium-sized businesses.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Ignition Benefits",
+      "slug": "ignition-benefits",
+      "website": "https://www.ignitionbenefits.com/",
+      "domain": "ignitionbenefits.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/ignition-benefits",
+      "batch_or_round": "YC F26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 12,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "Los Angeles"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "The AI-Native Benefits Brokerage",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Instawork",
+      "slug": "instawork",
+      "website": "http://instawork.com",
+      "domain": "instawork.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/instawork",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 500,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "A flexible work app that connects businesses with hourly workers.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Lattice",
+      "slug": "lattice",
+      "website": "https://lattice.com",
+      "domain": "lattice.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/lattice",
+      "batch_or_round": "YC W16",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 540,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "Modern people management platform.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Optifye.ai",
+      "slug": "optifye-ai",
+      "website": "https://www.optifye.ai",
+      "domain": "optifye.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/optifye-ai",
+      "batch_or_round": "YC W25",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 12,
+      "locations": [
+        "India",
+        "South Asia",
+        "New Delhi, Delhi, India"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "AI cameras for workforce monitoring",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Razorpay",
+      "slug": "razorpay",
+      "website": "https://razorpay.com",
+      "domain": "razorpay.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/razorpay",
+      "batch_or_round": "YC W15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 2700,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "India's only full-stack financial solutions company for businesses.",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Rippling",
+      "slug": "rippling",
+      "website": "http://rippling.com/",
+      "domain": "rippling.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/rippling",
+      "batch_or_round": "YC W17",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 2500,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "One place to run all your HR, IT, and Finance. Globally.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "SalaryBox",
+      "slug": "salarybox",
+      "website": "https://salarybox.in/",
+      "domain": "salarybox.in",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/salarybox",
+      "batch_or_round": "YC S21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 40,
+      "locations": [
+        "India",
+        "South Asia",
+        "Gurugram, Haryana, India"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "Gusto for India",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Spine",
+      "slug": "spine",
+      "website": "https://www.joinspine.ai/",
+      "domain": "joinspine.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/spine",
+      "batch_or_round": "YC F26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 0,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "We run benefits, payroll & compliance for startups, for free",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Vahan",
+      "slug": "vahan",
+      "website": "https://vahan.ai",
+      "domain": "vahan.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/vahan",
+      "batch_or_round": "YC S19",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 85,
+      "locations": [
+        "India",
+        "South Asia",
+        "Bengaluru"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "AI recruiter for India's massive blue-collar workforce",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Weekday",
+      "slug": "weekday",
+      "website": "https://weekday.works",
+      "domain": "weekday.works",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/weekday",
+      "batch_or_round": "YC W21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 38,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Fully Remote",
+        "Bengaluru"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "AI recruiter that runs outbound sourcing campaigns to find top talent",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Adalat AI",
+      "slug": "adalat-ai",
+      "website": "https://adalat.ai/",
+      "domain": "adalat.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/adalat-ai",
+      "batch_or_round": "YC F26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 80,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Fully Remote",
+        "Bengaluru"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI OS transforming courts, accelerating justice",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Alguna",
+      "slug": "alguna",
+      "website": "https://alguna.com",
+      "domain": "alguna.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/alguna",
+      "batch_or_round": "YC S23",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 10,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Fully Remote",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI-Native CPQ & Billing for Modern Pricing Models",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Amplitude",
+      "slug": "amplitude",
+      "website": "https://amplitude.com",
+      "domain": "amplitude.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/amplitude",
+      "batch_or_round": "YC W12",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 750,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Digital Analytics Platform",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Balance",
+      "slug": "getbalance",
+      "website": "https://getbalance.ai",
+      "domain": "getbalance.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/getbalance",
+      "batch_or_round": "YC W26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 20,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Full-Stack AI Accounting",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Brickwise",
+      "slug": "brickwise",
+      "website": "https://www.brickwiseai.com",
+      "domain": "brickwiseai.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/brickwise",
+      "batch_or_round": "YC F25",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 12,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI property manager for landlords and estate agents",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "BusinessOnBot",
+      "slug": "businessonbot",
+      "website": "https://www.businessonbot.com/",
+      "domain": "businessonbot.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/businessonbot",
+      "batch_or_round": "YC W21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Automated user acquisition & selling on WhatsApp for businesses",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "CircuitHub",
+      "slug": "circuithub",
+      "website": "https://circuithub.com",
+      "domain": "circuithub.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/circuithub",
+      "batch_or_round": "YC W12",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 58,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "On-Demand Electronics Manufacturing",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Clinikally",
+      "slug": "clinikally",
+      "website": "https://www.clinikally.com/",
+      "domain": "clinikally.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/clinikally",
+      "batch_or_round": "YC S22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 125,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Gurugram, Haryana, India"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "India's Telemedicine Platform & Online Pharmacy for Dermatology Care",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "CoLoop",
+      "slug": "coloop",
+      "website": "https://coloop.ai/",
+      "domain": "coloop.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/coloop",
+      "batch_or_round": "YC S21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 16,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI Copilot for insights & strategy",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Codingal",
+      "slug": "codingal",
+      "website": "https://www.codingal.com/?utm_source=yc",
+      "domain": "codingal.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/codingal",
+      "batch_or_round": "YC W21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 100,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Leading online after-school for kids & teens to learn AI & coding",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Complir",
+      "slug": "complir",
+      "website": "https://complir.io/",
+      "domain": "complir.io",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/complir",
+      "batch_or_round": "YC P26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 13,
+      "locations": [
+        "Denmark",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "Copenhagen, Denmark"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Vanta for physical products",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Conveo",
+      "slug": "conveo",
+      "website": "https://conveo.ai/",
+      "domain": "conveo.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/conveo",
+      "batch_or_round": "YC S24",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 90,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Growth through always\u2011on consumer understanding",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Cosine",
+      "slug": "cosine",
+      "website": "http://www.cosine.sh",
+      "domain": "cosine.sh",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/cosine",
+      "batch_or_round": "YC W23",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 12,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Fully Agentic SWE",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Coulomb AI",
+      "slug": "coulomb-ai",
+      "website": "https://coulomb.ai/",
+      "domain": "coulomb.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/coulomb-ai",
+      "batch_or_round": "YC S21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 10,
+      "locations": [
+        "India",
+        "South Asia",
+        "Bengaluru"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Battery Observability Platform for Electric Vehicles",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Curacel",
+      "slug": "curacel",
+      "website": "https://curacel.co",
+      "domain": "curacel.co",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/curacel",
+      "batch_or_round": "YC W22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 30,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI-Powered Infrastructure for Insurance & Healthcare",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Deepgram",
+      "slug": "deepgram",
+      "website": "https://www.deepgram.com",
+      "domain": "deepgram.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/deepgram",
+      "batch_or_round": "YC W16",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 115,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Building foundational AI for speech transcription and understanding.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Diligent",
+      "slug": "diligent",
+      "website": "https://godiligent.ai",
+      "domain": "godiligent.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/diligent",
+      "batch_or_round": "YC S23",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 10,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI agents for fintech risk and compliance operations",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Drip Capital",
+      "slug": "drip-capital",
+      "website": "http://dripcapital.com",
+      "domain": "dripcapital.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/drip-capital",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 280,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Mumbai, Maharashtra, India"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Digital trade finance and B2B commerce company",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Elyos AI",
+      "slug": "elyos-ai",
+      "website": "https://www.elyos.ai/",
+      "domain": "elyos.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/elyos-ai",
+      "batch_or_round": "YC S23",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 20,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI Customer Service Agents for trades and field services",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Encord",
+      "slug": "encord",
+      "website": "https://encord.com",
+      "domain": "encord.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/encord",
+      "batch_or_round": "YC W21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 150,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "The data layer for physical AI",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Explorex",
+      "slug": "explorex",
+      "website": "https://explorex.co",
+      "domain": "explorex.co",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/explorex",
+      "batch_or_round": "YC S20",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Ecosystem Platform for Restaurants in India",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Faire",
+      "slug": "faire",
+      "website": "https://www.faire.com/",
+      "domain": "faire.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/faire",
+      "batch_or_round": "YC W17",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 900,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "The global online platform empowering independent retail.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Ginkgo Bioworks",
+      "slug": "ginkgo-bioworks",
+      "website": "http://ginkgobioworks.com",
+      "domain": "ginkgobioworks.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/ginkgo-bioworks",
+      "batch_or_round": "YC S14",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 641,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "Boston"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Our mission is to make biology easier to engineer.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "GroMo",
+      "slug": "gromo",
+      "website": "https://www.gromo.in",
+      "domain": "gromo.in",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/gromo",
+      "batch_or_round": "YC W21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 100,
+      "locations": [
+        "India",
+        "South Asia",
+        "Gurugram, Haryana, India"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "App for independent agents to sell financial products in India",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Healthtech 1",
+      "slug": "healthtech-1",
+      "website": "https://www.healthtech1.uk/",
+      "domain": "healthtech1.uk",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/healthtech-1",
+      "batch_or_round": "YC S23",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 40,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Navigating patients to the right place, first time.",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Hive",
+      "slug": "hive",
+      "website": "http://www.hive.co",
+      "domain": "hive.co",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/hive",
+      "batch_or_round": "YC S14",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 65,
+      "locations": [
+        "Canada",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "Kitchener, ON, Canada"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Marketing automation for event promoters (email, sms, ads, CRM)",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Hub Labs",
+      "slug": "hub-labs",
+      "website": "https://hublabs.com",
+      "domain": "hublabs.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/hub-labs",
+      "batch_or_round": "YC P26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 50,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Deployment and data infrastructure for Embodied AI.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Humaans",
+      "slug": "humaans",
+      "website": "https://humaans.io",
+      "domain": "humaans.io",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/humaans",
+      "batch_or_round": "YC W21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 48,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI-Powered HRIS for high performing teams",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "IMT Care",
+      "slug": "imt-care",
+      "website": "https://www.imt.care",
+      "domain": "imt.care",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/imt-care",
+      "batch_or_round": "YC W22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 23,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Mumbai, Maharashtra, India"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Disrupting Indian Insurance space by empowering distrubutors",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "InferEdge",
+      "slug": "inferedge",
+      "website": "https://www.inferedge.com",
+      "domain": "inferedge.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/inferedge",
+      "batch_or_round": "YC W22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 20,
+      "locations": [
+        "India",
+        "South Asia",
+        "Mumbai, Maharashtra, India"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Agentic AI for buy-side firms",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Ironclad",
+      "slug": "ironclad",
+      "website": "http://ironcladapp.com",
+      "domain": "ironcladapp.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/ironclad",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 700,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI-powered contract management",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Jinba",
+      "slug": "jinba",
+      "website": "https://jinba.io",
+      "domain": "jinba.io",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/jinba",
+      "batch_or_round": "YC W26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 11,
+      "locations": [
+        "Remote",
+        "Partly Remote"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Automate enterprise workflows through chat",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Kalam Labs",
+      "slug": "kalam-labs",
+      "website": "http://www.kalamlabs.in",
+      "domain": "kalamlabs.in",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/kalam-labs",
+      "batch_or_round": "YC S21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 10,
+      "locations": [
+        "India",
+        "South Asia",
+        "India"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Autonomous Stratospheric UAVs",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Lab0",
+      "slug": "lab0",
+      "website": "https://lab0.ai",
+      "domain": "lab0.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/lab0",
+      "batch_or_round": "YC P26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 10,
+      "locations": [
+        "India",
+        "South Asia",
+        "Bengaluru"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI FDEs to make your B2B SaaS Go Live in Days, not Months",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Landeed",
+      "slug": "landeed",
+      "website": "https://www.landeed.com/",
+      "domain": "landeed.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/landeed",
+      "batch_or_round": "YC S22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 35,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Hyderabad, Telangana, India"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Landeed is India\u2019s digital infrastructure for property intelligence,\u2026",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Leena AI",
+      "slug": "leena-ai",
+      "website": "https://www.leena.ai",
+      "domain": "leena.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/leena-ai",
+      "batch_or_round": "YC S18",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 500,
+      "locations": [
+        "United States of America",
+        "India",
+        "America / Canada",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "New York City"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "We at Leena AI build a virtual assistant that answers employee's\u2026",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Lob",
+      "slug": "lob",
+      "website": "http://lob.com",
+      "domain": "lob.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/lob",
+      "batch_or_round": "YC S13",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 150,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "New York City"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Lob is the only automation platform that transforms direct mail into\u2026",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Magic",
+      "slug": "magic",
+      "website": "https://getmagic.com/",
+      "domain": "getmagic.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/magic",
+      "batch_or_round": "YC W15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 350,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "Washington, DC, USA"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Extremely talented assistants for busy people",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Mashgin",
+      "slug": "mashgin",
+      "website": "http://mashgin.com",
+      "domain": "mashgin.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/mashgin",
+      "batch_or_round": "YC W15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 150,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Self-Checkout using Computer Vision.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Model ML",
+      "slug": "model-ml",
+      "website": "https://www.modelml.com/",
+      "domain": "modelml.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/model-ml",
+      "batch_or_round": "YC W24",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 180,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "The AI for Financial Services.",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Moritz",
+      "slug": "moritz",
+      "website": "http://moritzlegal.com/",
+      "domain": "moritzlegal.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/moritz",
+      "batch_or_round": "YC W26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 10,
+      "locations": [
+        "Norway",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "Oslo, Norway"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Global AI-native law firm handling legal work with same-day turnaround",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Morphle Labs",
+      "slug": "morphle-labs",
+      "website": "https://morphlelabs.com",
+      "domain": "morphlelabs.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/morphle-labs",
+      "batch_or_round": "YC W20",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 65,
+      "locations": [
+        "India",
+        "South Asia",
+        "Bengaluru"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Robotic Automation for cancer diagnostics - Robotic Microscopes &\u2026",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Mytos",
+      "slug": "cytera-cellworks",
+      "website": "https://www.mytos.bio",
+      "domain": "mytos.bio",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/cytera-cellworks",
+      "batch_or_round": "YC S18",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 26,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Robotic human cell manufacturing",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Neodocs",
+      "slug": "neodocs",
+      "website": "https://www.neodocs.in",
+      "domain": "neodocs.in",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/neodocs",
+      "batch_or_round": "YC S21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 20,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Mumbai, Maharashtra, India"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Instant lab tests on your smartphone",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "PicnicAI",
+      "slug": "picnicai",
+      "website": "https://picnic.ai",
+      "domain": "picnic.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/picnicai",
+      "batch_or_round": "YC S14",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 100,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Intelligence to accelerate human health.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Pocket",
+      "slug": "pocket",
+      "website": "https://heypocket.com/now",
+      "domain": "heypocket.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/pocket",
+      "batch_or_round": "YC W26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 35,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Take Notes in the Real World",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Podium",
+      "slug": "podium",
+      "website": "https://podium.com",
+      "domain": "podium.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/podium",
+      "batch_or_round": "YC W16",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 1000,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "Lehi, UT, USA"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Get more leads. Make more money.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Prolific",
+      "slug": "prolific",
+      "website": "https://www.prolific.com",
+      "domain": "prolific.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/prolific",
+      "batch_or_round": "YC S19",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 180,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Making diverse, high-quality data easily available to anyone, anywhere",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "QuestDB",
+      "slug": "questdb",
+      "website": "https://questdb.com/",
+      "domain": "questdb.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/questdb",
+      "batch_or_round": "YC S20",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 0,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Data platform for mission-critical real-time workloads",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Qventus",
+      "slug": "qventus",
+      "website": "http://qventus.com",
+      "domain": "qventus.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/qventus",
+      "batch_or_round": "YC W15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 230,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "We automate operations for hospitals and health systems",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "RADAR",
+      "slug": "radar",
+      "website": "https://goradar.com",
+      "domain": "goradar.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/radar",
+      "batch_or_round": "YC W13",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 120,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "New York City"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "RADAR is building technology to completely transform the in-store\u2026",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "ReactWise",
+      "slug": "reactwise",
+      "website": "https://www.reactwise.com/",
+      "domain": "reactwise.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/reactwise",
+      "batch_or_round": "YC S24",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 10,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Cambridge, UK"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI Co-Pilot for Chemical Process Optimization",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Revion",
+      "slug": "revion",
+      "website": "https://revion.inc",
+      "domain": "revion.inc",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/revion",
+      "batch_or_round": "YC W26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 10,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "New York City"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Intelligence for Automotive Operations",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "RocketSDR",
+      "slug": "rocketsdr",
+      "website": "https://rocketsdr.ai",
+      "domain": "rocketsdr.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/rocketsdr",
+      "batch_or_round": "YC W21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 30,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI Native Sales Outreach Platform",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Saturn",
+      "slug": "saturn",
+      "website": "https://www.SaturnOS.com",
+      "domain": "saturnos.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/saturn",
+      "batch_or_round": "YC S24",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 18,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Compliance and back office workflows for Wealth Managers.",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Scale AI",
+      "slug": "scale-ai",
+      "website": "http://scale.com",
+      "domain": "scale.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/scale-ai",
+      "batch_or_round": "YC S16",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 500,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Data-centric infrastructure to accelerate the development of AI",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "SnapMagic",
+      "slug": "snapmagic",
+      "website": "https://www.snapmagic.com",
+      "domain": "snapmagic.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/snapmagic",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 23,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI-assisted electronics design",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Solve Intelligence",
+      "slug": "solve-intelligence",
+      "website": "https://www.solveintelligence.com/",
+      "domain": "solveintelligence.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/solve-intelligence",
+      "batch_or_round": "YC S23",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 70,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI patent drafting, prosecution, litigation and more for legal teams.",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Sunflower",
+      "slug": "sunflower",
+      "website": "https://sunflowerclinic.com/",
+      "domain": "sunflowerclinic.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/sunflower",
+      "batch_or_round": "YC S26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 15,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "We are building an AI-native telemedicine clinic for addiction. \ud83c\udf3b",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "SuperKalam",
+      "slug": "superkalam",
+      "website": "https://superkalam.com",
+      "domain": "superkalam.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/superkalam",
+      "batch_or_round": "YC W23",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 20,
+      "locations": [
+        "India",
+        "South Asia",
+        "Bengaluru"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AI-Powered Super Mentor for Test Prep",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Tempo",
+      "slug": "tempo",
+      "website": "https://tempo.fit/",
+      "domain": "tempo.fit",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/tempo",
+      "batch_or_round": "YC W15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 158,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Live home fitness training powered by computer vision.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Verge Genomics",
+      "slug": "verge-genomics",
+      "website": "http://vergegenomics.com",
+      "domain": "vergegenomics.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/verge-genomics",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 50,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "We use human data and AI to develop better drugs faster.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Zalos",
+      "slug": "zalos",
+      "website": "https://www.zalos.ai/",
+      "domain": "zalos.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/zalos",
+      "batch_or_round": "YC F25",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 10,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Hire Zalos AI workers to run your finance department",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Zapier",
+      "slug": "zapier",
+      "website": "http://zapier.com",
+      "domain": "zapier.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/zapier",
+      "batch_or_round": "YC S12",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 700,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "San Francisco"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "The easiest way to automate your work.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "AlgoTest",
+      "slug": "algotest",
+      "website": "https://algotest.in",
+      "domain": "algotest.in",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/algotest",
+      "batch_or_round": "YC S22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 40,
+      "locations": [
+        "India",
+        "South Asia",
+        "Delhi, India"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Ecosystem for options trading in India",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Algolia",
+      "slug": "algolia",
+      "website": "http://www.algolia.com",
+      "domain": "algolia.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/algolia",
+      "batch_or_round": "YC W14",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 810,
+      "locations": [
+        "United States of America",
+        "France",
+        "America / Canada",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "A developer-friendly and enterprise-grade search API.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "AptDeco",
+      "slug": "aptdeco",
+      "website": "https://www.aptdeco.com/",
+      "domain": "aptdeco.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/aptdeco",
+      "batch_or_round": "YC W14",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 0,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "New York City"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "AptDeco is the easiest way to buy and sell used furniture",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Binks",
+      "slug": "binks",
+      "website": "https://getbinks.com/",
+      "domain": "getbinks.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/binks",
+      "batch_or_round": "YC S19",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 70,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "A zero inventory, zero returns factory-to-consumer apparel company",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Cashfree Payments",
+      "slug": "cashfree-payments",
+      "website": "https://www.cashfree.com/",
+      "domain": "cashfree.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/cashfree-payments",
+      "batch_or_round": "YC S17",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 200,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Next-gen digital payments provider for India.",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Cityfurnish",
+      "slug": "cityfurnish",
+      "website": "https://cityfurnish.com/",
+      "domain": "cityfurnish.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/cityfurnish",
+      "batch_or_round": "YC W19",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 90,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "New Delhi, Delhi, India"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Cityfurnish - Commitment-free furniture rentals for a better you!",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Fleek",
+      "slug": "fleek",
+      "website": "https://www.joinfleek.com/",
+      "domain": "joinfleek.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/fleek",
+      "batch_or_round": "YC W22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 100,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "A B2B marketplace for wholesale second hand fashion",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Flexport",
+      "slug": "flexport",
+      "website": "https://www.flexport.com/careers/jobs/",
+      "domain": "flexport.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/flexport",
+      "batch_or_round": "YC W14",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 3000,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Platform for global logistics.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "GOAT Group",
+      "slug": "goat-group",
+      "website": "https://www.goatgroup.com/",
+      "domain": "goatgroup.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/goat-group",
+      "batch_or_round": "YC W11",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 1600,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "Los Angeles"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Platform for the greatest products from the past, present and future.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Gemnote",
+      "slug": "gemnote",
+      "website": "http://gemnote.com",
+      "domain": "gemnote.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/gemnote",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 40,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "Los Angeles"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Gemnote is the easiest way to design, create and send custom products.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Goldbelly",
+      "slug": "goldbelly",
+      "website": "https://www.goldbelly.com/",
+      "domain": "goldbelly.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/goldbelly",
+      "batch_or_round": "YC W13",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 125,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "New York City"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Empowering restaurants and small food makers to ship nationwide.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Instacart",
+      "slug": "instacart",
+      "website": "https://www.instacart.com",
+      "domain": "instacart.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/instacart",
+      "batch_or_round": "YC S12",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 3000,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Marketplace for grocery delivery and pickup",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Material Depot",
+      "slug": "material-depot",
+      "website": "https://materialdepot.in/",
+      "domain": "materialdepot.in",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/material-depot",
+      "batch_or_round": "YC W22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 50,
+      "locations": [
+        "India",
+        "South Asia",
+        "Bengaluru"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "India's Fastest Growing Home Decor destination for Floor & Wall Decor",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Meesho",
+      "slug": "meesho",
+      "website": "http://www.meesho.com",
+      "domain": "meesho.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/meesho",
+      "batch_or_round": "YC S16",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 1450,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Democratizing internet commerce for everyone in India",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "OneFin",
+      "slug": "onefin",
+      "website": "https://www.onefin.in",
+      "domain": "onefin.in",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/onefin",
+      "batch_or_round": "YC W17",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 50,
+      "locations": [
+        "India",
+        "South Asia",
+        "Bengaluru"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Shopify for Financial Services",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "QFEX",
+      "slug": "qfex",
+      "website": "https://qfex.com",
+      "domain": "qfex.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/qfex",
+      "batch_or_round": "YC P25",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 14,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "24/7 Global Stock Exchange",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Quartzy",
+      "slug": "quartzy",
+      "website": "https://www.quartzy.com",
+      "domain": "quartzy.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/quartzy",
+      "batch_or_round": "YC S11",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 100,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Marketplace for life science supplies.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Rappi",
+      "slug": "rappi",
+      "website": "http://www.rappi.com",
+      "domain": "rappi.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/rappi",
+      "batch_or_round": "YC W16",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 4800,
+      "locations": [
+        "Colombia",
+        "Latin America",
+        "Remote",
+        "Partly Remote",
+        "Bogot\u00e1, Bogota, Colombia"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "On-demand delivery and financial services for Latin America.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Swadesh",
+      "slug": "swadesh",
+      "website": "http://www.swadesh.co",
+      "domain": "swadesh.co",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/swadesh",
+      "batch_or_round": "YC S19",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 10,
+      "locations": [
+        "United States of America",
+        "India",
+        "America / Canada",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "New York City"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "We setup Immigrants with a free US Bank Account, Credit Card, SIM\u2026",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Whatnot",
+      "slug": "whatnot",
+      "website": "https://www.whatnot.com/careers/discover",
+      "domain": "whatnot.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/whatnot",
+      "batch_or_round": "YC W20",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 1500,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "Los Angeles"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Whatnot is the largest livestream shopping platform in the U.S.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Xendit",
+      "slug": "xendit",
+      "website": "https://www.xendit.co/",
+      "domain": "xendit.co",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/xendit",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 700,
+      "locations": [
+        "Indonesia",
+        "Southeast Asia",
+        "Remote",
+        "Partly Remote",
+        "Jakarta, Indonesia"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Provides payment infrastructure for Southeast Asia",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "yhangry",
+      "slug": "yhangry",
+      "website": "http://www.yhangry.com",
+      "domain": "yhangry.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/yhangry",
+      "batch_or_round": "YC W22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 12,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "Marketplace for private chefs",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Bitmovin",
+      "slug": "bitmovin",
+      "website": "http://bitmovin.com",
+      "domain": "bitmovin.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/bitmovin",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 145,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "Powers OTT online video providers with video developer tools.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Circle Medical",
+      "slug": "circle-medical",
+      "website": "https://circlemedical.com",
+      "domain": "circlemedical.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/circle-medical",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 235,
+      "locations": [
+        "Remote",
+        "Partly Remote"
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "Modern primary care via video and in-person",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Giveffect",
+      "slug": "giveffect",
+      "website": "http://giveffect.com",
+      "domain": "giveffect.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/giveffect",
+      "batch_or_round": "YC W15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 0,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "New York City"
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "Fundraising, Volunteer and Donor Management SaaS for nonprofits.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "OneSignal",
+      "slug": "onesignal",
+      "website": "https://onesignal.com",
+      "domain": "onesignal.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/onesignal",
+      "batch_or_round": "YC S11",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 150,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "Engage customers through personalized omni-channel messaging",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Ploy",
+      "slug": "ploy",
+      "website": "https://ploy.ai",
+      "domain": "ploy.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/ploy",
+      "batch_or_round": "YC P26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 14,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "Ploy turns your website into your company's growth engine.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Streak",
+      "slug": "streak",
+      "website": "http://streak.com",
+      "domain": "streak.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/streak",
+      "batch_or_round": "YC S11",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 35,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "San Francisco"
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "Streak transforms Gmail into a powerful CRM",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Webflow",
+      "slug": "webflow",
+      "website": "https://webflow.com",
+      "domain": "webflow.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/webflow",
+      "batch_or_round": "YC S13",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 600,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "Professional website design and publishing platform.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Zuddl",
+      "slug": "zuddl",
+      "website": "http://www.zuddl.com",
+      "domain": "zuddl.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/zuddl",
+      "batch_or_round": "YC S20",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 120,
+      "locations": [
+        "United States of America",
+        "India",
+        "America / Canada",
+        "South Asia",
+        "Remote",
+        "Fully Remote",
+        "San Francisco"
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "Zuddl is a modular platform for events and webinars that helps event\u2026",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "ARQ",
+      "slug": "arq",
+      "website": "https://www.arqfinance.com/",
+      "domain": "arqfinance.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/arq",
+      "batch_or_round": "YC S21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 100,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "The global financial platform for affluent consumers in the Americas.",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Apollo",
+      "slug": "apollo-3",
+      "website": "https://www.apollofirst.xyz/",
+      "domain": "apollofirst.xyz",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/apollo-3",
+      "batch_or_round": "YC W22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 11,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Payments & Loyalty Infrastructure",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Capi Money",
+      "slug": "capi-money",
+      "website": "https://www.capimoney.com",
+      "domain": "capimoney.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/capi-money",
+      "batch_or_round": "YC S23",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 40,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Helping businesses in emerging markets make pay their international\u2026",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "FamPay",
+      "slug": "fampay",
+      "website": "https://fampay.in",
+      "domain": "fampay.in",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/fampay",
+      "batch_or_round": "YC S19",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 24,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "India\u2019s first neobank for teenagers",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "GiveCampus",
+      "slug": "givecampus",
+      "website": "http://go.givecampus.com",
+      "domain": "go.givecampus.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/givecampus",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 130,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "Washington, DC, USA"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "The fundraising platform for schools.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Groww",
+      "slug": "groww",
+      "website": "https://groww.in",
+      "domain": "groww.in",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/groww",
+      "batch_or_round": "YC W18",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 1050,
+      "locations": [
+        "India",
+        "South Asia",
+        "Bengaluru"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Making financial services simple, transparent and delightful.",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Infinity",
+      "slug": "infinity",
+      "website": "https://www.infinityapp.in/",
+      "domain": "infinityapp.in",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/infinity",
+      "batch_or_round": "YC W24",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 15,
+      "locations": [
+        "India",
+        "South Asia",
+        "Bengaluru"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Business banking for cross-border SMBs & Startups",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Kodo",
+      "slug": "kodo",
+      "website": "https://www.kodo.com",
+      "domain": "kodo.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/kodo",
+      "batch_or_round": "YC W21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 45,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Mumbai, Maharashtra, India"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Corporate card & spend management platform for Indian startups",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Minimum",
+      "slug": "minimum",
+      "website": "https://minimum.com",
+      "domain": "minimum.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/minimum",
+      "batch_or_round": "YC S20",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 0,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Helping corporates achieve Net Zero through tech solutions.",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Muzz",
+      "slug": "muzz",
+      "website": "https://muzz.com",
+      "domain": "muzz.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/muzz",
+      "batch_or_round": "YC S17",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 104,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Where Single Muslims meet",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "New Story",
+      "slug": "new-story",
+      "website": "http://newstoryhomes.org",
+      "domain": "newstoryhomes.org",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/new-story",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 20,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "Atlanta, GA, USA"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "We pioneer solutions to end the global housing crisis by empowering\u2026",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "PrimeVault",
+      "slug": "primevault",
+      "website": "https://www.primevault.com",
+      "domain": "primevault.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/primevault",
+      "batch_or_round": "YC S22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 11,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Fully Remote",
+        "Bengaluru"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Infrastructure powering stablecoin and digital finance",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Prospa",
+      "slug": "prospa",
+      "website": "https://getprospa.com",
+      "domain": "getprospa.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/prospa",
+      "batch_or_round": "YC W21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 70,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Banking for businesses",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Stripe",
+      "slug": "stripe",
+      "website": "http://stripe.com",
+      "domain": "stripe.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/stripe",
+      "batch_or_round": "YC S09",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 7000,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Economic infrastructure for the internet.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Wifi Dabba, Inc.",
+      "slug": "wifi-dabba-inc",
+      "website": "https://dabba.com",
+      "domain": "dabba.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/wifi-dabba-inc",
+      "batch_or_round": "YC W17",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 21,
+      "locations": [
+        "India",
+        "South Asia",
+        "Bengaluru"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Decentralised broadband connectivity.",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Y Combinator",
+      "slug": "y-combinator",
+      "website": "https://www.ycombinator.com",
+      "domain": "ycombinator.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/y-combinator",
+      "batch_or_round": "YC",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 100,
+      "locations": [
+        "Remote",
+        "Partly Remote"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Make something people want.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "nsave",
+      "slug": "nsave",
+      "website": "https://www.nsave.com",
+      "domain": "nsave.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/nsave",
+      "batch_or_round": "YC S22",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 20,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "Trusted $\u20ac\u00a3 accounts abroad for people from unstable economies.",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "10 Minute School",
+      "slug": "10-minute-school",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/10-minute-school",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (10 Minute School)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Aampe",
+      "slug": "aampe",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/aampe",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Aampe)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Absolute Foods",
+      "slug": "absolute-foods",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/absolute-foods",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Absolute Foods)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Adplist",
+      "slug": "adplist",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/adplist",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Adplist)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Ai Rudder",
+      "slug": "ai-rudder",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/ai-rudder",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Ai Rudder)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Airalo",
+      "slug": "airalo",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/airalo",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Airalo)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Alma",
+      "slug": "alma",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/alma",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Alma)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Amaani",
+      "slug": "amaani",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/amaani",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Amaani)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Ambak",
+      "slug": "ambak",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/ambak",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Ambak)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Anon Coin",
+      "slug": "anon-coin",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/anon-coin",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Anon Coin)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "August Ai",
+      "slug": "august-ai",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/august-ai",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (August Ai)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Ditto",
+      "slug": "ditto",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/ditto",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Ditto)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Gamestock",
+      "slug": "gamestock",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/gamestock",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Gamestock)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Hiloop",
+      "slug": "hiloop",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/hiloop",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Hiloop)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Hoola Health",
+      "slug": "hoola-health",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/hoola-health",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Hoola Health)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Kello",
+      "slug": "kello",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/kello",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Kello)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Kindling",
+      "slug": "kindling",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/kindling",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Kindling)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Puralink",
+      "slug": "puralink",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/puralink",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Puralink)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Reinforce Labs",
+      "slug": "reinforce-labs",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/reinforce-labs",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Reinforce Labs)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Riffle",
+      "slug": "riffle",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/riffle",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Riffle)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Rosella",
+      "slug": "rosella",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/rosella",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Rosella)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Stealth 67C15",
+      "slug": "stealth-67c15",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/stealth-67c15",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Stealth 67C15)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Stealth 75612",
+      "slug": "stealth-75612",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/stealth-75612",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Stealth 75612)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Stealth 837Df",
+      "slug": "stealth-837df",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/stealth-837df",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Stealth 837Df)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Tribe Money",
+      "slug": "tribe-money",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/tribe-money",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Tribe Money)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Ulook",
+      "slug": "ulook",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/ulook",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Ulook)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "Wingit",
+      "slug": "wingit",
+      "website": "",
+      "domain": "",
+      "source_id": "surge_peakxv",
+      "source_url": "https://www.surgeahead.com/companies/wingit",
+      "batch_or_round": "Peak XV Surge",
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "Global"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 4,
+      "summary": "Peak XV Surge portfolio company (Wingit)",
+      "role_signal": "surge_portfolio",
+      "sources_seen": [
+        "surge_peakxv"
+      ]
+    },
+    {
+      "company_name": "AlgoUniversity",
+      "slug": "algouniversity",
+      "website": "http://algouniversity.com/",
+      "domain": "algouniversity.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/algouniversity",
+      "batch_or_round": "YC S21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 40,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Building Job driven Virtual Tech University for India \ud83c\uddee\ud83c\uddf3",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Anima",
+      "slug": "anima",
+      "website": "http://www.animahealth.com",
+      "domain": "animahealth.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/anima",
+      "batch_or_round": "YC W21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 20,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Fully Remote",
+        "London"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "The next generation care enablement platform",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Apollo",
+      "slug": "apollo",
+      "website": "http://apollographql.com/",
+      "domain": "apollographql.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/apollo",
+      "batch_or_round": "YC S11",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 200,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "San Francisco"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Apollo helps engineering teams accelerate delivery",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Betterhalf",
+      "slug": "betterhalf",
+      "website": "https://betterhalf.ai",
+      "domain": "betterhalf.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/betterhalf",
+      "batch_or_round": "YC W21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 25,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "India\u2019s first and only marriage super app",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "BillionToOne",
+      "slug": "billiontoone",
+      "website": "https://www.billiontoone.com",
+      "domain": "billiontoone.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/billiontoone",
+      "batch_or_round": "YC S17",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 300,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "The genetic testing platform detecting and measuring disease.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "CarbonChain",
+      "slug": "carbonchain",
+      "website": "https://carbonchain.com",
+      "domain": "carbonchain.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/carbonchain",
+      "batch_or_round": "YC S20",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 16,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "We help companies automate the accounting of their carbon emissions",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Duffel",
+      "slug": "duffel",
+      "website": "https://duffel.com/",
+      "domain": "duffel.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/duffel",
+      "batch_or_round": "YC S18",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 55,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "The complete toolkit to sell travel.",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Eight Sleep",
+      "slug": "eight-sleep",
+      "website": "http://eightsleep.com",
+      "domain": "eightsleep.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/eight-sleep",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 100,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "New York City"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "The sleep fitness company.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "EquipmentShare",
+      "slug": "equipmentshare",
+      "website": "https://www.equipmentshare.com",
+      "domain": "equipmentshare.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/equipmentshare",
+      "batch_or_round": "YC W15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 5400,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "Columbia, MO, USA"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Cloud solutions for the construction industry.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Inflection Space Systems",
+      "slug": "inflection-space-systems",
+      "website": "https://inflection-space.com/",
+      "domain": "inflection-space.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/inflection-space-systems",
+      "batch_or_round": "YC F26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 0,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "Los Angeles"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Hyperscaling space manufacturing",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "InfluxData",
+      "slug": "influxdata",
+      "website": "https://influxdata.com",
+      "domain": "influxdata.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/influxdata",
+      "batch_or_round": "YC W13",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 210,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "New York City"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "The platform for building and operating time series applications.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Inito",
+      "slug": "inito",
+      "website": "https://www.inito.com/",
+      "domain": "inito.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/inito",
+      "batch_or_round": "YC W19",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 100,
+      "locations": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Partly Remote",
+        "Bengaluru"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Enabling better self care with at-home hormone tracking.",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Junction",
+      "slug": "junction",
+      "website": "https://www.junction.com/",
+      "domain": "junction.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/junction",
+      "batch_or_round": "YC W20",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 19,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Fully Remote",
+        "London"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "API for at-home health data",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Lightdash",
+      "slug": "hubble",
+      "website": "http://lightdash.com/",
+      "domain": "lightdash.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/hubble",
+      "batch_or_round": "YC S20",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 23,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Fully Remote",
+        "London"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "The open source Looker alternative",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Lugg",
+      "slug": "lugg",
+      "website": "http://lugg.com",
+      "domain": "lugg.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/lugg",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 50,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote",
+        "Salt Lake City, UT, USA"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Move anything, anytime, anywhere",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Mason",
+      "slug": "mason",
+      "website": "http://www.bymason.com",
+      "domain": "bymason.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/mason",
+      "batch_or_round": "YC W16",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 65,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "Seattle"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Mason is the fastest way to take smart devices from idea to end user",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Meticulous",
+      "slug": "meticulous",
+      "website": "https://www.meticulous.ai",
+      "domain": "meticulous.ai",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/meticulous",
+      "batch_or_round": "YC S21",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 15,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Automated e2e screenshot testing without writing or maintaining tests",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Noora Health",
+      "slug": "noora-health",
+      "website": "http://noorahealth.org",
+      "domain": "noorahealth.org",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/noora-health",
+      "batch_or_round": "YC W14",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 500,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "Traverse City, MI, USA"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Training patients and their families with health skills",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Odeko",
+      "slug": "odeko",
+      "website": "http://www.odeko.com",
+      "domain": "odeko.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/odeko",
+      "batch_or_round": "YC S19",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 371,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "New York City"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Our operations software makes it easier to run--and grow--your cafe",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Padlet",
+      "slug": "padlet",
+      "website": "https://padlet.com",
+      "domain": "padlet.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/padlet",
+      "batch_or_round": "YC W13",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 65,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Papyrus \u2192 Parchment \u2192 Paper \u2192 Padlet",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Reach",
+      "slug": "reach",
+      "website": "https://reachpower.com",
+      "domain": "reachpower.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/reach",
+      "batch_or_round": "YC S15",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 45,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "San Francisco"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Long range, wireless energy distribution that scales",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "SAMMY Labs",
+      "slug": "sammy-labs",
+      "website": "https://www.sammylabs.com",
+      "domain": "sammylabs.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/sammy-labs",
+      "batch_or_round": "YC W25",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 10,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "Computational Law",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "SOUNDBOKS",
+      "slug": "soundboks",
+      "website": "http://soundboks.com",
+      "domain": "soundboks.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/soundboks",
+      "batch_or_round": "YC W16",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 50,
+      "locations": [
+        "Denmark",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "Copenhagen, Denmark"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "We're creating the loudest battery-driven speaker on the market",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Seal",
+      "slug": "seal-2",
+      "website": "https://seal.run",
+      "domain": "seal.run",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/seal-2",
+      "batch_or_round": "YC S20",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 22,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "Remote",
+        "Partly Remote",
+        "London"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "All-in-one workspace for companies making regulated products",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Tovala",
+      "slug": "tovala",
+      "website": "http://www.tovala.com",
+      "domain": "tovala.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/tovala",
+      "batch_or_round": "YC W16",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 375,
+      "locations": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote",
+        "Chicago, IL, USA"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "A smart-oven-paired subscription meal service.",
+      "role_signal": "hiring_badge (Remote)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "ZiffyHomes",
+      "slug": "ziffyhomes",
+      "website": "https://www.ziffyhomes.com/",
+      "domain": "ziffyhomes.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/ziffyhomes",
+      "batch_or_round": "YC S18",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 57,
+      "locations": [
+        "India",
+        "South Asia",
+        "Gurugram, Haryana, India"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "ZiffyHomes is managed corporate housing for white collar employees in\u2026",
+      "role_signal": "hiring_badge (India)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Zymbly",
+      "slug": "zymbly",
+      "website": "https://www.zymbly.com",
+      "domain": "zymbly.com",
+      "source_id": "yc_companies",
+      "source_url": "https://www.ycombinator.com/companies/zymbly",
+      "batch_or_round": "YC W26",
+      "investors": [
+        "Y Combinator"
+      ],
+      "investor_tier": 1,
+      "team_size": 0,
+      "locations": [
+        "United Kingdom",
+        "Europe",
+        "London"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "The decision-support layer for aviation ops teams to know what to do\u2026",
+      "role_signal": "hiring_badge (United Kingdom)",
+      "sources_seen": [
+        "yc_companies"
+      ]
+    },
+    {
+      "company_name": "Odin",
+      "slug": "odin",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50447035",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Senior Cloud Infra Engineer",
+        "Remote",
+        "Full time"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "Odin | Senior Cloud Infra Engineer | Remote | Full time We\u2019re hiring a Senior Cloud Infrastructure Engineer to help establish Odin\u2019s platform team. You\u2019ll build and run the cloud foundation powering workforce visibility, security, and opera",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Tecla IO",
+      "slug": "tecla-io",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50427828",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Digital Sales Specialist",
+        "REMOTE (Worldwide)",
+        "Paid, $10 -$13 per hour"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "Tecla IO | Digital Sales Specialist | REMOTE (Worldwide) | Paid, $10 -$13 per hour We are searching for a high-energy communicator to join our team as a Digital Sales & Communications Specialist. If you love building rapport, solving proble",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "TheraPlug",
+      "slug": "theraplug",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50352937",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Founding CTO / Technical Lead",
+        "Detroit preferred; remote considered",
+        "Equity-first, pre-funding"
+      ],
+      "industry": "Hiring & Recruitment Tech",
+      "industry_grade": "A+",
+      "industry_score": 10,
+      "summary": "TheraPlug | Founding CTO / Technical Lead | Detroit preferred; remote considered | Equity-first, pre-funding I\u2019m Marcelus Brice, founder of TheraPlug ( https://theraplug.health ). We\u2019re building a behavioral health platform focused on makin",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "3ive",
+      "slug": "3ive",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50398466",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Senior/Staff Software Engineer",
+        "REMOTE (Europe)",
+        "Full-time"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "3ive | Senior/Staff Software Engineer | REMOTE (Europe) | Full-time | Python, TypeScript, React, AI Agents We\u2019re building Cursor for mechanical engineering. Imagine an AI that doesn\u2019t just answer questions about a mechanical design, but can",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "AetherGrid",
+      "slug": "aethergrid",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50423766",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Founding GTM Lead",
+        "REMOTE (Worldwide)",
+        "Paid, Fractional / Contract"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "AetherGrid | Founding GTM Lead | REMOTE (Worldwide) | Paid, Fractional / Contract AetherGrid ( https://www.aethergrid.co.ke ) is an open-source control plane for distributed AI workloads. I'm the founder and have built the technical foundat",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Cocient",
+      "slug": "cocient",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50357754",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Software Engineers, Data Scientists, and experts in finance, medicine, law, science and engineering",
+        "AI training & evaluation",
+        "REMOTE (most countries)"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Cocient | Software Engineers, Data Scientists, and experts in finance, medicine, law, science and engineering | AI training & evaluation | REMOTE (most countries) | Contract, hourly | https://work.cocient.com/opportunities Cocient is a huma",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "EggAI",
+      "slug": "eggai",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50351693",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "AI tech leads, Software and Platform engineers",
+        "REMOTE (EU)",
+        "Full-time preferred. Contract possible. We are a small boutique consultancy and are quite experienced. A lot of us have extensive consultant experience. You will join a small, highly skilled remote team of engineers and transformation practitioners working at the forefront of enterprise AI. We use AI for both development and in our solutions. We are looking for engineers that are critical thinkers, understand the limitations of AI but also where it can have a positive impact."
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "EggAI | AI tech leads, Software and Platform engineers | REMOTE (EU) | Full-time preferred. Contract possible. We are a small boutique consultancy and are quite experienced. A lot of us have extensive consultant experience. You will join a ",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Froncort.AI Raises $2.3 Mn From Google.org To Expa",
+      "slug": "froncort-ai-raises-2-3-mn-from-google-org-to-expa",
+      "website": "",
+      "domain": "",
+      "source_id": "inc42",
+      "source_url": "https://inc42.com/buzz/froncort-ai-raises-2-3-mn-from-google-org-to-expand-ai-based-disease-surveillance/",
+      "batch_or_round": "Funding News",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "India"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Froncort.AI Raises $2.3 Mn From Google.org To Expand AI-Based Disease Surveillance \u2014 Healthcare AI startup Froncort.AI has secured $2.3 Mn (\u20b921.5 Cr) in fresh capital from Google\u2019s philanthropic arm, Google.org, to scale\u2026",
+      "role_signal": "fresh_funding_round",
+      "sources_seen": [
+        "inc42"
+      ]
+    },
+    {
+      "company_name": "IMC Trading",
+      "slug": "imc-trading",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50352150",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Machine Learning Engineer",
+        "Amsterdam OR London",
+        "ONSITE"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "IMC Trading | Machine Learning Engineer | Amsterdam OR London | ONSITE | Full-time IMC is a research-driven trading firm and has been a market maker since 1989. Our researchers, traders and engineers work as one team on systems we build our",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "LiveKit",
+      "slug": "livekit",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50433727",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "http://livekit.io/",
+        "VoiceAI",
+        "webRTC"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "LiveKit| http://livekit.io/ | VoiceAI | webRTC | Remote | Full Time LiveKit is building the infrastructure layer for the voice-driven era of computing. Our platform gives developers everything they need to build, test, deploy, scale, and ob",
+      "role_signal": "product manager",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Machine Age",
+      "slug": "machine-age",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50393239",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "COO \u2014 founder-level role",
+        "Full-time",
+        "UK time zone"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Machine Age | COO \u2014 founder-level role | Full-time | UK time zone | Salary post-raise Machine Age is building a network of businesses and robotics providers to supply real-world data for robot training. We\u2019re seeing strong interest, with mu",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Mastra",
+      "slug": "mastra",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50339514",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Founding Sales (Founding AE)",
+        "US Remote",
+        "Full-time"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Mastra | Founding Sales (Founding AE) | US Remote | Full-time Mastra is the open-source TypeScript framework for building AI agents (agents, workflows, memory, evals, tracing). From the team behind Gatsby, YC-backed, https://github.com/mast",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Opsfleet",
+      "slug": "opsfleet",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50349129",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "AI Engineer (Agentic / GenAI)",
+        "REMOTE (EEA)",
+        "Full-time"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Opsfleet | AI Engineer (Agentic / GenAI) | REMOTE (EEA) | Full-time Fully remote cloud & AI services company (founded 2015, 70+ engineers, AWS Premier, Google Cloud & Snowflake Partner) with a growing GenAI practice and several active clien",
+      "role_signal": "ai engineer",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Oscilar.com",
+      "slug": "oscilar-com",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50369581",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Sr/Staff Software Engineers, Data Scientist, FDE, PM",
+        "REMOTE (US/Canada/Brazil/Poland/UK/India) Full-time AI Risk Decisioning\u2122 platform that helps organizations manage onboarding, fraud, credit, and compliance risks Open roles: - Sr./Staff Analytics & Data Architecture Engineer (US/Canada) - Sr./Staff Java Backend Engineer (Brazil/Poland/India) - Staff Web SDK Engineer (US/Brazil/India/Canada/Poland/UK) - Data Scientist (US/Canada) - Forward Deployment Engineer (Brazil) - Product Manager AML (US/Canada) - Product Manager Device and Behavior (US/Canada) apply at: https://jobs.ashbyhq.com/oscilar?utm_source=HackerNews"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Oscilar.com | Sr/Staff Software Engineers, Data Scientist, FDE, PM| REMOTE (US/Canada/Brazil/Poland/UK/India) Full-time AI Risk Decisioning\u2122 platform that helps organizations manage onboarding, fraud, credit, and compliance risks Open roles",
+      "role_signal": "product manager",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Proximal Ventures",
+      "slug": "proximal-ventures",
+      "website": "",
+      "domain": "",
+      "source_id": "techcrunch",
+      "source_url": "https://techcrunch.com/2026/11/10/proximal-ventures-raises-debut-fund-to-back-startups-bringing-ai-to-drug-development/",
+      "batch_or_round": "Funding News",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Global"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Proximal Ventures raises debut fund to back startups bringing AI to drug development \u2014 Former SignalFire investor Sahir Raoof raises $27.5 million for new fund targeting AI in pharma.",
+      "role_signal": "fresh_funding_round",
+      "sources_seen": [
+        "techcrunch"
+      ]
+    },
+    {
+      "company_name": "Seal (YC S20)",
+      "slug": "seal-yc-s20",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50424162",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Forward Deployed Engineer, Founding Product Engineer",
+        "London",
+        "ONSITE"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Seal (YC S20) | Forward Deployed Engineer, Founding Product Engineer | London | ONSITE | Full-time | \u00a350k\u2013\u00a3120k + equity We build AI software that biotech and pharma manufacturers use to run their labs and prove every batch. Small team, rea",
+      "role_signal": "forward deployed",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Search Atlas",
+      "slug": "search-atlas",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50365279",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Product Engineer (PM)",
+        "REMOTE (anywhere, EST hours)",
+        "Full-time"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Search Atlas | Product Engineer (PM) | REMOTE (anywhere, EST hours) | Full-time | $23-34/hr We're ~160 people building an AI marketing platform. Our main product, OTTO, runs a site's SEO on its own: it reads live search data and ships the t",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Sortrace",
+      "slug": "sortrace",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50384008",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Computer Vision Engineer, Junior Frontend Engineer",
+        "REMOTE (Europe), hybrid Norrk\u00f6ping or Stockholm",
+        "Full-time"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Sortrace | Computer Vision Engineer, Junior Frontend Engineer | REMOTE (Europe), hybrid Norrk\u00f6ping or Stockholm | Full-time | https://sortrace.com Sortrace is a small cleantech AI company in Sweden. Cameras on waste collection trucks and tr",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Stream",
+      "slug": "stream",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50339750",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Multiple Positions",
+        "Amsterdam (NL), Skopje (North Macedonia)",
+        "Boulder, CO (US)"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Stream | Multiple Positions | Amsterdam (NL), Skopje (North Macedonia) | Boulder, CO (US) | Toronto (Canada)) | Remote possible | Full Time | Visa Sponsorship | https://getstream.io Stream powers Chat, Video, AI Moderation, and Activity Fee",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Sunsave",
+      "slug": "sunsave",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50427924",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Product Engineer (Mid-Level / Senior)",
+        "London, United Kingdom (Holborn)",
+        "ONSITE (hybrid, 3 days/week in office)"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Sunsave | Product Engineer (Mid-Level / Senior) | London, United Kingdom (Holborn) | ONSITE (hybrid, 3 days/week in office) | Full-time Sunsave is building what replaces your energy supplier. Customers switch to solar and a battery with not",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Voluntas",
+      "slug": "voluntas",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50340434",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Remote",
+        "Full Time",
+        "Software Engineer"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Voluntas | Remote | Full Time | Software Engineer Voluntas is a trading firm written 100% in Rust. We run systematic strategies, currently specializing in prediction markets, looking to expand our systems more broadly. We're looking for som",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Zed Industries",
+      "slug": "zed-industries",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50341570",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "North America, South America, Europe REMOTE",
+        "https://zed.dev/ Zed is a company for developers, by developers. All 3 of our founders have spent years in the trenches writing software and still do it almost every single day. We've raised $42M to support our ultimate vision, a new way to collaborate on software, where conversations about code remain connected to the code itself, instead of being tied to aging snapshots or scattered across different tools. The first step was creating a high-quality editor to serve as the user interface. Now this new investment lets us expand to tackle the next phase of our plan. We're developing a new kind of operation-based version control ( https://delta.dev/ ) that incrementally tracks the evolution of your code with edit-level granularity, and we're integrating it into Zed to make collaboration, both with agents and teammates, a first-class part of the coding experience."
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Zed Industries | North America, South America, Europe REMOTE | https://zed.dev/ Zed is a company for developers, by developers. All 3 of our founders have spent years in the trenches writing software and still do it almost every single day.",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Zefr",
+      "slug": "zefr",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50386884",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Los Angeles, CA (Marina del Rey)",
+        "Site Reliability Engineer",
+        "Full-time"
+      ],
+      "industry": "AI & Automation",
+      "industry_grade": "A",
+      "industry_score": 9,
+      "summary": "Zefr | Los Angeles, CA (Marina del Rey) | Site Reliability Engineer | Full-time | On-site 2-3x per week | $100,000 - $130,000 | https://zefr.com Company Zefr is the leading global technology company enabling responsible marketing in walled ",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "UNICEF - REMOTE backend dev - Digital Inclusion Division, Connectivity Credits",
+      "slug": "unicef-remote-backend-dev-digital-inclusion-division-connectivity-credits",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50349615",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [],
+      "industry": "Ecommerce & Dropshipping",
+      "industry_grade": "A-",
+      "industry_score": 8,
+      "summary": "UNICEF - REMOTE backend dev - Digital Inclusion Division, Connectivity Credits We're building a marketplace where local ISPs connect schools and health centers to the internet, prove it via telemetry, and get access to discounted backhaul, ",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "BCDRPulse",
+      "slug": "bcdrpulse",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50402383",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Head of Global GTM",
+        "REMOTE (worldwide)",
+        "Commission based, path to salary and equity"
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "BCDRPulse | Head of Global GTM | REMOTE (worldwide) | Commission based, path to salary and equity | https://bcdrpulse.com BCDRPulse is an early stage B2B SaaS platform for website resilience, infrastructure monitoring, performance testing, ",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "FusionAuth",
+      "slug": "fusionauth",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50344646",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Senior/Staff Java Engineers, Account Executive",
+        "Varies between REMOTE (in Europe but only for the account exec position) and ONSITE in Denver, CO, USA, details in each job desc",
+        "Salary ranges for the Java Engineers range from 140k-230k, but the Euro positions don't have them :("
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "FusionAuth | Senior/Staff Java Engineers, Account Executive | Varies between REMOTE (in Europe but only for the account exec position) and ONSITE in Denver, CO, USA, details in each job desc | Salary ranges for the Java Engineers range from",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "MONUMENTAL",
+      "slug": "monumental",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50339468",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "https://www.monumental.co/",
+        "Amsterdam, The Netherlands",
+        "Full Time"
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "MONUMENTAL | https://www.monumental.co/ | Amsterdam, The Netherlands | Full Time | Onsite We make robots that autonomously construct buildings, starting with bricklaying. There's a lot of vapourware in robotics, but we're deploying robots a",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "Modash.io",
+      "slug": "modash-io",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50349251",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Senior Product Engineer",
+        "Remote (Europe)",
+        "Full-time"
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "Modash.io | Senior Product Engineer | Remote (Europe) | Full-time | \u20ac80k\u2013110k | https://modash.io Modash helps brands find, manage, and pay creators - and helps creators earn a living. The product looks simple on the surface. Underneath, we",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "OpenRent",
+      "slug": "openrent",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50349755",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "London, UK",
+        "Full-Time",
+        "ONSITE+PART REMOTE"
+      ],
+      "industry": "Marketing & Sales Tech",
+      "industry_grade": "B+",
+      "industry_score": 7,
+      "summary": "OpenRent | London, UK | Full-Time | ONSITE+PART REMOTE | https://www.openrent.co.uk What sucked the last time you rented a house or flat? Come and fix it. OpenRent is force for good in an industry tarnished by rip-off agencies and one of th",
+      "role_signal": "domain_match",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "PlantingSpace",
+      "slug": "plantingspace",
+      "website": "",
+      "domain": "",
+      "source_id": "hacker_news",
+      "source_url": "https://news.ycombinator.com/item?id=50350077",
+      "batch_or_round": "HN Who Is Hiring",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "Full-time",
+        "Remote (EU time zone) + Quarterly Meet-ups",
+        "https://planting.space"
+      ],
+      "industry": "Trading & Finance",
+      "industry_grade": "B",
+      "industry_score": 6,
+      "summary": "PlantingSpace | Full-time | Remote (EU time zone) + Quarterly Meet-ups | https://planting.space We're building a system that represents domain knowledge as modular probabilistic models \u2014 making analysis rigorous and transparent. Users can c",
+      "role_signal": "product manager",
+      "sources_seen": [
+        "hacker_news"
+      ]
+    },
+    {
+      "company_name": "From GIVA To EloElo Group \u2014 Indian Startups Raised",
+      "slug": "from-giva-to-eloelo-group-indian-startups-raised",
+      "website": "",
+      "domain": "",
+      "source_id": "inc42",
+      "source_url": "https://inc42.com/buzz/from-giva-to-eloelo-group-indian-startups-raised-255-mn-this-week/",
+      "batch_or_round": "Funding News",
+      "investors": [],
+      "investor_tier": 0,
+      "team_size": 0,
+      "locations": [
+        "India"
+      ],
+      "industry": "Other",
+      "industry_grade": "C",
+      "industry_score": 3,
+      "summary": "From GIVA To EloElo Group \u2014 Indian Startups Raised $255 Mn This Week \u2014 Startup funding activity gathered steam in the first week of November. As per Inc42 data, 20 Indian startups cumulatively raised\u2026",
+      "role_signal": "fresh_funding_round",
+      "sources_seen": [
+        "inc42"
+      ]
+    }
+  ]
+}

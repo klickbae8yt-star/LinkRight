@@ -1,0 +1,24 @@
+# Workflow config template, BMAD aligned. Copy this to workflows/<code>/workflow.yaml
+# One file per workflow. Names the agents in order and the shared config they all use.
+
+workflow:
+  code: ""                 # stable id, kebab-case
+  name: ""                 # human name, for example Voice Building
+  purpose: ""              # one line, what this workflow delivers
+  cadence: ""              # once | per post | weekly | monthly | cross cutting
+
+  config_source: knowledge-base/   # where shared knowledge resolves from
+  output_folder: ""        # where the primary deliverable lands
+
+  agents:                  # run order, each name maps to agents/<code>/<name>.agent.yaml
+    - ""
+
+  validation: ""           # the eval that gates the whole workflow output
+  primary_output: ""       # the main template this workflow produces
+
+  inputs:                  # files this workflow needs before it can start
+    - ""
+
+  execution_hints:
+    interactive: false     # true if any agent needs the owner live
+    resumable: true        # state saved between agents in the run folder

@@ -1,0 +1,16 @@
+{
+  "source_id": "producthunt",
+  "name": "Product Hunt — New AI Product Launches",
+  "status": "needs_har",
+  "url_to_visit": "https://www.producthunt.com/topics/artificial-intelligence",
+  "what_to_do": "Visit the AI topic page, let it load, export HAR",
+  "expected_api_pattern": "api.producthunt.com/v2/api/graphql (GraphQL)",
+  "output_shape": "list of products with name, tagline, votes, makers, website, topics",
+  "filters": {
+    "min_votes": 100,
+    "topics": ["Artificial Intelligence", "Productivity", "Developer Tools", "Hiring"],
+    "time_window": "last_30_days"
+  },
+  "notes": "Products with 200+ upvotes in AI category = real traction. Maker profile links to LinkedIn. Use to find small well-funded teams before they raise."
+}
+

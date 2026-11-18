@@ -1,0 +1,11 @@
+{
+  "source_id": "surge_peakxv",
+  "name": "Surge by Peak XV Partners (Sequoia India)",
+  "status": "needs_har",
+  "url_to_visit": "https://www.surgeahead.com/companies",
+  "what_to_do": "Visit the portfolio page, let all companies load, export HAR",
+  "expected_api_pattern": "CMS or JSON feed powering the portfolio grid",
+  "output_shape": "list of companies with name, description, sector, website",
+  "notes": "Peak XV = Sequoia India. Surge portfolio = pre-vetted by Tier 1 Indian VC. Automatically passes investor quality filter. Focus: India-first, B2C, fintech, AI."
+}
+

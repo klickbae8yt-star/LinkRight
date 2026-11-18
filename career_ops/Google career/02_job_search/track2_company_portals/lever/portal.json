@@ -1,0 +1,72 @@
+{
+  "portal_id": "lever",
+  "company": "Lever ATS (Multi-Company Template)",
+  "enabled": true,
+  "parser_type": "lever_v0",
+  "search_query": "Product Manager",
+  "search_location": "Remote",
+  "max_jobs": 0,
+  "max_pages": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://api.lever.co/v0/postings/{{company_slug}}",
+    "query": {
+      "mode": "json",
+      "limit": "250"
+    },
+    "headers": {
+      "Accept": "application/json",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+    },
+    "body": null
+  },
+  "parser_config": {
+    "items_path": "$",
+    "fields": {
+      "job_id": "id",
+      "title": "text",
+      "locations": "workplaceType",
+      "job_url": "hostedUrl",
+      "apply_url": "applyUrl",
+      "about_the_job": "descriptionPlain",
+      "job_published_at": "createdAt",
+      "department": "categories.department",
+      "commitment": "categories.commitment",
+      "team": "categories.team"
+    }
+  },
+  "company_slugs": [
+    "netflix",
+    "shopify",
+    "reddit",
+    "discord",
+    "duolingo",
+    "flexport",
+    "postman",
+    "benchling",
+    "carta",
+    "convoy",
+    "devoted-health",
+    "gem",
+    "gong",
+    "highspot",
+    "hubspot",
+    "intercom",
+    "lattice",
+    "lyft",
+    "mindsdb",
+    "mixpanel",
+    "mulesoft",
+    "new-relic",
+    "pendo",
+    "sentry",
+    "shipbob",
+    "sprinklr",
+    "twilio",
+    "amplitude",
+    "appcues",
+    "attentive"
+  ],
+  "notes": "Template portal: loops over company_slugs. Lever public API: api.lever.co/v0/postings/<slug>?mode=json&limit=250. No auth needed. createdAt is Unix ms timestamp — convert in parser."
+}
+

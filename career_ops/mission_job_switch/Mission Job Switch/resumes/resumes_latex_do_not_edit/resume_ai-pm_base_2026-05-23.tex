@@ -1,0 +1,203 @@
+%-------------------------
+% Satvik Jain — AI Product Manager
+% FAANGPath Simple Template (A4)
+% All bullets verified via \savebox loop — 95–100% of 492.39783pt
+% No action verb repeated more than once across bullets
+%-------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-2pt}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\parfillskip=0pt}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+  \textbf{\Huge \scshape Satvik Jain} \\ \vspace{1pt}
+  \small +91-7678296693 $|$
+  \href{mailto:satvik.jain@iitdalumni.com}{\underline{satvik.jain@iitdalumni.com}} $|$
+  \href{https://linkedin.com/in/satvik-jain-iitd}{\underline{LinkedIn}} $|$
+  \href{https://github.com/satvik-jain-iitd}{\underline{GitHub}} $|$
+  \href{https://drive.google.com/drive/folders/1f8WyRNSA2u6x0BmSugD6U01G9yxWTtj-}{\underline{AI Songs}}
+\end{center}
+
+%---------- SUMMARY ----------
+\section{Summary}
+AI Product Manager with 4+ years building AI-powered data products in production.
+Designed GenAI root-cause pipeline for Walmart (100K+ monthly contacts; 7 days $\rightarrow$ same-day insight).
+Built LLM evaluation framework, fabrication guard system, and 9 self-hosted models solo for LinkRight.
+Hands-on with SQL, Python, prompt engineering, and ML deployment. Not just AI feature roadmaps.
+IIT Delhi.
+
+%---------- EXPERIENCE ----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {American Express}{Jul 2024 -- Present}
+    {Senior Associate Product Manager}{Gurugram, India}
+  \resumeItemListStart
+    \resumeItem{Sole PM on CRR for \textbf{10 consecutive sprints}; shipped \textbf{60+ features}: rule engine, asset mgmt, versioning, audit trail}
+    \resumeItem{Built LLM Grooming bot; ranked \textbf{\#21 of 400+ teams (Top 6\%)} at AmEx Hackathon; productionized as \textbf{QE Assist}}
+    \resumeItem{Drove \textbf{80\% AI-assisted story drafting} via ChatGPT Enterprise; cut manual story-writing across all sprint meetings}
+    \resumeItem{Earned \textbf{Leadership in Action Award} from SVP Risk (6 months); rated \textbf{G1L2}, top Band 30 PO in org; \textbf{120\% bonus}}
+    \resumeItem{Delivered \textbf{4 zero-spillover PIs} as sole PM; absorbed 2 strategy pivots, reprioritizing entire backlog within 1 week each}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Sprinklr}{Apr 2022 -- Jul 2024}
+    {Senior Product Analyst}{Gurugram, India}
+  \resumeItemListStart
+    \resumeItem{Led Walmart GenAI root-cause analysis pipeline across \textbf{6 data sources}, covering \textbf{100K+ monthly driver contacts}}
+    \resumeItem{Architected L1/L2/L3 issue taxonomy and unsupervised ML clustering pipeline; cut latency from \textbf{7 days to same-day}}
+    \resumeItem{Secured \textbf{\$1.2M TCV} POC-to-deal and \textbf{\$9M+ Q4 pipeline}; GenAI pipeline foundation closed \textbf{\$2M follow-on deal}}
+    \resumeItem{Lifted Arabic sentiment \textbf{F1 +11\%}, intuition \textbf{+13\%}; Qatar Sharek, Prime Minister's Office; \textbf{40 ministries}, \$32M TCV}
+    \resumeItem{Unified Adobe Earned / Organic / Paid data via SQL; built spam detection model \textbf{F1 = 87\%} using Sprinklr AI Studio}
+  \resumeItemListEnd
+
+  \resumeSubSubheading
+    {Product Analyst}{Apr 2022 -- Apr 2023}
+  \resumeItemListStart
+    \resumeItem{Ranked \textbf{\#1 globally} among all Sprinklr POs in 6 months (\textbf{10/10 CSAT}); only PO promoted at 11 months out of 8}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%---------- VENTURES & ADVISORY ----------
+\section{Ventures \& Advisory}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{ContentStack} $|$ \emph{Freelance AI PM}}{Nov 2024 -- Jun 2025}
+  \resumeItemListStart
+    \resumeItem{Shipped \textbf{6 AI features} (Compose AI, DesignerAI, Lens); PRDs, LLM eval, \textbf{10+ competitor} benchmarks, wireframes, prompt engineering}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{GoGoGo} $|$ \emph{Angel Investor}: pre-seed ride-hailing (Indore); backed, advised on product \& GTM; \textbf{$\sim$Rs.2.5Cr raised}}{}
+  \resumeItemListStart
+    \resumeItem{Built brand + GTM: AI anthem, AI video, LinkedIn automation; drove driver acquisition and founding team onboarding}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Navii (HeyNavii)} $|$ \emph{Beta Growth PM}}{2025}
+  \resumeItemListStart
+    \resumeItem{User base \textbf{2K $\rightarrow$ 20K} during beta; built N8N automations + Chrome extension; logged \textbf{14 bugs} + \textbf{9 enhancements}}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- PROJECTS ----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{LinkRight} $|$ \emph{Founder \& Solo Engineer}}{Jun 2025 -- Present}
+  \resumeItemListStart
+    \resumeItem{Designed and built solo LLM pipeline: hybrid resume parser, \textbf{16-dim eval scorecard}, fabrication guard, feedback loop}
+    \resumeItem{Deployed \textbf{9 self-hosted LLMs} on Oracle VPS (Ollama, fallback chain); built FastAPI backend, CLI published to \textbf{PyPI}}
+    \resumeItem{Validated via \textbf{147-response} survey + \textbf{7,000+} cold-reached; shipped \textbf{44/57 features (77\%)} in 11 months}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Sukha Education} $|$ \emph{Strategy Consultant (GGI)}}{Jan 2025 -- May 2025}
+  \resumeItemListStart
+    \resumeItem{Launched digital transformation for Chennai NGO (2,000+ students); Salesforce + Workspace rollout; \textbf{$\sim$Rs.60K/year}}
+  \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+%---------- SKILLS ----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{AI/ML:}{ LLM Pipeline Design, Prompt Engineering, RAG Architecture, Evaluation Frameworks, Fabrication Guard Systems, NLP, Sentiment Analysis, Embeddings, Vector Databases, Self-Hosted LLMs (Ollama), LangChain, Fine-Tuning, Supervised \& Unsupervised ML, Feature Engineering, MLOps, AI Safety, Model Evaluation} \\
+    \textbf{Product:}{ AI Product Strategy, PRD Writing, Roadmapping, OKR/KPI Design, User Research, Go-to-Market Strategy, A/B Testing, Feature Prioritization, Customer Discovery, Competitive Analysis, North Star Metrics, SAFe Agile, PI Planning, Stakeholder Management} \\
+    \textbf{Data \& Engineering:}{ SQL (production), Python, BigQuery, FastAPI, REST APIs, Schema Design, Data Architecture, ETL Pipelines, Data Modeling, System Design, GCP, Tableau, Mixpanel, Amplitude} \\
+    \textbf{Tools:}{ JIRA, Rally, Figma, Lucidchart, ChatGPT Enterprise, N8N, PowerBI, Postman, GitHub, Confluence, Miro}
+  }}
+\end{itemize}
+
+%---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Indian Institute of Technology Delhi}{2017 -- 2021}
+    {B.Tech, Civil Engineering}{CGPA: 6.43/10}
+  \resumeItemListStart
+    \resumeItem{JEE Advanced \textbf{Rank 2446} (Top 0.002\% of 1.2M+); Class 12 \textbf{District Rank 1}, 94.2\%, 100/100 Maths \& Chemistry}
+    \resumeItem{\textbf{GGI Fellow} (2024); Scaler Academy: SQL, Excel, Tableau, Power BI, Python, Product Analytics (all 6 completed)}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- REFERENCES ----------
+\vspace{-6pt}
+\section{References}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \href{https://linkedin.com/in/pulit-sharma-36426349}{\textbf{\underline{Pulit Sharma}}} $|$ Product Mgmt \& Channel, Sprinklr $|$ (+91-8698487841) \\
+    \href{https://linkedin.com/in/pallavi-sharma-54088159}{\textbf{\underline{Pallavi Sharma}}} $|$ Sr. Product Manager, American Express $|$ (+91-9910922037) \\
+    \href{https://linkedin.com/in/kartik-bn-3770807b}{\textbf{\underline{Kartik B.N}}} $|$ Sr. Manager Customer Success, Q2 $|$ (+91-9886896571)
+  }}
+\end{itemize}
+
+\end{document}

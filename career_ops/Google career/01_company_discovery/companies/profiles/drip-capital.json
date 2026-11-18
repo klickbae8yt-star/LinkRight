@@ -1,0 +1,64 @@
+{
+  "company_slug": "drip-capital",
+  "company_name": "Drip Capital",
+  "website": "http://dripcapital.com",
+  "career_portal_url": "https://www.dripcapital.com/careers/",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "Trading & Finance",
+  "industry_grade": "B",
+  "industry_score": 6,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S15",
+  "team_size": 280,
+  "locations": [
+    "India",
+    "South Asia",
+    "Remote",
+    "Partly Remote",
+    "Mumbai, Maharashtra, India"
+  ],
+  "summary": "Digital trade finance and B2B commerce company",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/drip-capital",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/dripcapital/",
+  "founders": [
+    {
+      "name": "Pushkar Mukewar",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/pub/pushkar-mukewar/1/695/31",
+      "twitter": "",
+      "bio": "Pushkar Mukewar is the Founder & CEO of Drip, a digital trade finance and commerce platform he started in 2016 with the mission of making global trade simple and accessible for small businesses. Drip builds modern, AI-native infrastructure that streamlines credit assessment and automates end-to-end trade workflows for exporters and importers worldwide.\n\nUnder Pushkar\u2019s leadership, Drip has facilitated over $8 billion in cross-border trade, serving 11,000+ sellers and buyers across 60+ countries.",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 5,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 66,
+  "recommendation": "consider",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 5,
+    "past_exits": 0,
+    "industry_match": 6,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

@@ -1,0 +1,76 @@
+{
+  "company_slug": "circle-medical",
+  "company_name": "Circle Medical",
+  "website": "https://circlemedical.com",
+  "career_portal_url": "https://www.circlemedical.com/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S15",
+  "team_size": 235,
+  "locations": [
+    "Remote",
+    "Partly Remote"
+  ],
+  "summary": "Modern primary care via video and in-person",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/circle-medical",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/circle-medical/",
+  "founders": [
+    {
+      "name": "JS Boulanger",
+      "title": "Founder/CTO",
+      "linkedin": "https://www.linkedin.com/in/jsboulanger",
+      "twitter": "https://twitter.com/jsboulanger",
+      "bio": "Cofounder and CTO at Circle Medical.",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Brent LaRue",
+      "title": "Co-founder, VP Product & Design",
+      "linkedin": "https://www.linkedin.com/in/laruebrent",
+      "twitter": "https://twitter.com/brentlarue",
+      "bio": "Product Designer, YC Founder, Olympian.",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 44,
+  "recommendation": "watch_needs_intel",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 0,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

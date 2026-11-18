@@ -1,0 +1,69 @@
+{
+  "company_slug": "onesignal",
+  "company_name": "OneSignal",
+  "website": "https://onesignal.com",
+  "career_portal_url": "https://onesignal.com/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S11",
+  "team_size": 150,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "San Francisco"
+  ],
+  "summary": "Engage customers through personalized omni-channel messaging",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/onesignal",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/onesignal/",
+  "founders": [
+    {
+      "name": "George Deglin",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/gdeglin",
+      "twitter": "https://twitter.com/gdeglin",
+      "bio": "Technical Founder & CEO of OneSignal (YC S11 and YCG S20). OneSignal helps businesses send Push Notifications, Email, SMS, and In-App messaging to develop engaged and loyal customers.",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 20,
+      "career_signals": [
+        "google",
+        "facebook",
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 10,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 84,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 10,
+    "founder_career": 20,
+    "past_exits": 10,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": false
+}

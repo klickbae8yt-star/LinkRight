@@ -1,0 +1,27 @@
+{
+  "portal_id": "google",
+  "company": "Google",
+  "enabled": true,
+  "parser_type": "google_ds1",
+  "search_query": "\"Product Manager\"",
+  "search_location": "India",
+  "hl": "en-GB",
+  "max_jobs": 0,
+  "max_pages": 10,
+  "request": {
+    "method": "GET",
+    "url": "https://www.google.com/about/careers/applications/jobs/results",
+    "query": {
+      "q": "{{search_query}}",
+      "location": "{{search_location}}",
+      "hl": "{{hl}}"
+    },
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+      "Accept-Language": "en-US,en;q=0.9"
+    },
+    "body": null
+  },
+  "notes": "Google Careers SSR AF_initDataCallback(ds:1) plain HTTP GET, no login or cookies required."
+}
+

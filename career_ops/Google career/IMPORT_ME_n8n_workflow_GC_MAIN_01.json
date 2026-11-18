@@ -1,0 +1,739 @@
+{
+  "name": "GC MAIN 01 Multi-Portal Career API to Data Table",
+  "nodes": [
+    {
+      "id": "sticky-0",
+      "name": "Sticky Note 0",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        60,
+        60
+      ],
+      "parameters": {
+        "content": "## START HERE\n**Does:** Fault-isolated multi-portal career ingestor (active portals: google). Loops all enabled portals; if one fails, the rest still save to google_careers_jobs.\n**Triggers:** Run Search (form) or Schedule Trigger (12h).\n**Config:** Config node (dry_run, kill_switch, override flags, max_jobs).\n**Built by:** `python3 scripts/build_workflow.py`.",
+        "width": 360,
+        "height": 580,
+        "color": 5
+      }
+    },
+    {
+      "id": "sticky-1",
+      "name": "Sticky Note 1",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        620,
+        60
+      ],
+      "parameters": {
+        "content": "## 1 TRIGGERS\n**What:** Starts manually via Run Search form or automatically every 12 hours via Schedule Trigger.\n**Needs:** Nothing.",
+        "width": 360,
+        "height": 580,
+        "color": 4
+      }
+    },
+    {
+      "id": "sticky-2",
+      "name": "Sticky Note 2",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1180,
+        60
+      ],
+      "parameters": {
+        "content": "## 2 CONFIG & GATE\n**What:** Holds global defaults/overrides and stops cleanly if kill_switch is true.\n**Needs:** Config keys.",
+        "width": 440,
+        "height": 580,
+        "color": 1
+      }
+    },
+    {
+      "id": "sticky-3",
+      "name": "Sticky Note 3",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1820,
+        60
+      ],
+      "parameters": {
+        "content": "## 3 TABLE, PORTALS & FETCH\n**What:** Ensures Data Table exists, emits 1 item per enabled portal, and fetches each sequentially with continueRegularOutput so one failure never stops the rest.\n**Needs:** Enabled portals in portals/*/portal.json.",
+        "width": 680,
+        "height": 580,
+        "color": 4
+      }
+    },
+    {
+      "id": "sticky-4",
+      "name": "Sticky Note 4",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2700,
+        60
+      ],
+      "parameters": {
+        "content": "## 4 PARSE ALL PORTALS\n**What:** Fault-isolated parser per portal (skips failed portals, parses ds:1 / JSON APIs, normalizes to 35 columns).\n**Needs:** Portal Registry + Fetch Portal outputs.",
+        "width": 360,
+        "height": 580,
+        "color": 1
+      }
+    },
+    {
+      "id": "sticky-5",
+      "name": "Sticky Note 5",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        3260,
+        60
+      ],
+      "parameters": {
+        "content": "## 5 DRY RUN?\n**What:** dry_run true previews rows without saving; dry_run false sends rows to SAVE.\n**Needs:** Config: dry_run.",
+        "width": 440,
+        "height": 580,
+        "color": 1
+      }
+    },
+    {
+      "id": "sticky-6",
+      "name": "Sticky Note 6",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        3900,
+        60
+      ],
+      "parameters": {
+        "content": "## 6 SAVE\n**What:** Upserts one row per job matched on job_id.\n**Needs:** Data Table google_careers_jobs.",
+        "width": 300,
+        "height": 580,
+        "color": 3
+      }
+    },
+    {
+      "id": "4130b4c6-45f7-476d-bb8a-a4863807fd90",
+      "name": "Run Search",
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "webhookId": "5b976384-a024-49b9-a2a6-82a262c46d23",
+      "parameters": {
+        "formTitle": "Career Portals Direct Search",
+        "formDescription": "Leave blank to use each portal's configured query/location.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "search_query",
+              "fieldType": "text",
+              "placeholder": "\"Product Manager\"",
+              "requiredField": false
+            },
+            {
+              "fieldLabel": "search_location",
+              "fieldType": "text",
+              "placeholder": "India",
+              "requiredField": false
+            }
+          ]
+        },
+        "responseMode": "lastNode",
+        "options": {
+          "respondWithOptions": {
+            "values": {
+              "formSubmittedText": "Done. Open Data Table google_careers_jobs to view results."
+            }
+          }
+        }
+      },
+      "position": [
+        740,
+        260
+      ]
+    },
+    {
+      "id": "6c77c015-2dbc-4fcb-aebe-c15f78412cff",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 12
+            }
+          ]
+        }
+      },
+      "position": [
+        740,
+        440
+      ]
+    },
+    {
+      "id": "843f2e0f-d039-477a-a4db-f59d84fc223c",
+      "name": "Config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "parameters": {
+        "mode": "manual",
+        "assignments": {
+          "assignments": [
+            {
+              "id": "1f184688-6073-4809-aef4-ca8500776fde",
+              "name": "table_name",
+              "value": "google_careers_jobs",
+              "type": "string"
+            },
+            {
+              "id": "35282a5c-4dfd-42b9-be8d-934c407b8026",
+              "name": "kill_switch",
+              "value": false,
+              "type": "boolean"
+            },
+            {
+              "id": "acc03f91-30e0-4a11-9436-a6a62819c958",
+              "name": "dry_run",
+              "value": false,
+              "type": "boolean"
+            },
+            {
+              "id": "8e8a4001-1111-4000-8000-000000000001",
+              "name": "search_query",
+              "value": "={{ ($json.search_query || '').trim() || '\"Product Manager\"' }}",
+              "type": "string"
+            },
+            {
+              "id": "8e8a4001-1111-4000-8000-000000000002",
+              "name": "search_location",
+              "value": "={{ ($json.search_location || '').trim() || 'India' }}",
+              "type": "string"
+            },
+            {
+              "id": "8e8a4001-1111-4000-8000-000000000005",
+              "name": "override_query",
+              "value": "={{ Boolean(($json.search_query || '').trim()) }}",
+              "type": "boolean"
+            },
+            {
+              "id": "8e8a4001-1111-4000-8000-000000000006",
+              "name": "override_location",
+              "value": "={{ Boolean(($json.search_location || '').trim()) }}",
+              "type": "boolean"
+            },
+            {
+              "id": "10b5212e-ce44-4a69-90d8-e05e93e0d117",
+              "name": "max_jobs",
+              "value": 0,
+              "type": "number"
+            },
+            {
+              "id": "8e8a4001-1111-4000-8000-000000000003",
+              "name": "max_pages",
+              "value": 10,
+              "type": "number"
+            },
+            {
+              "id": "8e8a4001-1111-4000-8000-000000000004",
+              "name": "hl",
+              "value": "en-GB",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": false,
+        "options": {}
+      },
+      "position": [
+        1240,
+        320
+      ]
+    },
+    {
+      "id": "dd3ffba0-331f-43ba-9a0e-2f4aeaa183ba",
+      "name": "Kill switch off?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "8ed63348-e6be-43fd-a936-f27dc1dff81f",
+              "leftValue": "={{ $json.kill_switch }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "position": [
+        1460,
+        320
+      ]
+    },
+    {
+      "id": "d598f3af-333f-49fb-93b9-e4c35a416f21",
+      "name": "Ensure Data table",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "executeOnce": true,
+      "parameters": {
+        "resource": "table",
+        "operation": "create",
+        "tableName": "={{ $('Config').first().json.table_name }}",
+        "columns": {
+          "column": [
+            {
+              "name": "job_id",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "company",
+              "type": "string"
+            },
+            {
+              "name": "is_product_manager_role",
+              "type": "boolean"
+            },
+            {
+              "name": "experience_level",
+              "type": "string"
+            },
+            {
+              "name": "experience_level_code",
+              "type": "number"
+            },
+            {
+              "name": "experience_level_description",
+              "type": "string"
+            },
+            {
+              "name": "min_years_experience",
+              "type": "number"
+            },
+            {
+              "name": "locations",
+              "type": "string"
+            },
+            {
+              "name": "primary_location",
+              "type": "string"
+            },
+            {
+              "name": "location_count",
+              "type": "number"
+            },
+            {
+              "name": "cities",
+              "type": "string"
+            },
+            {
+              "name": "country_codes",
+              "type": "string"
+            },
+            {
+              "name": "has_india_location",
+              "type": "boolean"
+            },
+            {
+              "name": "locations_json",
+              "type": "string"
+            },
+            {
+              "name": "remote_eligible",
+              "type": "boolean"
+            },
+            {
+              "name": "education_levels",
+              "type": "string"
+            },
+            {
+              "name": "minimum_qualifications",
+              "type": "string"
+            },
+            {
+              "name": "preferred_qualifications",
+              "type": "string"
+            },
+            {
+              "name": "about_the_job",
+              "type": "string"
+            },
+            {
+              "name": "responsibilities",
+              "type": "string"
+            },
+            {
+              "name": "applicant_notes",
+              "type": "string"
+            },
+            {
+              "name": "location_note",
+              "type": "string"
+            },
+            {
+              "name": "job_url",
+              "type": "string"
+            },
+            {
+              "name": "apply_url",
+              "type": "string"
+            },
+            {
+              "name": "job_created_at",
+              "type": "date"
+            },
+            {
+              "name": "job_published_at",
+              "type": "date"
+            },
+            {
+              "name": "job_updated_at",
+              "type": "date"
+            },
+            {
+              "name": "search_query",
+              "type": "string"
+            },
+            {
+              "name": "search_location",
+              "type": "string"
+            },
+            {
+              "name": "search_result_rank",
+              "type": "number"
+            },
+            {
+              "name": "source_page_url",
+              "type": "string"
+            },
+            {
+              "name": "page_saved_at",
+              "type": "date"
+            },
+            {
+              "name": "detail_status",
+              "type": "string"
+            },
+            {
+              "name": "last_scraped_at",
+              "type": "date"
+            }
+          ]
+        },
+        "options": {
+          "createIfNotExists": true
+        }
+      },
+      "position": [
+        1880,
+        320
+      ]
+    },
+    {
+      "id": "b7781d83-acd4-4370-8d5d-ba2876e873ff",
+      "name": "Portal Registry",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "// Code node: \"Portal Registry\" (generated by scripts/build_workflow.py)\n// Emits 1 item per enabled portal with resolved URL, method, headers, and parser metadata.\nconst cfg = $('Config').first().json;\nconst PORTALS = [\n  {\n    \"portal_id\": \"google\",\n    \"company\": \"Google\",\n    \"enabled\": true,\n    \"parser_type\": \"google_ds1\",\n    \"search_query\": \"\\\"Product Manager\\\"\",\n    \"search_location\": \"India\",\n    \"hl\": \"en-GB\",\n    \"max_jobs\": 0,\n    \"max_pages\": 10,\n    \"request\": {\n      \"method\": \"GET\",\n      \"url\": \"https://www.google.com/about/careers/applications/jobs/results\",\n      \"query\": {\n        \"q\": \"{{search_query}}\",\n        \"location\": \"{{search_location}}\",\n        \"hl\": \"{{hl}}\"\n      },\n      \"headers\": {\n        \"User-Agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36\",\n        \"Accept-Language\": \"en-US,en;q=0.9\"\n      },\n      \"body\": null\n    },\n    \"notes\": \"Google Careers SSR AF_initDataCallback(ds:1) plain HTTP GET, no login or cookies required.\"\n  }\n];\n\nfunction resolveTemplate(val, ctx) {\n  if (typeof val === 'string') {\n    return val\n      .replace(/\\{\\{search_query\\}\\}/g, ctx.search_query)\n      .replace(/\\{\\{search_location\\}\\}/g, ctx.search_location)\n      .replace(/\\{\\{hl\\}\\}/g, ctx.hl);\n  }\n  if (Array.isArray(val)) return val.map(v => resolveTemplate(v, ctx));\n  if (val && typeof val === 'object') {\n    const out = {};\n    for (const [k, v] of Object.entries(val)) out[k] = resolveTemplate(v, ctx);\n    return out;\n  }\n  return val;\n}\n\nfunction buildUrl(base, queryObj) {\n  const parts = [];\n  for (const [k, v] of Object.entries(queryObj || {})) {\n    if (v === null || v === undefined || String(v).trim() === '') continue;\n    parts.push(`${encodeURIComponent(k)}=${encodeURIComponent(String(v))}`);\n  }\n  if (!parts.length) return base;\n  return `${base}${base.includes('?') ? '&' : '?'}${parts.join('&')}`;\n}\n\nconst out = [];\nfor (const p of PORTALS) {\n  const query = cfg.override_query ? cfg.search_query : (p.search_query || cfg.search_query);\n  const location = cfg.override_location ? cfg.search_location : (p.search_location || cfg.search_location);\n  const hl = String(p.hl || cfg.hl || 'en-GB');\n  const ctx = { search_query: query, search_location: location, hl };\n  const req = p.request || {};\n  const resolvedQuery = resolveTemplate(req.query || {}, ctx);\n  const requestUrl = buildUrl(req.url, resolvedQuery);\n  const resolvedBody = req.body ? resolveTemplate(req.body, ctx) : null;\n\n  out.push({\n    json: {\n      portal_id: p.portal_id,\n      company: p.company,\n      parser_type: p.parser_type,\n      search_query: query,\n      search_location: location,\n      hl,\n      max_jobs: Number(cfg.max_jobs) || Number(p.max_jobs) || 0,\n      max_pages: Math.max(1, Number(cfg.max_pages) || Number(p.max_pages) || 10),\n      request_method: String(req.method || 'GET').toUpperCase(),\n      request_url: requestUrl,\n      request_headers: req.headers || {},\n      request_body: resolvedBody,\n      parser_config: p.parser_config || {},\n    },\n  });\n}\nreturn out;\n"
+      },
+      "position": [
+        2100,
+        320
+      ]
+    },
+    {
+      "id": "9af7aae5-c9b3-4960-bd8d-7f72e56bbc04",
+      "name": "Fetch Portal",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "retryOnFail": true,
+      "maxTries": 2,
+      "waitBetweenTries": 3000,
+      "onError": "continueRegularOutput",
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $json.request_url }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            }
+          ]
+        },
+        "options": {
+          "batching": {
+            "batch": {
+              "batchSize": 1,
+              "batchInterval": 1000
+            }
+          },
+          "response": {
+            "response": {
+              "responseFormat": "text",
+              "outputPropertyName": "body"
+            }
+          },
+          "timeout": 30000
+        }
+      },
+      "position": [
+        2320,
+        320
+      ]
+    },
+    {
+      "id": "19a67470-8cfa-4687-af7e-6fd18fe7d55f",
+      "name": "Parse Portal Jobs",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "// Code node: \"Parse Portal Jobs\" (mode: Run Once for All Items)\n// Fault-isolated multi-portal parser: if one portal fails, logs it and keeps all healthy portals' jobs.\nconst portals = $('Portal Registry').all().map(i => i.json);\nconst responses = $input.all().map(i => i.json || {});\nif (responses.length !== portals.length) {\n  throw new Error(`Portal count mismatch: ${portals.length} portals vs ${responses.length} responses.`);\n}\n\nconst LEVELS = {\n  1: ['Early', 'Experience completing work as directed and collaborating with teammates; developing knowledge of relevant concepts and processes.'],\n  2: ['Mid', 'Experience driving progress, solving problems and mentoring more junior team members; deeper expertise and applied knowledge within relevant areas.'],\n  3: ['Advanced', 'Experience owning outcomes and decision making, solving ambiguous problems and influencing stakeholders; deep expertise in a domain.'],\n  4: ['Director', 'Experience leading teams and defining long-term product and organizational strategy across multiple domains.'],\n};\nconst DEGREES = { 1: 'Associate', 2: \"Bachelor's\", 3: \"Master's\", 4: 'PhD' };\nconst now = new Date().toISOString();\nconst httpReq = (typeof helpers !== 'undefined' && helpers && helpers.httpRequest) || (this && this.helpers && this.helpers.httpRequest);\n\nfunction decodeEntities(s) {\n  return String(s || '')\n    .replace(/&nbsp;/g, ' ').replace(/&quot;/g, '\"').replace(/&#39;|&apos;/g, \"'\")\n    .replace(/&lt;/g, '<').replace(/&gt;/g, '>')\n    .replace(/&#(\\d+);/g, (_, n) => String.fromCodePoint(Number(n)))\n    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))\n    .replace(/&amp;/g, '&');\n}\nfunction text(html) {\n  return decodeEntities(String(html || '')\n    .replace(/<br\\s*\\/?>/gi, '\\n').replace(/<\\/(p|div|h\\d|li)>/gi, '\\n').replace(/<[^>]+>/g, ''))\n    .replace(/[ \\t]+/g, ' ').replace(/\\s*\\n\\s*\\n\\s*/g, '\\n\\n').replace(/[ \\t]*\\n[ \\t]*/g, '\\n').trim();\n}\nfunction bullets(html) {\n  const out = [];\n  const re = /<li[^>]*>([\\s\\S]*?)<\\/li>/gi;\n  let m;\n  while ((m = re.exec(html || ''))) {\n    const t = text(m[1]).replace(/\\n+/g, ' ').trim();\n    if (t) out.push('- ' + t);\n  }\n  return out.join('\\n');\n}\nfunction section(html, re) { return (String(html || '').match(re) || [])[1] || ''; }\nfunction rich(cell) { return Array.isArray(cell) ? (cell[1] || '') : (typeof cell === 'string' ? cell : ''); }\nfunction ts(cell) {\n  if (!Array.isArray(cell) || typeof cell[0] !== 'number') return null;\n  return new Date(cell[0] * 1000 + Math.floor((cell[1] || 0) / 1e6)).toISOString();\n}\nfunction slugify(title) {\n  return String(title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');\n}\nfunction getPath(obj, dotted) {\n  let cur = obj;\n  for (const part of String(dotted || '').split('.')) {\n    if (!part) continue;\n    if (cur && typeof cur === 'object') cur = cur[part];\n    else return null;\n  }\n  return cur;\n}\nfunction appendPageParam(url, pageNum) {\n  if (pageNum <= 1) return url;\n  return `${url}${url.includes('?') ? '&' : '?'}page=${encodeURIComponent(String(pageNum))}`;\n}\nfunction extractDs1(html) {\n  const m = html.match(/AF_initDataCallback\\(\\{key:\\s*'ds:1'[^}]*?data:(\\[)/);\n  if (!m) throw new Error('Could not locate ds:1 payload in Google Careers HTML.');\n  const start = m.index + m[0].length - 1;\n  let depth = 0, inStr = false, esc = false;\n  for (let i = start; i < html.length; i++) {\n    const c = html[i];\n    if (inStr) {\n      if (esc) esc = false;\n      else if (c === '\\\\') esc = true;\n      else if (c === '\"') inStr = false;\n    } else {\n      if (c === '\"') inStr = true;\n      else if (c === '[') depth++;\n      else if (c === ']') {\n        depth--;\n        if (depth === 0) return JSON.parse(html.slice(start, i + 1));\n      }\n    }\n  }\n  throw new Error('Unterminated ds:1 JSON array.');\n}\n\nfunction mapGoogleJob(job, portal, sourceUrl, rank) {\n  const BASE_URL = 'https://www.google.com/about/careers/applications/jobs/results';\n  const jobId = String(job[0] || '');\n  const title = String(job[1] || '');\n  const qual = rich(job[4]);\n  const minQ = bullets(section(qual, /Minimum qualifications:?<\\/h3>\\s*<ul>([\\s\\S]*?)<\\/ul>/i)) || bullets(rich(job[19]));\n  const prefQ = bullets(section(qual, /Preferred qualifications:?<\\/h3>\\s*<ul>([\\s\\S]*?)<\\/ul>/i));\n  const resp = bullets(rich(job[3])) || text(rich(job[3]));\n  const about = text(rich(job[10]));\n  const notes = text(rich(job[15]));\n  const locNote = text(rich(job[18]));\n  const applyUrl = typeof job[2] === 'string' ? job[2] : '';\n  const levelCode = typeof job[20] === 'number' ? job[20] : null;\n  const [levelName, levelDesc] = LEVELS[levelCode] || [null, null];\n  const eduCodes = Array.isArray(job[11]) ? job[11].filter(n => typeof n === 'number') : [];\n  const locs = (Array.isArray(job[9]) ? job[9] : []).map(l => ({\n    display: l[0] || null, city: l[2] || null, region: l[4] || null, country: l[5] || null,\n  }));\n  const display = locs.map(l => l.display).filter(Boolean);\n  const remote = /Remote (eligible|location)/i.test(`${notes} ${locNote}`);\n  const years = (minQ.match(/(\\d+)\\+?\\s+years? of experience/i) || [])[1];\n  const slug = slugify(title);\n  const jobUrl = slug ? `${BASE_URL}/${jobId}-${slug}` : `${BASE_URL}/${jobId}`;\n\n  return {\n    job_id: jobId,\n    title,\n    company: job[7] || portal.company || null,\n    is_product_manager_role: /product (manager|lead|management)/i.test(title),\n    experience_level: levelName,\n    experience_level_code: levelCode,\n    experience_level_description: levelDesc,\n    min_years_experience: years ? Number(years) : null,\n    locations: display.join('; '),\n    primary_location: display[0] || null,\n    location_count: display.length,\n    cities: [...new Set(locs.map(l => l.city).filter(Boolean))].join('; ') || null,\n    country_codes: [...new Set(locs.map(l => l.country).filter(Boolean))].join(', ') || null,\n    has_india_location: /India/i.test(display.join(' ')) || locs.some(l => l.country === 'IN'),\n    locations_json: locs.length ? JSON.stringify(locs) : null,\n    remote_eligible: remote,\n    education_levels: eduCodes.length ? `${eduCodes.map(c => DEGREES[c] || `code ${c}`).join(', ')} [${eduCodes.join(',')}]` : null,\n    minimum_qualifications: minQ || null,\n    preferred_qualifications: prefQ || null,\n    about_the_job: about || null,\n    responsibilities: resp || null,\n    applicant_notes: notes || null,\n    location_note: locNote || null,\n    job_url: jobUrl,\n    apply_url: applyUrl || null,\n    job_created_at: ts(job[12]),\n    job_published_at: ts(job[13]),\n    job_updated_at: ts(job[14]),\n    search_query: portal.search_query || null,\n    search_location: portal.search_location || null,\n    search_result_rank: rank,\n    source_page_url: sourceUrl,\n    page_saved_at: now,\n    detail_status: 'ok',\n    last_scraped_at: now,\n  };\n}\n\nfunction mapGenericJob(item, portal, rank) {\n  const pc = portal.parser_config || {};\n  const fm = pc.fields || {};\n  const rawId = String(getPath(item, fm.job_id || 'id') || rank);\n  const jobId = portal.portal_id === 'google' ? rawId : `${portal.portal_id}:${rawId}`;\n  const title = String(getPath(item, fm.title || 'title') || '');\n  const rawLoc = getPath(item, fm.locations || 'location');\n  const locStr = rawLoc && typeof rawLoc === 'object' ? String(rawLoc.name || '') : String(rawLoc || '');\n  return {\n    job_id: jobId,\n    title,\n    company: portal.company || null,\n    is_product_manager_role: /product (manager|lead|management)/i.test(title),\n    experience_level: null,\n    experience_level_code: null,\n    experience_level_description: null,\n    min_years_experience: null,\n    locations: locStr,\n    primary_location: locStr ? locStr.split(';')[0].trim() : null,\n    location_count: locStr ? 1 : 0,\n    cities: null,\n    country_codes: null,\n    has_india_location: /India/i.test(locStr),\n    locations_json: null,\n    remote_eligible: /remote/i.test(locStr),\n    education_levels: null,\n    minimum_qualifications: null,\n    preferred_qualifications: null,\n    about_the_job: text(getPath(item, fm.about_the_job || 'description')) || null,\n    responsibilities: null,\n    applicant_notes: null,\n    location_note: null,\n    job_url: getPath(item, fm.job_url || 'url') || null,\n    apply_url: getPath(item, fm.apply_url || 'applyUrl') || null,\n    job_created_at: null,\n    job_published_at: getPath(item, fm.job_published_at || 'publishedAt') || null,\n    job_updated_at: null,\n    search_query: portal.search_query || null,\n    search_location: portal.search_location || null,\n    search_result_rank: rank,\n    source_page_url: portal.request_url,\n    page_saved_at: now,\n    detail_status: 'ok',\n    last_scraped_at: now,\n  };\n}\n\nconst allRows = [];\nconst failedPortals = [];\nconst seenIds = new Set();\n\nfor (let i = 0; i < portals.length; i++) {\n  const portal = portals[i];\n  const resp = responses[i];\n  try {\n    if (resp.error) {\n      throw new Error(resp.error.message || JSON.stringify(resp.error));\n    }\n    const bodyText = typeof resp.body === 'string' ? resp.body : (typeof resp.data === 'string' ? resp.data : '');\n    if (!bodyText && typeof resp.body !== 'object') {\n      throw new Error('Empty response body');\n    }\n\n    if (portal.parser_type === 'google_ds1') {\n      const ds1 = extractDs1(bodyText);\n      const page1Jobs = Array.isArray(ds1[0]) ? ds1[0] : [];\n      const total = typeof ds1[2] === 'number' ? ds1[2] : page1Jobs.length;\n      const pageSize = typeof ds1[3] === 'number' ? ds1[3] : 20;\n      const pages = [{ url: portal.request_url, jobs: page1Jobs }];\n\n      const want = portal.max_jobs > 0 ? Math.min(portal.max_jobs, total) : total;\n      const totalPages = Math.min(portal.max_pages || 10, Math.ceil(want / Math.max(1, pageSize)));\n      for (let p = 2; p <= totalPages; p++) {\n        if (typeof httpReq !== 'function') break;\n        const pageUrl = appendPageParam(portal.request_url, p);\n        const nextHtml = await httpReq({\n          method: 'GET',\n          url: pageUrl,\n          headers: portal.request_headers || {},\n          returnFullResponse: false,\n        });\n        const dsNext = extractDs1(String(nextHtml || ''));\n        const nextJobs = Array.isArray(dsNext[0]) ? dsNext[0] : [];\n        if (!nextJobs.length) break;\n        pages.push({ url: pageUrl, jobs: nextJobs });\n      }\n\n      let rank = 0;\n      for (const pg of pages) {\n        for (const job of pg.jobs) {\n          const jid = String(job[0] || '');\n          if (!jid || seenIds.has(jid)) continue;\n          seenIds.add(jid);\n          rank++;\n          allRows.push({ json: mapGoogleJob(job, portal, pg.url, rank) });\n          if (portal.max_jobs > 0 && rank >= portal.max_jobs) break;\n        }\n        if (portal.max_jobs > 0 && rank >= portal.max_jobs) break;\n      }\n    } else {\n      const parsed = typeof resp.body === 'object' ? resp.body : JSON.parse(bodyText);\n      const pc = portal.parser_config || {};\n      const itemsPath = pc.items_path || 'jobs';\n      const items = (itemsPath === '$' || itemsPath === '') ? parsed : getPath(parsed, itemsPath);\n      if (!Array.isArray(items)) throw new Error(`Expected array at items_path=\"${itemsPath}\"`);\n      const qFilter = String(portal.search_query || '').replace(/\"/g, '').toLowerCase();\n      const lFilter = String(portal.search_location || '').toLowerCase();\n      let rank = 0;\n      for (const item of items) {\n        const mapped = mapGenericJob(item, portal, rank + 1);\n        if (qFilter && !mapped.title.toLowerCase().includes(qFilter)) continue;\n        if (lFilter && !mapped.locations.toLowerCase().includes(lFilter)) continue;\n        if (seenIds.has(mapped.job_id)) continue;\n        seenIds.add(mapped.job_id);\n        rank++;\n        mapped.search_result_rank = rank;\n        allRows.push({ json: mapped });\n        if (portal.max_jobs > 0 && rank >= portal.max_jobs) break;\n      }\n    }\n  } catch (err) {\n    failedPortals.push({ portal_id: portal.portal_id, error: err && err.message ? err.message : String(err) });\n  }\n}\n\nif (allRows.length === 0 && failedPortals.length === portals.length) {\n  throw new Error('All portals failed: ' + JSON.stringify(failedPortals));\n}\nreturn allRows;\n"
+      },
+      "position": [
+        2820,
+        320
+      ]
+    },
+    {
+      "id": "6ee36fdd-db80-4261-8878-be16b9acb71b",
+      "name": "Dry run?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "6fc8c2ad-2af2-4af0-8e10-ba21bfa4c89c",
+              "leftValue": "={{ $('Config').first().json.dry_run }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "position": [
+        3320,
+        320
+      ]
+    },
+    {
+      "id": "c5600e16-bf50-4f23-91ef-d612b414a0da",
+      "name": "Dry run preview (nothing saved)",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "parameters": {
+        "mode": "manual",
+        "assignments": {
+          "assignments": [
+            {
+              "id": "4b1359b0-4e2b-4053-a456-715a4259b7f2",
+              "name": "dry_run_note",
+              "value": "DRY RUN: nothing was saved. Set dry_run = false in Config to save these rows.",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "position": [
+        3540,
+        440
+      ]
+    },
+    {
+      "id": "997339f3-9e7c-424e-b0d9-e103b5812f87",
+      "name": "Save to Data table",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "parameters": {
+        "resource": "row",
+        "operation": "upsert",
+        "dataTableId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "={{ $('Config').first().json.table_name }}"
+        },
+        "matchType": "allConditions",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "job_id",
+              "condition": "eq",
+              "keyValue": "={{ $json.job_id }}"
+            }
+          ]
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "position": [
+        3980,
+        320
+      ]
+    }
+  ],
+  "connections": {
+    "Run Search": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Config": {
+      "main": [
+        [
+          {
+            "node": "Kill switch off?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Kill switch off?": {
+      "main": [
+        [
+          {
+            "node": "Ensure Data table",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ensure Data table": {
+      "main": [
+        [
+          {
+            "node": "Portal Registry",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Portal Registry": {
+      "main": [
+        [
+          {
+            "node": "Fetch Portal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Portal": {
+      "main": [
+        [
+          {
+            "node": "Parse Portal Jobs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Portal Jobs": {
+      "main": [
+        [
+          {
+            "node": "Dry run?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry run?": {
+      "main": [
+        [
+          {
+            "node": "Dry run preview (nothing saved)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Save to Data table",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "description": "Fault-isolated multi-portal job ingestor (google). Compiled by scripts/build_workflow.py from portals/*/portal.json."
+  }
+}

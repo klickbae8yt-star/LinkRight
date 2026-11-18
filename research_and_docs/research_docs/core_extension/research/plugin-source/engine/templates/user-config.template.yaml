@@ -1,0 +1,88 @@
+# Blank user config schema. The Onboarding Concierge fills this into config/user-config.yaml.
+# This is settings, user owned and stable. It is not agent memory. See architecture section 16.
+
+user:
+  name: ""
+  background: ""
+  goal: ""
+  handle: ""
+
+source_files:              # the user's project brief and ground truth files, agents read this list
+  project_brief: ""
+  ground_truth: []
+
+language:
+  chat_input: ""            # how the user talks to the system
+  content_output: ""        # the language the final content ships in
+  note: ""
+
+writing_protocol:          # the user's hard writing rules, these become gates
+  punctuation_allowed: []
+  punctuation_banned: []
+  banned_words: []
+  banned_word_swaps: {}
+  paragraph_max_sentences: 0
+  vertical_white_space: ""
+  hook:
+    mobile_cutoff_chars: 0
+    multi_line_split: false
+    signature: ""
+  no_corporate_openers: false
+  no_salesy_cta: false
+  first_person: false
+  no_hedging: false
+
+positioning:
+  locked: ""
+  lean: ""
+  framing_rules: []
+  real_projects: []
+
+expertise:                 # the user's domain, so the Domain SME adapts instead of hardcoding a field
+  domain: ""
+  sub_focus: []
+  credibility_sources: []
+
+cadence:
+  frequency: ""
+  week_one: ""
+  post_type_mix: []
+
+metrics_policy:
+  synthesized_allowed: false
+  approved_on: ""
+  rule: ""
+  never: ""
+
+audience:
+  primary: ""
+  secondary: ""
+  what_they_care_about: ""
+
+media_policy:
+  every_post_ships_an_asset: false
+  render: ""
+
+consents: {}
+
+topic_hunt:                # config for the Topic Hunt skill, generalize to any field
+  niche: ""                # the domain to hunt in, for example consumer product, climate tech, indie hacking
+  signal_of_interest: ""   # what makes a story high signal, for example a metric shift, a launch, a controversy
+  dimensions: []           # angles or metrics to extract, for example retention, pricing, funding, adoption
+  sources: []              # where to look, for example engineering blogs, earnings, forums, blank for open web
+  lookback_days: 7         # how recent
+  story_count: 3           # how many to return
+  ignore: []               # what to skip, for example generic listicles, motivation fluff
+  output_fields: []        # the fields to deliver per story
+
+profile_search:            # config for the Profile Search skill, generalize to any target persona
+  purpose: ""              # why search, for example people to connect with, hire, learn from, sell to
+  target_personas: []      # each, a named persona with a core search string and variations
+  verification_checks: []  # what must be true to include a profile
+  output_fields: []        # the columns to deliver per profile
+  dedupe_file: ""          # the csv that stores results and prevents duplicates
+
+change_log:
+  - date: ""
+    change: ""
+    by: ""

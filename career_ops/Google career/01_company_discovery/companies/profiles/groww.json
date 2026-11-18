@@ -1,0 +1,107 @@
+{
+  "company_slug": "groww",
+  "company_name": "Groww",
+  "website": "https://groww.in",
+  "career_portal_url": "https://groww.in/careers",
+  "ats_platform": "greenhouse",
+  "ats_slug": "groww",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 9,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W18",
+  "team_size": 1050,
+  "locations": [
+    "India",
+    "South Asia",
+    "Bengaluru"
+  ],
+  "summary": "Making financial services simple, transparent and delightful.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/groww",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/groww.in/",
+  "founders": [
+    {
+      "name": "Lalit Keshre",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/lalitkeshre",
+      "twitter": "",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Ishan Bansal",
+      "title": "Founder",
+      "linkedin": "https://in.linkedin.com/in/ishan-bansal-8678b216",
+      "twitter": "",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Harsh Jain",
+      "title": "Founder/COO",
+      "linkedin": "https://in.linkedin.com/in/harshjainiitd",
+      "twitter": "",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Neeraj Singh",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/neeraj-singh-a910819",
+      "twitter": "",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 0,
+      "career_signals": [],
+      "exit_score": 0,
+      "has_exa_detail": false,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 44,
+  "recommendation": "watch_needs_intel",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 0,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

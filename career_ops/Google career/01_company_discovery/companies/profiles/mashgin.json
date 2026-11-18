@@ -1,0 +1,87 @@
+{
+  "company_slug": "mashgin",
+  "company_name": "Mashgin",
+  "website": "http://mashgin.com",
+  "career_portal_url": "https://www.mashgin.com/careers",
+  "ats_platform": "lever",
+  "ats_slug": "mashgin",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 10,
+  "industry": "Other",
+  "industry_grade": "C",
+  "industry_score": 4,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W15",
+  "team_size": 150,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "San Francisco"
+  ],
+  "summary": "Self-Checkout using Computer Vision.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/mashgin",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/mashgin/",
+  "founders": [
+    {
+      "name": "Abhinai Srivastava",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/abhinai",
+      "twitter": "",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 20,
+      "career_signals": [
+        "facebook",
+        "microsoft",
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    },
+    {
+      "name": "Mukul Dhankhar",
+      "title": "Founder",
+      "linkedin": "https://linkedin.com/in/mdhankhar",
+      "twitter": "",
+      "bio": "",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 19,
+      "career_signals": [
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 64,
+  "recommendation": "consider",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 20,
+    "past_exits": 0,
+    "industry_match": 4,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

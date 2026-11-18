@@ -1,0 +1,35 @@
+# Media Handoff template. The W4 agents fill this. The finished asset, ready to attach to the post.
+media_handoff:
+  asset_type: ""             # image | document carousel | video | gif | poll
+
+  design_system:
+    background: ""
+    accent: ""
+    highlight: ""
+    fonts: ""
+    watermark: ""
+
+  rendered_files: []         # paths in the run folder, in order, for example slide-1.png ... slide-6.png
+
+  carousel:
+    slides:
+      - number: 1
+        file: ""
+        alt_text: ""
+  video:
+    file: ""
+    captions_file: ""        # srt or caption text
+
+  alt_text: {}               # per file alt text for images
+
+  render:
+    method: ""               # sandbox | external fallback
+    fallback_reason: ""      # if the external generator was used, why
+
+  scoring:
+    brand_consistency: 0
+    visual_impact: 0
+    relevance_to_copy: 0
+    accessibility: 0
+
+  notes_for_user: ""         # how to attach, any manual step

@@ -1,0 +1,85 @@
+{
+  "company_slug": "rippling",
+  "company_name": "Rippling",
+  "website": "http://rippling.com",
+  "career_portal_url": "https://www.rippling.com/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "Trading & Finance",
+  "industry_grade": "B",
+  "industry_score": 6,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W17",
+  "team_size": 2500,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "San Francisco"
+  ],
+  "summary": "One place to run all your HR, IT, and Finance. Globally.",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/rippling",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/rippling/",
+  "founders": [
+    {
+      "name": "Parker Conrad",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/parkerconrad",
+      "twitter": "https://twitter.com/parkerconrad",
+      "bio": "",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 15,
+      "career_signals": [
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    },
+    {
+      "name": "Prasanna S",
+      "title": "Founder/CTO",
+      "linkedin": "https://www.linkedin.com/in/myprasanna",
+      "twitter": "https://www.twitter.com/myprasanna",
+      "bio": "Co-founder at Vorflux. Previously co-founder and CTO at Rippling (W17), scaling it from founding through $13B+ valuation. First engineer on Zenefits Payroll as Director of Engineering. Earlier founded LikeALittle (YC W11). Software developer at Microsoft, intern at Google. B.Tech CS from NIT Trichy.",
+      "education_score": 10,
+      "education_signal": "Top-100 / notable engineering school",
+      "career_score": 20,
+      "career_signals": [
+        "google",
+        "microsoft",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 81,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 20,
+    "past_exits": 0,
+    "industry_match": 6,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": false
+}

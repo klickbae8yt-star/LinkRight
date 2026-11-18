@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+fileos-output/
+*.tmp
+.DS_Store
+

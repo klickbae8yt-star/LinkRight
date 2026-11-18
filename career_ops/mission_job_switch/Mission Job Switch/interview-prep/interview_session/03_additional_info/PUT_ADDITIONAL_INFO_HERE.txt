@@ -1,0 +1,13 @@
+Drop any additional context here. This folder is optional but makes the simulation significantly more realistic.
+
+What to put here:
+  - Interviewer LinkedIn bios or background notes
+  - Company recent news, funding announcements, product launches
+  - Glassdoor reviews about interview style
+  - Notes from a friend who went through the same process
+  - Any known concern already raised about your candidacy
+  - Anything else you know that the JD doesn't say
+
+Accepted formats: .txt  .md  .pdf  .docx  .html
+
+Multiple files are fine.

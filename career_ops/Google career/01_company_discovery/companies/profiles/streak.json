@@ -1,0 +1,69 @@
+{
+  "company_slug": "streak",
+  "company_name": "Streak",
+  "website": "http://streak.com",
+  "career_portal_url": "https://www.streak.com/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "Marketing & Sales Tech",
+  "industry_grade": "B+",
+  "industry_score": 7,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S11",
+  "team_size": 35,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Fully Remote",
+    "San Francisco"
+  ],
+  "summary": "Streak transforms Gmail into a powerful CRM",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/streak",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/streak-com",
+  "founders": [
+    {
+      "name": "Aleem Mawani",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/aleemmawani/",
+      "twitter": "",
+      "bio": "Founder of Streak",
+      "education_score": 0,
+      "education_signal": "unknown (needs LinkedIn check)",
+      "career_score": 20,
+      "career_signals": [
+        "google",
+        "microsoft",
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 10,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": true
+    }
+  ],
+  "score": 77,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 0,
+    "founder_career": 20,
+    "past_exits": 10,
+    "industry_match": 7,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": true
+}

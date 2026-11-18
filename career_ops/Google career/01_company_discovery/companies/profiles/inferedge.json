@@ -1,0 +1,105 @@
+{
+  "company_slug": "inferedge",
+  "company_name": "InferEdge",
+  "website": "https://www.inferedge.com",
+  "career_portal_url": "https://www.inferedge.com/careers",
+  "ats_platform": "unknown",
+  "ats_slug": "",
+  "has_portal_api": false,
+  "portal_needs_har": true,
+  "open_jobs_detected": 0,
+  "industry": "AI & Automation",
+  "industry_grade": "A",
+  "industry_score": 9,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC W22",
+  "team_size": 20,
+  "locations": [
+    "India",
+    "South Asia",
+    "Mumbai, Maharashtra, India"
+  ],
+  "summary": "Agentic AI for buy-side firms",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/inferedge",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/inferedge-ai",
+  "founders": [
+    {
+      "name": "Aditya Mehta",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/adityamehta1990/",
+      "twitter": "https://twitter.com/adityamehta1990",
+      "bio": "I have been working at the intersection of financial services and technology for more than 8 years, first as a quant at Goldman Sachs and then in the core team at a lending startup Paysense (acquired for $185 Mn by Payu). I love finding problems in financial systems and figuring out solutions to improve them. I am a silver medalist from IIT Bombay.",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 20,
+      "career_signals": [
+        "amazon",
+        "goldman sachs",
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 15,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    },
+    {
+      "name": "Amal Dani",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/amal-dani-cfa-845555107/",
+      "twitter": "",
+      "bio": "I enjoy solving problems from a data and technology perspective. Before Harmoney, I built portfolio management solutions using tech at Goldman Sachs and data-driven trading strategies at a $2 Bn hedge fund. I am a computer science grad from IIT Bombay.",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 20,
+      "career_signals": [
+        "goldman sachs",
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 0,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    },
+    {
+      "name": "Omkar Ghaisas",
+      "title": "Founder",
+      "linkedin": "https://www.linkedin.com/in/omkar-ghaisas/",
+      "twitter": "",
+      "bio": "After graduation, I have spent the last eight years of my career in Corporate Finance and Wealth Management. I enjoy learning about and solving financial problems. I predominantly look after business development at Harmoney.",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 20,
+      "career_signals": [
+        "amazon",
+        "goldman sachs",
+        "serial_founder"
+      ],
+      "exit_score": 10,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 99,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 20,
+    "past_exits": 15,
+    "industry_match": 9,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": false
+}

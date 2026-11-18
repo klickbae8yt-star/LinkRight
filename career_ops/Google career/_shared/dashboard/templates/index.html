@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Intelligence — Auth &amp; Workflow Health</title>
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --card: #131a26;
+      --border: #232f44;
+      --text: #e6edf7;
+      --muted: #8b9bb4;
+      --green: #22c55e;
+      --yellow: #eab308;
+      --red: #ef4444;
+      --blue: #3b82f6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg); color: var(--text); padding: 24px;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; }
+    h1 { margin: 0; font-size: 22px; }
+    .subtitle { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 24px; }
+    .kpi { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+    .kpi-label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+    .kpi-value { font-size: 26px; font-weight: 700; margin-top: 4px; }
+    table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); font-size: 13px; vertical-align: middle; }
+    th { color: var(--muted); font-weight: 600; background: #101622; }
+    tr:last-child td { border-bottom: none; }
+    .badge { display: inline-block; padding: 3px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+    .healthy, .ok { background: rgba(34,197,94,0.15); color: var(--green); }
+    .expiring_soon { background: rgba(234,179,8,0.18); color: var(--yellow); }
+    .expired, .broken { background: rgba(239,68,68,0.18); color: var(--red); }
+    .missing, .unknown { background: rgba(139,155,180,0.15); color: var(--muted); }
+    .btn {
+      display: inline-block; padding: 6px 11px; border-radius: 6px; font-size: 12px; font-weight: 600;
+      text-decoration: none; cursor: pointer; border: 1px solid var(--border); background: #1a2436; color: var(--text);
+      margin-right: 6px; margin-bottom: 4px;
+    }
+    .btn-primary { background: var(--blue); border-color: var(--blue); color: #fff; }
+    .btn-danger { background: rgba(239,68,68,0.2); border-color: var(--red); color: #fca5a5; }
+    .muted { color: var(--muted); font-size: 12px; }
+    .modal-backdrop {
+      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+      align-items: center; justify-content: center; z-index: 50;
+    }
+    .modal {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      padding: 20px; width: 92%; max-width: 480px;
+    }
+    .modal h3 { margin-top: 0; }
+    .field { margin-bottom: 12px; }
+    .field label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+    .field input, .field textarea {
+      width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--border);
+      background: var(--bg); color: var(--text); font-family: inherit; font-size: 13px;
+    }
+    .webhook-bar {
+      background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+      padding: 12px 16px; margin-bottom: 20px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    }
+    .webhook-bar input {
+      flex: 1; min-width: 260px; padding: 7px 10px; border-radius: 6px;
+      border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>🔐 Auth, Cookie &amp; Workflow Health Dashboard</h1>
+        <div class="subtitle">Encrypted vault: <code>_secrets/</code> (AES-256-CBC) · Click any Sign-In link to refresh session cookies</div>
+      </div>
+      <div>
+        <button class="btn" onclick="loadStatus()">↻ Refresh</button>
+      </div>
+    </header>
+
+    <div class="kpis" id="kpis"></div>
+
+    <div class="webhook-bar">
+      <span class="muted"><strong>n8n Cloud Cookie Sync Webhook:</strong></span>
+      <input id="webhookUrl" type="url" placeholder="https://your-instance.app.n8n.cloud/webhook/auth-cookie-sync" />
+      <button class="btn btn-primary" onclick="saveWebhook()">Save Webhook</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Portal / Domain</th>
+          <th>Cookie Status</th>
+          <th>Last Signed In / Expires</th>
+          <th>Workflow Health</th>
+          <th>Credentials</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="portalRows"></tbody>
+    </table>
+  </div>
+
+  <!-- Credentials Modal -->
+  <div class="modal-backdrop" id="credModal">
+    <div class="modal">
+      <h3>🔑 Save Encrypted Login Credentials</h3>
+      <input type="hidden" id="credPortalId" />
+      <div class="field">
+        <label>Portal</label>
+        <input id="credPortalName" disabled />
+      </div>
+      <div class="field">
+        <label>Username / Email</label>
+        <input id="credUser" placeholder="you@example.com" />
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input id="credPass" type="password" placeholder="••••••••" />
+      </div>
+      <div class="field">
+        <label>Login URL</label>
+        <input id="credLoginUrl" />
+      </div>
+      <button class="btn btn-primary" onclick="submitCreds()">Save to Vault</button>
+      <button class="btn" onclick="closeModal('credModal')">Cancel</button>
+    </div>
+  </div>
+
+  <!-- HAR / JSON Import Modal -->
+  <div class="modal-backdrop" id="importModal">
+    <div class="modal">
+      <h3>📦 Import Cookies (HAR or JSON)</h3>
+      <input type="hidden" id="importPortalId" />
+      <div class="field">
+        <label>Select .har file or Cookie-Editor .json export</label>
+        <input id="importFile" type="file" accept=".har,.json" />
+      </div>
+      <button class="btn btn-primary" onclick="submitImport()">Extract &amp; Encrypt Cookies</button>
+      <button class="btn" onclick="closeModal('importModal')">Cancel</button>
+    </div>
+  </div>
+
+  <script>
+    function fmtTime(iso) {
+      if (!iso) return '—';
+      const d = new Date(iso);
+      return isNaN(d) ? iso : d.toLocaleString();
+    }
+    function timeUntil(iso) {
+      if (!iso) return '';
+      const ms = new Date(iso) - Date.now();
+      if (ms <= 0) return ' (expired)';
+      const hrs = Math.floor(ms / 3600000);
+      return hrs >= 24 ? ` (${Math.floor(hrs/24)}d ${hrs%24}h left)` : ` (${hrs}h left)`;
+    }
+    async function loadStatus() {
+      const res = await fetch('/api/status');
+      const data = await res.json();
+      document.getElementById('webhookUrl').value = data.n8n_cloud_sync_webhook || '';
+      const portals = Object.values(data.portals || {});
+      const counts = { healthy: 0, expiring_soon: 0, expired: 0, broken: 0, missing: 0 };
+      portals.forEach(p => {
+        counts[p.cookie_status] = (counts[p.cookie_status] || 0) + 1;
+        if (p.workflow_status === 'broken') counts.broken += 1;
+      });
+      document.getElementById('kpis').innerHTML = `
+        <div class="kpi"><div class="kpi-label">Healthy Cookies</div><div class="kpi-value" style="color:var(--green)">${counts.healthy}</div></div>
+        <div class="kpi"><div class="kpi-label">Expiring (&lt;24h)</div><div class="kpi-value" style="color:var(--yellow)">${counts.expiring_soon}</div></div>
+        <div class="kpi"><div class="kpi-label">Expired / Broken</div><div class="kpi-value" style="color:var(--red)">${counts.expired + counts.broken}</div></div>
+        <div class="kpi"><div class="kpi-label">Not Configured</div><div class="kpi-value" style="color:var(--muted)">${counts.missing}</div></div>
+      `;
+      const rows = portals.map(p => {
+        const needsAction = p.cookie_status === 'expired' || p.workflow_status === 'broken';
+        return `<tr>
+          <td>
+            <strong>${p.display_name}</strong><br/>
+            <span class="muted">${p.track} · ${p.cookie_count || 0} cookies</span>
+          </td>
+          <td><span class="badge ${p.cookie_status}">${p.cookie_status.replace('_', ' ')}</span></td>
+          <td>
+            <div class="muted">In: ${fmtTime(p.last_signed_in)}</div>
+            <div>Exp: ${fmtTime(p.expires_at)}<span class="muted">${timeUntil(p.expires_at)}</span></div>
+          </td>
+          <td>
+            <span class="badge ${p.workflow_status}">${p.workflow_status}</span>
+            ${p.last_error ? `<div class="muted" style="color:var(--red);margin-top:4px">${p.last_error}</div>` : ''}
+          </td>
+          <td>${p.has_credentials ? '🔑 Encrypted' : '<span class="muted">None</span>'}</td>
+          <td>
+            <a class="btn ${needsAction ? 'btn-danger' : 'btn-primary'}" href="/auth/start?portal=${encodeURIComponent(p.portal_id)}">🔗 Sign In &amp; Capture</a>
+            <button class="btn" onclick='openCredModal(${JSON.stringify(p)})'>🔑 Creds</button>
+            <button class="btn" onclick='openImportModal("${p.portal_id}")'>📦 Import</button>
+          </td>
+        </tr>`;
+      }).join('');
+      document.getElementById('portalRows').innerHTML = rows;
+    }
+    function openCredModal(p) {
+      document.getElementById('credPortalId').value = p.portal_id;
+      document.getElementById('credPortalName').value = p.display_name;
+      document.getElementById('credLoginUrl').value = p.login_url || '';
+      document.getElementById('credUser').value = '';
+      document.getElementById('credPass').value = '';
+      document.getElementById('credModal').style.display = 'flex';
+    }
+    function openImportModal(pid) {
+      document.getElementById('importPortalId').value = pid;
+      document.getElementById('importFile').value = '';
+      document.getElementById('importModal').style.display = 'flex';
+    }
+    function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+    async function submitCreds() {
+      const body = {
+        portal_id: document.getElementById('credPortalId').value,
+        username: document.getElementById('credUser').value,
+        password: document.getElementById('credPass').value,
+        login_url: document.getElementById('credLoginUrl').value,
+      };
+      await fetch('/api/credentials', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body) });
+      closeModal('credModal');
+      loadStatus();
+    }
+    async function submitImport() {
+      const file = document.getElementById('importFile').files[0];
+      if (!file) return alert('Choose a .har or .json file first.');
+      const text = await file.text();
+      const pid = document.getElementById('importPortalId').value;
+      const res = await fetch('/api/auth/import', {
+        method: 'POST', headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ portal_id: pid, filename: file.name, content: text })
+      });
+      const out = await res.json();
+      if (!res.ok) return alert(out.error || 'Import failed');
+      closeModal('importModal');
+      loadStatus();
+    }
+    async function saveWebhook() {
+      const url = document.getElementById('webhookUrl').value.trim();
+      await fetch('/api/config/webhook', {
+        method: 'POST', headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ n8n_cloud_sync_webhook: url })
+      });
+      alert('Saved n8n Cloud sync webhook.');
+    }
+    loadStatus();
+  </script>
+</body>
+</html>
+

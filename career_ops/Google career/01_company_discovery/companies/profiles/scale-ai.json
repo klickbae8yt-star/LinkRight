@@ -1,0 +1,68 @@
+{
+  "company_slug": "scale-ai",
+  "company_name": "Scale AI",
+  "website": "http://scale.com",
+  "career_portal_url": "https://boards.greenhouse.io/scaleai",
+  "ats_platform": "greenhouse",
+  "ats_slug": "scaleai",
+  "has_portal_api": true,
+  "portal_needs_har": false,
+  "open_jobs_detected": 169,
+  "industry": "AI & Automation",
+  "industry_grade": "A",
+  "industry_score": 9,
+  "investor_tier": 1,
+  "investors": [
+    "Y Combinator"
+  ],
+  "batch_or_round": "YC S16",
+  "team_size": 500,
+  "locations": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote",
+    "San Francisco"
+  ],
+  "summary": "Data-centric infrastructure to accelerate the development of AI",
+  "sources_seen": [
+    "yc_companies"
+  ],
+  "source_url": "https://www.ycombinator.com/companies/scale-ai",
+  "research_status": "scored",
+  "added_on": "2026-11-10",
+  "company_linkedin": "https://www.linkedin.com/company/scaleai/",
+  "founders": [
+    {
+      "name": "Alexandr Wang",
+      "title": "Founder/CEO",
+      "linkedin": "https://www.linkedin.com/in/alexandrwang",
+      "twitter": "",
+      "bio": "",
+      "education_score": 15,
+      "education_signal": "IIT / IIM / Ivy League signal",
+      "career_score": 20,
+      "career_signals": [
+        "meta",
+        "linkedin",
+        "serial_founder"
+      ],
+      "exit_score": 10,
+      "has_exa_detail": true,
+      "has_linkedin_detail": false,
+      "needs_linkedin_lookup": false
+    }
+  ],
+  "score": 94,
+  "recommendation": "strong_match",
+  "score_breakdown": {
+    "investor_quality": 20,
+    "founder_education": 15,
+    "founder_career": 20,
+    "past_exits": 10,
+    "industry_match": 9,
+    "location_compliance": 10,
+    "product_stage_fit": 10
+  },
+  "needs_linkedin_burner_lookup": false
+}

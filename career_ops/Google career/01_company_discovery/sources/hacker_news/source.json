@@ -1,0 +1,25 @@
+{
+  "source_id": "hacker_news_hiring",
+  "name": "Hacker News — Who Is Hiring",
+  "status": "api_ready",
+  "needs_har": false,
+  "public_api": {
+    "base": "https://hacker-news.firebaseio.com/v0",
+    "monthly_thread_search": "https://hn.algolia.com/api/v1/search?query=Ask+HN+Who+is+hiring&tags=ask_hn&hitsPerPage=1",
+    "thread_items": "https://hacker-news.firebaseio.com/v0/item/{thread_id}.json",
+    "comment": "https://hacker-news.firebaseio.com/v0/item/{comment_id}.json"
+  },
+  "what_to_do": "No HAR needed. The HN Firebase API is fully public. Script can call it directly.",
+  "filters_to_apply_on_text": [
+    "remote",
+    "India",
+    "product manager",
+    "product marketing",
+    "chief of staff",
+    "AI",
+    "machine learning"
+  ],
+  "update_frequency": "first weekday of each month",
+  "notes": "Find the latest 'Ask HN: Who is Hiring?' thread ID using Algolia, then fetch all comments. Each comment is one company posting. Filter comment text for remote + role keywords."
+}
+

@@ -1,0 +1,35 @@
+# W3. Content Drafting. Writes the post copy and the media script in the owner's voice.
+workflow:
+  code: content-drafter
+  name: Content Drafting
+  purpose: Turn the strategy brief into a finished post and a media script, in the owner's voice, past the hard gates
+  cadence: per post
+
+  config_source: config/
+  output_folder: runs/
+
+  agents:
+    - domain-sme        # the substance, real numbers, kept consistent with the ledger
+    - storyteller       # drafts the body in the owner's voice
+    - hook-writer       # writes the scroll stopping hook
+    - copy-chief        # hard gates and the line edit
+    - media-scripter    # the media script for Media Production
+
+  validation: evals/copy-signoff.md
+  primary_output: templates/content-handoff.yaml
+
+  inputs:
+    - config/user-config.yaml
+    - knowledge-base/voice-profile.md
+    - knowledge-base/voice-examples.md
+    - templates/strategy-brief.yaml   # the filled brief from W2
+
+  refinement_loop:
+    gate: evals/hard-gates.md plus the scored rubric in evals/scoring path
+    on_fail: name the failing dimension, send back to storyteller or hook-writer, rewrite
+    max_iterations: 5
+    then: flag to Master Evaluator with the failing dimension named
+
+  execution_hints:
+    interactive: false
+    resumable: true
